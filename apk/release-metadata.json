@@ -1,0 +1,15 @@
+{
+  "version": "0.13.2",
+  "certificateSha256": "f4e4ca5b9ab49fb5464651341e6066d8cf017bfa8bd36f5762ea3b11fdfbb3dc",
+  "artifacts": [
+    {
+      "file": "EasyCar_Pleos_release.apk",
+      "bytes": 46679173,
+      "sha256": "415cc016ed19c21da78d25e9860d3d88c74ea732502ad856ef5fa51b31aef2b6",
+      "applicationId": "com.example.easycar",
+      "versionName": "0.13.2",
+      "versionCode": 18,
+      "debuggable": false
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+
+com.example.easycar.ParkingVideoAnalysisTest:..
+Error in calibrationReviewPersistsVersionedGeometryWithoutChangingManeuverResults(com.example.easycar.ParkingVideoAnalysisTest):
+java.lang.AssertionError: Activity never becomes requested state "[DESTROYED]" (last lifecycle transition = "PAUSED")
+	at androidx.test.core.app.ActivityScenario.waitForActivityToBecomeAnyOf(ActivityScenario.java:454)
+	at androidx.test.core.app.ActivityScenario.moveToState(ActivityScenario.java:689)
+	at androidx.test.core.app.ActivityScenario.close(ActivityScenario.java:421)
+	at kotlin.io.CloseableKt.closeFinally(Closeable.kt:46)
+	at com.example.easycar.ParkingVideoAnalysisTest.calibrationReviewPersistsVersionedGeometryWithoutChangingManeuverResults(ParkingVideoAnalysisTest.kt:44)
+
+com.example.easycar.ParkingVideoReviewTest:.
+com.example.easycar.ParkingVideoGalleryTest:.
+com.example.easycar.PersistenceAndVideoTest:....
+
+Time: 72.029
+There was 1 failure:
+1) calibrationReviewPersistsVersionedGeometryWithoutChangingManeuverResults(com.example.easycar.ParkingVideoAnalysisTest)
+java.lang.AssertionError: Activity never becomes requested state "[DESTROYED]" (last lifecycle transition = "PAUSED")
+	at androidx.test.core.app.ActivityScenario.waitForActivityToBecomeAnyOf(ActivityScenario.java:454)
+	at androidx.test.core.app.ActivityScenario.moveToState(ActivityScenario.java:689)
+	at androidx.test.core.app.ActivityScenario.close(ActivityScenario.java:421)
+	at kotlin.io.CloseableKt.closeFinally(Closeable.kt:46)
+	at com.example.easycar.ParkingVideoAnalysisTest.calibrationReviewPersistsVersionedGeometryWithoutChangingManeuverResults(ParkingVideoAnalysisTest.kt:44)
+
+FAILURES!!!
+Tests run: 9,  Failures: 1
+
+

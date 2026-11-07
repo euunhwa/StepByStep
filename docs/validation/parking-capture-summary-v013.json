@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-07",
+  "appVersion": "0.13.0",
+  "versionCode": 16,
+  "recognitionVersion": "recognition-document-1.0.1",
+  "parkingPolicyVersion": "parking-outcome-draft-1.0",
+  "unitTests": {
+    "core": 176,
+    "app": 14,
+    "failures": 0,
+    "newCoreCases": {
+      "parkingOutcome": 11,
+      "nominal10KphFloatBoundary": 1
+    }
+  },
+  "build": {
+    "pleosDebug": true,
+    "demoDebug": true,
+    "androidTest": true,
+    "lintErrors": 0,
+    "lintWarnings": 37,
+    "newLintWarning": "Conservative filesDir.usableSpace check; StorageManager allocatable-byte API suggested. 36 previous warnings."
+  },
+  "deviceTests": {
+    "newParkingTests": 4,
+    "existingRegressionTests": 18,
+    "cameraDisplayCaptureProbe": 1,
+    "actual8088Integration": 1,
+    "totalSuccessfulInvocations": 24,
+    "newParkingBatchSeconds": 36.098,
+    "regressionBatchSeconds": 29.728
+  },
+  "syntheticEvidence": {
+    "input": "bundled synthetic MP4 + synthetic speed/gear, not camera or training data",
+    "alignedScore": 95,
+    "stableRtoDCount": 2,
+    "intrusionScoreAtMost": 59,
+    "blankScore": null,
+    "manualSixPointFlowPassed": true,
+    "alreadyPublishedScoreLocked": true,
+    "roomReloadAndRecordQueryPreserved": true
+  },
+  "realCapture": {
+    "systemMediaProjectionConsent": true,
+    "normalCameraLauncherSurfaceVisibleInDecodedMp4": true,
+    "directEvsPermissionUsed": false,
+    "aroundViewTopViewVerified": false,
+    "source": "USER_SELECTED_SCREEN",
+    "timeMapping": "elapsedRealtime approximate; not camera PTS synchronization"
+  },
+  "actual8088": {
+    "input": "localhost8088 -> DDS -> AAOS vehicle service; no application frame/score injection",
+    "frames": 133,
+    "speedSources": [
+      "AAOS PERF_VEHICLE_SPEED"
+    ],
+    "reverseToDriveCount": 2,
+    "signalsComplete": true,
+    "automaticCompletion": true,
+    "videoSaved": true,
+    "videoDurationMs": 13617,
+    "finalVideoMs": 12453,
+    "score": null,
+    "holds": [
+      "보정된 탑뷰의 차량 외곽과 주차칸 전체 경계가 필요해요."
+    ],
+    "allSignalsIssues": []
+  },
+  "attemptsAndCorrections": [
+    "Initial new batch: 1 UI wait timeout at 20s; other 2 cases passed. Flow alone passed. End-to-end wait raised to45s; all4 new tests then passed.",
+    "8088 host checker initially read an empty/incomplete readiness file. JSON read race fixed; real device integration passed afterward. Application frames and score were never altered to make tests pass."
+  ],
+  "unverified": [
+    "actual AVM rectified parking-bay images",
+    "camera geometry/vehicle footprint calibration accuracy",
+    "camera-to-signal hardware timestamp synchronization",
+    "other OEM secure camera surfaces",
+    "real-world recognition/placement accuracy and expert policy validity",
+    "long recording/process-death recovery on target vehicles"
+  ],
+  "files": {
+    "build-parking-capture-v013.log": {
+      "sha256": "2edb945426b8e95c2c241c87e1d6d8974f1f246438c23009b140d2ef495b2884",
+      "bytes": 11475
+    },
+    "build-parking-console-test-v013.log": {
+      "sha256": "141b9176e0ff93aa32192ccbda3ebe4441323cfefd7292f0790454847bfd4bcd",
+      "bytes": 4667
+    },
+    "device-parking-camera-probe-v013.log": {
+      "sha256": "0cca7884e76523806bfed37a1e1784222c66b5ffc99bbcfa12e397ad30425ae2",
+      "bytes": 81
+    },
+    "device-parking-capture-v013-attempt1.log": {
+      "sha256": "2c1cef4a3468b29e431704a0aed06ec916489fe99d4a46cca1ddb8cce4998078",
+      "bytes": 1432
+    },
+    "device-parking-capture-v013.log": {
+      "sha256": "0dbb8239e2009bbdb66ee542ebde24d5c4f3a79cd4697318303dc1f767a21371",
+      "bytes": 222
+    },
+    "device-parking-console-v013.log": {
+      "sha256": "024e8e2f0994a8ffb90ae5d8fb02ec495c75e8c8d46aae2ca12007a0407855cc",
+      "bytes": 81
+    },
+    "device-parking-flow-v013-retry.log": {
+      "sha256": "00c03da1786ef2dfb1dc351839319b5ba0caf4ca32bfe6c187c9d2e00d05108a",
+      "bytes": 75
+    },
+    "device-parking-regression-v013.log": {
+      "sha256": "c78eda40f4d2caf93284c8fbe990cec4c1845ca7bee0a2da6795587248cc4695",
+      "bytes": 397
+    },
+    "parking-camera-probe-frame-v013.png": {
+      "sha256": "85644a7118bad8aad1f1ab0b740eedc16879d176bef043346ee522bac7182ef8",
+      "bytes": 111625
+    },
+    "parking-camera-probe-v013.json": {
+      "sha256": "9838eb61d3204d83960ed29bdd0475346b519a9d28e81647f19f20f1a6b0d91a",
+      "bytes": 1206
+    },
+    "parking-capture-analysis-v013.json": {
+      "sha256": "817069f0e8f6d07faf42b015db26e069f92b143bfa26516164b2364254ee4ffc",
+      "bytes": 2049
+    },
+    "parking-capture-fixtures-v013.json": {
+      "sha256": "74eb8358d38fc30309cda7c10e857ebb2927240a8b6029d88e8a00e88485aeca",
+      "bytes": 1051
+    },
+    "parking-capture-flow-v013.json": {
+      "sha256": "52f43b29c250d5e473f36872faf532e16ad744b5fad848fe513df58d6f7039e5",
+      "bytes": 2478
+    },
+    "parking-capture-flow-v013.png": {
+      "sha256": "f1c4f4991fa2aecdc94cfff1e1b92dac9bb72635fbf0866b2d252014b062a8fa",
+      "bytes": 317228
+    },
+    "parking-console-frame-v013.png": {
+      "sha256": "b3e9841cdbf784d31618660dd3b61ae65e0b3bbaa7b23b7092596c59365af763",
+      "bytes": 108269
+    },
+    "parking-console-host-attempt1-v013.log": {
+      "sha256": "e1c510427261cc23a8e4f41479727adb981aafebbada46f1bc27a2c094a84654",
+      "bytes": 1143
+    },
+    "parking-console-host-v013.log": {
+      "sha256": "42262534f6ca95bacda5a0ec88d0b35feba312e6b6c73559743c4e8c791d6424",
+      "bytes": 107
+    },
+    "parking-console-record-v013.json": {
+      "sha256": "871e3970f8e47e6ef944a258ee66d34b9ed1d1620c13721f1b3422dbe7eb44ef",
+      "bytes": 133735
+    },
+    "parking-console-sent-inputs-v013.json": {
+      "sha256": "cdc99e5afc2ad6b4d10e00911f04d93e8d9fba900f43c77bc4cdf40dcb9806de",
+      "bytes": 1030
+    },
+    "parking-console-v013.json": {
+      "sha256": "94f8682bddd7f7bf707829088e7ac682de872beb08dc19dfae32b6e3f8db82d4",
+      "bytes": 1180
+    },
+    "parking-final-marking-v013.png": {
+      "sha256": "4e5a22240f7a73324c9b77b834b5730ee56744b3294c433979fcc345adc76595",
+      "bytes": 289257
+    },
+    "parking-projection-frame-v013.png": {
+      "sha256": "72634506cd3400b1568b0283aa7241b26cfe1b67079a97cb85ef7e5071e7386c",
+      "bytes": 57064
+    },
+    "parking-projection-v013.json": {
+      "sha256": "6bc9e8875678ab5c63c52c0474cb88f7ff3ce48366749cc10bbab2b9d10818b4",
+      "bytes": 1205
+    },
+    "parking-v013-TEST-com.easycar.core.DocumentDatasetTest.xml": {
+      "sha256": "ee22c347641f9d693ae90fb9fce7c9b687b38316e5603b8b5600b67a1d9883bb",
+      "bytes": 2811
+    },
+    "parking-v013-TEST-com.easycar.core.ParkingOutcomeTest.xml": {
+      "sha256": "3a7dc09fe90c5dd10b6a4fce8abb5de5bfe34aee8e2fdb64324484a1394e0f26",
+      "bytes": 1882
+    }
+  },
+  "apk": {
+    "path": "app/build/outputs/apk/pleos/debug/app-pleos-debug.apk",
+    "sha256": "1ffefcacb8e11d94631088f3beefe6f9a2d067a11a5b3f76aae851a020c9a7cc"
+  }
+}

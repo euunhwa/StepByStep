@@ -1,0 +1,246 @@
+{
+  "source": "SYNTHETIC_QUERY_FIXTURE",
+  "externallyDispatched": false,
+  "calls": [
+    {
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "smoke-last",
+        "action": "GET_LAST_RESULT",
+        "parameters": {
+          "sessionId": "fixture-session",
+          "maneuverType": "T_PARK"
+        }
+      },
+      "response": {
+        "schemaVersion": 1,
+        "requestId": "smoke-last",
+        "action": "GET_LAST_RESULT",
+        "status": "OK",
+        "answer": "T자 주차 저장 점수는 85점이에요. 주차 완성도·연석 접촉·안전 맥락 항목은 미평가예요.",
+        "warnings": [
+          "관측된 조작 지표의 임시 점수이며 안전성이나 주차 성공을 보증하지 않아요."
+        ],
+        "session": {
+          "id": "fixture-session",
+          "createdAt": 1000,
+          "profileVersion": "document-derived-1.0",
+          "source": "SYNTHETIC_QUERY_FIXTURE",
+          "state": "COMPLETED"
+        },
+        "result": {
+          "id": "fixture-tpark-85",
+          "type": "T_PARK",
+          "startMs": 5000,
+          "endMs": 9000,
+          "lifecycle": "COMPLETED",
+          "score": 85,
+          "scoreKind": "PROVISIONAL",
+          "reverseToDriveCount": 4,
+          "profileVersion": "document-derived-1.0",
+          "evaluationPolicyVersion": "evaluation-document-1.0",
+          "source": "SYNTHETIC_QUERY_FIXTURE",
+          "historical": false,
+          "finalResult": true,
+          "holdReasons": [],
+          "deductions": [
+            {
+              "key": "gear_repetition",
+              "title": "전후진 반복",
+              "points": 15,
+              "measured": 4.0,
+              "unit": "회",
+              "allowed": 1.0,
+              "evidenceMs": 9000,
+              "durationMs": 4000,
+              "phase": "parking"
+            }
+          ],
+          "omittedDeductionCount": 0,
+          "recordedDeductionTotal": 15,
+          "appliedDeductionTotal": 15,
+          "arithmeticMatches": true,
+          "unobserved": [
+            {
+              "key": "parking_geometry",
+              "title": "주차 완성도·연석 접촉",
+              "reason": "구획·차체 위치·연석 관측 미통합: 평가 보류, 유형은 운동 패턴 추정"
+            },
+            {
+              "key": "safety_context",
+              "title": "안전 맥락",
+              "reason": "방향지시등·신호·보행자·제한속도·위반 맥락 미수신: 10점 위반/실격 판정 보류"
+            }
+          ],
+          "omittedUnobservedCount": 0,
+          "scoreBasis": "문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요."
+        },
+        "summary": null,
+        "transport": "LOCAL_MOCK",
+        "externallyDispatched": false
+      },
+      "callbackPreview": {
+        "functionName": "GET_LAST_RESULT",
+        "status": "success",
+        "message": "The saved local record query completed. The data preserves stored scores, holds and evaluation versions.",
+        "mode": "silent",
+        "data": "[\n  {\n    \"schemaVersion\": 1,\n    \"requestId\": \"smoke-last\",\n    \"action\": \"GET_LAST_RESULT\",\n    \"status\": \"OK\",\n    \"answer\": \"T자 주차 저장 점수는 85점이에요. 주차 완성도·연석 접촉·안전 맥락 항목은 미평가예요.\",\n    \"warnings\": [\n      \"관측된 조작 지표의 임시 점수이며 안전성이나 주차 성공을 보증하지 않아요.\"\n    ],\n    \"session\": {\n      \"id\": \"fixture-session\",\n      \"createdAt\": 1000,\n      \"profileVersion\": \"document-derived-1.0\",\n      \"source\": \"SYNTHETIC_QUERY_FIXTURE\",\n      \"state\": \"COMPLETED\"\n    },\n    \"result\": {\n      \"id\": \"fixture-tpark-85\",\n      \"type\": \"T_PARK\",\n      \"startMs\": 5000,\n      \"endMs\": 9000,\n      \"lifecycle\": \"COMPLETED\",\n      \"score\": 85,\n      \"scoreKind\": \"PROVISIONAL\",\n      \"reverseToDriveCount\": 4,\n      \"profileVersion\": \"document-derived-1.0\",\n      \"evaluationPolicyVersion\": \"evaluation-document-1.0\",\n      \"source\": \"SYNTHETIC_QUERY_FIXTURE\",\n      \"historical\": false,\n      \"finalResult\": true,\n      \"holdReasons\": [],\n      \"deductions\": [\n        {\n          \"key\": \"gear_repetition\",\n          \"title\": \"전후진 반복\",\n          \"points\": 15,\n          \"measured\": 4.0,\n          \"unit\": \"회\",\n          \"allowed\": 1.0,\n          \"evidenceMs\": 9000,\n          \"durationMs\": 4000,\n          \"phase\": \"parking\"\n        }\n      ],\n      \"omittedDeductionCount\": 0,\n      \"recordedDeductionTotal\": 15,\n      \"appliedDeductionTotal\": 15,\n      \"arithmeticMatches\": true,\n      \"unobserved\": [\n        {\n          \"key\": \"parking_geometry\",\n          \"title\": \"주차 완성도·연석 접촉\",\n          \"reason\": \"구획·차체 위치·연석 관측 미통합: 평가 보류, 유형은 운동 패턴 추정\"\n        },\n        {\n          \"key\": \"safety_context\",\n          \"title\": \"안전 맥락\",\n          \"reason\": \"방향지시등·신호·보행자·제한속도·위반 맥락 미수신: 10점 위반/실격 판정 보류\"\n        }\n      ],\n      \"omittedUnobservedCount\": 0,\n      \"scoreBasis\": \"문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요.\"\n    },\n    \"summary\": null,\n    \"transport\": \"LOCAL_MOCK\",\n    \"externallyDispatched\": false\n  }\n]"
+      }
+    },
+    {
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "smoke-explain",
+        "action": "EXPLAIN_RESULT",
+        "parameters": {
+          "sessionId": "fixture-session",
+          "resultId": "fixture-tpark-85"
+        }
+      },
+      "response": {
+        "schemaVersion": 1,
+        "requestId": "smoke-explain",
+        "action": "EXPLAIN_RESULT",
+        "status": "OK",
+        "answer": "T자 주차 저장 점수는 85점이에요. R→D 4회 중 기준 1회를 초과한 3회로 15점 감점됐어요. 저장 점수 기준 적용 감점은 15점이에요. 주차 완성도·연석 접촉·안전 맥락 항목은 미평가예요.",
+        "warnings": [
+          "관측된 조작 지표의 임시 점수이며 안전성이나 주차 성공을 보증하지 않아요."
+        ],
+        "session": {
+          "id": "fixture-session",
+          "createdAt": 1000,
+          "profileVersion": "document-derived-1.0",
+          "source": "SYNTHETIC_QUERY_FIXTURE",
+          "state": "COMPLETED"
+        },
+        "result": {
+          "id": "fixture-tpark-85",
+          "type": "T_PARK",
+          "startMs": 5000,
+          "endMs": 9000,
+          "lifecycle": "COMPLETED",
+          "score": 85,
+          "scoreKind": "PROVISIONAL",
+          "reverseToDriveCount": 4,
+          "profileVersion": "document-derived-1.0",
+          "evaluationPolicyVersion": "evaluation-document-1.0",
+          "source": "SYNTHETIC_QUERY_FIXTURE",
+          "historical": false,
+          "finalResult": true,
+          "holdReasons": [],
+          "deductions": [
+            {
+              "key": "gear_repetition",
+              "title": "전후진 반복",
+              "points": 15,
+              "measured": 4.0,
+              "unit": "회",
+              "allowed": 1.0,
+              "evidenceMs": 9000,
+              "durationMs": 4000,
+              "phase": "parking"
+            }
+          ],
+          "omittedDeductionCount": 0,
+          "recordedDeductionTotal": 15,
+          "appliedDeductionTotal": 15,
+          "arithmeticMatches": true,
+          "unobserved": [
+            {
+              "key": "parking_geometry",
+              "title": "주차 완성도·연석 접촉",
+              "reason": "구획·차체 위치·연석 관측 미통합: 평가 보류, 유형은 운동 패턴 추정"
+            },
+            {
+              "key": "safety_context",
+              "title": "안전 맥락",
+              "reason": "방향지시등·신호·보행자·제한속도·위반 맥락 미수신: 10점 위반/실격 판정 보류"
+            }
+          ],
+          "omittedUnobservedCount": 0,
+          "scoreBasis": "문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요."
+        },
+        "summary": null,
+        "transport": "LOCAL_MOCK",
+        "externallyDispatched": false
+      },
+      "callbackPreview": {
+        "functionName": "EXPLAIN_RESULT",
+        "status": "success",
+        "message": "The saved local record query completed. The data preserves stored scores, holds and evaluation versions.",
+        "mode": "silent",
+        "data": "[\n  {\n    \"schemaVersion\": 1,\n    \"requestId\": \"smoke-explain\",\n    \"action\": \"EXPLAIN_RESULT\",\n    \"status\": \"OK\",\n    \"answer\": \"T자 주차 저장 점수는 85점이에요. R→D 4회 중 기준 1회를 초과한 3회로 15점 감점됐어요. 저장 점수 기준 적용 감점은 15점이에요. 주차 완성도·연석 접촉·안전 맥락 항목은 미평가예요.\",\n    \"warnings\": [\n      \"관측된 조작 지표의 임시 점수이며 안전성이나 주차 성공을 보증하지 않아요.\"\n    ],\n    \"session\": {\n      \"id\": \"fixture-session\",\n      \"createdAt\": 1000,\n      \"profileVersion\": \"document-derived-1.0\",\n      \"source\": \"SYNTHETIC_QUERY_FIXTURE\",\n      \"state\": \"COMPLETED\"\n    },\n    \"result\": {\n      \"id\": \"fixture-tpark-85\",\n      \"type\": \"T_PARK\",\n      \"startMs\": 5000,\n      \"endMs\": 9000,\n      \"lifecycle\": \"COMPLETED\",\n      \"score\": 85,\n      \"scoreKind\": \"PROVISIONAL\",\n      \"reverseToDriveCount\": 4,\n      \"profileVersion\": \"document-derived-1.0\",\n      \"evaluationPolicyVersion\": \"evaluation-document-1.0\",\n      \"source\": \"SYNTHETIC_QUERY_FIXTURE\",\n      \"historical\": false,\n      \"finalResult\": true,\n      \"holdReasons\": [],\n      \"deductions\": [\n        {\n          \"key\": \"gear_repetition\",\n          \"title\": \"전후진 반복\",\n          \"points\": 15,\n          \"measured\": 4.0,\n          \"unit\": \"회\",\n          \"allowed\": 1.0,\n          \"evidenceMs\": 9000,\n          \"durationMs\": 4000,\n          \"phase\": \"parking\"\n        }\n      ],\n      \"omittedDeductionCount\": 0,\n      \"recordedDeductionTotal\": 15,\n      \"appliedDeductionTotal\": 15,\n      \"arithmeticMatches\": true,\n      \"unobserved\": [\n        {\n          \"key\": \"parking_geometry\",\n          \"title\": \"주차 완성도·연석 접촉\",\n          \"reason\": \"구획·차체 위치·연석 관측 미통합: 평가 보류, 유형은 운동 패턴 추정\"\n        },\n        {\n          \"key\": \"safety_context\",\n          \"title\": \"안전 맥락\",\n          \"reason\": \"방향지시등·신호·보행자·제한속도·위반 맥락 미수신: 10점 위반/실격 판정 보류\"\n        }\n      ],\n      \"omittedUnobservedCount\": 0,\n      \"scoreBasis\": \"문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요.\"\n    },\n    \"summary\": null,\n    \"transport\": \"LOCAL_MOCK\",\n    \"externallyDispatched\": false\n  }\n]"
+      }
+    },
+    {
+      "request": {
+        "schemaVersion": 1,
+        "requestId": "smoke-summary",
+        "action": "SUMMARIZE_SESSION",
+        "parameters": {
+          "sessionId": "fixture-session"
+        }
+      },
+      "response": {
+        "schemaVersion": 1,
+        "requestId": "smoke-summary",
+        "action": "SUMMARIZE_SESSION",
+        "status": "OK",
+        "answer": "동작 3개 중 평가된 동작은 2개, 보류·미완료는 1개예요. 전후진 반복 항목의 감점 기록이 1개 동작에 있어요. 전후진 전환이 반복된 구간의 진입 위치와 기동 순서를 복기해 보세요.",
+        "warnings": [
+          "관측 조작의 임시 점수 요약이에요. 안전성이나 주차 성공을 판정하지 않아요."
+        ],
+        "session": {
+          "id": "fixture-session",
+          "createdAt": 1000,
+          "profileVersion": "document-derived-1.0",
+          "source": "SYNTHETIC_QUERY_FIXTURE",
+          "state": "COMPLETED"
+        },
+        "result": null,
+        "summary": {
+          "totalResults": 3,
+          "ratedResults": 2,
+          "heldOrUnfinishedResults": 1,
+          "averageScore": null,
+          "mixedVersions": false,
+          "profileVersions": [
+            "document-derived-1.0"
+          ],
+          "policyVersions": [
+            "evaluation-document-1.0"
+          ],
+          "strengths": [
+            "출발: 저장된 관측 조작 항목에 감점이 없어요."
+          ],
+          "improvements": [
+            {
+              "key": "gear_repetition",
+              "title": "전후진 반복",
+              "occurrences": 1,
+              "recordedPoints": 15,
+              "profileVersion": "document-derived-1.0",
+              "evaluationPolicyVersion": "evaluation-document-1.0",
+              "resultIds": [
+                "fixture-tpark-85"
+              ]
+            }
+          ],
+          "nextSteps": [
+            "전후진 전환이 반복된 구간의 진입 위치와 기동 순서를 복기해 보세요."
+          ],
+          "omittedFindingCount": 0
+        },
+        "transport": "LOCAL_MOCK",
+        "externallyDispatched": false
+      },
+      "callbackPreview": {
+        "functionName": "SUMMARIZE_SESSION",
+        "status": "success",
+        "message": "The saved local record query completed. The data preserves stored scores, holds and evaluation versions.",
+        "mode": "silent",
+        "data": "[\n  {\n    \"schemaVersion\": 1,\n    \"requestId\": \"smoke-summary\",\n    \"action\": \"SUMMARIZE_SESSION\",\n    \"status\": \"OK\",\n    \"answer\": \"동작 3개 중 평가된 동작은 2개, 보류·미완료는 1개예요. 전후진 반복 항목의 감점 기록이 1개 동작에 있어요. 전후진 전환이 반복된 구간의 진입 위치와 기동 순서를 복기해 보세요.\",\n    \"warnings\": [\n      \"관측 조작의 임시 점수 요약이에요. 안전성이나 주차 성공을 판정하지 않아요.\"\n    ],\n    \"session\": {\n      \"id\": \"fixture-session\",\n      \"createdAt\": 1000,\n      \"profileVersion\": \"document-derived-1.0\",\n      \"source\": \"SYNTHETIC_QUERY_FIXTURE\",\n      \"state\": \"COMPLETED\"\n    },\n    \"result\": null,\n    \"summary\": {\n      \"totalResults\": 3,\n      \"ratedResults\": 2,\n      \"heldOrUnfinishedResults\": 1,\n      \"averageScore\": null,\n      \"mixedVersions\": false,\n      \"profileVersions\": [\n        \"document-derived-1.0\"\n      ],\n      \"policyVersions\": [\n        \"evaluation-document-1.0\"\n      ],\n      \"strengths\": [\n        \"출발: 저장된 관측 조작 항목에 감점이 없어요.\"\n      ],\n      \"improvements\": [\n        {\n          \"key\": \"gear_repetition\",\n          \"title\": \"전후진 반복\",\n          \"occurrences\": 1,\n          \"recordedPoints\": 15,\n          \"profileVersion\": \"document-derived-1.0\",\n          \"evaluationPolicyVersion\": \"evaluation-document-1.0\",\n          \"resultIds\": [\n            \"fixture-tpark-85\"\n          ]\n        }\n      ],\n      \"nextSteps\": [\n        \"전후진 전환이 반복된 구간의 진입 위치와 기동 순서를 복기해 보세요.\"\n      ],\n      \"omittedFindingCount\": 0\n    },\n    \"transport\": \"LOCAL_MOCK\",\n    \"externallyDispatched\": false\n  }\n]"
+      }
+    }
+  ]
+}

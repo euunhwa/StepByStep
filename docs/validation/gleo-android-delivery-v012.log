@@ -1,0 +1,108 @@
+      BroadcastRecord{bfd64ea com.example.easycar.GET_LAST_RESULT/u10} to user 10
+      Intent { act=com.example.easycar.GET_LAST_RESULT flg=0x10 pkg=com.example.easycar (has extras) }
+      caller=ai.umos.ambientai 1767:ai.umos.ambientai/u10a139 pid=1767 uid=1010139
+      DELIVERED scheduled 0 terminal +84ms (-1) #0: (manifest)
+          name=com.example.easycar.gleo.GleoRecordReceiver
+          packageName=com.example.easycar
+        reason: remote app
+
+      BroadcastRecord{69f73db ai.pleos.playground.intent.action.APP_ACTION_RESPONSE/u10} to user 10
+      Intent { act=ai.pleos.playground.intent.action.APP_ACTION_RESPONSE flg=0x10 pkg=ai.umos.ambientai (has extras) }
+      caller=com.example.easycar 23005:com.example.easycar/u10a177 pid=23005 uid=1010177
+      requiredPermissions=[ai.umos.gleo.permission.APP_ACTION]  appOp=-1
+      DELIVERED scheduled 0 terminal 0 (-1) #0: BroadcastFilter{2abda31 1010139/u10 ReceiverList{6f8b6d8 1767 ai.umos.ambientai/1010139/u10 remote:e8811bb}}
+        reason: assuming delivered
+
+      BroadcastRecord{d933e78 com.example.easycar.SUMMARIZE_SESSION/u10} to user 10
+      Intent { act=com.example.easycar.SUMMARIZE_SESSION flg=0x10 pkg=com.example.easycar (has extras) }
+      caller=ai.umos.ambientai 1767:ai.umos.ambientai/u10a139 pid=1767 uid=1010139
+      DELIVERED scheduled +1ms terminal +36ms (-1) #0: (manifest)
+          name=com.example.easycar.gleo.GleoRecordReceiver
+          packageName=com.example.easycar
+        reason: remote app
+
+      BroadcastRecord{d8a5951 ai.pleos.playground.intent.action.APP_ACTION_RESPONSE/u10} to user 10
+      Intent { act=ai.pleos.playground.intent.action.APP_ACTION_RESPONSE flg=0x10 pkg=ai.umos.ambientai (has extras) }
+      caller=com.example.easycar 0:com.example.easycar/u10a177 pid=25581 uid=1010177
+      requiredPermissions=[ai.umos.gleo.permission.APP_ACTION]  appOp=-1
+      DELIVERED scheduled 0 terminal 0 (-1) #0: BroadcastFilter{2abda31 1010139/u10 ReceiverList{6f8b6d8 1767 ai.umos.ambientai/1010139/u10 remote:e8811bb}}
+        reason: assuming delivered
+
+      BroadcastRecord{c4e5b6 ai.pleos.playground.intent.action.APP_ACTION_RESPONSE/u10} to user 10
+      Intent { act=ai.pleos.playground.intent.action.APP_ACTION_RESPONSE flg=0x10 pkg=ai.umos.ambientai (has extras) }
+      caller=com.example.easycar 0:com.example.easycar/u10a177 pid=3059 uid=1010177
+      requiredPermissions=[ai.umos.gleo.permission.APP_ACTION]  appOp=-1
+      DELIVERED scheduled 0 terminal 0 (-1) #0: BroadcastFilter{2abda31 1010139/u10 ReceiverList{6f8b6d8 1767 ai.umos.ambientai/1010139/u10 remote:e8811bb}}
+        reason: assuming delivered
+
+      BroadcastRecord{29772b7 ai.pleos.playground.intent.action.APP_ACTION_RESPONSE/u10} to user 10
+      Intent { act=ai.pleos.playground.intent.action.APP_ACTION_RESPONSE flg=0x10 pkg=ai.umos.ambientai (has extras) }
+      caller=com.example.easycar 0:com.example.easycar/u10a177 pid=3059 uid=1010177
+      requiredPermissions=[ai.umos.gleo.permission.APP_ACTION]  appOp=-1
+      DELIVERED scheduled 0 terminal 0 (-1) #0: BroadcastFilter{2abda31 1010139/u10 ReceiverList{6f8b6d8 1767 ai.umos.ambientai/1010139/u10 remote:e8811bb}}
+        reason: assuming delivered
+
+      BroadcastRecord{4ca398d ai.pleos.playground.intent.action.APP_ACTION_RESPONSE/u10} to user 10
+      Intent { act=ai.pleos.playground.intent.action.APP_ACTION_RESPONSE flg=0x10 pkg=ai.umos.ambientai (has extras) }
+      caller=com.example.easycar 0:com.example.easycar/u10a177 pid=3059 uid=1010177
+      requiredPermissions=[ai.umos.gleo.permission.APP_ACTION]  appOp=-1
+      DELIVERED scheduled 0 terminal 0 (-1) #0: BroadcastFilter{2abda31 1010139/u10 ReceiverList{6f8b6d8 1767 ai.umos.ambientai/1010139/u10 remote:e8811bb}}
+        reason: assuming delivered
+
+      BroadcastRecord{6a68353 ai.pleos.playground.intent.action.APP_ACTION_RESPONSE/u10} to user 10
+      Intent { act=ai.pleos.playground.intent.action.APP_ACTION_RESPONSE flg=0x10 pkg=ai.umos.ambientai (has extras) }
+      caller=com.example.easycar 0:com.example.easycar/u10a177 pid=3059 uid=1010177
+      requiredPermissions=[ai.umos.gleo.permission.APP_ACTION]  appOp=-1
+      DELIVERED scheduled 0 terminal 0 (-1) #0: BroadcastFilter{2abda31 1010139/u10 ReceiverList{6f8b6d8 1767 ai.umos.ambientai/1010139/u10 remote:e8811bb}}
+        reason: assuming delivered
+
+      BroadcastRecord{9ade189 ai.pleos.playground.intent.action.APP_ACTION_RESPONSE/u10} to user 10
+      Intent { act=ai.pleos.playground.intent.action.APP_ACTION_RESPONSE flg=0x10 pkg=ai.umos.ambientai (has extras) }
+      caller=com.example.easycar 0:com.example.easycar/u10a177 pid=3059 uid=1010177
+      requiredPermissions=[ai.umos.gleo.permission.APP_ACTION]  appOp=-1
+      DELIVERED scheduled 0 terminal 0 (-1) #0: BroadcastFilter{2abda31 1010139/u10 ReceiverList{6f8b6d8 1767 ai.umos.ambientai/1010139/u10 remote:e8811bb}}
+        reason: assuming delivered
+
+      BroadcastRecord{2b6f58e com.example.easycar.GET_LAST_RESULT/u10} to user 10
+      Intent { act=com.example.easycar.GET_LAST_RESULT flg=0x10 pkg=com.example.easycar (has extras) }
+      caller=com.example.easycar 0:com.example.easycar/u10a177 pid=3059 uid=1010177
+      DELIVERED scheduled +1ms terminal +31ms (-1) #0: (manifest)
+          name=com.example.easycar.gleo.GleoRecordReceiver
+          packageName=com.example.easycar
+        reason: remote app
+
+      BroadcastRecord{8c01af ai.pleos.playground.intent.action.APP_ACTION_RESPONSE/u10} to user 10
+      Intent { act=ai.pleos.playground.intent.action.APP_ACTION_RESPONSE flg=0x10 pkg=ai.umos.ambientai (has extras) }
+      caller=com.example.easycar 0:com.example.easycar/u10a177 pid=3059 uid=1010177
+      requiredPermissions=[ai.umos.gleo.permission.APP_ACTION]  appOp=-1
+      DELIVERED scheduled +1ms terminal 0 (-1) #0: BroadcastFilter{2abda31 1010139/u10 ReceiverList{6f8b6d8 1767 ai.umos.ambientai/1010139/u10 remote:e8811bb}}
+        reason: assuming delivered
+
+      BroadcastRecord{50a0d45 ai.pleos.playground.intent.action.APP_ACTION_RESPONSE/u10} to user 10
+      Intent { act=ai.pleos.playground.intent.action.APP_ACTION_RESPONSE flg=0x10 pkg=ai.umos.ambientai (has extras) }
+      caller=com.example.easycar 0:com.example.easycar/u10a177 pid=3059 uid=1010177
+      requiredPermissions=[ai.umos.gleo.permission.APP_ACTION]  appOp=-1
+      DELIVERED scheduled 0 terminal 0 (-1) #0: BroadcastFilter{2abda31 1010139/u10 ReceiverList{6f8b6d8 1767 ai.umos.ambientai/1010139/u10 remote:e8811bb}}
+        reason: assuming delivered
+
+      BroadcastRecord{a109cb ai.pleos.playground.intent.action.APP_ACTION_RESPONSE/u10} to user 10
+      Intent { act=ai.pleos.playground.intent.action.APP_ACTION_RESPONSE flg=0x10 pkg=ai.umos.ambientai (has extras) }
+      caller=com.example.easycar 0:com.example.easycar/u10a177 pid=3059 uid=1010177
+      requiredPermissions=[ai.umos.gleo.permission.APP_ACTION]  appOp=-1
+      DELIVERED scheduled 0 terminal 0 (-1) #0: BroadcastFilter{2abda31 1010139/u10 ReceiverList{6f8b6d8 1767 ai.umos.ambientai/1010139/u10 remote:e8811bb}}
+        reason: assuming delivered
+
+      BroadcastRecord{e4338c1 com.example.easycar.GET_LAST_RESULT/u10} to user 10
+      Intent { act=com.example.easycar.GET_LAST_RESULT flg=0x10 pkg=com.example.easycar (has extras) }
+      caller=ai.umos.ambientai 1767:ai.umos.ambientai/u10a139 pid=1767 uid=1010139
+      DELIVERED scheduled 0 terminal +86ms (-1) #0: (manifest)
+          name=com.example.easycar.gleo.GleoRecordReceiver
+          packageName=com.example.easycar
+        reason: remote app
+
+      BroadcastRecord{4302866 ai.pleos.playground.intent.action.APP_ACTION_RESPONSE/u10} to user 10
+      Intent { act=ai.pleos.playground.intent.action.APP_ACTION_RESPONSE flg=0x10 pkg=ai.umos.ambientai (has extras) }
+      caller=com.example.easycar 0:com.example.easycar/u10a177 pid=3743 uid=1010177
+      requiredPermissions=[ai.umos.gleo.permission.APP_ACTION]  appOp=-1
+      DELIVERED scheduled 0 terminal 0 (-1) #0: BroadcastFilter{2abda31 1010139/u10 ReceiverList{6f8b6d8 1767 ai.umos.ambientai/1010139/u10 remote:e8811bb}}
+        reason: assuming delivered

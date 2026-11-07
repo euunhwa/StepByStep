@@ -1,0 +1,58 @@
+{
+  "requestOrigin": "SAME_UID_ANDROID_BROADCAST_TEST_NOT_VOICE",
+  "fixture": "SYNTHETIC_QUERY_FIXTURE_SAVED_IN_ROOM",
+  "callbackTarget": "ai.umos.ambientai",
+  "callbackRecipientPermission": "ai.umos.gleo.permission.APP_ACTION",
+  "storedRecordUnchanged": true,
+  "automaticScopeRevokedOnDelete": true,
+  "deliveries": [
+    {
+      "action": "GET_LAST_RESULT",
+      "dispatch": "SENT",
+      "queryStatus": "OK",
+      "sequence": 1
+    },
+    {
+      "action": "EXPLAIN_RESULT",
+      "dispatch": "SENT",
+      "queryStatus": "OK",
+      "sequence": 2
+    },
+    {
+      "action": "GET_LAST_RESULT",
+      "dispatch": "SENT",
+      "queryStatus": "OK",
+      "sequence": 3
+    },
+    {
+      "action": "GET_LAST_RESULT",
+      "dispatch": "SENT",
+      "queryStatus": "HELD",
+      "sequence": 4
+    },
+    {
+      "action": "SUMMARIZE_SESSION",
+      "dispatch": "SENT",
+      "queryStatus": "OK",
+      "sequence": 5
+    },
+    {
+      "action": "EXPLAIN_RESULT",
+      "dispatch": "SENT",
+      "queryStatus": "INVALID_REQUEST",
+      "sequence": 6
+    },
+    {
+      "action": "GET_LAST_RESULT",
+      "dispatch": "SENT",
+      "queryStatus": "SCOPE_REQUIRED",
+      "sequence": 7
+    },
+    {
+      "action": "GET_LAST_RESULT",
+      "dispatch": "SENT",
+      "queryStatus": "SCOPE_REQUIRED",
+      "sequence": 8
+    }
+  ]
+}

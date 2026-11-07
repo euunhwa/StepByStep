@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "version": "document-derived-1.0",
+  "validationStatus": "DOCUMENT_DERIVED_DRAFT",
+  "source": "사용자 첨부 MD 문헌·추론 기준 / datasets/document-v1; legacy scoring 필드는 직렬화 호환용이며 활성 채점에서 사용하지 않음",
+  "vehicleId": "synthetic-sedan",
+  "courseId": "demo-pad-a",
+  "conditions": "차량별 미보정, 임의 감점 초안, 전문가·실차 검증 필요",
+  "maneuverTypes": [
+    "LEFT",
+    "RIGHT",
+    "U_TURN",
+    "START",
+    "STOP",
+    "T_PARK",
+    "PARALLEL_PARK"
+  ],
+  "phases": {
+    "entry": "정지 후 출발 / 회전 시작 전 3초",
+    "turn": "조향 45도 이상 진입, 진행 방향 변화 결합",
+    "exit": "핸들 18도 이내 및 방향 안정 1초",
+    "parking": "동작 선택 없이 저속/전후진·검증된 공간 근거로 자동 관측; P+정차는 종료 후보"
+  },
+  "scoring": {
+    "speed": {
+      "maxAbs": 1,
+      "weight": 0,
+      "cap": 0
+    },
+    "acceleration": {
+      "maxAbs": 1,
+      "weight": 0,
+      "cap": 0
+    },
+    "jerk": {
+      "maxAbs": 1,
+      "weight": 0,
+      "cap": 0
+    },
+    "steeringRate": {
+      "maxAbs": 1,
+      "weight": 0,
+      "cap": 0
+    },
+    "entryAngle": {
+      "maxAbs": 1,
+      "weight": 0,
+      "cap": 0
+    },
+    "alignment": {
+      "maxAbs": 1,
+      "weight": 0,
+      "cap": 0
+    },
+    "intrusionPenalty": 0,
+    "parkingCountScale": 1,
+    "parkingCountCap": 1,
+    "maxMovementPenalty": 1,
+    "minExceedanceMs": 600,
+    "maxTotalPenalty": 100,
+    "parkingSpeed": {
+      "maxAbs": 1,
+      "weight": 0,
+      "cap": 0
+    }
+  },
+  "phaseBands": {}
+}

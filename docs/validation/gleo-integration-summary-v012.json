@@ -1,0 +1,62 @@
+{
+  "appVersion": "0.12.0",
+  "versionCode": 15,
+  "core": {
+    "tests": 164,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "app": {
+    "tests": 14,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "device": {
+    "tests": 18,
+    "passed": 18,
+    "failures": 0,
+    "durationSeconds": 28.782,
+    "environment": "Pleos Connect v2.1.0 / CPU 2 / RAM 3072MB / user 10"
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 36,
+    "newGleoSourceWarnings": 0
+  },
+  "builds": [
+    "pleosDebug",
+    "pleosDebugAndroidTest",
+    "demoDebug"
+  ],
+  "packagedSchemaMatchesSource": true,
+  "demoHasExportedGleoReceiver": false,
+  "actualGleo": {
+    "package": "ai.umos.ambientai",
+    "version": "4.2.0.15",
+    "schemaLoaded": true,
+    "callerPermission": "ai.umos.gleo.permission.APP_ACTION",
+    "callerPermissionProtection": "signature",
+    "syntheticSpeechViaOfficialMicrophoneApi": true,
+    "hostMicrophoneEnabled": false,
+    "realVoiceActionAccepted": [
+      "GET_LAST_RESULT",
+      "SUMMARIZE_SESSION"
+    ],
+    "voicePrompts": 4,
+    "storedParkingScoreSpoken": 85,
+    "storedDeductionSpoken": 15,
+    "storedReverseToDriveCountSpoken": 4,
+    "summarySpoken": {
+      "total": 3,
+      "rated": 2,
+      "heldOrUnfinished": 1
+    },
+    "explanationVoiceRouting": "Gleo used prior conversation and GET_LAST_RESULT for fresh lookup; EXPLAIN_RESULT itself was verified through Android transport tests.",
+    "appMarketApprovalClaimed": false,
+    "physicalVehicleVerified": false,
+    "queriedSyntheticRecordsUnchanged": true
+  },
+  "apkSha256": "5e74fda9dde885c434b900a141ff3002328bf8d4c17fd54d08e65c7aa4b5b65a"
+}

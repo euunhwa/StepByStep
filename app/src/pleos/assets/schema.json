@@ -1,0 +1,98 @@
+{
+  "packageName": "com.example.easycar",
+  "appDescription": "Reads the user's selected local driving practice records and explains their stored maneuver results and deductions.",
+  "version": "0.13.2",
+  "actionCalls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "GET_LAST_RESULT",
+        "description": "Retrieves the most recent stored maneuver result within the user's selected local practice session.",
+        "component": "service",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "sessionId": {
+              "type": "string",
+              "description": "Optional identifier of the selected local practice session; omit when unknown."
+            },
+            "maneuverType": {
+              "type": "string",
+              "description": "Maneuver category to retrieve. PARKING includes all stored parking categories.",
+              "enum": [
+                "LEFT",
+                "RIGHT",
+                "U_TURN",
+                "START",
+                "STOP",
+                "ACCELERATION",
+                "DECELERATION",
+                "T_PARK",
+                "PARALLEL_PARK",
+                "PARKING"
+              ]
+            }
+          },
+          "required": []
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "EXPLAIN_RESULT",
+        "description": "Explains the saved score, deductions and evaluation holds of a result within the user's selected practice session.",
+        "component": "service",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "sessionId": {
+              "type": "string",
+              "description": "Optional identifier of the selected local practice session; omit when unknown."
+            },
+            "resultId": {
+              "type": "string",
+              "description": "Optional identifier of a stored maneuver result; omit to explain the latest stored maneuver."
+            },
+            "maneuverType": {
+              "type": "string",
+              "description": "Maneuver category to retrieve. PARKING includes all stored parking categories.",
+              "enum": [
+                "LEFT",
+                "RIGHT",
+                "U_TURN",
+                "START",
+                "STOP",
+                "ACCELERATION",
+                "DECELERATION",
+                "T_PARK",
+                "PARALLEL_PARK",
+                "PARKING"
+              ]
+            }
+          },
+          "required": []
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "SUMMARIZE_SESSION",
+        "description": "Summarizes observed strengths, repeated recorded deductions and unresolved evaluations in the selected local practice session.",
+        "component": "service",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "sessionId": {
+              "type": "string",
+              "description": "Optional identifier of the selected local practice session; omit when unknown."
+            }
+          },
+          "required": []
+        }
+      }
+    }
+  ],
+  "invokeWord": "이지카"
+}

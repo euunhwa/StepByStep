@@ -1,0 +1,648 @@
+{
+  "recognitionVersion": "recognition-document-1.0",
+  "evaluationVersion": "evaluation-document-1.0",
+  "results": [
+    {
+      "id": "4c8b94bf-9178-430c-b2a4-41b7e1d95926",
+      "type": "START",
+      "startMs": 3200,
+      "endMs": 11200,
+      "lifecycle": "COMPLETED",
+      "confidence": 0.75,
+      "score": 100,
+      "holdReasons": [],
+      "deductions": [],
+      "reverseToDriveCount": 0,
+      "profileVersion": "document-derived-1.0",
+      "source": "문헌 기준 합성 데모 · 실차 데이터 아님",
+      "measurements": {
+        "harshStart": 0.0,
+        "maxSpeedMps": 3.0,
+        "baseCoverage": 1.0
+      },
+      "phaseTimes": {},
+      "coaching": "출발 100점. 관측된 조작 지표가 초안 범위 안이에요.",
+      "observation": "문헌·추론에 기반한 관측 조작 점수. 제동 원인·운전자 과실·안전운전 적합성을 판단하지 않아요. 문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요.",
+      "assessments": [
+        {
+          "key": "acceleration",
+          "title": "가속 강도",
+          "measured": 0.9532072569826044,
+          "unit": "m/s²",
+          "allowed": 2.0,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "deceleration",
+          "title": "감속 강도",
+          "measured": 0.0,
+          "unit": "m/s²",
+          "allowed": 2.0,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "jerk",
+          "title": "가감속 변화",
+          "measured": 0.4965630633855245,
+          "unit": "m/s³",
+          "allowed": 0.9,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "safety_context",
+          "title": "안전 맥락",
+          "unit": "—",
+          "phase": "maneuver",
+          "reason": "방향지시등·신호·보행자·제한속도·위반 맥락 미수신: 10점 위반/실격 판정 보류"
+        }
+      ],
+      "recognition": {
+        "method": "SPEED_EVENT",
+        "source": "recognition-document-1.0",
+        "parkingEpisodeConfirmed": false
+      },
+      "evaluationPolicyVersion": "evaluation-document-1.0",
+      "scoreKind": "PROVISIONAL",
+      "scoreBasis": "문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요."
+    },
+    {
+      "id": "11090dfb-fac0-49a6-9be8-8567aba0cc18",
+      "type": "LEFT",
+      "startMs": 14000,
+      "endMs": 22100,
+      "lifecycle": "COMPLETED",
+      "confidence": 0.75,
+      "score": 100,
+      "holdReasons": [],
+      "deductions": [],
+      "reverseToDriveCount": 0,
+      "profileVersion": "document-derived-1.0",
+      "source": "문헌 기준 합성 데모 · 실차 데이터 아님",
+      "measurements": {
+        "yawDeltaDeg": 89.62500000000018,
+        "rapidTurn": 0.0,
+        "rapidUTurn": 0.0,
+        "maxSpeedMps": 3.0,
+        "baseCoverage": 1.0
+      },
+      "phaseTimes": {},
+      "coaching": "좌회전 100점. 관측된 조작 지표가 초안 범위 안이에요.",
+      "observation": "문헌·추론에 기반한 관측 조작 점수. 제동 원인·운전자 과실·안전운전 적합성을 판단하지 않아요. 문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요.",
+      "assessments": [
+        {
+          "key": "acceleration",
+          "title": "가속 강도",
+          "measured": 0.0,
+          "unit": "m/s²",
+          "allowed": 2.0,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "deceleration",
+          "title": "감속 강도",
+          "measured": -0.0,
+          "unit": "m/s²",
+          "allowed": 2.0,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "jerk",
+          "title": "가감속 변화",
+          "measured": 0.0,
+          "unit": "m/s³",
+          "allowed": 0.9,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "lateral_acceleration",
+          "title": "횡가속",
+          "measured": 0.06006624306445996,
+          "unit": "g",
+          "allowed": 0.25,
+          "phase": "turn",
+          "passed": true,
+          "reason": "전용 센서 우선, 없으면 시간 정렬된 v×yaw 운동학 추정 · 경사/미끄러짐 미보정",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "safety_context",
+          "title": "안전 맥락",
+          "unit": "—",
+          "phase": "maneuver",
+          "reason": "방향지시등·신호·보행자·제한속도·위반 맥락 미수신: 10점 위반/실격 판정 보류"
+        }
+      ],
+      "recognition": {
+        "method": "YAW_INTEGRAL_KINEMATIC_CANDIDATE",
+        "source": "recognition-document-1.0",
+        "parkingEpisodeConfirmed": false,
+        "reason": "차량 동작 패턴 추정; 도로·주차 공간 확인 아님"
+      },
+      "evaluationPolicyVersion": "evaluation-document-1.0",
+      "scoreKind": "PROVISIONAL",
+      "scoreBasis": "문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요."
+    },
+    {
+      "id": "34042c4a-9356-4121-8eb3-614c6d77f28c",
+      "type": "RIGHT",
+      "startMs": 26000,
+      "endMs": 34100,
+      "lifecycle": "COMPLETED",
+      "confidence": 0.75,
+      "score": 100,
+      "holdReasons": [],
+      "deductions": [],
+      "reverseToDriveCount": 0,
+      "profileVersion": "document-derived-1.0",
+      "source": "문헌 기준 합성 데모 · 실차 데이터 아님",
+      "measurements": {
+        "yawDeltaDeg": -89.62500000000018,
+        "rapidTurn": 0.0,
+        "rapidUTurn": 0.0,
+        "maxSpeedMps": 3.0,
+        "baseCoverage": 1.0
+      },
+      "phaseTimes": {},
+      "coaching": "우회전 100점. 관측된 조작 지표가 초안 범위 안이에요.",
+      "observation": "문헌·추론에 기반한 관측 조작 점수. 제동 원인·운전자 과실·안전운전 적합성을 판단하지 않아요. 문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요.",
+      "assessments": [
+        {
+          "key": "acceleration",
+          "title": "가속 강도",
+          "measured": 0.0,
+          "unit": "m/s²",
+          "allowed": 2.0,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "deceleration",
+          "title": "감속 강도",
+          "measured": -0.0,
+          "unit": "m/s²",
+          "allowed": 2.0,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "jerk",
+          "title": "가감속 변화",
+          "measured": 0.0,
+          "unit": "m/s³",
+          "allowed": 0.9,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "lateral_acceleration",
+          "title": "횡가속",
+          "measured": 0.06006624306445996,
+          "unit": "g",
+          "allowed": 0.25,
+          "phase": "turn",
+          "passed": true,
+          "reason": "전용 센서 우선, 없으면 시간 정렬된 v×yaw 운동학 추정 · 경사/미끄러짐 미보정",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "safety_context",
+          "title": "안전 맥락",
+          "unit": "—",
+          "phase": "maneuver",
+          "reason": "방향지시등·신호·보행자·제한속도·위반 맥락 미수신: 10점 위반/실격 판정 보류"
+        }
+      ],
+      "recognition": {
+        "method": "YAW_INTEGRAL_KINEMATIC_CANDIDATE",
+        "source": "recognition-document-1.0",
+        "parkingEpisodeConfirmed": false,
+        "reason": "차량 동작 패턴 추정; 도로·주차 공간 확인 아님"
+      },
+      "evaluationPolicyVersion": "evaluation-document-1.0",
+      "scoreKind": "PROVISIONAL",
+      "scoreBasis": "문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요."
+    },
+    {
+      "id": "e3403b06-3281-4cde-bae5-fd85244f5aaf",
+      "type": "U_TURN",
+      "startMs": 38000,
+      "endMs": 48100,
+      "lifecycle": "COMPLETED",
+      "confidence": 0.75,
+      "score": 100,
+      "holdReasons": [],
+      "deductions": [],
+      "reverseToDriveCount": 0,
+      "profileVersion": "document-derived-1.0",
+      "source": "문헌 기준 합성 데모 · 실차 데이터 아님",
+      "measurements": {
+        "yawDeltaDeg": 179.39999999999978,
+        "rapidTurn": 0.0,
+        "rapidUTurn": 0.0,
+        "maxSpeedMps": 3.0,
+        "baseCoverage": 1.0
+      },
+      "phaseTimes": {},
+      "coaching": "유턴 100점. 관측된 조작 지표가 초안 범위 안이에요.",
+      "observation": "문헌·추론에 기반한 관측 조작 점수. 제동 원인·운전자 과실·안전운전 적합성을 판단하지 않아요. 문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요.",
+      "assessments": [
+        {
+          "key": "acceleration",
+          "title": "가속 강도",
+          "measured": 0.0,
+          "unit": "m/s²",
+          "allowed": 2.0,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "deceleration",
+          "title": "감속 강도",
+          "measured": -0.0,
+          "unit": "m/s²",
+          "allowed": 2.0,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "jerk",
+          "title": "가감속 변화",
+          "measured": 0.0,
+          "unit": "m/s³",
+          "allowed": 0.9,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "lateral_acceleration",
+          "title": "횡가속",
+          "measured": 0.09610598890313593,
+          "unit": "g",
+          "allowed": 0.25,
+          "phase": "turn",
+          "passed": true,
+          "reason": "전용 센서 우선, 없으면 시간 정렬된 v×yaw 운동학 추정 · 경사/미끄러짐 미보정",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "u_turn_radius_speed",
+          "title": "반경별 유턴 속도",
+          "unit": "km/h",
+          "phase": "turn",
+          "reason": "회전 반경 R 미수신: √(0.2gR) 평가 보류; 6m를 가정하지 않음"
+        },
+        {
+          "key": "safety_context",
+          "title": "안전 맥락",
+          "unit": "—",
+          "phase": "maneuver",
+          "reason": "방향지시등·신호·보행자·제한속도·위반 맥락 미수신: 10점 위반/실격 판정 보류"
+        }
+      ],
+      "recognition": {
+        "method": "YAW_INTEGRAL_KINEMATIC_CANDIDATE",
+        "source": "recognition-document-1.0",
+        "parkingEpisodeConfirmed": false,
+        "reason": "차량 동작 패턴 추정; 도로·주차 공간 확인 아님"
+      },
+      "evaluationPolicyVersion": "evaluation-document-1.0",
+      "scoreKind": "PROVISIONAL",
+      "scoreBasis": "문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요."
+    },
+    {
+      "id": "fca7e13d-0bdb-4f63-92bf-330646c101ad",
+      "type": "STOP",
+      "startMs": 52200,
+      "endMs": 60900,
+      "lifecycle": "COMPLETED",
+      "confidence": 0.75,
+      "score": 100,
+      "holdReasons": [],
+      "deductions": [],
+      "reverseToDriveCount": 0,
+      "profileVersion": "document-derived-1.0",
+      "source": "문헌 기준 합성 데모 · 실차 데이터 아님",
+      "measurements": {
+        "harshDeceleration": 0.0,
+        "harshStop": 0.0,
+        "maxSpeedMps": 2.999857617092967,
+        "baseCoverage": 1.0
+      },
+      "phaseTimes": {},
+      "coaching": "정지 100점. 관측된 조작 지표가 초안 범위 안이에요.",
+      "observation": "문헌·추론에 기반한 관측 조작 점수. 제동 원인·운전자 과실·안전운전 적합성을 판단하지 않아요. 문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요.",
+      "assessments": [
+        {
+          "key": "acceleration",
+          "title": "가속 강도",
+          "measured": 0.0,
+          "unit": "m/s²",
+          "allowed": 2.0,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "deceleration",
+          "title": "감속 강도",
+          "measured": 0.9532072569826022,
+          "unit": "m/s²",
+          "allowed": 2.0,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "jerk",
+          "title": "가감속 변화",
+          "measured": 0.4965630633852136,
+          "unit": "m/s³",
+          "allowed": 0.9,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "safety_context",
+          "title": "안전 맥락",
+          "unit": "—",
+          "phase": "maneuver",
+          "reason": "방향지시등·신호·보행자·제한속도·위반 맥락 미수신: 10점 위반/실격 판정 보류"
+        }
+      ],
+      "recognition": {
+        "method": "SPEED_EVENT",
+        "source": "recognition-document-1.0",
+        "parkingEpisodeConfirmed": false
+      },
+      "evaluationPolicyVersion": "evaluation-document-1.0",
+      "scoreKind": "PROVISIONAL",
+      "scoreBasis": "문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요."
+    },
+    {
+      "id": "27fecd3f-6074-4d60-90eb-426d9f043f2f",
+      "type": "T_PARK",
+      "startMs": 56500,
+      "endMs": 76300,
+      "lifecycle": "COMPLETED",
+      "confidence": 0.75,
+      "score": 100,
+      "holdReasons": [],
+      "deductions": [],
+      "reverseToDriveCount": 0,
+      "profileVersion": "document-derived-1.0",
+      "source": "문헌 기준 합성 데모 · 실차 데이터 아님",
+      "measurements": {
+        "yawDeltaDeg": 90.0000000000002,
+        "maxSpeedMps": 0.6,
+        "baseCoverage": 1.0
+      },
+      "phaseTimes": {},
+      "coaching": "T자 주차 100점. 관측된 조작 지표가 초안 범위 안이에요.",
+      "observation": "문헌·추론에 기반한 관측 조작 점수. 제동 원인·운전자 과실·안전운전 적합성을 판단하지 않아요. 문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요.",
+      "assessments": [
+        {
+          "key": "acceleration",
+          "title": "가속 강도",
+          "measured": 5.999999999999999,
+          "unit": "m/s²",
+          "allowed": 2.0,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "deceleration",
+          "title": "감속 강도",
+          "measured": 0.4253120651030051,
+          "unit": "m/s²",
+          "allowed": 2.0,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "jerk",
+          "title": "가감속 변화",
+          "measured": 59.999999999999986,
+          "unit": "m/s³",
+          "allowed": 0.9,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "confirmed_R_to_D_count",
+          "title": "전후진 반복",
+          "measured": 0.0,
+          "unit": "회",
+          "allowed": 1.0,
+          "phase": "parking",
+          "passed": true,
+          "reason": "R→D만 세며 N 경유 포함, 안정 500ms",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "parking_time",
+          "title": "주차 소요시간",
+          "measured": 19.8,
+          "unit": "s",
+          "allowed": 120.0,
+          "phase": "parking",
+          "passed": true,
+          "reason": "초과한 120초 블록마다 10점 · 앱 설계안, 면허시험 판정 아님",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "parking_geometry",
+          "title": "주차 완성도·연석 접촉",
+          "unit": "—",
+          "phase": "parking",
+          "reason": "구획·차체 위치·연석 관측 미통합: 평가 보류, 유형은 운동 패턴 추정"
+        },
+        {
+          "key": "safety_context",
+          "title": "안전 맥락",
+          "unit": "—",
+          "phase": "maneuver",
+          "reason": "방향지시등·신호·보행자·제한속도·위반 맥락 미수신: 10점 위반/실격 판정 보류"
+        }
+      ],
+      "recognition": {
+        "method": "YAW_INTEGRAL_KINEMATIC_CANDIDATE",
+        "source": "recognition-document-1.0",
+        "parkingEpisodeConfirmed": true,
+        "reason": "차량 동작 패턴 추정; 도로·주차 공간 확인 아님"
+      },
+      "evaluationPolicyVersion": "evaluation-document-1.0",
+      "scoreKind": "PROVISIONAL",
+      "scoreBasis": "문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요."
+    },
+    {
+      "id": "128b7cfd-4436-490d-8fe6-f82d6ea574e3",
+      "type": "PARALLEL_PARK",
+      "startMs": 76400,
+      "endMs": 88600,
+      "lifecycle": "COMPLETED",
+      "confidence": 0.75,
+      "score": 100,
+      "holdReasons": [],
+      "deductions": [],
+      "reverseToDriveCount": 0,
+      "profileVersion": "document-derived-1.0",
+      "source": "문헌 기준 합성 데모 · 실차 데이터 아님",
+      "measurements": {
+        "yawDeltaDeg": 3.4787316828507215E-16,
+        "maxSpeedMps": 0.5,
+        "baseCoverage": 1.0
+      },
+      "phaseTimes": {},
+      "coaching": "평행주차 100점. 관측된 조작 지표가 초안 범위 안이에요.",
+      "observation": "문헌·추론에 기반한 관측 조작 점수. 제동 원인·운전자 과실·안전운전 적합성을 판단하지 않아요. 문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요.",
+      "assessments": [
+        {
+          "key": "acceleration",
+          "title": "가속 강도",
+          "measured": 5.0,
+          "unit": "m/s²",
+          "allowed": 2.0,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "deceleration",
+          "title": "감속 강도",
+          "measured": 0.0,
+          "unit": "m/s²",
+          "allowed": 2.0,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "jerk",
+          "title": "가감속 변화",
+          "measured": 50.0,
+          "unit": "m/s³",
+          "allowed": 0.9,
+          "phase": "maneuver",
+          "passed": true,
+          "reason": "연속 600ms 초과 · 문헌 기반 초안",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "confirmed_R_to_D_count",
+          "title": "전후진 반복",
+          "measured": 0.0,
+          "unit": "회",
+          "allowed": 2.0,
+          "phase": "parking",
+          "passed": true,
+          "reason": "R→D만 세며 N 경유 포함, 안정 500ms",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "parking_time",
+          "title": "주차 소요시간",
+          "measured": 12.2,
+          "unit": "s",
+          "allowed": 120.0,
+          "phase": "parking",
+          "passed": true,
+          "reason": "초과한 120초 블록마다 10점 · 앱 설계안, 면허시험 판정 아님",
+          "referenceSource": "evaluation-document-1.0",
+          "deductionPoints": 0
+        },
+        {
+          "key": "parking_geometry",
+          "title": "주차 완성도·연석 접촉",
+          "unit": "—",
+          "phase": "parking",
+          "reason": "구획·차체 위치·연석 관측 미통합: 평가 보류, 유형은 운동 패턴 추정"
+        },
+        {
+          "key": "safety_context",
+          "title": "안전 맥락",
+          "unit": "—",
+          "phase": "maneuver",
+          "reason": "방향지시등·신호·보행자·제한속도·위반 맥락 미수신: 10점 위반/실격 판정 보류"
+        }
+      ],
+      "recognition": {
+        "method": "YAW_INTEGRAL_KINEMATIC_CANDIDATE",
+        "source": "recognition-document-1.0",
+        "parkingEpisodeConfirmed": true,
+        "reason": "차량 동작 패턴 추정; 도로·주차 공간 확인 아님"
+      },
+      "evaluationPolicyVersion": "evaluation-document-1.0",
+      "scoreKind": "PROVISIONAL",
+      "scoreBasis": "문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "projection": "TOP_VIEW_UNDISTORTED",
+  "vehicleAxis": "VERTICAL",
+  "videoWidth": 480,
+  "videoHeight": 360,
+  "vehicleBounds": {"left": 190, "right": 290, "top": 95, "bottom": 265},
+  "metersPerPixel": 0.01,
+  "source": "번들 합성 영상만을 위한 예제 · 사용자 영상에 그대로 적용하지 않음"
+}

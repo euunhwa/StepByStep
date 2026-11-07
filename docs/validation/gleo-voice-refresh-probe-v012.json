@@ -1,0 +1,11 @@
+{
+  "input": "SYNTHETIC_KOREAN_SPEECH_VIA_OFFICIAL_EMULATOR_MICROPHONE_API",
+  "voiceActionObserved": true,
+  "delivery": {
+    "action": "GET_LAST_RESULT",
+    "dispatch": "SENT",
+    "queryStatus": "OK",
+    "sequence": 1
+  },
+  "storedRecordUnchanged": true
+}

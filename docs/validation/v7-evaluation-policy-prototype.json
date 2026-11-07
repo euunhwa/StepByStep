@@ -1,0 +1,505 @@
+{
+  "schema_version": 1,
+  "version": "evaluation-prototype-0.3",
+  "status": "ARBITRARY_SYNTHETIC_PROTOTYPE",
+  "real_world_scoring_enabled": false,
+  "checked_on": "2026-11-06",
+  "app_runtime_modified": true,
+  "purpose": "일곱 동작을 자동 인식한 뒤 적용할 코칭 점수 설계. 사고 위험/운전 적격 판정 아님.",
+  "inference_contract": {
+    "user_action": "START_COACHING_ONCE",
+    "automatic_classes": [
+      "LEFT",
+      "RIGHT",
+      "U_TURN",
+      "START",
+      "STOP",
+      "T_PARK",
+      "PARALLEL_PARK"
+    ],
+    "unknown_outcomes": [
+      "UNKNOWN_TURN",
+      "UNKNOWN_PARKING_TYPE",
+      "LOW_SPEED_MANEUVER_UNCONFIRMED"
+    ],
+    "forbidden_features": [
+      "selected_maneuver_type",
+      "ground_truth_label",
+      "future_frame",
+      "future_trajectory"
+    ],
+    "episode_policy": "주차 안의 출발/정지/조향을 주차 하위 단계로 묶어 중복 평가하지 않음"
+  },
+  "quality_gate": {
+    "required_signal_valid_coverage": 0.95,
+    "max_contiguous_gap_s": 1.0,
+    "critical_entry_and_end_windows_must_be_valid": true,
+    "receipt_timestamp_is_not_sensor_measurement_time": true,
+    "no_upsampling_to_invent_information": true,
+    "parameters_status": "시제품 데이터 품질 게이트 제안; 수집 주기/장치 검증 후 확정"
+  },
+  "score_contract": {
+    "initial_score": 100,
+    "minimum": 0,
+    "maximum": 100,
+    "rounding": "ROUND_HALF_UP",
+    "missing_required_item": "HOLD_TOTAL_DO_NOT_RENORMALIZE",
+    "confirmed_observations_preserved": true,
+    "safety_flags_separate": true,
+    "shared_acceleration_and_jerk_cause": "MAX_NOT_SUM",
+    "exposure": "E_i = integral over qualifying runs of max(0,(x_i(t)-B_i)/S_i) dt; lower-bound metrics invert sign",
+    "penalty": "round_half_up(cap_i * min(1,E_i/tau_i))",
+    "minimum_exceedance_run_s": 0.3,
+    "unconfirmed_braking_cause": "If a braking-related deduction would be positive and cause is unverified, suppress it and linked jerk penalties, HOLD the affected group/total, preserve observations.",
+    "tau_semantics": "Arbitrary prototype exposure seconds, not instructor-calibrated; never current maneuver duration.",
+    "per_metric_tau_s": null,
+    "normative_bounds": null,
+    "scale_S": null,
+    "static_geometry_penalty": "round_half_up(cap_i * min(1, max(0,(error_i-B_i)/S_i))); requires calibrated stable final pose",
+    "binary_intrusion_penalty": "cap_i only if verified intrusion beyond calibration uncertainty; otherwise 0 or HELD",
+    "clearance": "MEASURED_CONTEXT_ONLY_NO_ADDITIONAL_DEDUCTION"
+  },
+  "budgets": {
+    "START": [
+      {
+        "key": "launch_smoothness",
+        "cap": 100,
+        "metrics": [
+          "acceleration",
+          "longitudinal_jerk"
+        ]
+      }
+    ],
+    "STOP": [
+      {
+        "key": "stop_smoothness",
+        "cap": 100,
+        "metrics": [
+          "deceleration_if_cause_known",
+          "longitudinal_jerk"
+        ]
+      }
+    ],
+    "LEFT": [
+      {
+        "key": "speed",
+        "cap": 40,
+        "metrics": [
+          "entry_speed",
+          "rotation_speed",
+          "exit_speed"
+        ]
+      },
+      {
+        "key": "longitudinal_smoothness",
+        "cap": 30,
+        "metrics": [
+          "acceleration",
+          "deceleration_if_cause_known",
+          "longitudinal_jerk"
+        ]
+      },
+      {
+        "key": "steering_smoothness",
+        "cap": 30,
+        "metrics": [
+          "steering_rate",
+          "exit_steering_rate"
+        ]
+      }
+    ],
+    "RIGHT": [
+      {
+        "key": "speed",
+        "cap": 40,
+        "metrics": [
+          "entry_speed",
+          "rotation_speed",
+          "exit_speed"
+        ]
+      },
+      {
+        "key": "longitudinal_smoothness",
+        "cap": 30,
+        "metrics": [
+          "acceleration",
+          "deceleration_if_cause_known",
+          "longitudinal_jerk"
+        ]
+      },
+      {
+        "key": "steering_smoothness",
+        "cap": 30,
+        "metrics": [
+          "steering_rate",
+          "exit_steering_rate"
+        ]
+      }
+    ],
+    "U_TURN": [
+      {
+        "key": "speed",
+        "cap": 40,
+        "metrics": [
+          "entry_speed",
+          "rotation_speed",
+          "exit_speed"
+        ]
+      },
+      {
+        "key": "longitudinal_smoothness",
+        "cap": 30,
+        "metrics": [
+          "acceleration",
+          "deceleration_if_cause_known",
+          "longitudinal_jerk"
+        ]
+      },
+      {
+        "key": "steering_smoothness",
+        "cap": 30,
+        "metrics": [
+          "steering_rate",
+          "exit_steering_rate"
+        ]
+      }
+    ],
+    "T_PARK": [
+      {
+        "key": "gear_repetition",
+        "cap": 30,
+        "metrics": [
+          "confirmed_R_to_D_count"
+        ]
+      },
+      {
+        "key": "movement",
+        "cap": 30,
+        "metrics": [
+          "parking_speed",
+          "acceleration",
+          "longitudinal_jerk",
+          "steering_rate"
+        ]
+      },
+      {
+        "key": "entry_pose",
+        "cap": 10,
+        "metrics": [
+          "entry_pose_error_for_space"
+        ]
+      },
+      {
+        "key": "final_alignment",
+        "cap": 20,
+        "metrics": [
+          "axis_angle_error"
+        ]
+      },
+      {
+        "key": "line_intrusion",
+        "cap": 10,
+        "metrics": [
+          "verified_vehicle_footprint_outside_slot"
+        ]
+      }
+    ],
+    "PARALLEL_PARK": [
+      {
+        "key": "gear_repetition",
+        "cap": 30,
+        "metrics": [
+          "confirmed_R_to_D_count"
+        ]
+      },
+      {
+        "key": "movement",
+        "cap": 30,
+        "metrics": [
+          "parking_speed",
+          "acceleration",
+          "longitudinal_jerk",
+          "steering_rate"
+        ]
+      },
+      {
+        "key": "entry_pose",
+        "cap": 10,
+        "metrics": [
+          "entry_pose_error_for_space"
+        ]
+      },
+      {
+        "key": "final_alignment",
+        "cap": 20,
+        "metrics": [
+          "axis_angle_error"
+        ]
+      },
+      {
+        "key": "line_intrusion",
+        "cap": 10,
+        "metrics": [
+          "verified_vehicle_footprint_outside_slot"
+        ]
+      }
+    ]
+  },
+  "parking_count": {
+    "definition": "안정된 실제 기어의 R→D; R→N→D도 1회, D→R은 세지 않음",
+    "formula": "min(30,n*(n+1))",
+    "points_0_to_5": [
+      0,
+      2,
+      6,
+      12,
+      20,
+      30
+    ],
+    "provenance": "기존 제품 요구의 가중 감점과 시제품 기본 수식; 전문가/데이터로 검증된 안전 기준이 아님",
+    "gear_not_observed": "UNAVAILABLE_NOT_ZERO_NOT_INFERRED_FROM_SPEED_SIGN",
+    "minimum_stable_gear_s": 0.5,
+    "total_if_other_required_evidence_missing": "HELD_WITH_CONFIRMED_COUNT_DEDUCTION_SHOWN"
+  },
+  "metrics": [
+    {
+      "id": "entry_speed",
+      "unit": "m/s",
+      "direction": "absolute",
+      "definition": "구간 시작 전 도로·회전 반경·제한 조건",
+      "required_sources": [
+        "speed",
+        "course_geometry"
+      ],
+      "normative_bound": null,
+      "validation_status": "REQUIRES_DOMAIN_EXPERT_REFERENCE"
+    },
+    {
+      "id": "rotation_speed",
+      "unit": "m/s",
+      "direction": "absolute",
+      "definition": "실제 회전 단계",
+      "required_sources": [
+        "speed",
+        "heading_or_pose"
+      ],
+      "normative_bound": null,
+      "validation_status": "REQUIRES_DOMAIN_EXPERT_REFERENCE"
+    },
+    {
+      "id": "exit_speed",
+      "unit": "m/s",
+      "direction": "absolute",
+      "definition": "복원·진행방향 안정 단계",
+      "required_sources": [
+        "speed",
+        "heading_or_pose"
+      ],
+      "normative_bound": null,
+      "validation_status": "REQUIRES_DOMAIN_EXPERT_REFERENCE"
+    },
+    {
+      "id": "acceleration",
+      "unit": "m/s²",
+      "direction": "upper",
+      "definition": "출발/이동의 양의 가속",
+      "required_sources": [
+        "speed",
+        "timestamps"
+      ],
+      "normative_bound": null,
+      "validation_status": "REQUIRES_DOMAIN_EXPERT_REFERENCE"
+    },
+    {
+      "id": "deceleration_if_cause_known",
+      "unit": "m/s²",
+      "direction": "upper_magnitude",
+      "definition": "통제된 상황 또는 원인 확인 때만 감점",
+      "required_sources": [
+        "speed",
+        "timestamps",
+        "reviewed_cause"
+      ],
+      "normative_bound": null,
+      "validation_status": "REQUIRES_DOMAIN_EXPERT_REFERENCE"
+    },
+    {
+      "id": "longitudinal_jerk",
+      "unit": "m/s³",
+      "direction": "absolute",
+      "definition": "가감속 변화; 차체 충격으로 단정하지 않음",
+      "required_sources": [
+        "reliable_acceleration",
+        "timestamps"
+      ],
+      "normative_bound": null,
+      "validation_status": "REQUIRES_DOMAIN_EXPERT_REFERENCE"
+    },
+    {
+      "id": "steering_rate",
+      "unit": "deg/s",
+      "direction": "absolute",
+      "definition": "핸들 각도 변화; 앞바퀴 각도와 구분",
+      "required_sources": [
+        "steering_wheel_angle",
+        "measurement_timestamps"
+      ],
+      "normative_bound": null,
+      "validation_status": "REQUIRES_DOMAIN_EXPERT_REFERENCE"
+    },
+    {
+      "id": "exit_steering_rate",
+      "unit": "deg/s",
+      "direction": "absolute",
+      "definition": "회전 탈출 단계",
+      "required_sources": [
+        "steering_wheel_angle",
+        "measurement_timestamps"
+      ],
+      "normative_bound": null,
+      "validation_status": "REQUIRES_DOMAIN_EXPERT_REFERENCE"
+    },
+    {
+      "id": "parking_speed",
+      "unit": "m/s",
+      "direction": "absolute",
+      "definition": "확정한 주차 에피소드 안의 이동",
+      "required_sources": [
+        "speed",
+        "parking_episode_evidence"
+      ],
+      "normative_bound": null,
+      "validation_status": "REQUIRES_DOMAIN_EXPERT_REFERENCE"
+    },
+    {
+      "id": "entry_pose_error_for_space",
+      "unit": "deg",
+      "direction": "space_conditioned",
+      "definition": "유형·공간별 진입 자세",
+      "required_sources": [
+        "pose",
+        "space_geometry",
+        "entry_preroll"
+      ],
+      "normative_bound": null,
+      "validation_status": "REQUIRES_DOMAIN_EXPERT_REFERENCE"
+    },
+    {
+      "id": "axis_angle_error",
+      "unit": "deg",
+      "direction": "axis_mod_180",
+      "definition": "차량축과 주차칸축 상대 각도",
+      "required_sources": [
+        "calibrated_vehicle_pose",
+        "slot_axis"
+      ],
+      "normative_bound": null,
+      "validation_status": "REQUIRES_DOMAIN_EXPERT_REFERENCE"
+    },
+    {
+      "id": "clearance_if_calibrated",
+      "unit": "m",
+      "direction": "lower",
+      "definition": "관측 가능한 측면 여유; 좌우 같음을 강요하지 않음",
+      "required_sources": [
+        "vehicle_footprint",
+        "slot_polygon",
+        "scale_calibration"
+      ],
+      "normative_bound": null,
+      "validation_status": "REQUIRES_DOMAIN_EXPERT_REFERENCE"
+    },
+    {
+      "id": "verified_vehicle_footprint_outside_slot",
+      "unit": "bool",
+      "direction": "binary",
+      "definition": "보정 불확실성 여유를 넘는 차체 외곽의 침범",
+      "required_sources": [
+        "calibrated_vehicle_footprint",
+        "slot_polygon"
+      ],
+      "normative_bound": null,
+      "validation_status": "REQUIRES_DOMAIN_EXPERT_REFERENCE"
+    }
+  ],
+  "research_benchmark": {
+    "source": "nuPlan comfort",
+    "classification": "NON_NORMATIVE_OFFLINE_REFERENCE_ONLY",
+    "enables_real_world_scoring": false,
+    "values": [
+      {
+        "id": "longitudinal_acceleration",
+        "unit": "m/s²",
+        "lower": -4.05,
+        "upper": 2.4,
+        "source": "https://raw.githubusercontent.com/motional/nuplan-devkit/master/nuplan/planning/script/config/common/simulation_metric/low_level/ego_lon_acceleration_statistics.yaml"
+      },
+      {
+        "id": "lateral_acceleration",
+        "unit": "m/s²",
+        "max_abs": 4.89,
+        "source": "https://raw.githubusercontent.com/motional/nuplan-devkit/master/nuplan/planning/script/config/common/simulation_metric/low_level/ego_lat_acceleration_statistics.yaml"
+      },
+      {
+        "id": "longitudinal_jerk",
+        "unit": "m/s³",
+        "max_abs": 4.13,
+        "source": "https://raw.githubusercontent.com/motional/nuplan-devkit/master/nuplan/planning/script/config/common/simulation_metric/low_level/ego_lon_jerk_statistics.yaml"
+      },
+      {
+        "id": "jerk_vector_magnitude",
+        "unit": "m/s³",
+        "max_abs": 8.37,
+        "source": "https://raw.githubusercontent.com/motional/nuplan-devkit/master/nuplan/planning/script/config/common/simulation_metric/low_level/ego_jerk_statistics.yaml"
+      }
+    ],
+    "notes": [
+      "longitudinal jerk 4.13과 벡터 jerk 8.37을 혼용하지 않음",
+      "speed-only jerk는 vector magnitude가 아님",
+      "통제되지 않은 급제동은 기준 초과여도 과실 감점 보류",
+      "Pleos 지원/샘플링/차종이 검증되었다는 뜻이 아님"
+    ]
+  },
+  "profile_activation": {
+    "required": [
+      "approved_signal_semantics",
+      "matching_vehicle_and_environment",
+      "independent_expert_accepted_examples",
+      "expert_reviewed_bounds_scales_taus",
+      "out_of_driver_and_session_validation",
+      "licensing_scope_recorded",
+      "versioned_signed_off_profile"
+    ],
+    "threshold_estimation": "동일 조건의 전문가 수용 사례 분포 Q95/Q99는 후보 생성에만 사용; 안전 경계로 자동 확정 금지",
+    "synthetic_or_public_unreviewed_data_cannot_activate": true
+  },
+  "proposed_acceptance_targets": {
+    "status": "DESIGN_TARGETS_NOT_MEASURED_RESULTS",
+    "per_type_precision_min": 0.95,
+    "per_type_precision_wilson_lower95_min": 0.9,
+    "per_type_recall_min": 0.9,
+    "unconfirmed_counted_as_miss_for_recall": true,
+    "event_matching": {
+      "class_must_match": true,
+      "temporal_iou_min": 0.5,
+      "one_to_one": true,
+      "wrong_class": "FP for predicted class and FN for true class",
+      "truncated_events": "Exclude from complete-event score with counts/reasons reported",
+      "scoring_validation_uses": "Predicted event boundaries and classes; oracle-GT segmentation results reported separately"
+    },
+    "test_events_min_per_type": 100,
+    "event_end_latency_p95_s_max": 2.0,
+    "card_publication_latency_p95_s_max": 0.25,
+    "tts_on_start_latency_p95_s_max_if_eligible": 1.5,
+    "expert_score_MAE_max_points": 10,
+    "expert_interrater_weighted_kappa_min": 0.75,
+    "false_feedback_events_per_hour_max": 1,
+    "report_coverage_and_abstention": true,
+    "notes": "표본 수는 최소 계획 게이트이며 충분성 보장 아님. 잠긴 테스트셋·조건별 신뢰구간으로 판단"
+  },
+  "provisional_scoring": {
+    "enabled": true,
+    "dataset_id": "arbitrary-evaluation-reference-0.2"
+  },
+  "app_notice": "평가용 데이터셋은 임의로 만든 자료이며 개선이 필요합니다."
+}

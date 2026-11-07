@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.easycar.core.DocumentDatasetTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2026-11-06T13:34:00.427Z" hostname="gim-yeongjaeui-MacBookPro.local" time="0.164">
+  <properties/>
+  <testcase name="reverseEntryAbsorbsUnfinishedLowSpeedParkingLaunch" classname="com.easycar.core.DocumentDatasetTest" time="0.015"/>
+  <testcase name="recognitionValidationPackUsesOnlySignalsAndTruthStaysOutsideFrames" classname="com.easycar.core.DocumentDatasetTest" time="0.062"/>
+  <testcase name="sevenManeuversPublishBeforeSessionFinishAndNoDuplicationAtFinish" classname="com.easycar.core.DocumentDatasetTest" time="0.003"/>
+  <testcase name="strictVersionedPairHasNoLegacyArbitraryFallback" classname="com.easycar.core.DocumentDatasetTest" time="0.001"/>
+  <testcase name="missingDerivativesHoldRatherThanAwardFullScore" classname="com.easycar.core.DocumentDatasetTest" time="0.001"/>
+  <testcase name="provenanceManifestAndOriginalDocumentAreTraceable" classname="com.easycar.core.DocumentDatasetTest" time="0.049"/>
+  <testcase name="shortSpikeCurveAndOppositeBumpsAreNotFalselyCalledTurn" classname="com.easycar.core.DocumentDatasetTest" time="0.001"/>
+  <testcase name="realServiceRecordingCanBeReplayedWithoutInventingYaw" classname="com.easycar.core.DocumentDatasetTest" time="0.008"/>
+  <testcase name="evaluationMetricVectorPackChecksBoundariesAndParkingWeights" classname="com.easycar.core.DocumentDatasetTest" time="0.013"/>
+  <testcase name="rapidTurnRequiresSpeedThroughoutBumpAndDuration" classname="com.easycar.core.DocumentDatasetTest" time="0.001"/>
+  <testcase name="yawTurnBlocksSpeechEvenWithCenteredWheelAndScorerUsesNewRules" classname="com.easycar.core.DocumentDatasetTest" time="0.001"/>
+  <testcase name="staleYawGapAndReceiptEstimateNeverBecomeMeasuredYaw" classname="com.easycar.core.DocumentDatasetTest" time="0.001"/>
+  <testcase name="sub600msSpikeHasNoGradePenaltyButSustained600msDoes" classname="com.easycar.core.DocumentDatasetTest" time="0.001"/>
+  <testcase name="yawSignControlsDirectionEvenWhenSteeringIsZero" classname="com.easycar.core.DocumentDatasetTest" time="0.001"/>
+  <testcase name="measured100HzInputsAreAlignedTo10HzWithoutChangingYawSign" classname="com.easycar.core.DocumentDatasetTest" time="0.002"/>
+  <testcase name="yawLossInUturnNeverReclassifiesRemainingHalfAsLeftTurn" classname="com.easycar.core.DocumentDatasetTest" time="0.0"/>
+  <testcase name="onChangeGear500msPollingDoesNotExpireAt300ms" classname="com.easycar.core.DocumentDatasetTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

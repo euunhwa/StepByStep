@@ -1,0 +1,19 @@
+{
+  "avd": "Pleos_Connect_v2.1.0",
+  "api": 34,
+  "android_user": 10,
+  "picture_in_picture": false,
+  "freeform_window_management": false,
+  "cores": 2,
+  "memory_mb": 3072,
+  "window_manager_split_verified": true,
+  "mini_pane_bounds": [
+    853,
+    90,
+    1694,
+    1300
+  ],
+  "minimized_via": "System right edge three-dot handle dragged left; no private app API",
+  "actual_voice": "Pleos ON_DEVICE onStart/onDone recorded with another app foreground",
+  "emulator_closed_after_validation": true
+}

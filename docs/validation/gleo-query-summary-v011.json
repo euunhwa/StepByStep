@@ -1,0 +1,29 @@
+{
+  "appVersion": "0.11.0",
+  "versionCode": 14,
+  "protocolVersion": 1,
+  "transport": "LOCAL_MOCK",
+  "liveGleoDispatched": false,
+  "core": {
+    "tests": 158,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "app": {
+    "tests": 9,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "device": {
+    "tests": 14,
+    "passed": 14,
+    "failures": 0,
+    "durationSeconds": 25.422,
+    "environment": "Pleos Connect v2.1.0 / CPU 2 / RAM 3072MB / user 10",
+    "narrowWidthVerifiedDp": 700
+  },
+  "smokeCalls": 3,
+  "apkSha256": "4858b02dee44eab95b8ea1bbe1b698b0d4791c3e06e25372f6b7a41e6c5029e8"
+}

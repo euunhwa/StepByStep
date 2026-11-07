@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-07",
+  "appVersion": "0.13.2",
+  "versionCode": 18,
+  "userScope": {
+    "home": [
+      "지금 들어오는 차량 신호",
+      "속도",
+      "기어",
+      "핸들 각도",
+      "진행 방향"
+    ],
+    "removeTechnicalCopyFrom": [
+      "coaching",
+      "records",
+      "session summary",
+      "maneuver detail",
+      "record query",
+      "video review",
+      "common footer"
+    ],
+    "settingsPreserved": true
+  },
+  "presentationOnly": true,
+  "scoreAndDatasetThresholdsChanged": false,
+  "originalStoredRecordMutation": false,
+  "externalGleoMachineProtocolChanged": false,
+  "settingsSourceSha256": "90b24f2e6efd4ab932dbdb7634095bc35e0700aa3848ad68f96596a7acde9889",
+  "datasetFilesSha256": {
+    "auto-drive.json": "3d713ae22cfeaafa9a215bccc7a39ef3f811bc9697b703d418e53f0149fb2319",
+    "recognition-validation.json": "ad2722892020a27c21a53495a6aa5a10788abb5f94347aad326659a9889011b2",
+    "recognition.json": "46be3037715ad2b827749f3ea40523e1360c99c0bdcf5faf3bde81c3f293cd17",
+    "evaluation-validation.json": "4b4f3ad78f3b6752d5dd15e0f4168592a353566fea9166b4878597da73cefaa0",
+    "evaluation.json": "72b1f59b121d88d05858bc66df9769170219a694607be519be190a34b9921aa7"
+  },
+  "unitTests": {
+    "core": 165,
+    "app": 21,
+    "failures": 0,
+    "newPresentationTests": 6,
+    "unratedVoiceTechnicalTextRegression": true
+  },
+  "deviceTests": {
+    "passed": 19,
+    "seconds": 36.032,
+    "failures": 0,
+    "homeFourValuesAndTitleRetained": true,
+    "settingsTechnicalTextRetained": true,
+    "friendlyDetailAndQuery": true,
+    "stored85PointResultPreserved": true,
+    "jsonUiAbsentEvenInDebug": true,
+    "videoWideNarrowAndHeld": true,
+    "feedbackScoreColorsAndWindowSizes": true
+  },
+  "builds": [
+    "pleosDebug",
+    "demoDebug",
+    "pleosDebugAndroidTest"
+  ],
+  "lint": {
+    "errors": 0,
+    "existingWarnings": 36
+  },
+  "apkSha256": "f8ceb672cce534721961e0b74e91e748535ae8f27d00e0010bd1b48054d557a3",
+  "files": {
+    "build-friendly-ui-v0132.log": {
+      "sha256": "cef479d8b70457e34bb25865498619a0dab124d2d9c751b007d5e63de5c1a463",
+      "bytes": 25659
+    },
+    "device-friendly-ui-v0132.log": {
+      "sha256": "a7489606e61c990ae06d9902c506016eddd72cd7ab93c7d4ff70674deef49fe5",
+      "bytes": 439
+    },
+    "friendly-coaching-narrow-v0132.png": {
+      "sha256": "c8a4e318096f5ee3cc5c7aa3d1a20d89085a8b926d04f6eb6c60db7b906136cd",
+      "bytes": 260330
+    },
+    "friendly-coaching-short-v0132.png": {
+      "sha256": "a8fd85e6cd0d65c93abd715b6d58ec13d6c9dbf273ca2bc79e15870ed3f27fc5",
+      "bytes": 257476
+    },
+    "friendly-detail-v0132.png": {
+      "sha256": "6f1ce446d4313896570c2b07d78e63a68618c933b7e0e14315d59709adf51261",
+      "bytes": 299176
+    },
+    "friendly-home-v0132.png": {
+      "sha256": "95f23137f93f997079a6da73001a3b550d196391df226e399adca0037aedbc94",
+      "bytes": 343532
+    },
+    "friendly-query-v0132.png": {
+      "sha256": "8f6f3162dc3a025a4d7efb33ad098d49a888d9a7322d7bac49147917c4442d15",
+      "bytes": 336636
+    },
+    "friendly-settings-v0132.png": {
+      "sha256": "2f0def75fc020eeb0ea831aa8a5f9564019baff51e502bd68f34e6b0c68f4463",
+      "bytes": 404303
+    },
+    "friendly-v0132-TEST-com.easycar.core.FeedbackSpeechTest.xml": {
+      "sha256": "75b291b23b0ca3d48103c5bd3a36cc5626f797f0504ee7be4c38243359f8e891",
+      "bytes": 1887
+    },
+    "friendly-v0132-TEST-com.example.easycar.UserFacingTextTest.xml": {
+      "sha256": "0b69ab451ff74a232267501031f961366f0653e8f70cb81f83af5d184afd5c93",
+      "bytes": 1228
+    },
+    "friendly-video-flow-v0132.png": {
+      "sha256": "e87ad2b0ae15827c2e73bc78031479a7deb4787ddfa12de3ed25609448125293",
+      "bytes": 366242
+    },
+    "friendly-video-narrow-v0132.png": {
+      "sha256": "37068ea5c61a8c1cb80019bda6cb3a561e350264318af46065d85e73743f1dd5",
+      "bytes": 310685
+    },
+    "friendly-video-wide-v0132.png": {
+      "sha256": "3f6ddd2d4644fcd803e68f7b74d938b4c67a2da598d74c23bffb6480f1c2c89b",
+      "bytes": 334398
+    }
+  }
+}

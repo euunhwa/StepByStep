@@ -1,0 +1,13 @@
+--------- beginning of main
+11-03 22:18:17.137 21008 21103 I EasyCarValidation: pleos speech status=Pleos 기기 내 음성 준비됨
+11-03 22:22:07.733 32375 32460 I EasyCarValidation: pleos speech status=Pleos 기기 내 음성 준비됨
+11-03 22:22:07.755 32375 32460 I EasyCarValidation: pleos short speech accepted=true
+11-03 22:25:33.965  6538  6643 I EasyCarValidation: pleos speech status=Pleos 기기 내 음성 준비됨
+11-03 22:25:33.998  6538  6643 I EasyCarValidation: pleos short speech accepted=true
+11-03 22:25:38.717  6538  6643 I EasyCarValidation: pleos short speech completed
+11-03 22:30:38.515  7576  7670 I EasyCarValidation: pleos speech status=Pleos 기기 내 음성 준비됨
+11-03 22:30:38.525  7576  7670 I EasyCarValidation: pleos short speech accepted=true
+11-03 22:30:41.286  7576  7670 I EasyCarValidation: pleos short speech completed
+11-03 22:35:00.008 27265 27402 I EasyCarValidation: pleos speech status=Pleos 기기 내 음성 준비됨
+11-03 22:35:00.019 27265 27402 I EasyCarValidation: pleos short speech accepted=true
+11-03 22:35:03.068 27265 27402 I EasyCarValidation: pleos short speech completed

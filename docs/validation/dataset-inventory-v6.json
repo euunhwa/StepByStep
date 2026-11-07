@@ -1,0 +1,130 @@
+{
+  "checked_on": "2026-11-06",
+  "app_version": "0.6.0",
+  "recognition": {
+    "version": "r1 (unchanged since 0.5.0)",
+    "config_source": "core/src/main/kotlin/com/easycar/core/Models.kt:DetectionConfig",
+    "synthetic_fixtures": 45,
+    "trained_ml_model": false,
+    "documentation": "docs/datasets/recognition-ko.md"
+  },
+  "evaluation": {
+    "id": "arbitrary-evaluation-reference-0.2",
+    "profile_version": "arbitrary-prototype-0.2",
+    "policy_version": "evaluation-prototype-0.3",
+    "arbitrary": true,
+    "expert_validated": false,
+    "requires_improvement": true,
+    "templates": 7,
+    "samples": 926,
+    "limits": {
+      "entry_speed": {
+        "bound": 4.0,
+        "scale": 2.0,
+        "tau_seconds": 1.5,
+        "source": "ARBITRARY_SYNTHETIC / arbitrary-evaluation-reference-0.2",
+        "validation_status": "ARBITRARY_SYNTHETIC"
+      },
+      "rotation_speed": {
+        "bound": 3.5,
+        "scale": 2.0,
+        "tau_seconds": 1.5,
+        "source": "ARBITRARY_SYNTHETIC / arbitrary-evaluation-reference-0.2",
+        "validation_status": "ARBITRARY_SYNTHETIC"
+      },
+      "exit_speed": {
+        "bound": 4.0,
+        "scale": 2.0,
+        "tau_seconds": 1.5,
+        "source": "ARBITRARY_SYNTHETIC / arbitrary-evaluation-reference-0.2",
+        "validation_status": "ARBITRARY_SYNTHETIC"
+      },
+      "acceleration": {
+        "bound": 3.0,
+        "scale": 3.0,
+        "tau_seconds": 3.0,
+        "source": "ARBITRARY_SYNTHETIC / arbitrary-evaluation-reference-0.2",
+        "validation_status": "ARBITRARY_SYNTHETIC"
+      },
+      "deceleration_if_cause_known": {
+        "bound": 3.5,
+        "scale": 3.0,
+        "tau_seconds": 3.0,
+        "source": "ARBITRARY_SYNTHETIC / arbitrary-evaluation-reference-0.2",
+        "validation_status": "ARBITRARY_SYNTHETIC"
+      },
+      "longitudinal_jerk": {
+        "bound": 6.0,
+        "scale": 6.0,
+        "tau_seconds": 2.0,
+        "source": "ARBITRARY_SYNTHETIC / arbitrary-evaluation-reference-0.2",
+        "validation_status": "ARBITRARY_SYNTHETIC"
+      },
+      "steering_rate": {
+        "bound": 160.0,
+        "scale": 160.0,
+        "tau_seconds": 1.0,
+        "source": "ARBITRARY_SYNTHETIC / arbitrary-evaluation-reference-0.2",
+        "validation_status": "ARBITRARY_SYNTHETIC"
+      },
+      "exit_steering_rate": {
+        "bound": 120.0,
+        "scale": 120.0,
+        "tau_seconds": 1.0,
+        "source": "ARBITRARY_SYNTHETIC / arbitrary-evaluation-reference-0.2",
+        "validation_status": "ARBITRARY_SYNTHETIC"
+      },
+      "parking_speed": {
+        "bound": 1.5,
+        "scale": 1.0,
+        "tau_seconds": 1.0,
+        "source": "ARBITRARY_SYNTHETIC / arbitrary-evaluation-reference-0.2",
+        "validation_status": "ARBITRARY_SYNTHETIC"
+      },
+      "entry_pose_error_for_space": {
+        "bound": 15.0,
+        "scale": 30.0,
+        "tau_seconds": 1.0,
+        "source": "ARBITRARY_SYNTHETIC / arbitrary-evaluation-reference-0.2",
+        "validation_status": "ARBITRARY_SYNTHETIC"
+      },
+      "axis_angle_error": {
+        "bound": 3.0,
+        "scale": 7.0,
+        "tau_seconds": 1.0,
+        "source": "ARBITRARY_SYNTHETIC / arbitrary-evaluation-reference-0.2",
+        "validation_status": "ARBITRARY_SYNTHETIC"
+      },
+      "verified_vehicle_footprint_outside_slot": {
+        "bound": 0.0,
+        "scale": 1.0,
+        "tau_seconds": 1.0,
+        "source": "ARBITRARY_SYNTHETIC / arbitrary-evaluation-reference-0.2",
+        "validation_status": "ARBITRARY_SYNTHETIC"
+      }
+    },
+    "documentation": "docs/datasets/evaluation-ko.md"
+  },
+  "artifacts": {
+    "evaluation/arbitrary-reference-v1.json": {
+      "bytes": 4556,
+      "sha256": "2e59f1496fe0d5b6fc7f86d83df07ef52154dc64f59cb234bb110b418d96eb44"
+    },
+    "evaluation/arbitrary-reference-episodes-v1.json": {
+      "bytes": 179029,
+      "sha256": "46e577f4bf9b5368a1f1d94404ec38e5687474545fa88b0714b9ad54ab80b556"
+    },
+    "evaluation/evaluation-policy-prototype.json": {
+      "bytes": 15031,
+      "sha256": "fce3b2bc41a57d0a66c75ef7d74697f3b96b7bc6d40a47091e47445d7cac5373"
+    },
+    "profiles/arbitrary-prototype-v1.json": {
+      "bytes": 2167,
+      "sha256": "0d0b53330c41e7447dc74c478fc4b575a9df071cbb3da086a70b723efaccc6a3"
+    },
+    "demo/signals/auto-drive.json": {
+      "bytes": 1264638,
+      "sha256": "dbd6ff7436d3eef6a7ac0a7cdc044fe3079bad9dacb001e1d04d51364b166a4c"
+    }
+  }
+}

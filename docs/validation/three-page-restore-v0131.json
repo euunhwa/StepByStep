@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-07",
+  "appVersion": "0.13.1",
+  "versionCode": 17,
+  "request": "Keep previous parking behavior until approved top-down AVM input is available; expose only Home, Records, Settings.",
+  "menus": [
+    "홈",
+    "기록",
+    "설정"
+  ],
+  "parkingPageReachable": false,
+  "mediaProjectionServiceInApk": false,
+  "experimentalCaptureAssetsInApk": false,
+  "archivedSource": "experimental/parking-capture-v013",
+  "legacyCaptureRecordReadCompatibility": true,
+  "oldScoresRescored": false,
+  "activeRecognition": "recognition-document-1.0.1",
+  "activeEvaluation": "evaluation-document-1.0",
+  "activeProfile": "document-derived-1.0",
+  "retainedIndependentFix": "Nominal10km/h float-rounding boundary tolerance1e-6m/s.10.01km/h still rejected.",
+  "unitTests": {
+    "core": 165,
+    "app": 15,
+    "failures": 0
+  },
+  "deviceTests": {
+    "tests": 18,
+    "failures": 0,
+    "seconds": 32.414,
+    "assertedExactlyThreeClickableNavigationItems": true,
+    "settingsHomeRecordsNavigationPassed": true
+  },
+  "builds": [
+    "pleosDebug",
+    "demoDebug",
+    "pleosDebugAndroidTest"
+  ],
+  "lint": {
+    "errors": 0,
+    "existingWarnings": 36
+  },
+  "visualChecks": {
+    "wide160dpi": "three-page-home-v0131.png",
+    "compact320dpi": "three-page-compact-v0131.png",
+    "densityRestoredToPhysical160": true,
+    "storedRecordQuery": "three-page-restore-flow-v0131.png"
+  },
+  "futureRequirement": "Hyundai/Pleos-provided approved rectified top-down AVM frames/stream/API, recording/storage/analysis permission, resolution, actual vehicle footprint, calibration and frame timing. Availability not yet confirmed. Keep README prerequisite at next GitHub submission and preserve only three top-level menus.",
+  "apkSha256": "8bd8e1bc0d65f1f8484fe36934084ea6e6530aa16e34d0bd3d703a4eae152d0b",
+  "files": {
+    "build-three-page-restore-v0131.log": {
+      "sha256": "971181c7e2bc9646d604ea16bab6d1448b1a2795c35ff7dbc5f11e61328b3fad",
+      "bytes": 25618
+    },
+    "device-three-page-restore-v0131.log": {
+      "sha256": "583c6fdb23525551d51b7d01a5c868a4a788671e6e3574ed20534ea645131d25",
+      "bytes": 397
+    },
+    "three-page-home-v0131.png": {
+      "sha256": "e2081f7945d578b8887e1de75d226a87993ea41c3edf5a8cedbfb37c0b633b61",
+      "bytes": 444334
+    },
+    "three-page-compact-v0131.png": {
+      "sha256": "68ec46b6a93e2fd76916c11c741e31a8a3f0cd12de0e5324ff19968c30d94347",
+      "bytes": 356110
+    },
+    "three-page-restore-flow-v0131.png": {
+      "sha256": "f243931b655a287ee6485402161c7d3d6782bab4d64fa40259c1599fb937ebbe",
+      "bytes": 375028
+    },
+    "restore-v0131-TEST-com.example.easycar.LocalRecordQueryGatewayTest.xml": {
+      "sha256": "0b199d75bcf495655bd87c13c6bb4da192e0d37c724a29ce37b781804fae5b45",
+      "bytes": 1086
+    }
+  }
+}

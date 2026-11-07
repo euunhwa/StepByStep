@@ -1,0 +1,7602 @@
+[
+  {
+    "timeMs": 0,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 0,
+      "receivedMs": 0,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 0,
+      "receivedMs": 0,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 0,
+      "receivedMs": 0,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 0,
+      "receivedMs": 0,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 100,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 100,
+      "receivedMs": 100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 100,
+      "receivedMs": 100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 100,
+      "receivedMs": 100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 100,
+      "receivedMs": 100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 200,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 200,
+      "receivedMs": 200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 200,
+      "receivedMs": 200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 200,
+      "receivedMs": 200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 200,
+      "receivedMs": 200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 300,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 300,
+      "receivedMs": 300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 300,
+      "receivedMs": 300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 300,
+      "receivedMs": 300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 300,
+      "receivedMs": 300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 400,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 400,
+      "receivedMs": 400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 400,
+      "receivedMs": 400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 400,
+      "receivedMs": 400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 400,
+      "receivedMs": 400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 500,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 500,
+      "receivedMs": 500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 500,
+      "receivedMs": 500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 500,
+      "receivedMs": 500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 500,
+      "receivedMs": 500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 600,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 600,
+      "receivedMs": 600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 600,
+      "receivedMs": 600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 600,
+      "receivedMs": 600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 600,
+      "receivedMs": 600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 700,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 700,
+      "receivedMs": 700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 700,
+      "receivedMs": 700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 700,
+      "receivedMs": 700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 700,
+      "receivedMs": 700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 800,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 800,
+      "receivedMs": 800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 800,
+      "receivedMs": 800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 800,
+      "receivedMs": 800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 800,
+      "receivedMs": 800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 900,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 900,
+      "receivedMs": 900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 900,
+      "receivedMs": 900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 900,
+      "receivedMs": 900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 900,
+      "receivedMs": 900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 1000,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 1000,
+      "receivedMs": 1000,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 1000,
+      "receivedMs": 1000,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 1000,
+      "receivedMs": 1000,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 1000,
+      "receivedMs": 1000,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 1100,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 1100,
+      "receivedMs": 1100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 1100,
+      "receivedMs": 1100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 1100,
+      "receivedMs": 1100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 1100,
+      "receivedMs": 1100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 1200,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 1200,
+      "receivedMs": 1200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 1200,
+      "receivedMs": 1200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 1200,
+      "receivedMs": 1200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 1200,
+      "receivedMs": 1200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 1300,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 1300,
+      "receivedMs": 1300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 1300,
+      "receivedMs": 1300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 1300,
+      "receivedMs": 1300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 1300,
+      "receivedMs": 1300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 1400,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 1400,
+      "receivedMs": 1400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 1400,
+      "receivedMs": 1400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 1400,
+      "receivedMs": 1400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 1400,
+      "receivedMs": 1400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 1500,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 1500,
+      "receivedMs": 1500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 1500,
+      "receivedMs": 1500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 1500,
+      "receivedMs": 1500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 1500,
+      "receivedMs": 1500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 1600,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 1600,
+      "receivedMs": 1600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 1600,
+      "receivedMs": 1600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 1600,
+      "receivedMs": 1600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 1600,
+      "receivedMs": 1600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 1700,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 1700,
+      "receivedMs": 1700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 1700,
+      "receivedMs": 1700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 1700,
+      "receivedMs": 1700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 1700,
+      "receivedMs": 1700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 1800,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 1800,
+      "receivedMs": 1800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 1800,
+      "receivedMs": 1800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 1800,
+      "receivedMs": 1800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 1800,
+      "receivedMs": 1800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 1900,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 1900,
+      "receivedMs": 1900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 1900,
+      "receivedMs": 1900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 1900,
+      "receivedMs": 1900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 1900,
+      "receivedMs": 1900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 2000,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 2000,
+      "receivedMs": 2000,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 2000,
+      "receivedMs": 2000,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 2000,
+      "receivedMs": 2000,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 2000,
+      "receivedMs": 2000,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 2100,
+    "speed": {
+      "value": 0.25862068965517243,
+      "measuredMs": 2100,
+      "receivedMs": 2100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 2100,
+      "receivedMs": 2100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 2100,
+      "receivedMs": 2100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 2100,
+      "receivedMs": 2100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 2200,
+    "speed": {
+      "value": 0.5172413793103449,
+      "measuredMs": 2200,
+      "receivedMs": 2200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 2200,
+      "receivedMs": 2200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 2200,
+      "receivedMs": 2200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 2200,
+      "receivedMs": 2200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 2300,
+    "speed": {
+      "value": 0.7758620689655172,
+      "measuredMs": 2300,
+      "receivedMs": 2300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 2300,
+      "receivedMs": 2300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 2300,
+      "receivedMs": 2300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 2300,
+      "receivedMs": 2300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 2400,
+    "speed": {
+      "value": 1.0344827586206897,
+      "measuredMs": 2400,
+      "receivedMs": 2400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 2400,
+      "receivedMs": 2400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 2400,
+      "receivedMs": 2400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 2400,
+      "receivedMs": 2400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 2500,
+    "speed": {
+      "value": 1.293103448275862,
+      "measuredMs": 2500,
+      "receivedMs": 2500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 2500,
+      "receivedMs": 2500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 2500,
+      "receivedMs": 2500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 2500,
+      "receivedMs": 2500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 2600,
+    "speed": {
+      "value": 1.5517241379310345,
+      "measuredMs": 2600,
+      "receivedMs": 2600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 2600,
+      "receivedMs": 2600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 2600,
+      "receivedMs": 2600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 2600,
+      "receivedMs": 2600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 2700,
+    "speed": {
+      "value": 1.810344827586207,
+      "measuredMs": 2700,
+      "receivedMs": 2700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 2700,
+      "receivedMs": 2700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 2700,
+      "receivedMs": 2700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 2700,
+      "receivedMs": 2700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 2800,
+    "speed": {
+      "value": 2.0689655172413794,
+      "measuredMs": 2800,
+      "receivedMs": 2800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 2800,
+      "receivedMs": 2800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 2800,
+      "receivedMs": 2800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 2800,
+      "receivedMs": 2800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 2900,
+    "speed": {
+      "value": 2.3275862068965516,
+      "measuredMs": 2900,
+      "receivedMs": 2900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 2900,
+      "receivedMs": 2900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 2900,
+      "receivedMs": 2900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 2900,
+      "receivedMs": 2900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 3000,
+    "speed": {
+      "value": 2.586206896551724,
+      "measuredMs": 3000,
+      "receivedMs": 3000,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 3000,
+      "receivedMs": 3000,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 3000,
+      "receivedMs": 3000,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 3000,
+      "receivedMs": 3000,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 3100,
+    "speed": {
+      "value": 2.8448275862068964,
+      "measuredMs": 3100,
+      "receivedMs": 3100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 3100,
+      "receivedMs": 3100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 3100,
+      "receivedMs": 3100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 3100,
+      "receivedMs": 3100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 3200,
+    "speed": {
+      "value": 3.103448275862069,
+      "measuredMs": 3200,
+      "receivedMs": 3200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 3200,
+      "receivedMs": 3200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 3200,
+      "receivedMs": 3200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 3200,
+      "receivedMs": 3200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 3300,
+    "speed": {
+      "value": 3.3620689655172415,
+      "measuredMs": 3300,
+      "receivedMs": 3300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 3300,
+      "receivedMs": 3300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 3300,
+      "receivedMs": 3300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 3300,
+      "receivedMs": 3300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 3400,
+    "speed": {
+      "value": 3.620689655172414,
+      "measuredMs": 3400,
+      "receivedMs": 3400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 3400,
+      "receivedMs": 3400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 3400,
+      "receivedMs": 3400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 3400,
+      "receivedMs": 3400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 3500,
+    "speed": {
+      "value": 3.8793103448275863,
+      "measuredMs": 3500,
+      "receivedMs": 3500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 3500,
+      "receivedMs": 3500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 3500,
+      "receivedMs": 3500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 3500,
+      "receivedMs": 3500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 3600,
+    "speed": {
+      "value": 4.137931034482759,
+      "measuredMs": 3600,
+      "receivedMs": 3600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 3600,
+      "receivedMs": 3600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 3600,
+      "receivedMs": 3600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 3600,
+      "receivedMs": 3600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 3700,
+    "speed": {
+      "value": 4.396551724137931,
+      "measuredMs": 3700,
+      "receivedMs": 3700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 3700,
+      "receivedMs": 3700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 3700,
+      "receivedMs": 3700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 3700,
+      "receivedMs": 3700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 3800,
+    "speed": {
+      "value": 4.655172413793103,
+      "measuredMs": 3800,
+      "receivedMs": 3800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 3800,
+      "receivedMs": 3800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 3800,
+      "receivedMs": 3800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 3800,
+      "receivedMs": 3800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 3900,
+    "speed": {
+      "value": 4.913793103448276,
+      "measuredMs": 3900,
+      "receivedMs": 3900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 3900,
+      "receivedMs": 3900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 3900,
+      "receivedMs": 3900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 3900,
+      "receivedMs": 3900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 4000,
+    "speed": {
+      "value": 5.172413793103448,
+      "measuredMs": 4000,
+      "receivedMs": 4000,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 4000,
+      "receivedMs": 4000,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 4000,
+      "receivedMs": 4000,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 4000,
+      "receivedMs": 4000,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 4100,
+    "speed": {
+      "value": 5.431034482758621,
+      "measuredMs": 4100,
+      "receivedMs": 4100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 4100,
+      "receivedMs": 4100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 4100,
+      "receivedMs": 4100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 4100,
+      "receivedMs": 4100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 4200,
+    "speed": {
+      "value": 5.689655172413793,
+      "measuredMs": 4200,
+      "receivedMs": 4200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 4200,
+      "receivedMs": 4200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 4200,
+      "receivedMs": 4200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 4200,
+      "receivedMs": 4200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 4300,
+    "speed": {
+      "value": 5.948275862068966,
+      "measuredMs": 4300,
+      "receivedMs": 4300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 4300,
+      "receivedMs": 4300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 4300,
+      "receivedMs": 4300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 4300,
+      "receivedMs": 4300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 4400,
+    "speed": {
+      "value": 6.206896551724138,
+      "measuredMs": 4400,
+      "receivedMs": 4400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 4400,
+      "receivedMs": 4400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 4400,
+      "receivedMs": 4400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 4400,
+      "receivedMs": 4400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 4500,
+    "speed": {
+      "value": 6.46551724137931,
+      "measuredMs": 4500,
+      "receivedMs": 4500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 4500,
+      "receivedMs": 4500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 4500,
+      "receivedMs": 4500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 4500,
+      "receivedMs": 4500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 4600,
+    "speed": {
+      "value": 6.724137931034483,
+      "measuredMs": 4600,
+      "receivedMs": 4600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 4600,
+      "receivedMs": 4600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 4600,
+      "receivedMs": 4600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 4600,
+      "receivedMs": 4600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 4700,
+    "speed": {
+      "value": 6.982758620689655,
+      "measuredMs": 4700,
+      "receivedMs": 4700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 4700,
+      "receivedMs": 4700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 4700,
+      "receivedMs": 4700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 4700,
+      "receivedMs": 4700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 4800,
+    "speed": {
+      "value": 7.241379310344828,
+      "measuredMs": 4800,
+      "receivedMs": 4800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 4800,
+      "receivedMs": 4800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 4800,
+      "receivedMs": 4800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 4800,
+      "receivedMs": 4800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 4900,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 4900,
+      "receivedMs": 4900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 4900,
+      "receivedMs": 4900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 4900,
+      "receivedMs": 4900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 4900,
+      "receivedMs": 4900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 5000,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 5000,
+      "receivedMs": 5000,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 5000,
+      "receivedMs": 5000,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 5000,
+      "receivedMs": 5000,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 5000,
+      "receivedMs": 5000,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 5100,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 5100,
+      "receivedMs": 5100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 5100,
+      "receivedMs": 5100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 5100,
+      "receivedMs": 5100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 5100,
+      "receivedMs": 5100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 5200,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 5200,
+      "receivedMs": 5200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 5200,
+      "receivedMs": 5200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 5200,
+      "receivedMs": 5200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 5200,
+      "receivedMs": 5200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 5300,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 5300,
+      "receivedMs": 5300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 5300,
+      "receivedMs": 5300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 5300,
+      "receivedMs": 5300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 5300,
+      "receivedMs": 5300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 5400,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 5400,
+      "receivedMs": 5400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 5400,
+      "receivedMs": 5400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 5400,
+      "receivedMs": 5400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 5400,
+      "receivedMs": 5400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 5500,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 5500,
+      "receivedMs": 5500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 5500,
+      "receivedMs": 5500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 5500,
+      "receivedMs": 5500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 5500,
+      "receivedMs": 5500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 5600,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 5600,
+      "receivedMs": 5600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 5600,
+      "receivedMs": 5600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 5600,
+      "receivedMs": 5600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 5600,
+      "receivedMs": 5600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 5700,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 5700,
+      "receivedMs": 5700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 5700,
+      "receivedMs": 5700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 5700,
+      "receivedMs": 5700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 5700,
+      "receivedMs": 5700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 5800,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 5800,
+      "receivedMs": 5800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 5800,
+      "receivedMs": 5800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 5800,
+      "receivedMs": 5800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 5800,
+      "receivedMs": 5800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 5900,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 5900,
+      "receivedMs": 5900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 5900,
+      "receivedMs": 5900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 5900,
+      "receivedMs": 5900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 5900,
+      "receivedMs": 5900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 6000,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 6000,
+      "receivedMs": 6000,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 6000,
+      "receivedMs": 6000,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 6000,
+      "receivedMs": 6000,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.0,
+      "measuredMs": 6000,
+      "receivedMs": 6000,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 6100,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 6100,
+      "receivedMs": 6100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 9.579991471592157,
+      "measuredMs": 6100,
+      "receivedMs": 6100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 6100,
+      "receivedMs": 6100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.07668748995757824,
+      "measuredMs": 6100,
+      "receivedMs": 6100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 6200,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 6200,
+      "receivedMs": 6200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 19.13282741652577,
+      "measuredMs": 6200,
+      "receivedMs": 6200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 6200,
+      "receivedMs": 6200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.3032442460037146,
+      "measuredMs": 6200,
+      "receivedMs": 6200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 6300,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 6300,
+      "receivedMs": 6300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 28.631429283432972,
+      "measuredMs": 6300,
+      "receivedMs": 6300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 6300,
+      "receivedMs": 6300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 0.6744116973984546,
+      "measuredMs": 6300,
+      "receivedMs": 6300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 6400,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 6400,
+      "receivedMs": 6400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 38.04887225333238,
+      "measuredMs": 6400,
+      "receivedMs": 6400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 6400,
+      "receivedMs": 6400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 1.184931273401844,
+      "measuredMs": 6400,
+      "receivedMs": 6400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 6500,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 6500,
+      "receivedMs": 6500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 47.35846156095383,
+      "measuredMs": 6500,
+      "receivedMs": 6500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 6500,
+      "receivedMs": 6500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 1.8295444032739283,
+      "measuredMs": 6500,
+      "receivedMs": 6500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 6600,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 6600,
+      "receivedMs": 6600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 56.53380816395079,
+      "measuredMs": 6600,
+      "receivedMs": 6600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 6600,
+      "receivedMs": 6600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 2.60299251627481,
+      "measuredMs": 6600,
+      "receivedMs": 6600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 6700,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 6700,
+      "receivedMs": 6700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 65.548903545508,
+      "measuredMs": 6700,
+      "receivedMs": 6700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 6700,
+      "receivedMs": 6700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 3.500017041664421,
+      "measuredMs": 6700,
+      "receivedMs": 6700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 6800,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 6800,
+      "receivedMs": 6800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 74.37819343830807,
+      "measuredMs": 6800,
+      "receivedMs": 6800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 6800,
+      "receivedMs": 6800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 4.5153594087029205,
+      "measuredMs": 6800,
+      "receivedMs": 6800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 6900,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 6900,
+      "receivedMs": 6900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 82.99665026087865,
+      "measuredMs": 6900,
+      "receivedMs": 6900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 6900,
+      "receivedMs": 6900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 5.643761046650354,
+      "measuredMs": 6900,
+      "receivedMs": 6900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 7000,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 7000,
+      "receivedMs": 7000,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 91.37984406099119,
+      "measuredMs": 7000,
+      "receivedMs": 7000,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 7000,
+      "receivedMs": 7000,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 6.879963384766711,
+      "measuredMs": 7000,
+      "receivedMs": 7000,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 7100,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 7100,
+      "receivedMs": 7100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 99.5040117650148,
+      "measuredMs": 7100,
+      "receivedMs": 7100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 7100,
+      "receivedMs": 7100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 8.218707852312093,
+      "measuredMs": 7100,
+      "receivedMs": 7100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 7200,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 7200,
+      "receivedMs": 7200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 107.34612453693026,
+      "measuredMs": 7200,
+      "receivedMs": 7200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 7200,
+      "receivedMs": 7200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 9.65473587854649,
+      "measuredMs": 7200,
+      "receivedMs": 7200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 7300,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 7300,
+      "receivedMs": 7300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 114.88395305606761,
+      "measuredMs": 7300,
+      "receivedMs": 7300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 7300,
+      "receivedMs": 7300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 11.182788892730002,
+      "measuredMs": 7300,
+      "receivedMs": 7300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 7400,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 7400,
+      "receivedMs": 7400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 122.09613052853089,
+      "measuredMs": 7400,
+      "receivedMs": 7400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 7400,
+      "receivedMs": 7400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 12.797608324122734,
+      "measuredMs": 7400,
+      "receivedMs": 7400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 7500,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 7500,
+      "receivedMs": 7500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 128.96221325369672,
+      "measuredMs": 7500,
+      "receivedMs": 7500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 7500,
+      "receivedMs": 7500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 14.493935601984617,
+      "measuredMs": 7500,
+      "receivedMs": 7500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 7600,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 7600,
+      "receivedMs": 7600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 135.46273857410492,
+      "measuredMs": 7600,
+      "receivedMs": 7600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 7600,
+      "receivedMs": 7600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 16.26651215557581,
+      "measuredMs": 7600,
+      "receivedMs": 7600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 7700,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 7700,
+      "receivedMs": 7700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 141.57928004447564,
+      "measuredMs": 7700,
+      "receivedMs": 7700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 7700,
+      "receivedMs": 7700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 18.110079414156246,
+      "measuredMs": 7700,
+      "receivedMs": 7700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 7800,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 7800,
+      "receivedMs": 7800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 147.29449966347042,
+      "measuredMs": 7800,
+      "receivedMs": 7800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 7800,
+      "receivedMs": 7800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 20.019378806986083,
+      "measuredMs": 7800,
+      "receivedMs": 7800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 7900,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 7900,
+      "receivedMs": 7900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 152.59219702014076,
+      "measuredMs": 7900,
+      "receivedMs": 7900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 7900,
+      "receivedMs": 7900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 21.989151763325367,
+      "measuredMs": 7900,
+      "receivedMs": 7900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 8000,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 8000,
+      "receivedMs": 8000,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 157.45735521575304,
+      "measuredMs": 8000,
+      "receivedMs": 8000,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 8000,
+      "receivedMs": 8000,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 24.014139712434087,
+      "measuredMs": 8000,
+      "receivedMs": 8000,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 8100,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 8100,
+      "receivedMs": 8100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 161.87618343081945,
+      "measuredMs": 8100,
+      "receivedMs": 8100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 8100,
+      "receivedMs": 8100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 26.089084083572345,
+      "measuredMs": 8100,
+      "receivedMs": 8100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 8200,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 8200,
+      "receivedMs": 8200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 165.83615601667432,
+      "measuredMs": 8200,
+      "receivedMs": 8200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 8200,
+      "receivedMs": 8200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 28.20872630600013,
+      "measuredMs": 8200,
+      "receivedMs": 8200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 8300,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 8300,
+      "receivedMs": 8300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 169.326048000786,
+      "measuredMs": 8300,
+      "receivedMs": 8300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 8300,
+      "receivedMs": 8300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 30.367807808977545,
+      "measuredMs": 8300,
+      "receivedMs": 8300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 8400,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 8400,
+      "receivedMs": 8400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 172.33596690516097,
+      "measuredMs": 8400,
+      "receivedMs": 8400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 8400,
+      "receivedMs": 8400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 32.561070021764635,
+      "measuredMs": 8400,
+      "receivedMs": 8400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 8500,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 8500,
+      "receivedMs": 8500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 174.85738078764777,
+      "measuredMs": 8500,
+      "receivedMs": 8500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 8500,
+      "receivedMs": 8500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 34.783254373621446,
+      "measuredMs": 8500,
+      "receivedMs": 8500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 8600,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 8600,
+      "receivedMs": 8600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 176.88314242665376,
+      "measuredMs": 8600,
+      "receivedMs": 8600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 8600,
+      "receivedMs": 8600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 37.02910229380802,
+      "measuredMs": 8600,
+      "receivedMs": 8600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 8700,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 8700,
+      "receivedMs": 8700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 178.4075095807213,
+      "measuredMs": 8700,
+      "receivedMs": 8700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 8700,
+      "receivedMs": 8700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 39.29335521158441,
+      "measuredMs": 8700,
+      "receivedMs": 8700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 8800,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 8800,
+      "receivedMs": 8800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 179.42616126553503,
+      "measuredMs": 8800,
+      "receivedMs": 8800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 8800,
+      "receivedMs": 8800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 41.570754556210716,
+      "measuredMs": 8800,
+      "receivedMs": 8800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 8900,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 8900,
+      "receivedMs": 8900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 179.9362100022215,
+      "measuredMs": 8900,
+      "receivedMs": 8900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 8900,
+      "receivedMs": 8900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 43.85604175694692,
+      "measuredMs": 8900,
+      "receivedMs": 8900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 9000,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 9000,
+      "receivedMs": 9000,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 179.9362100022215,
+      "measuredMs": 9000,
+      "receivedMs": 9000,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 9000,
+      "receivedMs": 9000,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 46.14395824305308,
+      "measuredMs": 9000,
+      "receivedMs": 9000,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 9100,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 9100,
+      "receivedMs": 9100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 179.42616126553503,
+      "measuredMs": 9100,
+      "receivedMs": 9100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 9100,
+      "receivedMs": 9100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 48.429245443789284,
+      "measuredMs": 9100,
+      "receivedMs": 9100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 9200,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 9200,
+      "receivedMs": 9200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 178.4075095807213,
+      "measuredMs": 9200,
+      "receivedMs": 9200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 9200,
+      "receivedMs": 9200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 50.70664478841559,
+      "measuredMs": 9200,
+      "receivedMs": 9200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 9300,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 9300,
+      "receivedMs": 9300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 176.88314242665376,
+      "measuredMs": 9300,
+      "receivedMs": 9300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 9300,
+      "receivedMs": 9300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 52.97089770619198,
+      "measuredMs": 9300,
+      "receivedMs": 9300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 9400,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 9400,
+      "receivedMs": 9400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 174.85738078764777,
+      "measuredMs": 9400,
+      "receivedMs": 9400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 9400,
+      "receivedMs": 9400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 55.216745626378554,
+      "measuredMs": 9400,
+      "receivedMs": 9400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 9500,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 9500,
+      "receivedMs": 9500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 172.335966905161,
+      "measuredMs": 9500,
+      "receivedMs": 9500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 9500,
+      "receivedMs": 9500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 57.438929978235365,
+      "measuredMs": 9500,
+      "receivedMs": 9500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 9600,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 9600,
+      "receivedMs": 9600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 169.326048000786,
+      "measuredMs": 9600,
+      "receivedMs": 9600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 9600,
+      "receivedMs": 9600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 59.632192191022455,
+      "measuredMs": 9600,
+      "receivedMs": 9600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 9700,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 9700,
+      "receivedMs": 9700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 165.83615601667435,
+      "measuredMs": 9700,
+      "receivedMs": 9700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 9700,
+      "receivedMs": 9700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 61.79127369399987,
+      "measuredMs": 9700,
+      "receivedMs": 9700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 9800,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 9800,
+      "receivedMs": 9800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 161.87618343081945,
+      "measuredMs": 9800,
+      "receivedMs": 9800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 9800,
+      "receivedMs": 9800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 63.910915916427655,
+      "measuredMs": 9800,
+      "receivedMs": 9800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 9900,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 9900,
+      "receivedMs": 9900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 157.45735521575304,
+      "measuredMs": 9900,
+      "receivedMs": 9900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 9900,
+      "receivedMs": 9900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 65.98586028756591,
+      "measuredMs": 9900,
+      "receivedMs": 9900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 10000,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 10000,
+      "receivedMs": 10000,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 152.5921970201408,
+      "measuredMs": 10000,
+      "receivedMs": 10000,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 10000,
+      "receivedMs": 10000,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 68.01084823667463,
+      "measuredMs": 10000,
+      "receivedMs": 10000,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 10100,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 10100,
+      "receivedMs": 10100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 147.29449966347045,
+      "measuredMs": 10100,
+      "receivedMs": 10100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 10100,
+      "receivedMs": 10100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 69.98062119301392,
+      "measuredMs": 10100,
+      "receivedMs": 10100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 10200,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 10200,
+      "receivedMs": 10200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 141.57928004447567,
+      "measuredMs": 10200,
+      "receivedMs": 10200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 10200,
+      "receivedMs": 10200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 71.8899205858437,
+      "measuredMs": 10200,
+      "receivedMs": 10200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 10300,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 10300,
+      "receivedMs": 10300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 135.46273857410495,
+      "measuredMs": 10300,
+      "receivedMs": 10300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 10300,
+      "receivedMs": 10300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 73.73348784442419,
+      "measuredMs": 10300,
+      "receivedMs": 10300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 10400,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 10400,
+      "receivedMs": 10400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 128.96221325369675,
+      "measuredMs": 10400,
+      "receivedMs": 10400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 10400,
+      "receivedMs": 10400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 75.50606439801538,
+      "measuredMs": 10400,
+      "receivedMs": 10400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 10500,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 10500,
+      "receivedMs": 10500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 122.09613052853092,
+      "measuredMs": 10500,
+      "receivedMs": 10500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 10500,
+      "receivedMs": 10500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 77.20239167587727,
+      "measuredMs": 10500,
+      "receivedMs": 10500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 10600,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 10600,
+      "receivedMs": 10600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 114.88395305606758,
+      "measuredMs": 10600,
+      "receivedMs": 10600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 10600,
+      "receivedMs": 10600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 78.81721110726994,
+      "measuredMs": 10600,
+      "receivedMs": 10600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 10700,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 10700,
+      "receivedMs": 10700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 107.34612453693029,
+      "measuredMs": 10700,
+      "receivedMs": 10700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 10700,
+      "receivedMs": 10700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 80.34526412145351,
+      "measuredMs": 10700,
+      "receivedMs": 10700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 10800,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 10800,
+      "receivedMs": 10800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 99.5040117650148,
+      "measuredMs": 10800,
+      "receivedMs": 10800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 10800,
+      "receivedMs": 10800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 81.78129214768796,
+      "measuredMs": 10800,
+      "receivedMs": 10800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 10900,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 10900,
+      "receivedMs": 10900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 91.37984406099119,
+      "measuredMs": 10900,
+      "receivedMs": 10900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 10900,
+      "receivedMs": 10900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 83.12003661523329,
+      "measuredMs": 10900,
+      "receivedMs": 10900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 11000,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 11000,
+      "receivedMs": 11000,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 82.99665026087871,
+      "measuredMs": 11000,
+      "receivedMs": 11000,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 11000,
+      "receivedMs": 11000,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 84.35623895334965,
+      "measuredMs": 11000,
+      "receivedMs": 11000,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 11100,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 11100,
+      "receivedMs": 11100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 74.37819343830806,
+      "measuredMs": 11100,
+      "receivedMs": 11100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 11100,
+      "receivedMs": 11100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 85.48464059129708,
+      "measuredMs": 11100,
+      "receivedMs": 11100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 11200,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 11200,
+      "receivedMs": 11200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 65.54890354550798,
+      "measuredMs": 11200,
+      "receivedMs": 11200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 11200,
+      "receivedMs": 11200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 86.49998295833558,
+      "measuredMs": 11200,
+      "receivedMs": 11200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 11300,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 11300,
+      "receivedMs": 11300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 56.53380816395079,
+      "measuredMs": 11300,
+      "receivedMs": 11300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 11300,
+      "receivedMs": 11300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 87.39700748372525,
+      "measuredMs": 11300,
+      "receivedMs": 11300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 11400,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 11400,
+      "receivedMs": 11400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 47.35846156095383,
+      "measuredMs": 11400,
+      "receivedMs": 11400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 11400,
+      "receivedMs": 11400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 88.17045559672601,
+      "measuredMs": 11400,
+      "receivedMs": 11400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 11500,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 11500,
+      "receivedMs": 11500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 38.048872253332384,
+      "measuredMs": 11500,
+      "receivedMs": 11500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 11500,
+      "receivedMs": 11500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 88.81506872659816,
+      "measuredMs": 11500,
+      "receivedMs": 11500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 11600,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 11600,
+      "receivedMs": 11600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 28.63142928343298,
+      "measuredMs": 11600,
+      "receivedMs": 11600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 11600,
+      "receivedMs": 11600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 89.32558830260155,
+      "measuredMs": 11600,
+      "receivedMs": 11600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 11700,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 11700,
+      "receivedMs": 11700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 19.132827416525785,
+      "measuredMs": 11700,
+      "receivedMs": 11700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 11700,
+      "receivedMs": 11700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 89.69675575399629,
+      "measuredMs": 11700,
+      "receivedMs": 11700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 11800,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 11800,
+      "receivedMs": 11800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 9.579991471592177,
+      "measuredMs": 11800,
+      "receivedMs": 11800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 11800,
+      "receivedMs": 11800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 89.92331251004242,
+      "measuredMs": 11800,
+      "receivedMs": 11800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 11900,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 11900,
+      "receivedMs": 11900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 2.2043642384652358E-14,
+      "measuredMs": 11900,
+      "receivedMs": 11900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 11900,
+      "receivedMs": 11900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 11900,
+      "receivedMs": 11900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 12000,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 12000,
+      "receivedMs": 12000,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 12000,
+      "receivedMs": 12000,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 12000,
+      "receivedMs": 12000,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 12000,
+      "receivedMs": 12000,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 12100,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 12100,
+      "receivedMs": 12100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 12100,
+      "receivedMs": 12100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 12100,
+      "receivedMs": 12100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 12100,
+      "receivedMs": 12100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 12200,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 12200,
+      "receivedMs": 12200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 12200,
+      "receivedMs": 12200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 12200,
+      "receivedMs": 12200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 12200,
+      "receivedMs": 12200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 12300,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 12300,
+      "receivedMs": 12300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 12300,
+      "receivedMs": 12300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 12300,
+      "receivedMs": 12300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 12300,
+      "receivedMs": 12300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 12400,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 12400,
+      "receivedMs": 12400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 12400,
+      "receivedMs": 12400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 12400,
+      "receivedMs": 12400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 12400,
+      "receivedMs": 12400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 12500,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 12500,
+      "receivedMs": 12500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 12500,
+      "receivedMs": 12500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 12500,
+      "receivedMs": 12500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 12500,
+      "receivedMs": 12500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 12600,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 12600,
+      "receivedMs": 12600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 12600,
+      "receivedMs": 12600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 12600,
+      "receivedMs": 12600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 12600,
+      "receivedMs": 12600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 12700,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 12700,
+      "receivedMs": 12700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 12700,
+      "receivedMs": 12700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 12700,
+      "receivedMs": 12700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 12700,
+      "receivedMs": 12700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 12800,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 12800,
+      "receivedMs": 12800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 12800,
+      "receivedMs": 12800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 12800,
+      "receivedMs": 12800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 12800,
+      "receivedMs": 12800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 12900,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 12900,
+      "receivedMs": 12900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 12900,
+      "receivedMs": 12900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 12900,
+      "receivedMs": 12900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 12900,
+      "receivedMs": 12900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 13000,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 13000,
+      "receivedMs": 13000,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 13000,
+      "receivedMs": 13000,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 13000,
+      "receivedMs": 13000,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 13000,
+      "receivedMs": 13000,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 13100,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 13100,
+      "receivedMs": 13100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 13100,
+      "receivedMs": 13100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 13100,
+      "receivedMs": 13100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 13100,
+      "receivedMs": 13100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 13200,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 13200,
+      "receivedMs": 13200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 13200,
+      "receivedMs": 13200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 13200,
+      "receivedMs": 13200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 13200,
+      "receivedMs": 13200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 13300,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 13300,
+      "receivedMs": 13300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 13300,
+      "receivedMs": 13300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 13300,
+      "receivedMs": 13300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 13300,
+      "receivedMs": 13300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 13400,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 13400,
+      "receivedMs": 13400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 13400,
+      "receivedMs": 13400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 13400,
+      "receivedMs": 13400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 13400,
+      "receivedMs": 13400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 13500,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 13500,
+      "receivedMs": 13500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 13500,
+      "receivedMs": 13500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 13500,
+      "receivedMs": 13500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 13500,
+      "receivedMs": 13500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 13600,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 13600,
+      "receivedMs": 13600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 13600,
+      "receivedMs": 13600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 13600,
+      "receivedMs": 13600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 13600,
+      "receivedMs": 13600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 13700,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 13700,
+      "receivedMs": 13700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 13700,
+      "receivedMs": 13700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 13700,
+      "receivedMs": 13700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 13700,
+      "receivedMs": 13700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 13800,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 13800,
+      "receivedMs": 13800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 13800,
+      "receivedMs": 13800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 13800,
+      "receivedMs": 13800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 13800,
+      "receivedMs": 13800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 13900,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 13900,
+      "receivedMs": 13900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 13900,
+      "receivedMs": 13900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 13900,
+      "receivedMs": 13900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 13900,
+      "receivedMs": 13900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 14000,
+    "speed": {
+      "value": 7.5,
+      "measuredMs": 14000,
+      "receivedMs": 14000,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 14000,
+      "receivedMs": 14000,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 14000,
+      "receivedMs": 14000,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 14000,
+      "receivedMs": 14000,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 14100,
+    "speed": {
+      "value": 7.241379310344828,
+      "measuredMs": 14100,
+      "receivedMs": 14100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 14100,
+      "receivedMs": 14100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 14100,
+      "receivedMs": 14100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 14100,
+      "receivedMs": 14100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 14200,
+    "speed": {
+      "value": 6.982758620689655,
+      "measuredMs": 14200,
+      "receivedMs": 14200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 14200,
+      "receivedMs": 14200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 14200,
+      "receivedMs": 14200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 14200,
+      "receivedMs": 14200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 14300,
+    "speed": {
+      "value": 6.724137931034483,
+      "measuredMs": 14300,
+      "receivedMs": 14300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 14300,
+      "receivedMs": 14300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 14300,
+      "receivedMs": 14300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 14300,
+      "receivedMs": 14300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 14400,
+    "speed": {
+      "value": 6.46551724137931,
+      "measuredMs": 14400,
+      "receivedMs": 14400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 14400,
+      "receivedMs": 14400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 14400,
+      "receivedMs": 14400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 14400,
+      "receivedMs": 14400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 14500,
+    "speed": {
+      "value": 6.206896551724138,
+      "measuredMs": 14500,
+      "receivedMs": 14500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 14500,
+      "receivedMs": 14500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 14500,
+      "receivedMs": 14500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 14500,
+      "receivedMs": 14500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 14600,
+    "speed": {
+      "value": 5.948275862068966,
+      "measuredMs": 14600,
+      "receivedMs": 14600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 14600,
+      "receivedMs": 14600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 14600,
+      "receivedMs": 14600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 14600,
+      "receivedMs": 14600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 14700,
+    "speed": {
+      "value": 5.689655172413793,
+      "measuredMs": 14700,
+      "receivedMs": 14700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 14700,
+      "receivedMs": 14700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 14700,
+      "receivedMs": 14700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 14700,
+      "receivedMs": 14700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 14800,
+    "speed": {
+      "value": 5.431034482758621,
+      "measuredMs": 14800,
+      "receivedMs": 14800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 14800,
+      "receivedMs": 14800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 14800,
+      "receivedMs": 14800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 14800,
+      "receivedMs": 14800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 14900,
+    "speed": {
+      "value": 5.172413793103448,
+      "measuredMs": 14900,
+      "receivedMs": 14900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 14900,
+      "receivedMs": 14900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 14900,
+      "receivedMs": 14900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 14900,
+      "receivedMs": 14900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 15000,
+    "speed": {
+      "value": 4.913793103448276,
+      "measuredMs": 15000,
+      "receivedMs": 15000,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 15000,
+      "receivedMs": 15000,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 15000,
+      "receivedMs": 15000,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 15000,
+      "receivedMs": 15000,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 15100,
+    "speed": {
+      "value": 4.655172413793103,
+      "measuredMs": 15100,
+      "receivedMs": 15100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 15100,
+      "receivedMs": 15100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 15100,
+      "receivedMs": 15100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 15100,
+      "receivedMs": 15100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 15200,
+    "speed": {
+      "value": 4.3965517241379315,
+      "measuredMs": 15200,
+      "receivedMs": 15200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 15200,
+      "receivedMs": 15200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 15200,
+      "receivedMs": 15200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 15200,
+      "receivedMs": 15200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 15300,
+    "speed": {
+      "value": 4.137931034482759,
+      "measuredMs": 15300,
+      "receivedMs": 15300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 15300,
+      "receivedMs": 15300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 15300,
+      "receivedMs": 15300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 15300,
+      "receivedMs": 15300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 15400,
+    "speed": {
+      "value": 3.8793103448275854,
+      "measuredMs": 15400,
+      "receivedMs": 15400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 15400,
+      "receivedMs": 15400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 15400,
+      "receivedMs": 15400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 15400,
+      "receivedMs": 15400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 15500,
+    "speed": {
+      "value": 3.6206896551724137,
+      "measuredMs": 15500,
+      "receivedMs": 15500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 15500,
+      "receivedMs": 15500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 15500,
+      "receivedMs": 15500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 15500,
+      "receivedMs": 15500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 15600,
+    "speed": {
+      "value": 3.3620689655172415,
+      "measuredMs": 15600,
+      "receivedMs": 15600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 15600,
+      "receivedMs": 15600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 15600,
+      "receivedMs": 15600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 15600,
+      "receivedMs": 15600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 15700,
+    "speed": {
+      "value": 3.1034482758620694,
+      "measuredMs": 15700,
+      "receivedMs": 15700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 15700,
+      "receivedMs": 15700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 15700,
+      "receivedMs": 15700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 15700,
+      "receivedMs": 15700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 15800,
+    "speed": {
+      "value": 2.8448275862068964,
+      "measuredMs": 15800,
+      "receivedMs": 15800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 15800,
+      "receivedMs": 15800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 15800,
+      "receivedMs": 15800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 15800,
+      "receivedMs": 15800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 15900,
+    "speed": {
+      "value": 2.586206896551724,
+      "measuredMs": 15900,
+      "receivedMs": 15900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 15900,
+      "receivedMs": 15900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 15900,
+      "receivedMs": 15900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 15900,
+      "receivedMs": 15900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 16000,
+    "speed": {
+      "value": 2.3275862068965516,
+      "measuredMs": 16000,
+      "receivedMs": 16000,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 16000,
+      "receivedMs": 16000,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 16000,
+      "receivedMs": 16000,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 16000,
+      "receivedMs": 16000,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 16100,
+    "speed": {
+      "value": 2.0689655172413794,
+      "measuredMs": 16100,
+      "receivedMs": 16100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 16100,
+      "receivedMs": 16100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 16100,
+      "receivedMs": 16100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 16100,
+      "receivedMs": 16100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 16200,
+    "speed": {
+      "value": 1.8103448275862073,
+      "measuredMs": 16200,
+      "receivedMs": 16200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 16200,
+      "receivedMs": 16200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 16200,
+      "receivedMs": 16200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 16200,
+      "receivedMs": 16200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 16300,
+    "speed": {
+      "value": 1.5517241379310343,
+      "measuredMs": 16300,
+      "receivedMs": 16300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 16300,
+      "receivedMs": 16300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 16300,
+      "receivedMs": 16300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 16300,
+      "receivedMs": 16300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 16400,
+    "speed": {
+      "value": 1.293103448275862,
+      "measuredMs": 16400,
+      "receivedMs": 16400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 16400,
+      "receivedMs": 16400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 16400,
+      "receivedMs": 16400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 16400,
+      "receivedMs": 16400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 16500,
+    "speed": {
+      "value": 1.03448275862069,
+      "measuredMs": 16500,
+      "receivedMs": 16500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 16500,
+      "receivedMs": 16500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 16500,
+      "receivedMs": 16500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 16500,
+      "receivedMs": 16500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 16600,
+    "speed": {
+      "value": 0.7758620689655171,
+      "measuredMs": 16600,
+      "receivedMs": 16600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 16600,
+      "receivedMs": 16600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 16600,
+      "receivedMs": 16600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 16600,
+      "receivedMs": 16600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 16700,
+    "speed": {
+      "value": 0.517241379310345,
+      "measuredMs": 16700,
+      "receivedMs": 16700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 16700,
+      "receivedMs": 16700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 16700,
+      "receivedMs": 16700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 16700,
+      "receivedMs": 16700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 16800,
+    "speed": {
+      "value": 0.2586206896551721,
+      "measuredMs": 16800,
+      "receivedMs": 16800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 16800,
+      "receivedMs": 16800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 16800,
+      "receivedMs": 16800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 16800,
+      "receivedMs": 16800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 16900,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 16900,
+      "receivedMs": 16900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 16900,
+      "receivedMs": 16900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 16900,
+      "receivedMs": 16900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 16900,
+      "receivedMs": 16900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 17000,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 17000,
+      "receivedMs": 17000,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 17000,
+      "receivedMs": 17000,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 17000,
+      "receivedMs": 17000,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 17000,
+      "receivedMs": 17000,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 17100,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 17100,
+      "receivedMs": 17100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 17100,
+      "receivedMs": 17100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 17100,
+      "receivedMs": 17100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 17100,
+      "receivedMs": 17100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 17200,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 17200,
+      "receivedMs": 17200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 17200,
+      "receivedMs": 17200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 17200,
+      "receivedMs": 17200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 17200,
+      "receivedMs": 17200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 17300,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 17300,
+      "receivedMs": 17300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 17300,
+      "receivedMs": 17300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 17300,
+      "receivedMs": 17300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 17300,
+      "receivedMs": 17300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 17400,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 17400,
+      "receivedMs": 17400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 17400,
+      "receivedMs": 17400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 17400,
+      "receivedMs": 17400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 17400,
+      "receivedMs": 17400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 17500,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 17500,
+      "receivedMs": 17500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 17500,
+      "receivedMs": 17500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 17500,
+      "receivedMs": 17500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 17500,
+      "receivedMs": 17500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 17600,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 17600,
+      "receivedMs": 17600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 17600,
+      "receivedMs": 17600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 17600,
+      "receivedMs": 17600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 17600,
+      "receivedMs": 17600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 17700,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 17700,
+      "receivedMs": 17700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 17700,
+      "receivedMs": 17700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 17700,
+      "receivedMs": 17700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 17700,
+      "receivedMs": 17700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 17800,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 17800,
+      "receivedMs": 17800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 17800,
+      "receivedMs": 17800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 17800,
+      "receivedMs": 17800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 17800,
+      "receivedMs": 17800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 17900,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 17900,
+      "receivedMs": 17900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 17900,
+      "receivedMs": 17900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 17900,
+      "receivedMs": 17900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 17900,
+      "receivedMs": 17900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 18000,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 18000,
+      "receivedMs": 18000,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 18000,
+      "receivedMs": 18000,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 18000,
+      "receivedMs": 18000,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 18000,
+      "receivedMs": 18000,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 18100,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 18100,
+      "receivedMs": 18100,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 18100,
+      "receivedMs": 18100,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 18100,
+      "receivedMs": 18100,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 18100,
+      "receivedMs": 18100,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 18200,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 18200,
+      "receivedMs": 18200,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 18200,
+      "receivedMs": 18200,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 18200,
+      "receivedMs": 18200,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 18200,
+      "receivedMs": 18200,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 18300,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 18300,
+      "receivedMs": 18300,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 18300,
+      "receivedMs": 18300,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 18300,
+      "receivedMs": 18300,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 18300,
+      "receivedMs": 18300,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 18400,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 18400,
+      "receivedMs": 18400,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 18400,
+      "receivedMs": 18400,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 18400,
+      "receivedMs": 18400,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 18400,
+      "receivedMs": 18400,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 18500,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 18500,
+      "receivedMs": 18500,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 18500,
+      "receivedMs": 18500,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 18500,
+      "receivedMs": 18500,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 18500,
+      "receivedMs": 18500,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 18600,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 18600,
+      "receivedMs": 18600,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 18600,
+      "receivedMs": 18600,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 18600,
+      "receivedMs": 18600,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 18600,
+      "receivedMs": 18600,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 18700,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 18700,
+      "receivedMs": 18700,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 18700,
+      "receivedMs": 18700,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 18700,
+      "receivedMs": 18700,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 18700,
+      "receivedMs": 18700,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 18800,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 18800,
+      "receivedMs": 18800,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 18800,
+      "receivedMs": 18800,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 18800,
+      "receivedMs": 18800,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 18800,
+      "receivedMs": 18800,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  },
+  {
+    "timeMs": 18900,
+    "speed": {
+      "value": 0.0,
+      "measuredMs": 18900,
+      "receivedMs": 18900,
+      "unit": "m/s",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "steering": {
+      "value": 0.0,
+      "measuredMs": 18900,
+      "receivedMs": 18900,
+      "unit": "degree:steering-wheel",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "gear": {
+      "value": "DRIVE",
+      "measuredMs": 18900,
+      "receivedMs": 18900,
+      "unit": "gear",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "heading": {
+      "value": 90.0,
+      "measuredMs": 18900,
+      "receivedMs": 18900,
+      "unit": "degree:heading",
+      "source": "SYNTHETIC_DEMO",
+      "quality": "VALID",
+      "timing": "MEASUREMENT"
+    },
+    "connected": true
+  }
+]

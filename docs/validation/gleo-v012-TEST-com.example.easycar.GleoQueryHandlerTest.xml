@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.easycar.GleoQueryHandlerTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-07T08:08:22.147Z" hostname="gim-yeongjaeui-MacBookPro.local" time="0.06">
+  <properties/>
+  <testcase name="onlyExplicitlySelectedScopeIsReadAndOriginalFactsAreKept" classname="com.example.easycar.GleoQueryHandlerTest" time="0.055"/>
+  <testcase name="deniedMalformedUnselectedAndRestrictedCallsDoNotReadRecords" classname="com.example.easycar.GleoQueryHandlerTest" time="0.001"/>
+  <testcase name="revokeOrSelectionChangesDuringQueryPreventDisclosure" classname="com.example.easycar.GleoQueryHandlerTest" time="0.001"/>
+  <testcase name="mutedAndHeldStatusArePreservedForExternalResponse" classname="com.example.easycar.GleoQueryHandlerTest" time="0.001"/>
+  <testcase name="deletedChangedOrNewlyRestrictedRecordsCannotReturnAStaleAnswer" classname="com.example.easycar.GleoQueryHandlerTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

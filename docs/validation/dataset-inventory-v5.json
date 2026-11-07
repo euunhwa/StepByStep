@@ -1,0 +1,121 @@
+{
+  "checked_on": "2026-11-06",
+  "recognition": {
+    "implementation": "deterministic rules, not a trained ML model",
+    "synthetic_fixture_count": 45,
+    "public_sample_only": {
+      "name": "comma2k19",
+      "files": 4,
+      "bytes": 159680,
+      "speed_samples": 4974,
+      "steering_samples": 4974,
+      "maneuver_labels": false,
+      "expert_scores": false,
+      "used_for_training": false,
+      "used_for_score_limits": false
+    }
+  },
+  "evaluation": {
+    "id": "arbitrary-evaluation-reference-0.1",
+    "arbitrary": true,
+    "expert_validated": false,
+    "requires_improvement": true,
+    "templates": 7,
+    "samples": 926,
+    "method": "comparison to manually chosen bounds/scales/exposure; no ML fitting"
+  },
+  "submission_demo": {
+    "asset": "demo/signals/auto-drive.json",
+    "frames": 1112,
+    "duration_s": 111.1,
+    "synthetic": true,
+    "entry": "top-right demo only"
+  },
+  "artifacts": {
+    "evaluation/arbitrary-reference-v1.json": {
+      "bytes": 4556,
+      "sha256": "7514346b8867b864cdf24365aeb4c34e2c363fe7b92a322d6a2fe3aedecaa214"
+    },
+    "evaluation/arbitrary-reference-episodes-v1.json": {
+      "bytes": 179029,
+      "sha256": "cf6302898b3d6d859cc3d41b3a1fe57d43cb1a17abca4c09362056a862861a2a"
+    },
+    "evaluation/evaluation-policy-prototype.json": {
+      "bytes": 15011,
+      "sha256": "025feedd075dfd7fbd178f200004299136b5f0dae28f741e90c195721716fdf9"
+    },
+    "demo/signals/auto-drive.json": {
+      "bytes": 1264638,
+      "sha256": "dbd6ff7436d3eef6a7ac0a7cdc044fe3079bad9dacb001e1d04d51364b166a4c"
+    }
+  },
+  "pre_v5_live_integration_probe": {
+    "source": "Pleos 차량 관측 신호",
+    "demo_case_id": null,
+    "frames": 2340,
+    "types": [
+      "START",
+      "STOP"
+    ],
+    "environment": "Pleos Connect v2.1.0 emulator, localhost controls, not physical-road data"
+  },
+  "live_integration_probes_v5": [
+    {
+      "artifact": "localhost-live-v5-rapid-stop-session.json",
+      "frames": 158,
+      "source": "Pleos 차량 관측 신호",
+      "demo_case_id": null,
+      "speed_sources": [
+        "AAOS PERF_VEHICLE_SPEED"
+      ],
+      "results": [
+        {
+          "type": "START",
+          "score": null,
+          "score_kind": "PROVISIONAL",
+          "holds": [
+            "가속 변화 · 감속 원인 미확인 · 연결된 jerk 감점도 보류",
+            "가감속 변화의 급격함 · 감속 원인 미확인 · 연결된 jerk 감점도 보류"
+          ]
+        },
+        {
+          "type": "STOP",
+          "score": null,
+          "score_kind": "PROVISIONAL",
+          "holds": [
+            "감속 변화 · 감속 원인 미확인 · 연결된 jerk 감점도 보류",
+            "가감속 변화의 급격함 · 감속 원인 미확인 · 연결된 jerk 감점도 보류"
+          ]
+        }
+      ],
+      "environment": "Pleos Connect v2.1.0 emulator controlled through localhost; not physical-road driving; not expert evaluation data"
+    },
+    {
+      "artifact": "localhost-live-v5-session.json",
+      "frames": 269,
+      "source": "Pleos 차량 관측 신호",
+      "demo_case_id": null,
+      "speed_sources": [
+        "AAOS PERF_VEHICLE_SPEED"
+      ],
+      "results": [
+        {
+          "type": "START",
+          "score": 0,
+          "score_kind": "PROVISIONAL",
+          "holds": []
+        },
+        {
+          "type": "STOP",
+          "score": null,
+          "score_kind": "PROVISIONAL",
+          "holds": [
+            "감속 변화 · 감속 원인 미확인 · 연결된 jerk 감점도 보류",
+            "가감속 변화의 급격함 · 감속 원인 미확인 · 연결된 jerk 감점도 보류"
+          ]
+        }
+      ],
+      "environment": "Pleos Connect v2.1.0 emulator controlled through localhost; not physical-road driving; not expert evaluation data"
+    }
+  ]
+}

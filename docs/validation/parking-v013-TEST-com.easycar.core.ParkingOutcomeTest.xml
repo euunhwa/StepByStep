@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.easycar.core.ParkingOutcomeTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-11-07T09:38:42.999Z" hostname="gim-yeongjaeui-MacBookPro.local" time="0.144">
+  <properties/>
+  <testcase name="signalGapsAndMissingVehicleSignalsAreLatchedAsIncomplete" classname="com.easycar.core.ParkingOutcomeTest" time="0.0"/>
+  <testcase name="alignedPlacementAndOneFreeConversionScore100" classname="com.easycar.core.ParkingOutcomeTest" time="0.001"/>
+  <testcase name="startupSignalLossCannotProduceACompleteCount" classname="com.easycar.core.ParkingOutcomeTest" time="0.0"/>
+  <testcase name="fullBoundaryDetectorReadsPixelsAndBlankInputCannotBeScoredByManualCoordinates" classname="com.easycar.core.ParkingOutcomeTest" time="0.098"/>
+  <testcase name="crossedPerspectiveAndNonFiniteQuadsAreRejected" classname="com.easycar.core.ParkingOutcomeTest" time="0.0"/>
+  <testcase name="initialParkAndBriefGearNoiseCannotCompleteOrCountAnEpisode" classname="com.easycar.core.ParkingOutcomeTest" time="0.0"/>
+  <testcase name="intrusionIncludesAllFourEdgesAndAppliesAnExplicitScoreCap" classname="com.easycar.core.ParkingOutcomeTest" time="0.0"/>
+  <testcase name="episodeStartsBeforeReverseCountsStableTransitionsAndCompletesAfterMovedThenParked" classname="com.easycar.core.ParkingOutcomeTest" time="0.0"/>
+  <testcase name="additionalConversionsAreFivePointsAndCappedWithoutOverflow" classname="com.easycar.core.ParkingOutcomeTest" time="0.0"/>
+  <testcase name="uncertainBoundaryAndMissingSignalsOrVideoNeverBecomeAPassingScore" classname="com.easycar.core.ParkingOutcomeTest" time="0.001"/>
+  <testcase name="movingEndFramesAreRejectedAndSingleImageIsInsufficient" classname="com.easycar.core.ParkingOutcomeTest" time="0.044"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

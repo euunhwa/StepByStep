@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-07",
+  "versionName": "0.13.2",
+  "versionCode": 18,
+  "purpose": "Prepare working-tree source for another repository; no remote upload performed",
+  "submissionTarget": "Pleos only; no Android Phone APK",
+  "cleanCopy": {
+    "sourceFilesCompared": 210,
+    "codeAssetsConfigIdentical": true,
+    "unitTests": {
+      "core": {
+        "tests": 165,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "app": {
+        "tests": 21,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    "result": "PASS",
+    "log": "build-submission-clean-copy-v0132.log",
+    "offlineBuildUsedExistingDependencyCache": true
+  },
+  "signedPleosRelease": {
+    "debuggable": false,
+    "installedOn": "Isolated copy of Pleos Connect v2.1.0 / Android 34 / user 10",
+    "cpuCores": 2,
+    "effectiveGuestMemoryMiB": 3072,
+    "instrumentationTests": 2,
+    "result": "PASS",
+    "tests": [
+      "RecordQueryFlowTest.selectedRoomRecordCanBeQueriedThroughRealNavigationWithoutAnyMutation",
+      "SubmissionDemoTest.topRightDemoIsExplicitAndKeepsAllSevenProvisionalResults"
+    ],
+    "log": "device-submission-release-pleos-v0132.log",
+    "demoResults": [
+      {
+        "type": "START",
+        "score": 100,
+        "kind": "PROVISIONAL"
+      },
+      {
+        "type": "LEFT",
+        "score": 100,
+        "kind": "PROVISIONAL"
+      },
+      {
+        "type": "RIGHT",
+        "score": 100,
+        "kind": "PROVISIONAL"
+      },
+      {
+        "type": "U_TURN",
+        "score": 100,
+        "kind": "PROVISIONAL"
+      },
+      {
+        "type": "STOP",
+        "score": 100,
+        "kind": "PROVISIONAL"
+      },
+      {
+        "type": "T_PARK",
+        "score": 100,
+        "kind": "PROVISIONAL"
+      },
+      {
+        "type": "PARALLEL_PARK",
+        "score": 100,
+        "kind": "PROVISIONAL"
+      }
+    ],
+    "artifacts": [
+      {
+        "file": "EasyCar_Pleos_release.apk",
+        "bytes": 46679173,
+        "sha256": "415cc016ed19c21da78d25e9860d3d88c74ea732502ad856ef5fa51b31aef2b6",
+        "applicationId": "com.example.easycar",
+        "versionName": "0.13.2",
+        "versionCode": 18,
+        "debuggable": false
+      }
+    ],
+    "certificateSha256": "f4e4ca5b9ab49fb5464651341e6066d8cf017bfa8bd36f5762ea3b11fdfbb3dc"
+  },
+  "preserved": {
+    "existingRecordAndScore": true,
+    "recognitionEvaluationCriteriaUnchangedByPackaging": true,
+    "originalAvdUserdataRestoredAndComparedWithPreValidationCopy": true
+  },
+  "limits": [
+    "Synthetic demo and emulator verification; no real-vehicle accuracy claim",
+    "Live 8088 rotation model is Debug-emulator only; Release uses built-in demo for all seven types in this environment",
+    "Real Gleo voice end-to-end verification is from prior development build, not repeated for this release",
+    "Actual top-view AVM input and automatic capture remain unavailable",
+    "First-time dependency download on another machine was not tested offline"
+  ]
+}

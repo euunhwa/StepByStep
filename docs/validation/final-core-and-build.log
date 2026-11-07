@@ -1,0 +1,137 @@
+Reusing configuration cache.
+> Task :core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:generatePleosDebugAssets UP-TO-DATE
+> Task :app:preDemoDebugBuild UP-TO-DATE
+> Task :app:prePleosDebugBuild UP-TO-DATE
+> Task :app:generateDemoDebugAssets UP-TO-DATE
+> Task :core:processResources NO-SOURCE
+> Task :app:mergeDemoDebugNativeDebugMetadata NO-SOURCE
+> Task :core:processTestResources NO-SOURCE
+> Task :app:generateDemoDebugGlobalSynthetics UP-TO-DATE
+> Task :app:generateDemoDebugBuildConfig UP-TO-DATE
+> Task :app:javaPreCompileDemoDebug UP-TO-DATE
+> Task :app:desugarDemoDebugFileDependencies UP-TO-DATE
+> Task :app:createDemoDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDemoDebug UP-TO-DATE
+> Task :app:generateDemoDebugResources UP-TO-DATE
+> Task :app:mapDemoDebugSourceSetPaths UP-TO-DATE
+> Task :app:mergeDemoDebugJniLibFolders UP-TO-DATE
+> Task :app:writeDemoDebugAppMetadata UP-TO-DATE
+> Task :app:validateSigningDemoDebug UP-TO-DATE
+> Task :app:writeDemoDebugSigningConfigVersions UP-TO-DATE
+> Task :app:mergePleosDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generatePleosDebugBuildConfig UP-TO-DATE
+> Task :app:generatePleosDebugResources UP-TO-DATE
+> Task :app:packageDemoDebugResources UP-TO-DATE
+> Task :app:javaPreCompilePleosDebug UP-TO-DATE
+> Task :app:packagePleosDebugResources UP-TO-DATE
+> Task :app:processDemoDebugNavigationResources UP-TO-DATE
+> Task :app:checkDemoDebugAarMetadata UP-TO-DATE
+> Task :app:parseDemoDebugLocalResources UP-TO-DATE
+> Task :app:generatePleosDebugGlobalSynthetics UP-TO-DATE
+> Task :app:compileDemoDebugNavigationResources UP-TO-DATE
+> Task :app:processPleosDebugNavigationResources UP-TO-DATE
+> Task :app:checkDemoDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeDemoDebugAssets UP-TO-DATE
+> Task :app:generateDemoDebugRFile UP-TO-DATE
+> Task :app:parsePleosDebugLocalResources UP-TO-DATE
+> Task :app:desugarPleosDebugFileDependencies UP-TO-DATE
+> Task :app:compressDemoDebugAssets UP-TO-DATE
+> Task :app:mapPleosDebugSourceSetPaths UP-TO-DATE
+> Task :app:generatePleosDebugRFile UP-TO-DATE
+> Task :app:checkPleosDebugDuplicateClasses UP-TO-DATE
+> Task :app:compilePleosDebugNavigationResources UP-TO-DATE
+> Task :app:createPleosDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksPleosDebug UP-TO-DATE
+> Task :app:mergePleosDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDemoDebugResources UP-TO-DATE
+> Task :app:validateSigningPleosDebug UP-TO-DATE
+> Task :app:writePleosDebugAppMetadata UP-TO-DATE
+> Task :app:mergePleosDebugAssets UP-TO-DATE
+> Task :app:writePleosDebugSigningConfigVersions UP-TO-DATE
+> Task :app:processDemoDebugMainManifest UP-TO-DATE
+> Task :app:checkPleosDebugAarMetadata UP-TO-DATE
+> Task :app:processDemoDebugManifest UP-TO-DATE
+> Task :app:processDemoDebugManifestForPackage UP-TO-DATE
+> Task :app:compressPleosDebugAssets UP-TO-DATE
+> Task :app:mergeExtDexDemoDebug UP-TO-DATE
+> Task :app:mergeExtDexPleosDebug UP-TO-DATE
+> Task :app:processPleosDebugMainManifest UP-TO-DATE
+> Task :app:processPleosDebugManifest UP-TO-DATE
+> Task :app:processPleosDebugManifestForPackage UP-TO-DATE
+> Task :app:mergePleosDebugResources UP-TO-DATE
+> Task :app:processDemoDebugResources UP-TO-DATE
+> Task :app:processPleosDebugResources UP-TO-DATE
+> Task :core:compileKotlin
+> Task :core:compileJava NO-SOURCE
+> Task :core:classes UP-TO-DATE
+> Task :core:jar
+> Task :app:mergePleosDebugNativeLibs UP-TO-DATE
+> Task :app:mergeDemoDebugNativeLibs UP-TO-DATE
+> Task :app:stripPleosDebugDebugSymbols UP-TO-DATE
+> Task :app:stripDemoDebugDebugSymbols UP-TO-DATE
+
+> Task :core:exportDemoFixtures
+Exported 33 reproducible synthetic signal fixtures; truth labels are separate.
+
+> Task :app:mergeLibDexDemoDebug
+> Task :app:mergeLibDexPleosDebug
+> Task :core:compileTestKotlin
+> Task :core:compileTestJava NO-SOURCE
+> Task :core:testClasses UP-TO-DATE
+> Task :app:compilePleosDebugKotlin
+> Task :app:compileDemoDebugKotlin
+> Task :app:compilePleosDebugJavaWithJavac UP-TO-DATE
+> Task :app:compileDemoDebugJavaWithJavac UP-TO-DATE
+> Task :app:compressPleosDebugJavaRes UP-TO-DATE
+> Task :app:compressDemoDebugJavaRes UP-TO-DATE
+> Task :app:mergeDemoDebugJavaResource UP-TO-DATE
+> Task :app:mergePleosDebugJavaResource UP-TO-DATE
+> Task :app:dexBuilderPleosDebug
+> Task :app:dexBuilderDemoDebug
+> Task :app:mergeProjectDexDemoDebug
+> Task :app:mergeProjectDexPleosDebug
+> Task :app:packageDemoDebug
+> Task :app:assembleDemoDebug
+> Task :app:createDemoDebugApkListingFileRedirect UP-TO-DATE
+
+> Task :core:test
+
+EngineTest > stableGearsDebounceDuplicatesNeutralAndShortOscillation PASSED
+
+EngineTest > turnRecognitionRequiresHeadingAndRejectsCurveLaneChange PASSED
+
+EngineTest > strongerExceedanceNeverReducesPenalty PASSED
+
+EngineTest > weightedParkingCountsUseSameDetectorAndScorer PASSED
+
+EngineTest > profileSchemaAndUnknownConditionsAreChecked PASSED
+
+EngineTest > detectsPixelsAtKnownAnglesAndIntrusionAndNoLines PASSED
+
+EngineTest > unknownHarshBrakingDoesNotAssignFault PASSED
+
+EngineTest > sameCourseBadSpeedAndRoughSteeringCarryMeasuredDeductions PASSED
+
+EngineTest > onChangeStateReadDoesNotPretendToBeNewSensorMeasurement PASSED
+
+EngineTest > missingFinalEvidenceHoldsTotalButKeepsCountPenalty PASSED
+
+EngineTest > playbackSchedulingDoesNotEnterAnalysis PASSED
+
+EngineTest > gapsAndBadTimesDoNotProduceFakeDerivatives PASSED
+
+EngineTest > singleSampleNoiseDoesNotCreateHarshLaunch PASSED
+
+EngineTest > missingSteeringStillPreservesConfirmedParkingCountAndHoldsTotal PASSED
+
+EngineTest > restrictionsAndAudioFailClosedAndDeduplicate PASSED
+
+> Task :app:packagePleosDebug
+> Task :app:assemblePleosDebug
+> Task :app:createPleosDebugApkListingFileRedirect UP-TO-DATE
+
+BUILD SUCCESSFUL in 4s
+81 actionable tasks: 15 executed, 66 up-to-date
+Configuration cache entry reused.

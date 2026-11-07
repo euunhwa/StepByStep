@@ -1,0 +1,19 @@
+{
+  "appVersion": "0.10.0",
+  "tests": 9,
+  "passed": 9,
+  "failures": 0,
+  "durationSeconds": 23.562,
+  "environment": "Pleos Connect v2.1.0 / CPU 2 / RAM 3072MB / Android user 10",
+  "scope": "Synthetic pixels and bundled H.264 MP4 only; no real-car accuracy claim",
+  "checks": [
+    "decoded MP4 windows",
+    "latest missing/blank/occluded/calibration holds",
+    "original scores and feedback preserved",
+    "selected analysis time 2500ms preserved",
+    "Room restart and old JSON",
+    "wide/narrow layout and UX restriction",
+    "records example to analysis to save"
+  ],
+  "earlierAttempt": "ActivityScenario teardown timed out in PAUSED; ViewModel/storage test now owns a ViewModelStore; real activity UI remains covered separately"
+}

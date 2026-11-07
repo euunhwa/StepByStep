@@ -1,0 +1,30 @@
+{
+  "checked_on": "2026-11-06",
+  "app_version": "0.8.0",
+  "reference_dataset": "arbitrary-evaluation-reference-0.2",
+  "profile_version": "arbitrary-prototype-0.3",
+  "policy_version": "evaluation-prototype-0.4",
+  "meaning": "observed provisional control smoothness, not fault",
+  "signals_required": true,
+  "templates": 7,
+  "samples": 926,
+  "limits_changed": false,
+  "artifacts": {
+    "evaluation/arbitrary-reference-v1.json": {
+      "bytes": 4556,
+      "sha256": "2e59f1496fe0d5b6fc7f86d83df07ef52154dc64f59cb234bb110b418d96eb44"
+    },
+    "evaluation/arbitrary-reference-episodes-v1.json": {
+      "bytes": 179029,
+      "sha256": "46e577f4bf9b5368a1f1d94404ec38e5687474545fa88b0714b9ad54ab80b556"
+    },
+    "evaluation/evaluation-policy-prototype.json": {
+      "bytes": 15142,
+      "sha256": "ccad855a5ffbc8a2aa282d012521fe6b410c77307f2ff8c1a1dcf73ed181faf5"
+    },
+    "profiles/arbitrary-prototype-v1.json": {
+      "bytes": 2167,
+      "sha256": "4ceb4627e4d791faf4eb02a78bfb578785af1193c5e2ce865406f3199e5ba0fd"
+    }
+  }
+}

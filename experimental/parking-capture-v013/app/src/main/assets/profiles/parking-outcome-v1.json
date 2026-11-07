@@ -1,0 +1,17 @@
+{
+  "version": "parking-outcome-draft-1.0",
+  "freeReverseToDrive": 1,
+  "extraConversionPoints": 5,
+  "conversionCap": 30,
+  "angleGoodDeg": 3.0,
+  "angleWarningDeg": 8.0,
+  "lateralGoodFraction": 0.10,
+  "lateralWarningFraction": 0.20,
+  "longitudinalGoodFraction": 0.15,
+  "longitudinalWarningFraction": 0.30,
+  "cautionPoints": 5,
+  "dangerPoints": 10,
+  "intrusionPoints": 20,
+  "intrusionScoreCap": 59,
+  "boundaryUncertaintyPx": 2.0
+}

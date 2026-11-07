@@ -1,0 +1,14 @@
+
+com.example.easycar.RecordQueryStorageTest:...
+com.example.easycar.RecordQueryScreenTest:.
+com.example.easycar.RecordQueryFlowTest:.
+com.example.easycar.ParkingVideoAnalysisTest:...
+com.example.easycar.ParkingVideoReviewTest:.
+com.example.easycar.ParkingVideoGalleryTest:.
+com.example.easycar.PersistenceAndVideoTest:....
+
+Time: 25.422
+
+OK (14 tests)
+
+

@@ -1,0 +1,19 @@
+Gleo loaded EasyCar assets/schema.json
+Gleo loaded EasyCar assets/schema.json
+Gleo loaded EasyCar assets/schema.json
+Gleo loaded EasyCar assets/schema.json
+Gleo loaded EasyCar assets/schema.json
+STT: 글레오 이지카 최근 주차 결과 알려줘.
+sendActionCall action: com.example.easycar.GET_LAST_RESULT, component: service, param : {"maneuverType":"PARKING"}
+Gleo received pending callback: GET_LAST_RESULT; state=Thinking
+Gleo TTS: 최근 이지카 주차 결과는 T자 주차 85점이에요. 전후진을 4회 반복해서 15점 감점됐고, 주차 완성도와 연석 접촉, 안전 맥락 항목은 미평가예요., isFinal=true
+STT: 글레오 이지카 주차 감점 이유 알려줘.
+Gleo TTS: 전후진을 여러 번 반복해서 감점이 있었어요., isFinal=true
+STT: 글레오 이지카 이번 연습 요약해 줘.
+sendActionCall action: com.example.easycar.SUMMARIZE_SESSION, component: service, param : {"sessionId":""}
+Gleo received pending callback: SUMMARIZE_SESSION; state=Thinking
+Gleo TTS: 이번 연습은 총 3개 동작 중 2개가 평가됐고 1개는 보류나 미완료예요. 전후진 반복으로 1개 동작에서 15점 감점 기록이 있어서 전후진 전환이 반복된 구간의 진입 위치와 기동 순서를 복기해 보면 좋아요. 출발 구간은 저장된 관측 조작 항목에서 감점이 없었어요. 관측 조작의 임시 점수 요약이라 안전성이나 주차 성공을 판정하진 않아요., isFinal=true
+STT: 글레오 이지카 앱에서 최근 자주차 감점 이유를 다시 조회해 줘.
+sendActionCall action: com.example.easycar.GET_LAST_RESULT, component: service, param : {"sessionId":"","maneuverType":"PARKING"}
+Gleo received pending callback: GET_LAST_RESULT; state=Thinking
+Gleo TTS: 이지카 앱의 최근 T자 주차 기록을 다시 조회해 보면, 저장 점수는 85점이고 감점은 전후진 반복 4회로 15점이에요. 주차 완성도와 연석 접촉, 안전 맥락 항목은 미평가로 보류된 기록이에요., isFinal=true

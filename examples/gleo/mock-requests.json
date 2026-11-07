@@ -1,0 +1,5 @@
+[
+  {"schemaVersion": 1, "requestId": "smoke-last", "action": "GET_LAST_RESULT", "parameters": {"sessionId": "fixture-session", "maneuverType": "T_PARK"}},
+  {"schemaVersion": 1, "requestId": "smoke-explain", "action": "EXPLAIN_RESULT", "parameters": {"sessionId": "fixture-session", "resultId": "fixture-tpark-85"}},
+  {"schemaVersion": 1, "requestId": "smoke-summary", "action": "SUMMARIZE_SESSION", "parameters": {"sessionId": "fixture-session"}}
+]

@@ -1,0 +1,91 @@
+{
+  "reviewDate": "2026-11-07",
+  "appVersion": "0.12.0",
+  "environment": "Pleos Connect v2.1.0 emulator / user 10",
+  "scope": "Feasibility review only; no production code, permissions, vehicle controls or stored scores changed",
+  "requestedFlow": [
+    "Record AVM from parking start",
+    "Count stable forward/reverse maneuvers and evaluate final placement",
+    "Publish combined score and persist complete video plus scoring evidence"
+  ],
+  "observations": {
+    "evsService": "android.hardware.automotive.evs.IEvsEnumerator/default",
+    "evsCameraIds": [
+      "/dev/video10",
+      "/dev/video12",
+      "/dev/video11",
+      "/dev/video13"
+    ],
+    "carEvsServiceTypes": [
+      "REARVIEW",
+      "FRONTVIEW",
+      "LEFTVIEW",
+      "RIGHTVIEW"
+    ],
+    "evsFrameHistory": {
+      "observed": true,
+      "width": 640,
+      "height": 360,
+      "note": "Historical receive/return counters; not proof of a currently running stream, a stitched AVM output or an EasyCar capture."
+    },
+    "normalCameraService": {
+      "deviceCount": 1,
+      "normalDeviceCount": 1,
+      "publicApi1Count": 1,
+      "facing": "Front",
+      "provider": "external"
+    },
+    "permissions": {
+      "android.car.permission.USE_CAR_EVS_CAMERA": {
+        "owner": "com.android.car.updatable",
+        "protection": "signature|privileged",
+        "requestedByEasyCar": false,
+        "grantListedForEvsSystemApp": true
+      },
+      "android.car.permission.MONITOR_CAR_EVS_STATUS": {
+        "owner": "com.android.car.updatable",
+        "protection": "signature|privileged",
+        "requestedByEasyCar": false
+      },
+      "android.permission.SYSTEM_CAMERA": {
+        "owner": "android",
+        "protection": "signature|privileged|role",
+        "requestedByEasyCar": false,
+        "grantListedForEvsSystemApp": true
+      }
+    },
+    "easyCarInstall": "Ordinary debuggable /data/app package; not listed as a privileged system app",
+    "installedVehicleSdk": {
+      "version": "2.3.2",
+      "aarInspected": true,
+      "cameraEvsSurroundParkingFrameBitmapClassesFound": false,
+      "videoFrameGetterFoundInVehicleEntryPoint": false
+    },
+    "mediaProjectionServicePresent": true,
+    "activeEvsWindowAtReview": false,
+    "evsSecureWindowFlagVerified": false,
+    "directFrameOpenAttempted": false,
+    "mediaProjectionRecordingAttempted": false
+  },
+  "decisions": {
+    "parkingLifecycleCountStorage": "Implementable with existing vehicle signals, service and Room/file infrastructure",
+    "finalPlacementScoring": "Implementable after adding full slot boundaries, trusted vehicle footprint, calibration and a versioned scoring policy; real AVM accuracy remains unvalidated",
+    "ordinaryAppDirectEvsCapture": "Not available through the currently inspected SDK/permission configuration; requires an authorized platform integration route",
+    "screenRecordingAlternative": "Conditional and unverified for the EVS view. Requires per-session user consent, foreground service, visible capturable content and applicable Pleos support; secure content must not be assumed capturable",
+    "developmentPrototype": "Implementable with explicit synthetic/replay AVM input; this does not establish real vehicle capture support",
+    "completeRealVehicleFlow": "Conditional on an approved AVM frame/recording interface and camera/vehicle calibration"
+  },
+  "requiredPlatformClarifications": [
+    "Can an ordinary Pleos App Market app receive stitched AVM frames or an approved recorded file?",
+    "Which supported SDK/service, permissions and consent flow provide that input?",
+    "Are recording, local storage, final-frame extraction and image analysis permitted?",
+    "Are timestamps, camera projection/stitching transforms and actual vehicle footprint calibration available?"
+  ],
+  "sources": [
+    "https://document.pleos.ai/docs/pleos-only/vehicle-app-planning-guide/platform-api-architecture",
+    "https://document.pleos.ai/en/docs/pleos-only/connect-sdk-pleos/Vehicle/intro",
+    "https://source.android.com/docs/automotive/camera/evs/camera-hal",
+    "https://developer.android.com/media/grow/media-projection",
+    "https://developer.android.com/reference/android/view/WindowManager.LayoutParams#FLAG_SECURE"
+  ]
+}

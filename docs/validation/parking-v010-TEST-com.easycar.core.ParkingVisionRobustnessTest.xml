@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.easycar.core.ParkingVisionRobustnessTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-11-07T04:54:35.472Z" hostname="gim-yeongjaeui-MacBookPro.local" time="0.066">
+  <properties/>
+  <testcase name="contactWithinTwoPixelsIsUnknownAndClearCrossingIsObserved" classname="com.easycar.core.ParkingVisionRobustnessTest" time="0.002"/>
+  <testcase name="malformedCalibrationAndPixelsAreHeldRatherThanCrashing" classname="com.easycar.core.ParkingVisionRobustnessTest" time="0.0"/>
+  <testcase name="dimWhiteAndYellowMarkingsUseLocalContrast" classname="com.easycar.core.ParkingVisionRobustnessTest" time="0.029"/>
+  <testcase name="clearancesUseInnerMarkingEdgeAndPerpendicularDistance" classname="com.easycar.core.ParkingVisionRobustnessTest" time="0.005"/>
+  <testcase name="calibratedVehicleCenterCanBeAwayFromImageCenter" classname="com.easycar.core.ParkingVisionRobustnessTest" time="0.005"/>
+  <testcase name="redMarkingsAndUniformGlareDoNotBecomeParkingLines" classname="com.easycar.core.ParkingVisionRobustnessTest" time="0.008"/>
+  <testcase name="advicePreservesUnknownAndNamesObservedGeometryOnly" classname="com.easycar.core.ParkingVisionRobustnessTest" time="0.006"/>
+  <testcase name="shortFragmentsCannotBeExtrapolatedAcrossTheVehicle" classname="com.easycar.core.ParkingVisionRobustnessTest" time="0.003"/>
+  <testcase name="slotSelectionUsesTheTappedRowAndCannotSelectOutsideDetectedGaps" classname="com.easycar.core.ParkingVisionRobustnessTest" time="0.001"/>
+  <testcase name="missingMetricScaleKeepsPixelsWithoutInventingMeters" classname="com.easycar.core.ParkingVisionRobustnessTest" time="0.004"/>
+  <testcase name="dashedMarkingsRetainAngleWithSufficientObservedRows" classname="com.easycar.core.ParkingVisionRobustnessTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

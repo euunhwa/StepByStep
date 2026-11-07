@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "checks": 14,
+  "details": [
+    "7 types and per-type budgets total 100",
+    "real scoring stays disabled even for a hypothetical complete case",
+    "normative bounds and tau deliberately unfilled",
+    "actual gear count weighted from first transition",
+    "missing gear is not zero",
+    "short isolated exceedance excluded",
+    "larger and longer exceedance never reduce deduction",
+    "long normal time cannot dilute prior penalty",
+    "cap and rounding are explicit",
+    "example sum 100-12-6-0-4-0=78",
+    "partial evidence never renormalizes to 100",
+    "inference rejects manual type and future features",
+    "inspected arrays match stored SHA256",
+    "sample remains a sample, not an expert reference"
+  ],
+  "scope": "STDLIB_ONLY_NO_EMULATOR_NO_GRADLE_NO_ML_TRAINING",
+  "example_only": {
+    "parking_count_n3": 12,
+    "combined_example_score": 78
+  }
+}

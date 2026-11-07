@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "evaluation-document-1.0",
+  "sourceSha256": "97b5e83658d26483efd9cb261542e50ac75306d0474b14f5e7474a1d48a9211e",
+  "validationStatus": "DOCUMENT_DERIVED_DRAFT",
+  "expertValidated": false,
+  "requiresImprovement": true,
+  "appNotice": "문헌 기반 평가 초안 · 임의 배점과 합성 검증 데이터는 개선이 필요합니다. 전문가·실차 검증 전 조작 지표 점수예요.",
+  "config": {
+    "accelerationGood": 2.0,
+    "accelerationDanger": 2.7777777777777777,
+    "decelerationGood": 2.0,
+    "decelerationDanger": 3.5,
+    "jerkGood": 0.9,
+    "jerkDanger": 1.5,
+    "lateralGoodG": 0.25,
+    "lateralDangerG": 0.4,
+    "gravityMps2": 9.80665,
+    "cautionPoints": 5,
+    "dangerPoints": 7,
+    "safetyPoints": 10,
+    "parkingTFreeReverseToDrive": 1,
+    "parkingParallelFreeReverseToDrive": 2,
+    "parkingExtraConversionPoints": 5,
+    "parkingTimeBlockMs": 120000,
+    "parkingExtraTimePoints": 10,
+    "minimumExceedanceMs": 600
+  }
+}

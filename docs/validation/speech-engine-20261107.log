@@ -1,0 +1,42 @@
+--------- beginning of crash
+11-06 08:15:36.306  3809  3927 E AndroidRuntime: FATAL EXCEPTION: Firebase Blocking Thread #0
+11-06 08:15:36.306  3809  3927 E AndroidRuntime: Process: ai.pleos.gleoai.model.provider, PID: 3809
+11-06 08:15:36.306  3809  3927 E AndroidRuntime: java.lang.AbstractMethodError: abstract method "A.f A.f.a0(int)"
+11-06 08:15:36.306  3809  3927 E AndroidRuntime: 	at e0.e.h(Unknown Source:89)
+11-06 08:15:36.306  3809  3927 E AndroidRuntime: 	at e0.e.b(Unknown Source:91)
+11-06 08:15:36.306  3809  3927 E AndroidRuntime: 	at com.google.firebase.installations.e.e(Unknown Source:30)
+11-06 08:15:36.306  3809  3927 E AndroidRuntime: 	at com.google.firebase.installations.e.b(Unknown Source:65)
+11-06 08:15:36.306  3809  3927 E AndroidRuntime: 	at c0.a.run(Unknown Source:14)
+11-06 08:15:36.306  3809  3927 E AndroidRuntime: 	at S.c.run(Unknown Source:8)
+11-06 08:15:36.306  3809  3927 E AndroidRuntime: 	at S.c.a(Unknown Source:84)
+11-06 08:15:36.306  3809  3927 E AndroidRuntime: 	at S.c.run(Unknown Source:12)
+11-06 08:15:36.306  3809  3927 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-06 08:15:36.306  3809  3927 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-06 08:15:36.306  3809  3927 E AndroidRuntime: 	at com.google.firebase.concurrent.b.a(Unknown Source:12)
+11-06 08:15:36.306  3809  3927 E AndroidRuntime: 	at com.google.firebase.concurrent.a.run(Unknown Source:14)
+11-06 08:15:36.306  3809  3927 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:1012)
+11-06 08:15:38.515  3809  4186 E AndroidRuntime: FATAL EXCEPTION: Firebase Blocking Thread #1
+11-06 08:15:38.515  3809  4186 E AndroidRuntime: Process: ai.pleos.gleoai.model.provider, PID: 3809
+11-06 08:15:38.515  3809  4186 E AndroidRuntime: java.lang.AbstractMethodError: abstract method "A.f A.f.a0(int)"
+11-06 08:15:38.515  3809  4186 E AndroidRuntime: 	at e0.e.h(Unknown Source:89)
+11-06 08:15:38.515  3809  4186 E AndroidRuntime: 	at e0.e.b(Unknown Source:91)
+11-06 08:15:38.515  3809  4186 E AndroidRuntime: 	at com.google.firebase.installations.e.e(Unknown Source:30)
+11-06 08:15:38.515  3809  4186 E AndroidRuntime: 	at com.google.firebase.installations.e.b(Unknown Source:65)
+11-06 08:15:38.515  3809  4186 E AndroidRuntime: 	at c0.a.run(Unknown Source:14)
+11-06 08:15:38.515  3809  4186 E AndroidRuntime: 	at S.c.a(Unknown Source:84)
+11-06 08:15:38.515  3809  4186 E AndroidRuntime: 	at S.c.run(Unknown Source:12)
+11-06 08:15:38.515  3809  4186 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+11-06 08:15:38.515  3809  4186 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+11-06 08:15:38.515  3809  4186 E AndroidRuntime: 	at com.google.firebase.concurrent.b.a(Unknown Source:12)
+11-06 08:15:38.515  3809  4186 E AndroidRuntime: 	at com.google.firebase.concurrent.a.run(Unknown Source:14)
+11-06 08:15:38.515  3809  4186 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:1012)
+--------- beginning of main
+11-06 08:16:25.298 11510 11699 I TestRunner: run started: 2 tests
+11-06 08:16:25.299 11510 11699 I TestRunner: started: topRightDemoIsExplicitAndKeepsAllSevenProvisionalResults(com.example.easycar.SubmissionDemoTest)
+11-06 08:18:17.427 11510 11699 I TestRunner: finished: topRightDemoIsExplicitAndKeepsAllSevenProvisionalResults(com.example.easycar.SubmissionDemoTest)
+11-06 08:18:17.437 11510 11699 I TestRunner: started: reportsActualEngineInitializationOrExplicitFailure(com.example.easycar.SpeechAvailabilityTest)
+11-06 08:18:17.489 11510 11699 I EasyCarValidation: pleos speech status=Pleos 기기 내 음성 준비됨
+11-06 08:18:17.527 11510 11699 I EasyCarValidation: pleos short speech accepted=true
+11-06 08:18:21.024 11510 11699 I EasyCarValidation: pleos short speech completed
+11-06 08:18:21.027 11510 11699 I TestRunner: finished: reportsActualEngineInitializationOrExplicitFailure(com.example.easycar.SpeechAvailabilityTest)
+11-06 08:18:21.032 11510 11699 I TestRunner: run finished: 2 tests, 0 failed, 0 ignored

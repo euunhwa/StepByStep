@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-feature android:name="android.hardware.type.automotive" android:required="true" />
+    <uses-permission android:name="android.car.permission.CAR_SPEED" />
+    <uses-permission android:name="android.car.permission.CAR_POWERTRAIN" />
+    <uses-permission android:name="pleos.car.permission.CAR_DRIVE" />
+    <uses-permission android:name="pleos.car.permission.FUSED_LOCATION" />
+    <uses-permission android:name="pleos.car.permission.TTS_SERVICE" />
+    <queries><package android:name="ai.umos.ambientai" /></queries>
+    <application>
+        <activity android:name=".MainActivity"><meta-data android:name="distractionOptimized" android:value="true" /></activity>
+        <receiver android:name=".gleo.GleoRecordReceiver" android:exported="true" android:permission="ai.umos.gleo.permission.APP_ACTION">
+            <intent-filter>
+                <action android:name="GET_LAST_RESULT" />
+                <action android:name="EXPLAIN_RESULT" />
+                <action android:name="SUMMARIZE_SESSION" />
+                <action android:name="com.example.easycar.GET_LAST_RESULT" />
+                <action android:name="com.example.easycar.EXPLAIN_RESULT" />
+                <action android:name="com.example.easycar.SUMMARIZE_SESSION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="android.car" android:required="false" />
+    </application>
+</manifest>

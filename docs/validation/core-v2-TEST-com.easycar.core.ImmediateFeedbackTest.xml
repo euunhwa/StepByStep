@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.easycar.core.ImmediateFeedbackTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-11-05T05:21:16.697Z" hostname="gim-yeongjaeui-MacBookPro.local" time="0.05">
+  <properties/>
+  <testcase name="visualFeedbackIsImmediateEvenWithMutedOrUnavailableVoice" classname="com.easycar.core.ImmediateFeedbackTest" time="0.011"/>
+  <testcase name="completeDriveRecognizesAllFiveNonParkingSituationsWithoutLabels" classname="com.easycar.core.ImmediateFeedbackTest" time="0.004"/>
+  <testcase name="stoppedWithTurnedWheelCanSpeakButMovingTurnAndReverseMustWait" classname="com.easycar.core.ImmediateFeedbackTest" time="0.003"/>
+  <testcase name="receiptTimestampedSteeringCanDetectCandidateButNeverInventsSensorRate" classname="com.easycar.core.ImmediateFeedbackTest" time="0.001"/>
+  <testcase name="voiceWaitsForActualPermissionAndExpiresWithoutHidingResult" classname="com.easycar.core.ImmediateFeedbackTest" time="0.004"/>
+  <testcase name="phaseEvidenceComesFromSignalsAndKeepsDeductionTotals" classname="com.easycar.core.ImmediateFeedbackTest" time="0.003"/>
+  <testcase name="parkingEmitsOnceThenRefinesActualPixelsWithoutAnotherVoiceEvent" classname="com.easycar.core.ImmediateFeedbackTest" time="0.004"/>
+  <testcase name="rotationDecelerationDoesNotIncludeBrakingBeforeSteeringBegins" classname="com.easycar.core.ImmediateFeedbackTest" time="0.001"/>
+  <testcase name="everyRequestedSituationFinishesBeforeSessionEnds" classname="com.easycar.core.ImmediateFeedbackTest" time="0.011"/>
+  <testcase name="selectedTurnDoesNotLoseVoiceBudgetToEarlierStart" classname="com.easycar.core.ImmediateFeedbackTest" time="0.005"/>
+  <testcase name="startAndStopAreNotBlockedByMissingSteering" classname="com.easycar.core.ImmediateFeedbackTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

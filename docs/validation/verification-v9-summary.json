@@ -1,0 +1,16 @@
+{
+  "appVersion": "0.9.0",
+  "coreTests": 88,
+  "appUnitTests": 5,
+  "deviceTests": 4,
+  "failures": 0,
+  "deviceSeconds": 132.116,
+  "feedbackExpiryMs": 5046,
+  "autoDriveSamples": 896,
+  "sourceType": "ARBITRARY_SYNTHETIC_VALIDATION",
+  "expertValidated": false,
+  "externalRawDatasetAcquired": false,
+  "trainingPerformed": false,
+  "localhostHttpStatus": 200,
+  "apkSha256": "80ed0c13416122bf56e9086361cc8cf6af939e7c245fc3cde2c311ab7ee2240e"
+}

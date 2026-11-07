@@ -1,0 +1,9 @@
+--------- beginning of main
+11-06 08:32:47.051  7146  7269 I TestRunner: run started: 3 tests
+11-06 08:32:47.052  7146  7269 I TestRunner: started: mutedDemoCompletesWithoutWaitingForSpeech(com.example.easycar.DemoSpeechSequenceTest)
+11-06 08:33:13.862  7146  7269 I TestRunner: finished: mutedDemoCompletesWithoutWaitingForSpeech(com.example.easycar.DemoSpeechSequenceTest)
+11-06 08:33:13.865  7146  7269 I TestRunner: started: everyNarrationFinishesBeforePlaybackConsumesAnotherFrame(com.example.easycar.DemoSpeechSequenceTest)
+11-06 08:33:59.625  7146  7269 I TestRunner: finished: everyNarrationFinishesBeforePlaybackConsumesAnotherFrame(com.example.easycar.DemoSpeechSequenceTest)
+11-06 08:33:59.629  7146  7269 I TestRunner: started: completedCardClearsWhileSessionWaitsAndNextManeuverStillPublishes(com.example.easycar.FeedbackExpiryTest)
+11-06 08:34:24.514  7146  7269 I TestRunner: finished: completedCardClearsWhileSessionWaitsAndNextManeuverStillPublishes(com.example.easycar.FeedbackExpiryTest)
+11-06 08:34:24.522  7146  7269 I TestRunner: run finished: 3 tests, 0 failed, 0 ignored

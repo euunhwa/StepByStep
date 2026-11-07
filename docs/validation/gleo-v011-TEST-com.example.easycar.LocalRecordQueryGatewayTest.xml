@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.easycar.LocalRecordQueryGatewayTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-07T05:36:26.061Z" hostname="gim-yeongjaeui-MacBookPro.local" time="0.041">
+  <properties/>
+  <testcase name="sameGatewayReadsFreshDataAfterChangesAndDeletion" classname="com.example.easycar.LocalRecordQueryGatewayTest" time="0.03"/>
+  <testcase name="unauthorizedSessionDataNeverAppearsInAResponse" classname="com.example.easycar.LocalRecordQueryGatewayTest" time="0.004"/>
+  <testcase name="denialDoesNotReadTheRecordSource" classname="com.example.easycar.LocalRecordQueryGatewayTest" time="0.0"/>
+  <testcase name="queriesNeverSerializeRawFramesOrPrivateMediaAndNeverMutateTheRecord" classname="com.example.easycar.LocalRecordQueryGatewayTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

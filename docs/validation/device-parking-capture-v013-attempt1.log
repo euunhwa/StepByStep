@@ -1,0 +1,23 @@
+
+com.example.easycar.ParkingCaptureFlowTest:
+Error in syntheticMp4EpisodePublishes95AndKeepsAReplayableVideoAndStoredDeductions(com.example.easycar.ParkingCaptureFlowTest):
+androidx.compose.ui.test.ComposeTimeoutException: Condition still not satisfied after 20000 ms
+	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.waitUntil(ComposeUiTest.android.kt:809)
+	at androidx.compose.ui.test.junit4.AndroidComposeTestRule.waitUntil(AndroidComposeTestRule.android.kt:378)
+	at com.example.easycar.ParkingCaptureFlowTest.syntheticMp4EpisodePublishes95AndKeepsAReplayableVideoAndStoredDeductions(ParkingCaptureFlowTest.kt:29)
+
+com.example.easycar.ParkingCaptureAnalysisTest:.
+com.example.easycar.ParkingProjectionCaptureTest:.
+
+Time: 31.083
+There was 1 failure:
+1) syntheticMp4EpisodePublishes95AndKeepsAReplayableVideoAndStoredDeductions(com.example.easycar.ParkingCaptureFlowTest)
+androidx.compose.ui.test.ComposeTimeoutException: Condition still not satisfied after 20000 ms
+	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.waitUntil(ComposeUiTest.android.kt:809)
+	at androidx.compose.ui.test.junit4.AndroidComposeTestRule.waitUntil(AndroidComposeTestRule.android.kt:378)
+	at com.example.easycar.ParkingCaptureFlowTest.syntheticMp4EpisodePublishes95AndKeepsAReplayableVideoAndStoredDeductions(ParkingCaptureFlowTest.kt:29)
+
+FAILURES!!!
+Tests run: 3,  Failures: 1
+
+

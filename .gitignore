@@ -1,0 +1,31 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# EasyCar module outputs
+**/build/
+.kotlin/
+__pycache__/
+*.pyc
+
+# Private APK signing material (never export to another repository)
+.private-signing/
+*.jks
+*.keystore
+*.p12
+*.pfx
+.env
+.env.*
+!.env.example

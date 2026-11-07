@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "freshSessionRequired": true,
+  "sdkControlSteeringSign": -1,
+  "profileSteeringConvention": "theory positive=forward-left; host sends -steeringDeg to compensate confirmed console-to-SDK sign",
+  "readyBeforeStartingProfile": "live state.motion exists and record.frames count > 0",
+  "cases": [
+    {
+      "id": "01-start-100",
+      "name": "출발100",
+      "type": "START",
+      "targetScore": 100,
+      "path": "examples/console-showcase/01-start-100.json",
+      "durationMs": 24000,
+      "nominalResults": [
+        [
+          "START",
+          100
+        ]
+      ],
+      "positiveJitterValidation": {
+        "0..1ms": {
+          "[START:100]": 10
+        },
+        "0..5ms": {
+          "[START:100]": 10
+        },
+        "0..10ms": {
+          "[START:100]": 10
+        },
+        "0..20ms": {
+          "[START:100]": 10
+        }
+      }
+    },
+    {
+      "id": "02-left-100",
+      "name": "좌회전100",
+      "type": "LEFT",
+      "targetScore": 100,
+      "path": "examples/console-showcase/02-left-100.json",
+      "durationMs": 19000,
+      "nominalResults": [
+        [
+          "LEFT",
+          100
+        ]
+      ],
+      "positiveJitterValidation": {
+        "0..1ms": {
+          "[LEFT:100]": 10
+        },
+        "0..5ms": {
+          "[LEFT:100]": 10
+        },
+        "0..10ms": {
+          "[LEFT:100]": 10
+        },
+        "0..20ms": {
+          "[LEFT:100]": 10
+        }
+      }
+    },
+    {
+      "id": "03-right-100",
+      "name": "우회전100",
+      "type": "RIGHT",
+      "targetScore": 100,
+      "path": "examples/console-showcase/03-right-100.json",
+      "durationMs": 19000,
+      "nominalResults": [
+        [
+          "RIGHT",
+          100
+        ]
+      ],
+      "positiveJitterValidation": {
+        "0..1ms": {
+          "[RIGHT:100]": 10
+        },
+        "0..5ms": {
+          "[RIGHT:100]": 10
+        },
+        "0..10ms": {
+          "[RIGHT:100]": 10
+        },
+        "0..20ms": {
+          "[RIGHT:100]": 10
+        }
+      }
+    },
+    {
+      "id": "04-uturn-100",
+      "name": "유턴100",
+      "type": "U_TURN",
+      "targetScore": 100,
+      "path": "examples/console-showcase/04-uturn-100.json",
+      "durationMs": 21000,
+      "nominalResults": [
+        [
+          "U_TURN",
+          100
+        ]
+      ],
+      "positiveJitterValidation": {
+        "0..1ms": {
+          "[U_TURN:100]": 10
+        },
+        "0..5ms": {
+          "[U_TURN:100]": 10
+        },
+        "0..10ms": {
+          "[U_TURN:100]": 10
+        },
+        "0..20ms": {
+          "[U_TURN:100]": 10
+        }
+      }
+    },
+    {
+      "id": "05-stop-100",
+      "name": "정지100",
+      "type": "STOP",
+      "targetScore": 100,
+      "path": "examples/console-showcase/05-stop-100.json",
+      "durationMs": 22000,
+      "nominalResults": [
+        [
+          "STOP",
+          100
+        ]
+      ],
+      "positiveJitterValidation": {
+        "0..1ms": {
+          "[STOP:100]": 10
+        },
+        "0..5ms": {
+          "[STOP:100]": 10
+        },
+        "0..10ms": {
+          "[STOP:100]": 10
+        },
+        "0..20ms": {
+          "[STOP:100]": 10
+        }
+      }
+    },
+    {
+      "id": "06-tpark-60",
+      "name": "T자주차60",
+      "type": "T_PARK",
+      "targetScore": 60,
+      "path": "examples/console-showcase/06-tpark-60.json",
+      "durationMs": 74800,
+      "nominalResults": [
+        [
+          "T_PARK",
+          60
+        ]
+      ],
+      "positiveJitterValidation": {
+        "0..1ms": {
+          "[T_PARK:60]": 10
+        },
+        "0..5ms": {
+          "[T_PARK:60]": 10
+        },
+        "0..10ms": {
+          "[T_PARK:60]": 10
+        },
+        "0..20ms": {
+          "[T_PARK:60]": 10
+        }
+      }
+    },
+    {
+      "id": "07-parallel-90",
+      "name": "평행주차90",
+      "type": "PARALLEL_PARK",
+      "targetScore": 90,
+      "path": "examples/console-showcase/07-parallel-90.json",
+      "durationMs": 47800,
+      "nominalResults": [
+        [
+          "PARALLEL_PARK",
+          90
+        ]
+      ],
+      "positiveJitterValidation": {
+        "0..1ms": {
+          "[PARALLEL_PARK:90]": 10
+        },
+        "0..5ms": {
+          "[PARALLEL_PARK:90]": 10
+        },
+        "0..10ms": {
+          "[PARALLEL_PARK:90]": 10
+        },
+        "0..20ms": {
+          "[PARALLEL_PARK:90]": 10
+        }
+      }
+    },
+    {
+      "id": "08-tpark-85",
+      "name": "T자주차85",
+      "type": "T_PARK",
+      "targetScore": 85,
+      "path": "examples/console-showcase/08-tpark-85.json",
+      "durationMs": 54800,
+      "nominalResults": [
+        [
+          "T_PARK",
+          85
+        ]
+      ],
+      "positiveJitterValidation": {
+        "0..1ms": {
+          "[T_PARK:85]": 10
+        },
+        "0..5ms": {
+          "[T_PARK:85]": 10
+        },
+        "0..10ms": {
+          "[T_PARK:85]": 10
+        },
+        "0..20ms": {
+          "[T_PARK:85]": 10
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "id": "evaluation-synthetic-1.0",
+  "sourceType": "ARBITRARY_SYNTHETIC_METRIC_VECTORS",
+  "expertValidated": false,
+  "requiresImprovement": true,
+  "cases": [
+    {
+      "id": "accel-good-boundary",
+      "type": "START",
+      "expectedScore": 100,
+      "acceleration": 2.0,
+      "jerk": 0.9
+    },
+    {
+      "id": "accel-caution",
+      "type": "START",
+      "expectedScore": 95,
+      "acceleration": 2.4,
+      "jerk": 0.0
+    },
+    {
+      "id": "accel-danger-boundary",
+      "type": "START",
+      "expectedScore": 93,
+      "acceleration": 2.7777777777777777,
+      "jerk": 0.0
+    },
+    {
+      "id": "brake-good-boundary",
+      "type": "STOP",
+      "expectedScore": 100,
+      "acceleration": -2.0,
+      "jerk": 0.0
+    },
+    {
+      "id": "brake-caution-boundary",
+      "type": "STOP",
+      "expectedScore": 95,
+      "acceleration": -3.5,
+      "jerk": 0.0
+    },
+    {
+      "id": "brake-danger",
+      "type": "STOP",
+      "expectedScore": 93,
+      "acceleration": -3.5001,
+      "jerk": 0.0
+    },
+    {
+      "id": "jerk-good-boundary",
+      "type": "START",
+      "expectedScore": 100,
+      "acceleration": 0.0,
+      "jerk": 0.9
+    },
+    {
+      "id": "jerk-caution-boundary",
+      "type": "START",
+      "expectedScore": 95,
+      "acceleration": 0.0,
+      "jerk": 1.5
+    },
+    {
+      "id": "jerk-danger",
+      "type": "START",
+      "expectedScore": 93,
+      "acceleration": 0.0,
+      "jerk": 1.5001
+    },
+    {
+      "id": "independent-accel-jerk",
+      "type": "START",
+      "expectedScore": 90,
+      "acceleration": 2.4,
+      "jerk": 1.2
+    },
+    {
+      "id": "lateral-good",
+      "type": "LEFT",
+      "expectedScore": 100,
+      "acceleration": 0.0,
+      "jerk": 0.0,
+      "lateralG": 0.25
+    },
+    {
+      "id": "lateral-caution",
+      "type": "LEFT",
+      "expectedScore": 95,
+      "acceleration": 0.0,
+      "jerk": 0.0,
+      "lateralG": 0.4
+    },
+    {
+      "id": "lateral-danger",
+      "type": "LEFT",
+      "expectedScore": 93,
+      "acceleration": 0.0,
+      "jerk": 0.0,
+      "lateralG": 0.4001
+    },
+    {
+      "id": "T_PARK-1",
+      "type": "T_PARK",
+      "expectedScore": 100,
+      "acceleration": 0.0,
+      "jerk": 0.0,
+      "conversions": 1
+    },
+    {
+      "id": "T_PARK-2",
+      "type": "T_PARK",
+      "expectedScore": 95,
+      "acceleration": 0.0,
+      "jerk": 0.0,
+      "conversions": 2
+    },
+    {
+      "id": "PARALLEL_PARK-2",
+      "type": "PARALLEL_PARK",
+      "expectedScore": 100,
+      "acceleration": 0.0,
+      "jerk": 0.0,
+      "conversions": 2
+    },
+    {
+      "id": "PARALLEL_PARK-3",
+      "type": "PARALLEL_PARK",
+      "expectedScore": 95,
+      "acceleration": 0.0,
+      "jerk": 0.0,
+      "conversions": 3
+    },
+    {
+      "id": "parking-time-120000",
+      "type": "T_PARK",
+      "expectedScore": 100,
+      "acceleration": 0.0,
+      "jerk": 0.0,
+      "durationMs": 120000
+    },
+    {
+      "id": "parking-time-120100",
+      "type": "T_PARK",
+      "expectedScore": 90,
+      "acceleration": 0.0,
+      "jerk": 0.0,
+      "durationMs": 120100
+    },
+    {
+      "id": "parking-time-240000",
+      "type": "T_PARK",
+      "expectedScore": 90,
+      "acceleration": 0.0,
+      "jerk": 0.0,
+      "durationMs": 240000
+    },
+    {
+      "id": "parking-time-240100",
+      "type": "T_PARK",
+      "expectedScore": 80,
+      "acceleration": 0.0,
+      "jerk": 0.0,
+      "durationMs": 240100
+    }
+  ]
+}

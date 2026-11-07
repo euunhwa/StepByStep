@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "version": "demo-2.0.0",
+  "validationStatus": "SYNTHETIC_DEMO",
+  "source": "재현 가능한 합성 파형 / 시제품용 임시 기준. 전문가 측정 데이터 아님.",
+  "vehicleId": "synthetic-sedan",
+  "courseId": "demo-pad-a",
+  "conditions": "합성 세단 / 가상의 평탄한 폐쇄 연습장 A / 폭 2.1m 합성 주차칸. 실도로·실차 적용 금지.",
+  "maneuverTypes": [
+    "LEFT",
+    "RIGHT",
+    "U_TURN",
+    "START",
+    "STOP",
+    "T_PARK",
+    "PARALLEL_PARK"
+  ],
+  "phases": {
+    "entry": "정지 후 출발 / 회전 시작 전 3초",
+    "turn": "조향 45도 이상 진입, 진행 방향 변화 결합",
+    "exit": "핸들 18도 이내 및 방향 안정 1초",
+    "parking": "연습 유형 선택 후 R단 시작, P+정차 1.2초 종료 후보"
+  },
+  "scoring": {
+    "speed": {
+      "maxAbs": 4.0,
+      "weight": 14.0,
+      "cap": 25
+    },
+    "acceleration": {
+      "maxAbs": 1.8,
+      "weight": 12.0,
+      "cap": 20
+    },
+    "jerk": {
+      "maxAbs": 4.0,
+      "weight": 8.0,
+      "cap": 15
+    },
+    "steeringRate": {
+      "maxAbs": 120.0,
+      "weight": 0.6,
+      "cap": 20
+    },
+    "entryAngle": {
+      "maxAbs": 12.0,
+      "weight": 0.5,
+      "cap": 10
+    },
+    "alignment": {
+      "maxAbs": 3.0,
+      "weight": 1.0,
+      "cap": 15
+    },
+    "intrusionPenalty": 15,
+    "parkingCountScale": 1.0,
+    "parkingCountCap": 30,
+    "maxMovementPenalty": 40,
+    "minExceedanceMs": 300,
+    "maxTotalPenalty": 100,
+    "parkingSpeed": {
+      "maxAbs": 1.3,
+      "weight": 24.0,
+      "cap": 20
+    }
+  },
+  "phaseBands": {
+    "entrySpeed": {
+      "maxAbs": 4.0,
+      "weight": 18.0,
+      "cap": 20
+    },
+    "rotationSpeed": {
+      "maxAbs": 3.5,
+      "weight": 14.0,
+      "cap": 20
+    },
+    "exitSpeed": {
+      "maxAbs": 4.5,
+      "weight": 12.0,
+      "cap": 15
+    },
+    "exitSteeringRate": {
+      "maxAbs": 90.0,
+      "weight": 0.8,
+      "cap": 15
+    },
+    "deceleration": {
+      "maxAbs": 1.8,
+      "weight": 12.0,
+      "cap": 20
+    }
+  }
+}

@@ -1,0 +1,250 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Calculating task graph as no cached configuration is available for tasks: :core:exportDemoFixtures :core:test :core:auditScenarios :app:lintDemoDebug :app:lintPleosDebug
+> Task :core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core:compileKotlin
+> Task :core:compileJava NO-SOURCE
+> Task :core:processResources NO-SOURCE
+> Task :core:classes UP-TO-DATE
+
+> Task :core:exportDemoFixtures
+Exported 45 reproducible synthetic signal fixtures; truth labels are separate.
+
+> Task :core:jar
+> Task :core:compileTestKotlin
+> Task :core:compileTestJava NO-SOURCE
+> Task :core:processTestResources NO-SOURCE
+> Task :core:testClasses UP-TO-DATE
+
+> Task :core:test
+
+AutomaticCoachingTest > forwardParkingUsesObservedSpaceAndDoesNotRequireReverseGear PASSED
+
+AutomaticCoachingTest > steeringReceiptTimeNeverBecomesMeasurementTimeEvenWhenValueQualityIsValid PASSED
+
+AutomaticCoachingTest > incompleteReverseIsNotReportedAsCompletedParking PASSED
+
+AutomaticCoachingTest > draftMeasurementsUseLongitudinalReferenceWithoutActivatingScore PASSED
+
+AutomaticCoachingTest > noSpaceIsUnconfirmedLowSpeedOperationWithActualCountsAndNoInventedPenalty PASSED
+
+AutomaticCoachingTest > legacySelectionAndScenarioNameCannotChangeRecognition PASSED
+
+AutomaticCoachingTest > staleUnverifiedAndChangingSpacesNeverBecomeKnownParkingTypes PASSED
+
+AutomaticCoachingTest > ambiguousButConfirmedSpaceKeepsCountAndHoldsType PASSED
+
+AutomaticCoachingTest > physicalSpaceAxesDetermineParkingTypeWithoutSelectedLabel PASSED
+
+AutomaticCoachingTest > oneUnselectedSessionRecognizesAllSevenAndPublishesBeforeSessionEnd PASSED
+
+AutomaticCoachingTest > exportedContinuousInputRecognizesAllSevenWithoutLoadingTruthOrContext PASSED
+
+AutomaticCoachingTest > allConfirmedParkingCountWeightsRemainVisibleWithTotalHeld PASSED
+
+EngineTest > stableGearsDebounceDuplicatesNeutralAndShortOscillation PASSED
+
+EngineTest > turnRecognitionRequiresHeadingAndRejectsCurveLaneChange PASSED
+
+EngineTest > strongerExceedanceNeverReducesPenalty PASSED
+
+EngineTest > weightedParkingCountsUseSameDetectorAndScorer PASSED
+
+EngineTest > profileSchemaAndUnknownConditionsAreChecked PASSED
+
+EngineTest > detectsPixelsAtKnownAnglesAndIntrusionAndNoLines PASSED
+
+EngineTest > unknownHarshBrakingDoesNotAssignFault PASSED
+
+EngineTest > sameCourseBadSpeedAndRoughSteeringCarryMeasuredDeductions PASSED
+
+EngineTest > onChangeStateReadDoesNotPretendToBeNewSensorMeasurement PASSED
+
+EngineTest > missingFinalEvidenceHoldsTotalButKeepsCountPenalty PASSED
+
+EngineTest > playbackSchedulingDoesNotEnterAnalysis PASSED
+
+EngineTest > gapsAndBadTimesDoNotProduceFakeDerivatives PASSED
+
+EngineTest > singleSampleNoiseDoesNotCreateHarshLaunch PASSED
+
+EngineTest > missingSteeringStillPreservesConfirmedParkingCountAndHoldsTotal PASSED
+
+EngineTest > restrictionsAndAudioFailClosedAndDeduplicate PASSED
+
+EvaluationPolicyTest > parserRejectsUnknownMetricsDuplicateMetricsAndBadValidatedLimits PASSED
+
+EvaluationPolicyTest > noGearMeansUnknownCountRatherThanObservedZero PASSED
+
+EvaluationPolicyTest > allBudgetsSumToOneHundredAndDraftCannotGrade PASSED
+
+EvaluationPolicyTest > unvalidatedProfileCannotActivateDespitePolicyFlag PASSED
+
+EvaluationPolicyTest > unknownBrakingCauseHoldsWholeLinkedGroupAndPreservesMeasurements PASSED
+
+EvaluationPolicyTest > correlatedAccelerationAndJerkTakeMaximumAndAssessmentsMatchAppliedTotal PASSED
+
+EvaluationPolicyTest > unavailableRequiredItemNeverRenormalizesOtherGroups PASSED
+
+EvaluationPolicyTest > exposureCannotBeDilutedByAddingNormalTailAndLargerExposureIsMonotonic PASSED
+
+EvaluationPolicyTest > turnBudgetsCapAtFortyThirtyThirtyWithNoDoubleCountedAssessments PASSED
+
+EvaluationPolicyTest > missingGearOrCriticalWindowHoldsTotalInsteadOfGivingHundred PASSED
+
+EvaluationPolicyTest > shorterThanThreeHundredMillisecondsDoesNotDeduct PASSED
+
+ImmediateFeedbackTest > visualFeedbackIsImmediateEvenWithMutedOrUnavailableVoice PASSED
+
+ImmediateFeedbackTest > completeDriveRecognizesAllFiveNonParkingSituationsWithoutLabels PASSED
+
+ImmediateFeedbackTest > stoppedWithTurnedWheelCanSpeakButMovingTurnAndReverseMustWait PASSED
+
+ImmediateFeedbackTest > receiptTimestampedSteeringCanDetectCandidateButNeverInventsSensorRate PASSED
+
+ImmediateFeedbackTest > voiceWaitsForActualPermissionAndExpiresWithoutHidingResult PASSED
+
+ImmediateFeedbackTest > phaseEvidenceComesFromSignalsAndKeepsDeductionTotals PASSED
+
+ImmediateFeedbackTest > parkingEmitsOnceThenRefinesActualPixelsWithoutAnotherVoiceEvent PASSED
+
+ImmediateFeedbackTest > rotationDecelerationDoesNotIncludeBrakingBeforeSteeringBegins PASSED
+
+ImmediateFeedbackTest > everyRecognizedTypeGetsItsOwnFeedbackWithoutFocusFiltering PASSED
+
+ImmediateFeedbackTest > everyRequestedSituationFinishesBeforeSessionEnds PASSED
+
+ImmediateFeedbackTest > startAndStopAreNotBlockedByMissingSteering PASSED
+
+VideoCalibrationTest > unsupportedProjectionAndImpossibleBoundsAreRejected PASSED
+
+VideoCalibrationTest > validatesCalibrationAndMapsOnlyExplicitTimeRange PASSED
+
+VideoCalibrationTest > resizedActualPixelsUseCorrespondinglyScaledVehicleBounds PASSED
+
+VideoCalibrationTest > multipleSlotsAreHeldUntilUserSelectsAnActualDetectedPair PASSED
+
+> Task :core:auditScenarios
+scenario	events BEFORE session finish [type@seconds:score]
+auto-drive	START@6.8:보류, LEFT@17.9:보류, RIGHT@30.9:보류, U_TURN@45.8:보류, STOP@56.1:보류, T_PARK@90.9:보류, PARALLEL_PARK@110.4:보류
+drive-course	START@6.8:보류, LEFT@17.9:보류, RIGHT@30.9:보류, U_TURN@45.8:보류, STOP@56.1:보류
+left	START@6.8:보류, LEFT@12.9:보류, STOP@18.1:보류
+right	START@6.8:보류, RIGHT@12.9:보류, STOP@18.1:보류
+uturn	START@6.8:보류, U_TURN@12.9:보류, STOP@18.1:보류
+fast-left	START@6.4:보류, LEFT@12.9:보류, STOP@18.2:보류
+rough-right	START@6.8:보류, RIGHT@13.0:보류, STOP@18.1:보류
+curve	START@6.8:보류, UNKNOWN@12.9:보류, STOP@18.1:보류
+low-heading	START@6.8:보류, UNKNOWN@12.9:보류, STOP@18.1:보류
+fast-right	START@6.4:보류, RIGHT@12.9:보류, STOP@18.2:보류
+fast-uturn	START@6.4:보류, U_TURN@12.9:보류, STOP@18.2:보류
+rough-left	START@6.8:보류, LEFT@13.0:보류, STOP@18.1:보류
+rough-uturn	START@6.8:보류, U_TURN@13.0:보류, STOP@18.1:보류
+smooth-start-stop	START@6.8:보류, STOP@16.1:보류
+rough-start-stop	START@6.3:보류, STOP@10.0:보류
+unknown-brake	START@6.3:보류, STOP@10.0:보류
+start-smooth	START@6.8:보류, STOP@16.1:보류
+start-rough	START@6.3:보류, STOP@10.0:보류
+stop-smooth	START@6.8:보류, STOP@16.1:보류
+stop-rough	START@6.3:보류, STOP@10.0:보류
+lane-change	START@6.8:보류, UNKNOWN@13.0:보류, STOP@18.1:보류
+park-t_park-0-normal	T_PARK@14.3:보류
+park-t_park-1-normal	T_PARK@18.7:보류
+park-t_park-2-normal	T_PARK@25.9:보류
+park-t_park-3-normal	T_PARK@33.9:보류
+park-t_park-4-normal	T_PARK@41.1:보류
+park-t_park-5-normal	T_PARK@49.1:보류
+park-parallel_park-0-normal	PARALLEL_PARK@14.3:보류
+park-parallel_park-1-normal	PARALLEL_PARK@18.7:보류
+park-parallel_park-2-normal	PARALLEL_PARK@25.9:보류
+park-parallel_park-3-normal	PARALLEL_PARK@33.9:보류
+park-parallel_park-4-normal	PARALLEL_PARK@41.1:보류
+park-parallel_park-5-normal	PARALLEL_PARK@49.1:보류
+park-t_park-3-tilted	T_PARK@33.9:보류
+park-t_park-3-intrusion	T_PARK@33.9:보류
+park-t_park-3-occluded	T_PARK@33.9:보류
+park-t_park-3-missing	T_PARK@33.9:보류
+park-t_park-3-speed	T_PARK@33.9:보류
+parking-space-missing	PARKING_UNKNOWN@25.9:보류
+parking-space-ambiguous	PARKING_UNKNOWN@25.9:보류
+delayed	START@6.8:보류, UNKNOWN@8.4:보류
+gap	START@6.8:보류, UNKNOWN@8.4:보류
+disconnect	START@6.8:보류, UNKNOWN@8.4:보류
+out-of-order	START@6.8:보류, LEFT@12.9:보류, STOP@18.1:보류
+restrictions	START@6.8:보류, LEFT@12.9:보류, STOP@18.1:보류
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDemoDebugBuild UP-TO-DATE
+> Task :app:generateDemoDebugBuildConfig UP-TO-DATE
+> Task :app:generateDemoDebugResources UP-TO-DATE
+> Task :app:packageDemoDebugResources UP-TO-DATE
+> Task :app:processDemoDebugNavigationResources UP-TO-DATE
+> Task :app:parseDemoDebugLocalResources UP-TO-DATE
+> Task :app:generateDemoDebugRFile UP-TO-DATE
+> Task :app:compileDemoDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileDemoDebug UP-TO-DATE
+> Task :app:compileDemoDebugJavaWithJavac UP-TO-DATE
+> Task :app:checkDemoDebugAarMetadata UP-TO-DATE
+> Task :app:mapDemoDebugSourceSetPaths UP-TO-DATE
+> Task :app:compileDemoDebugNavigationResources UP-TO-DATE
+> Task :app:mergeDemoDebugResources UP-TO-DATE
+> Task :app:createDemoDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDemoDebug UP-TO-DATE
+> Task :app:processDemoDebugMainManifest UP-TO-DATE
+> Task :app:processDemoDebugManifest UP-TO-DATE
+> Task :app:processDemoDebugManifestForPackage UP-TO-DATE
+> Task :app:processDemoDebugResources UP-TO-DATE
+> Task :app:bundleDemoDebugClassesToCompileJar UP-TO-DATE
+> Task :app:preDemoDebugAndroidTestBuild SKIPPED
+> Task :app:generateDemoDebugAndroidTestLintModel
+> Task :app:extractProguardFiles
+> Task :app:generateDemoDebugLintReportModel
+> Task :app:preDemoDebugUnitTestBuild UP-TO-DATE
+> Task :app:generateDemoDebugUnitTestLintModel
+> Task :app:lintAnalyzeDemoDebug
+> Task :app:lintAnalyzeDemoDebugAndroidTest
+> Task :app:lintAnalyzeDemoDebugUnitTest
+
+> Task :app:lintReportDemoDebug
+Wrote HTML report to file:///Users/genius/CODEX/Pleos%20앱%20개발/work/easycar-v3/app/build/reports/lint-results-demoDebug.html
+Wrote SARIF report to file:///Users/genius/CODEX/Pleos%20앱%20개발/work/easycar-v3/app/build/reports/lint-results-demoDebug.sarif
+
+> Task :app:lintDemoDebug
+> Task :app:prePleosDebugBuild UP-TO-DATE
+> Task :app:generatePleosDebugBuildConfig UP-TO-DATE
+> Task :app:generatePleosDebugResources UP-TO-DATE
+> Task :app:packagePleosDebugResources UP-TO-DATE
+> Task :app:processPleosDebugNavigationResources UP-TO-DATE
+> Task :app:parsePleosDebugLocalResources UP-TO-DATE
+> Task :app:generatePleosDebugRFile UP-TO-DATE
+> Task :app:compilePleosDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompilePleosDebug UP-TO-DATE
+> Task :app:compilePleosDebugJavaWithJavac UP-TO-DATE
+> Task :app:checkPleosDebugAarMetadata UP-TO-DATE
+> Task :app:mapPleosDebugSourceSetPaths UP-TO-DATE
+> Task :app:compilePleosDebugNavigationResources UP-TO-DATE
+> Task :app:mergePleosDebugResources UP-TO-DATE
+> Task :app:createPleosDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksPleosDebug UP-TO-DATE
+> Task :app:processPleosDebugMainManifest UP-TO-DATE
+> Task :app:processPleosDebugManifest UP-TO-DATE
+> Task :app:processPleosDebugManifestForPackage UP-TO-DATE
+> Task :app:processPleosDebugResources UP-TO-DATE
+> Task :app:bundlePleosDebugClassesToCompileJar UP-TO-DATE
+> Task :app:prePleosDebugAndroidTestBuild SKIPPED
+> Task :app:generatePleosDebugAndroidTestLintModel
+> Task :app:generatePleosDebugLintReportModel
+> Task :app:prePleosDebugUnitTestBuild UP-TO-DATE
+> Task :app:generatePleosDebugUnitTestLintModel
+> Task :app:lintAnalyzePleosDebug
+> Task :app:lintAnalyzePleosDebugAndroidTest
+> Task :app:lintAnalyzePleosDebugUnitTest
+
+> Task :app:lintReportPleosDebug
+Wrote HTML report to file:///Users/genius/CODEX/Pleos%20앱%20개발/work/easycar-v3/app/build/reports/lint-results-pleosDebug.html
+Wrote SARIF report to file:///Users/genius/CODEX/Pleos%20앱%20개발/work/easycar-v3/app/build/reports/lint-results-pleosDebug.sarif
+
+> Task :app:lintPleosDebug
+
+BUILD SUCCESSFUL in 41s
+63 actionable tasks: 23 executed, 40 up-to-date
+Configuration cache entry stored.

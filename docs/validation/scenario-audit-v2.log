@@ -1,0 +1,313 @@
+Calculating task graph as no cached configuration is available for tasks: :core:test :core:auditScenarios :app:assembleDemoDebug :app:assemblePleosDebug :app:assembleDemoDebugAndroidTest :app:assemblePleosDebugAndroidTest :app:lintDemoDebug :app:lintPleosDebug
+> Task :core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generatePleosDebugAndroidTestAssets UP-TO-DATE
+> Task :app:generateDemoDebugAndroidTestAssets UP-TO-DATE
+> Task :app:generatePleosDebugAssets UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:generateDemoDebugAssets UP-TO-DATE
+> Task :app:preDemoDebugBuild UP-TO-DATE
+> Task :app:mergeDemoDebugNativeDebugMetadata NO-SOURCE
+> Task :core:processResources NO-SOURCE
+> Task :core:processTestResources NO-SOURCE
+> Task :app:generateDemoDebugBuildConfig UP-TO-DATE
+> Task :app:javaPreCompileDemoDebug UP-TO-DATE
+> Task :app:generateDemoDebugGlobalSynthetics UP-TO-DATE
+> Task :app:createDemoDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:generateDemoDebugResources UP-TO-DATE
+> Task :app:mapDemoDebugSourceSetPaths UP-TO-DATE
+> Task :app:desugarDemoDebugFileDependencies UP-TO-DATE
+> Task :app:extractDeepLinksDemoDebug UP-TO-DATE
+> Task :app:mergeDemoDebugJniLibFolders UP-TO-DATE
+> Task :app:writeDemoDebugAppMetadata UP-TO-DATE
+> Task :app:validateSigningDemoDebug UP-TO-DATE
+> Task :app:prePleosDebugBuild UP-TO-DATE
+> Task :app:writeDemoDebugSigningConfigVersions UP-TO-DATE
+> Task :app:mergePleosDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generatePleosDebugBuildConfig UP-TO-DATE
+> Task :app:generatePleosDebugResources UP-TO-DATE
+> Task :app:checkDemoDebugDuplicateClasses UP-TO-DATE
+> Task :app:packageDemoDebugResources UP-TO-DATE
+> Task :app:javaPreCompilePleosDebug UP-TO-DATE
+> Task :app:packagePleosDebugResources UP-TO-DATE
+> Task :app:checkDemoDebugAarMetadata UP-TO-DATE
+> Task :app:processDemoDebugNavigationResources UP-TO-DATE
+> Task :app:parseDemoDebugLocalResources UP-TO-DATE
+> Task :app:generatePleosDebugGlobalSynthetics UP-TO-DATE
+> Task :app:checkPleosDebugDuplicateClasses UP-TO-DATE
+> Task :app:compileDemoDebugNavigationResources UP-TO-DATE
+> Task :app:mergePleosDebugAssets UP-TO-DATE
+> Task :app:mergeDemoDebugAssets UP-TO-DATE
+> Task :app:mergeExtDexDemoDebug UP-TO-DATE
+> Task :app:generateDemoDebugRFile UP-TO-DATE
+> Task :app:desugarPleosDebugFileDependencies UP-TO-DATE
+> Task :app:processPleosDebugNavigationResources UP-TO-DATE
+> Task :app:mapPleosDebugSourceSetPaths UP-TO-DATE
+> Task :app:compilePleosDebugNavigationResources UP-TO-DATE
+> Task :app:parsePleosDebugLocalResources UP-TO-DATE
+> Task :app:compressPleosDebugAssets UP-TO-DATE
+> Task :app:createPleosDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:compressDemoDebugAssets UP-TO-DATE
+> Task :app:extractDeepLinksPleosDebug UP-TO-DATE
+> Task :app:generatePleosDebugRFile UP-TO-DATE
+> Task :app:writePleosDebugAppMetadata UP-TO-DATE
+> Task :app:validateSigningPleosDebug UP-TO-DATE
+> Task :app:checkPleosDebugAarMetadata UP-TO-DATE
+> Task :app:prePleosDebugAndroidTestBuild SKIPPED
+> Task :app:preDemoDebugAndroidTestBuild SKIPPED
+> Task :app:writePleosDebugSigningConfigVersions UP-TO-DATE
+> Task :app:generateDemoDebugAndroidTestResources UP-TO-DATE
+> Task :app:mergeExtDexPleosDebug UP-TO-DATE
+> Task :app:processDemoDebugMainManifest UP-TO-DATE
+> Task :app:javaPreCompileDemoDebugAndroidTest UP-TO-DATE
+> Task :app:processDemoDebugAndroidTestNavigationResources UP-TO-DATE
+> Task :app:processDemoDebugManifest UP-TO-DATE
+> Task :app:generateDemoDebugAndroidTestGlobalSynthetics UP-TO-DATE
+> Task :app:packageDemoDebugAndroidTestResources UP-TO-DATE
+> Task :app:mergeDemoDebugAndroidTestAssets UP-TO-DATE
+> Task :app:processDemoDebugManifestForPackage UP-TO-DATE
+> Task :app:parseDemoDebugAndroidTestLocalResources UP-TO-DATE
+> Task :app:compressDemoDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergeDemoDebugResources UP-TO-DATE
+> Task :app:desugarDemoDebugAndroidTestFileDependencies UP-TO-DATE
+> Task :app:generateDemoDebugAndroidTestRFile UP-TO-DATE
+> Task :app:mapDemoDebugAndroidTestSourceSetPaths UP-TO-DATE
+> Task :app:checkDemoDebugAndroidTestDuplicateClasses UP-TO-DATE
+> Task :app:mergeDemoDebugAndroidTestManifest UP-TO-DATE
+> Task :app:checkDemoDebugAndroidTestAarMetadata UP-TO-DATE
+> Task :app:processDemoDebugAndroidTestManifest UP-TO-DATE
+> Task :app:compileDemoDebugAndroidTestNavigationResources UP-TO-DATE
+> Task :app:validateSigningDemoDebugAndroidTest UP-TO-DATE
+> Task :app:generateDemoDebugAndroidTestBuildConfig UP-TO-DATE
+> Task :app:writeDemoDebugAndroidTestSigningConfigVersions UP-TO-DATE
+> Task :app:mergeDemoDebugAndroidTestJniLibFolders UP-TO-DATE
+> Task :app:mergePleosDebugJniLibFolders UP-TO-DATE
+> Task :app:generatePleosDebugAndroidTestResources UP-TO-DATE
+> Task :app:mergeExtDexDemoDebugAndroidTest UP-TO-DATE
+> Task :app:processPleosDebugAndroidTestNavigationResources UP-TO-DATE
+> Task :app:javaPreCompilePleosDebugAndroidTest UP-TO-DATE
+> Task :app:generatePleosDebugAndroidTestGlobalSynthetics UP-TO-DATE
+> Task :app:mergePleosDebugAndroidTestAssets UP-TO-DATE
+> Task :app:processPleosDebugMainManifest UP-TO-DATE
+> Task :app:mergePleosDebugAndroidTestManifest UP-TO-DATE
+> Task :app:compressPleosDebugAndroidTestAssets UP-TO-DATE
+> Task :app:processPleosDebugManifest UP-TO-DATE
+> Task :app:processPleosDebugAndroidTestManifest UP-TO-DATE
+> Task :app:packagePleosDebugAndroidTestResources UP-TO-DATE
+> Task :app:desugarPleosDebugAndroidTestFileDependencies UP-TO-DATE
+> Task :app:checkPleosDebugAndroidTestDuplicateClasses UP-TO-DATE
+> Task :app:processPleosDebugManifestForPackage UP-TO-DATE
+> Task :app:mapPleosDebugAndroidTestSourceSetPaths UP-TO-DATE
+> Task :app:checkPleosDebugAndroidTestAarMetadata UP-TO-DATE
+> Task :app:generatePleosDebugAndroidTestBuildConfig UP-TO-DATE
+> Task :app:parsePleosDebugAndroidTestLocalResources UP-TO-DATE
+> Task :app:compilePleosDebugAndroidTestNavigationResources UP-TO-DATE
+> Task :app:mergePleosDebugAndroidTestJniLibFolders UP-TO-DATE
+> Task :app:writePleosDebugAndroidTestSigningConfigVersions UP-TO-DATE
+> Task :app:mergeExtDexPleosDebugAndroidTest UP-TO-DATE
+> Task :app:preDemoDebugUnitTestBuild UP-TO-DATE
+> Task :app:prePleosDebugUnitTestBuild UP-TO-DATE
+> Task :app:validateSigningPleosDebugAndroidTest UP-TO-DATE
+> Task :app:mergePleosDebugResources UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:generatePleosDebugAndroidTestRFile UP-TO-DATE
+> Task :app:mergeDemoDebugAndroidTestResources UP-TO-DATE
+> Task :app:mergePleosDebugAndroidTestResources UP-TO-DATE
+> Task :app:processDemoDebugAndroidTestResources UP-TO-DATE
+> Task :app:processDemoDebugResources UP-TO-DATE
+> Task :app:processPleosDebugResources UP-TO-DATE
+> Task :app:processPleosDebugAndroidTestResources UP-TO-DATE
+> Task :core:compileKotlin
+> Task :core:compileJava NO-SOURCE
+> Task :core:classes UP-TO-DATE
+> Task :core:jar
+> Task :app:mergePleosDebugNativeLibs UP-TO-DATE
+> Task :app:mergeDemoDebugNativeLibs UP-TO-DATE
+> Task :app:stripDemoDebugDebugSymbols UP-TO-DATE
+> Task :app:mergeDemoDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripPleosDebugDebugSymbols UP-TO-DATE
+> Task :app:stripDemoDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:mergePleosDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripPleosDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:mergeLibDexDemoDebugAndroidTest UP-TO-DATE
+> Task :app:mergeLibDexPleosDebugAndroidTest UP-TO-DATE
+> Task :app:mergeLibDexDemoDebug
+> Task :app:mergeLibDexPleosDebug
+
+> Task :core:auditScenarios
+scenario	events BEFORE session finish [type@seconds:score]
+drive-course	START@6.8:100, LEFT@17.9:100, RIGHT@30.9:100, U_TURN@45.8:100, STOP@56.1:100
+left	START@6.8:100, LEFT@12.9:100, STOP@18.1:100
+right	START@6.8:100, RIGHT@12.9:100, STOP@18.1:100
+uturn	START@6.8:100, U_TURN@12.9:100, STOP@18.1:100
+fast-left	START@6.4:96, LEFT@12.9:75, STOP@18.2:96
+rough-right	START@6.8:100, RIGHT@13.0:84, STOP@18.1:100
+curve	START@6.8:100, UNKNOWN@12.9:보류, STOP@18.1:100
+low-heading	START@6.8:100, UNKNOWN@12.9:보류, STOP@18.1:100
+fast-right	START@6.4:96, RIGHT@12.9:75, STOP@18.2:96
+fast-uturn	START@6.4:96, U_TURN@12.9:75, STOP@18.2:96
+rough-left	START@6.8:100, LEFT@13.0:84, STOP@18.1:100
+rough-uturn	START@6.8:100, U_TURN@13.0:84, STOP@18.1:100
+smooth-start-stop	START@6.8:100, STOP@16.1:100
+rough-start-stop	START@6.3:95, STOP@10.0:93
+unknown-brake	START@6.3:95, STOP@10.0:보류
+start-smooth	START@6.8:100, STOP@16.1:100
+start-rough	START@6.3:95, STOP@10.0:93
+stop-smooth	START@6.8:100, STOP@16.1:100
+stop-rough	START@6.3:95, STOP@10.0:93
+lane-change	START@6.8:100, UNKNOWN@13.0:보류, STOP@18.1:100
+park-t_park-0-normal	T_PARK@8.3:보류
+park-t_park-1-normal	T_PARK@12.7:보류
+park-t_park-2-normal	T_PARK@19.9:보류
+park-t_park-3-normal	T_PARK@27.9:보류
+park-t_park-4-normal	T_PARK@35.1:보류
+park-t_park-5-normal	T_PARK@43.1:보류
+park-parallel_park-0-normal	PARALLEL_PARK@8.3:보류
+park-parallel_park-1-normal	PARALLEL_PARK@12.7:보류
+park-parallel_park-2-normal	PARALLEL_PARK@19.9:보류
+park-parallel_park-3-normal	PARALLEL_PARK@27.9:보류
+park-parallel_park-4-normal	PARALLEL_PARK@35.1:보류
+park-parallel_park-5-normal	PARALLEL_PARK@43.1:보류
+park-t_park-3-tilted	T_PARK@27.9:보류
+park-t_park-3-intrusion	T_PARK@27.9:보류
+park-t_park-3-occluded	T_PARK@27.9:보류
+park-t_park-3-missing	T_PARK@27.9:보류
+park-t_park-3-speed	T_PARK@27.9:보류
+delayed	START@6.8:100, UNKNOWN@8.4:보류
+gap	START@6.8:100, UNKNOWN@8.4:보류
+disconnect	START@6.8:100, UNKNOWN@8.4:보류
+out-of-order	START@6.8:100, LEFT@12.9:100, STOP@18.1:100
+restrictions	START@6.8:100, LEFT@12.9:100, STOP@18.1:100
+
+> Task :core:compileTestKotlin
+> Task :core:compileTestJava NO-SOURCE
+> Task :core:testClasses UP-TO-DATE
+> Task :app:compilePleosDebugKotlin
+> Task :app:compileDemoDebugKotlin
+> Task :app:compileDemoDebugJavaWithJavac UP-TO-DATE
+> Task :app:compressDemoDebugJavaRes UP-TO-DATE
+> Task :app:compilePleosDebugJavaWithJavac UP-TO-DATE
+> Task :app:compressPleosDebugJavaRes UP-TO-DATE
+> Task :app:mergePleosDebugJavaResource UP-TO-DATE
+> Task :app:mergeDemoDebugJavaResource UP-TO-DATE
+> Task :app:generateDemoDebugLintReportModel
+> Task :app:generatePleosDebugLintReportModel
+> Task :app:bundleDemoDebugClassesToCompileJar
+> Task :app:bundlePleosDebugClassesToCompileJar
+> Task :app:generateDemoDebugUnitTestLintModel
+> Task :app:generateDemoDebugAndroidTestLintModel
+> Task :app:dexBuilderDemoDebug
+> Task :app:dexBuilderPleosDebug
+> Task :app:generatePleosDebugAndroidTestLintModel
+> Task :app:mergeProjectDexDemoDebug
+> Task :app:mergeProjectDexPleosDebug
+> Task :app:generatePleosDebugUnitTestLintModel
+> Task :app:packageDemoDebug
+> Task :app:assembleDemoDebug
+> Task :app:createDemoDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:packagePleosDebug
+> Task :app:assemblePleosDebug
+> Task :app:createPleosDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:lintAnalyzeDemoDebugUnitTest
+> Task :app:compilePleosDebugAndroidTestKotlin
+> Task :app:compressPleosDebugAndroidTestJavaRes UP-TO-DATE
+> Task :app:mergePleosDebugAndroidTestJavaResource UP-TO-DATE
+> Task :app:compileDemoDebugAndroidTestKotlin
+> Task :app:compressDemoDebugAndroidTestJavaRes UP-TO-DATE
+> Task :app:mergeDemoDebugAndroidTestJavaResource UP-TO-DATE
+> Task :app:compilePleosDebugAndroidTestJavaWithJavac UP-TO-DATE
+> Task :app:compileDemoDebugAndroidTestJavaWithJavac UP-TO-DATE
+> Task :app:dexBuilderPleosDebugAndroidTest
+> Task :app:dexBuilderDemoDebugAndroidTest
+> Task :app:mergeProjectDexDemoDebugAndroidTest
+> Task :app:mergeProjectDexPleosDebugAndroidTest
+
+> Task :core:test
+
+EngineTest > stableGearsDebounceDuplicatesNeutralAndShortOscillation PASSED
+
+EngineTest > turnRecognitionRequiresHeadingAndRejectsCurveLaneChange PASSED
+
+EngineTest > strongerExceedanceNeverReducesPenalty PASSED
+
+EngineTest > weightedParkingCountsUseSameDetectorAndScorer PASSED
+
+EngineTest > profileSchemaAndUnknownConditionsAreChecked PASSED
+
+EngineTest > detectsPixelsAtKnownAnglesAndIntrusionAndNoLines PASSED
+
+EngineTest > unknownHarshBrakingDoesNotAssignFault PASSED
+
+EngineTest > sameCourseBadSpeedAndRoughSteeringCarryMeasuredDeductions PASSED
+
+EngineTest > onChangeStateReadDoesNotPretendToBeNewSensorMeasurement PASSED
+
+EngineTest > missingFinalEvidenceHoldsTotalButKeepsCountPenalty PASSED
+
+EngineTest > playbackSchedulingDoesNotEnterAnalysis PASSED
+
+EngineTest > gapsAndBadTimesDoNotProduceFakeDerivatives PASSED
+
+EngineTest > singleSampleNoiseDoesNotCreateHarshLaunch PASSED
+
+> Task :app:packageDemoDebugAndroidTest
+> Task :app:assembleDemoDebugAndroidTest
+> Task :app:createDemoDebugAndroidTestApkListingFileRedirect UP-TO-DATE
+> Task :app:packagePleosDebugAndroidTest
+> Task :app:createPleosDebugAndroidTestApkListingFileRedirect UP-TO-DATE
+> Task :app:assemblePleosDebugAndroidTest
+
+> Task :core:test
+
+EngineTest > missingSteeringStillPreservesConfirmedParkingCountAndHoldsTotal PASSED
+
+EngineTest > restrictionsAndAudioFailClosedAndDeduplicate PASSED
+
+ImmediateFeedbackTest > visualFeedbackIsImmediateEvenWithMutedOrUnavailableVoice PASSED
+
+ImmediateFeedbackTest > completeDriveRecognizesAllFiveNonParkingSituationsWithoutLabels PASSED
+
+ImmediateFeedbackTest > receiptTimestampedSteeringCanDetectCandidateButNeverInventsSensorRate PASSED
+
+ImmediateFeedbackTest > voiceWaitsForActualPermissionAndExpiresWithoutHidingResult PASSED
+
+ImmediateFeedbackTest > phaseEvidenceComesFromSignalsAndKeepsDeductionTotals PASSED
+
+ImmediateFeedbackTest > parkingEmitsOnceThenRefinesActualPixelsWithoutAnotherVoiceEvent PASSED
+
+ImmediateFeedbackTest > rotationDecelerationDoesNotIncludeBrakingBeforeSteeringBegins PASSED
+
+ImmediateFeedbackTest > everyRequestedSituationFinishesBeforeSessionEnds PASSED
+
+ImmediateFeedbackTest > selectedTurnDoesNotLoseVoiceBudgetToEarlierStart PASSED
+
+ImmediateFeedbackTest > startAndStopAreNotBlockedByMissingSteering PASSED
+
+VideoCalibrationTest > unsupportedProjectionAndImpossibleBoundsAreRejected PASSED
+
+VideoCalibrationTest > validatesCalibrationAndMapsOnlyExplicitTimeRange PASSED
+
+VideoCalibrationTest > resizedActualPixelsUseCorrespondinglyScaledVehicleBounds PASSED
+
+VideoCalibrationTest > multipleSlotsAreHeldUntilUserSelectsAnActualDetectedPair PASSED
+
+> Task :app:lintAnalyzeDemoDebugAndroidTest
+> Task :app:lintAnalyzePleosDebugAndroidTest
+> Task :app:lintAnalyzePleosDebugUnitTest
+> Task :app:lintAnalyzeDemoDebug
+
+> Task :app:lintReportDemoDebug
+Wrote HTML report to file:///Users/genius/AndroidStudioProjects/EasyCar/app/build/reports/lint-results-demoDebug.html
+Wrote SARIF report to file:///Users/genius/AndroidStudioProjects/EasyCar/app/build/reports/lint-results-demoDebug.sarif
+
+> Task :app:lintDemoDebug
+> Task :app:lintAnalyzePleosDebug
+
+> Task :app:lintReportPleosDebug
+Wrote HTML report to file:///Users/genius/AndroidStudioProjects/EasyCar/app/build/reports/lint-results-pleosDebug.html
+Wrote SARIF report to file:///Users/genius/AndroidStudioProjects/EasyCar/app/build/reports/lint-results-pleosDebug.sarif
+
+> Task :app:lintPleosDebug
+
+BUILD SUCCESSFUL in 16s
+164 actionable tasks: 41 executed, 123 up-to-date
+Configuration cache entry stored.

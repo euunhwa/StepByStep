@@ -1,0 +1,56 @@
+[
+  {
+    "hostMonotonic": 2490602.675001125,
+    "gear": "Park",
+    "speedKph": 0,
+    "durationSeconds": 2
+  },
+  {
+    "hostMonotonic": 2490616.764242333,
+    "gear": "Drive",
+    "speedKph": 2,
+    "durationSeconds": 2
+  },
+  {
+    "hostMonotonic": 2490618.817864375,
+    "gear": "Reverse",
+    "speedKph": 2,
+    "durationSeconds": 2
+  },
+  {
+    "hostMonotonic": 2490620.851034875,
+    "gear": "Drive",
+    "speedKph": 2,
+    "durationSeconds": 2
+  },
+  {
+    "hostMonotonic": 2490622.910770083,
+    "gear": "Reverse",
+    "speedKph": 2,
+    "durationSeconds": 2
+  },
+  {
+    "hostMonotonic": 2490624.948936291,
+    "gear": "Drive",
+    "speedKph": 2,
+    "durationSeconds": 2
+  },
+  {
+    "hostMonotonic": 2490626.999716958,
+    "gear": "Drive",
+    "speedKph": 0,
+    "durationSeconds": 2
+  },
+  {
+    "hostMonotonic": 2490629.035025625,
+    "gear": "Park",
+    "speedKph": 0,
+    "durationSeconds": 2
+  },
+  {
+    "hostMonotonic": 2490631.166889041,
+    "gear": "Park",
+    "speedKph": 0,
+    "durationSeconds": 1
+  }
+]

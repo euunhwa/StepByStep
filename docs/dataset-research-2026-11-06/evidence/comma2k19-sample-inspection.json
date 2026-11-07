@@ -1,0 +1,68 @@
+{
+  "status": "ONE_HIGHWAY_SEGMENT_INSPECTED_NOT_EXPERT_REFERENCE",
+  "total_downloaded_bytes": 159680,
+  "signals": {
+    "speed": {
+      "count": 4974,
+      "dtype": "<f8",
+      "duration_s": 59.9881140610014,
+      "strictly_increasing": true,
+      "duplicate_or_reverse_count": 0,
+      "median_dt_s": 0.011211375662242062,
+      "median_hz": 89.19512021774668,
+      "max_gap_s": 0.02646135466056876,
+      "minimum": 7.974305555555556,
+      "maximum": 19.840972222222227,
+      "unit_from_documentation": "m/s"
+    },
+    "steering_angle": {
+      "count": 4974,
+      "dtype": "<f8",
+      "duration_s": 59.98725012300565,
+      "strictly_increasing": true,
+      "duplicate_or_reverse_count": 0,
+      "median_dt_s": 0.011220261003472842,
+      "median_hz": 89.1244864705451,
+      "max_gap_s": 0.028691416002402548,
+      "minimum": -4.6,
+      "maximum": 2.5,
+      "unit_from_documentation": "degree:as-described-by-source"
+    }
+  },
+  "not_available_in_inspected_files": [
+    "gear",
+    "parking_space",
+    "maneuver_labels",
+    "expert_quality_scores"
+  ],
+  "files": [
+    {
+      "file": "sample-data/comma2k19/speed_t.npy",
+      "url": "https://raw.githubusercontent.com/commaai/comma2k19/master/Example_1/b0c9d2329ad1606b%7C2018-08-02--08-34-47/40/processed_log/CAN/speed/t",
+      "bytes": 39920,
+      "git_blob_sha1": "db54caa7d3f53611713bc5f8a82d2c19950d251a",
+      "sha256": "53d2a88becfc45f9dcb804f2f78436f2bb6246d80386ff18ded10af679d5d6f3"
+    },
+    {
+      "file": "sample-data/comma2k19/speed_value.npy",
+      "url": "https://raw.githubusercontent.com/commaai/comma2k19/master/Example_1/b0c9d2329ad1606b%7C2018-08-02--08-34-47/40/processed_log/CAN/speed/value",
+      "bytes": 39920,
+      "git_blob_sha1": "6da9b94fbcfaaac9fe57dd53e5fe1f38d18970c4",
+      "sha256": "ba40ded2c9d2a6d5f98801f5438d0cb5d811ccf1444e3a3f680d7addb707551f"
+    },
+    {
+      "file": "sample-data/comma2k19/steering_angle_t.npy",
+      "url": "https://raw.githubusercontent.com/commaai/comma2k19/master/Example_1/b0c9d2329ad1606b%7C2018-08-02--08-34-47/40/processed_log/CAN/steering_angle/t",
+      "bytes": 39920,
+      "git_blob_sha1": "6fd8d82b1373588e3138b80e9d47f1fe0c22d3e0",
+      "sha256": "eb489c74b52cebccd30b803860d70aaafc44801a44b93e72585d602a982dbfc7"
+    },
+    {
+      "file": "sample-data/comma2k19/steering_angle_value.npy",
+      "url": "https://raw.githubusercontent.com/commaai/comma2k19/master/Example_1/b0c9d2329ad1606b%7C2018-08-02--08-34-47/40/processed_log/CAN/steering_angle/value",
+      "bytes": 39920,
+      "git_blob_sha1": "662e677be5f2ea19d76d5478fde21ec80935bd59",
+      "sha256": "6af86fe2fce790c6d3a51d512c625e4766699f473ec13207ea043c08d83a6bea"
+    }
+  ]
+}

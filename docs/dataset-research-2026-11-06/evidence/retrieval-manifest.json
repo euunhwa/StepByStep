@@ -1,0 +1,26 @@
+[
+  {
+    "file": "comma2k19-tree.json",
+    "url": "https://api.github.com/repos/commaai/comma2k19/git/trees/master?recursive=1",
+    "http_status": 200,
+    "bytes": 24009,
+    "sha256": "f42fc9b3bfe2bfb8897afa23c5dee033e9e04b3e81ec5173c11a2ec04c0f997a",
+    "retrieved_utc": "2026-11-06T07:39:04.248344+00:00"
+  },
+  {
+    "file": "dlp-datacite.json",
+    "url": "https://api.datacite.org/dois/10.5061/dryad.tht76hf5b",
+    "http_status": 200,
+    "bytes": 19530,
+    "sha256": "99a074b219d1d480b4b279a4d693e8768b6b52d8f63f68b9e40269e4ef75fde0",
+    "retrieved_utc": "2026-11-06T07:39:05.752654+00:00"
+  },
+  {
+    "file": "interaction-dataset-card.md",
+    "url": "https://huggingface.co/datasets/INTERACTION-dataset/INTERACTION-dataset/resolve/main/README.md",
+    "http_status": 200,
+    "bytes": 7454,
+    "sha256": "3e303038b6c75059bef7505f0a8e1698fb805192217fd963984344a233506e6f",
+    "retrieved_utc": "2026-11-06T07:39:06.065746+00:00"
+  }
+]

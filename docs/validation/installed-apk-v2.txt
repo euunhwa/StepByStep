@@ -1,0 +1,2 @@
+emulator-5554 pleos installed=delivery 9e2b7a15d1b3af55b1035b53100e73e42f09dd97be8130f90463f5e94b8a62c8
+emulator-5556 demo installed=delivery 18e14805e27f45d10065ff86b982d84ad0b1f17de5b58e794cd25296549c1c20

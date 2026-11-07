@@ -1,0 +1,79 @@
+{
+  "version": "0.9.3",
+  "input": "127.0.0.1:8088 → DDS → vehicle service",
+  "modeledSignal": "yaw only / EMULATOR_BICYCLE_MODEL_NOT_SENSOR",
+  "scenes": [
+    {
+      "id": "01-start-100",
+      "type": "START",
+      "score": 100,
+      "voiceState": "SPOKEN",
+      "reverseToDriveCount": 0,
+      "frameCount": 280,
+      "source": "8088 에뮬레이터 · 회전율 모델 사용 / 실차 센서 아님"
+    },
+    {
+      "id": "02-left-100",
+      "type": "LEFT",
+      "score": 100,
+      "voiceState": "SPOKEN",
+      "reverseToDriveCount": 0,
+      "frameCount": 240,
+      "source": "8088 에뮬레이터 · 회전율 모델 사용 / 실차 센서 아님"
+    },
+    {
+      "id": "03-right-100",
+      "type": "RIGHT",
+      "score": 100,
+      "voiceState": "SPOKEN",
+      "reverseToDriveCount": 0,
+      "frameCount": 240,
+      "source": "8088 에뮬레이터 · 회전율 모델 사용 / 실차 센서 아님"
+    },
+    {
+      "id": "04-uturn-100",
+      "type": "U_TURN",
+      "score": 100,
+      "voiceState": "SPOKEN",
+      "reverseToDriveCount": 0,
+      "frameCount": 260,
+      "source": "8088 에뮬레이터 · 회전율 모델 사용 / 실차 센서 아님"
+    },
+    {
+      "id": "05-stop-100",
+      "type": "STOP",
+      "score": 100,
+      "voiceState": "SPOKEN",
+      "reverseToDriveCount": 0,
+      "frameCount": 260,
+      "source": "8088 에뮬레이터 · 회전율 모델 사용 / 실차 센서 아님"
+    },
+    {
+      "id": "06-tpark-60",
+      "type": "T_PARK",
+      "score": 60,
+      "voiceState": "SPOKEN",
+      "reverseToDriveCount": 9,
+      "frameCount": 760,
+      "source": "8088 에뮬레이터 · 회전율 모델 사용 / 실차 센서 아님"
+    },
+    {
+      "id": "07-parallel-90",
+      "type": "PARALLEL_PARK",
+      "score": 90,
+      "voiceState": "SPOKEN",
+      "reverseToDriveCount": 4,
+      "frameCount": 520,
+      "source": "8088 에뮬레이터 · 회전율 모델 사용 / 실차 센서 아님"
+    },
+    {
+      "id": "08-tpark-85",
+      "type": "T_PARK",
+      "score": 85,
+      "voiceState": "SPOKEN",
+      "reverseToDriveCount": 4,
+      "frameCount": 580,
+      "source": "8088 에뮬레이터 · 회전율 모델 사용 / 실차 센서 아님"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Calculating task graph as no cached configuration is available for tasks: :app:assembleDemoDebug :app:assemblePleosDebug :app:assembleDemoDebugAndroidTest :app:assemblePleosDebugAndroidTest
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDemoDebugBuild UP-TO-DATE
+> Task :app:mergeDemoDebugNativeDebugMetadata NO-SOURCE
+> Task :core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core:compileKotlin UP-TO-DATE
+> Task :core:compileJava NO-SOURCE
+> Task :core:processResources NO-SOURCE
+> Task :core:classes UP-TO-DATE
+> Task :core:jar UP-TO-DATE
+> Task :app:generateDemoDebugBuildConfig UP-TO-DATE
+> Task :app:generateDemoDebugResources UP-TO-DATE
+> Task :app:packageDemoDebugResources UP-TO-DATE
+> Task :app:processDemoDebugNavigationResources UP-TO-DATE
+> Task :app:parseDemoDebugLocalResources UP-TO-DATE
+> Task :app:generateDemoDebugRFile UP-TO-DATE
+> Task :app:compileDemoDebugKotlin
+> Task :app:javaPreCompileDemoDebug
+> Task :app:compileDemoDebugJavaWithJavac
+> Task :app:generateDemoDebugAssets UP-TO-DATE
+> Task :app:mergeDemoDebugAssets
+> Task :app:compressDemoDebugAssets
+> Task :app:generateDemoDebugGlobalSynthetics
+> Task :app:compressDemoDebugJavaRes
+> Task :app:mergeDemoDebugJavaResource
+> Task :app:checkDemoDebugDuplicateClasses
+> Task :app:desugarDemoDebugFileDependencies
+> Task :app:mergeExtDexDemoDebug
+> Task :app:mergeLibDexDemoDebug
+> Task :app:checkDemoDebugAarMetadata
+> Task :app:mapDemoDebugSourceSetPaths
+> Task :app:compileDemoDebugNavigationResources
+> Task :app:mergeDemoDebugResources
+> Task :app:createDemoDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDemoDebug
+> Task :app:processDemoDebugMainManifest
+> Task :app:processDemoDebugManifest
+> Task :app:processDemoDebugManifestForPackage
+> Task :app:processDemoDebugResources
+> Task :app:dexBuilderDemoDebug
+> Task :app:mergeProjectDexDemoDebug
+> Task :app:mergeDemoDebugJniLibFolders
+> Task :app:mergeDemoDebugNativeLibs
+
+> Task :app:stripDemoDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libdatastore_shared_counter.so. Run with --info option to learn more.
+
+> Task :app:validateSigningDemoDebug
+> Task :app:writeDemoDebugAppMetadata
+> Task :app:writeDemoDebugSigningConfigVersions
+> Task :app:packageDemoDebug
+> Task :app:createDemoDebugApkListingFileRedirect
+> Task :app:assembleDemoDebug
+> Task :app:prePleosDebugBuild UP-TO-DATE
+> Task :app:mergePleosDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generatePleosDebugBuildConfig
+> Task :app:generatePleosDebugResources
+> Task :app:packagePleosDebugResources
+> Task :app:processPleosDebugNavigationResources
+> Task :app:parsePleosDebugLocalResources
+> Task :app:generatePleosDebugRFile
+
+> Task :app:compilePleosDebugKotlin
+w: file:///Users/genius/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-v3/app/src/pleos/java/com/example/easycar/PleosBridge.kt:38:18 'val status: Int' is deprecated. Deprecated in Java.
+w: file:///Users/genius/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-v3/app/src/pleos/java/com/example/easycar/PleosBridge.kt:52:50 The corresponding parameter in the supertype 'SteeringWheelAngleListener' is named 'angle'. This may cause problems when calling this function with named arguments.
+w: file:///Users/genius/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-v3/app/src/pleos/java/com/example/easycar/PleosBridge.kt:53:31 The corresponding parameter in the supertype 'VehicleListener' is named 'e'. This may cause problems when calling this function with named arguments.
+w: file:///Users/genius/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-v3/app/src/pleos/java/com/example/easycar/PleosBridge.kt:62:32 The corresponding parameter in the supertype 'FusedLocationListener' is named 'location'. This may cause problems when calling this function with named arguments.
+w: file:///Users/genius/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-v3/app/src/pleos/java/com/example/easycar/PleosBridge.kt:89:49 'fun registerCallback(p0: CarPropertyManager.CarPropertyEventCallback!, p1: Int, p2: Float): Boolean' is deprecated. Deprecated in Java.
+w: file:///Users/genius/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-v3/app/src/pleos/java/com/example/easycar/PleosBridge.kt:131:35 'fun unregisterCallback(p0: CarPropertyManager.CarPropertyEventCallback!): Unit' is deprecated. Deprecated in Java.
+
+> Task :app:javaPreCompilePleosDebug
+> Task :app:compilePleosDebugJavaWithJavac
+> Task :app:generatePleosDebugAssets UP-TO-DATE
+> Task :app:mergePleosDebugAssets
+> Task :app:compressPleosDebugAssets
+> Task :app:generatePleosDebugGlobalSynthetics
+> Task :app:checkPleosDebugDuplicateClasses
+> Task :app:desugarPleosDebugFileDependencies
+> Task :app:mergeExtDexPleosDebug
+> Task :app:mergeLibDexPleosDebug
+> Task :app:compressPleosDebugJavaRes
+> Task :app:mergePleosDebugJavaResource
+> Task :app:checkPleosDebugAarMetadata
+> Task :app:mapPleosDebugSourceSetPaths
+> Task :app:compilePleosDebugNavigationResources
+> Task :app:mergePleosDebugResources
+> Task :app:createPleosDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksPleosDebug
+> Task :app:processPleosDebugMainManifest
+> Task :app:processPleosDebugManifest
+> Task :app:processPleosDebugManifestForPackage
+> Task :app:processPleosDebugResources
+> Task :app:dexBuilderPleosDebug
+> Task :app:mergeProjectDexPleosDebug
+> Task :app:mergePleosDebugJniLibFolders
+> Task :app:mergePleosDebugNativeLibs
+
+> Task :app:stripPleosDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libdatastore_shared_counter.so, libjnidispatch.so, libuacore.so. Run with --info option to learn more.
+
+> Task :app:validateSigningPleosDebug
+> Task :app:writePleosDebugAppMetadata
+> Task :app:writePleosDebugSigningConfigVersions
+> Task :app:packagePleosDebug
+> Task :app:createPleosDebugApkListingFileRedirect
+> Task :app:assemblePleosDebug
+> Task :app:bundleDemoDebugClassesToCompileJar
+> Task :app:preDemoDebugAndroidTestBuild SKIPPED
+> Task :app:mergeDemoDebugAndroidTestManifest
+> Task :app:processDemoDebugAndroidTestManifest
+> Task :app:generateDemoDebugAndroidTestBuildConfig
+> Task :app:generateDemoDebugAndroidTestResources
+> Task :app:packageDemoDebugAndroidTestResources
+> Task :app:processDemoDebugAndroidTestNavigationResources
+> Task :app:parseDemoDebugAndroidTestLocalResources
+> Task :app:generateDemoDebugAndroidTestRFile
+> Task :app:compileDemoDebugAndroidTestKotlin
+> Task :app:javaPreCompileDemoDebugAndroidTest
+> Task :app:compileDemoDebugAndroidTestJavaWithJavac
+> Task :app:generateDemoDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergeDemoDebugAndroidTestAssets
+> Task :app:compressDemoDebugAndroidTestAssets
+> Task :app:generateDemoDebugAndroidTestGlobalSynthetics
+> Task :app:compressDemoDebugAndroidTestJavaRes
+> Task :app:mergeDemoDebugAndroidTestJavaResource
+> Task :app:checkDemoDebugAndroidTestDuplicateClasses
+> Task :app:desugarDemoDebugAndroidTestFileDependencies
+> Task :app:mergeExtDexDemoDebugAndroidTest
+> Task :app:mergeLibDexDemoDebugAndroidTest
+> Task :app:checkDemoDebugAndroidTestAarMetadata
+> Task :app:mapDemoDebugAndroidTestSourceSetPaths
+> Task :app:compileDemoDebugAndroidTestNavigationResources
+> Task :app:mergeDemoDebugAndroidTestResources
+> Task :app:processDemoDebugAndroidTestResources
+> Task :app:dexBuilderDemoDebugAndroidTest
+> Task :app:mergeProjectDexDemoDebugAndroidTest
+> Task :app:mergeDemoDebugAndroidTestJniLibFolders
+> Task :app:mergeDemoDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripDemoDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:validateSigningDemoDebugAndroidTest
+> Task :app:writeDemoDebugAndroidTestSigningConfigVersions
+> Task :app:packageDemoDebugAndroidTest
+> Task :app:createDemoDebugAndroidTestApkListingFileRedirect
+> Task :app:assembleDemoDebugAndroidTest
+> Task :app:bundlePleosDebugClassesToCompileJar
+> Task :app:prePleosDebugAndroidTestBuild SKIPPED
+> Task :app:mergePleosDebugAndroidTestManifest
+> Task :app:processPleosDebugAndroidTestManifest
+> Task :app:generatePleosDebugAndroidTestBuildConfig
+> Task :app:generatePleosDebugAndroidTestResources
+> Task :app:packagePleosDebugAndroidTestResources
+> Task :app:processPleosDebugAndroidTestNavigationResources
+> Task :app:parsePleosDebugAndroidTestLocalResources
+> Task :app:generatePleosDebugAndroidTestRFile
+> Task :app:compilePleosDebugAndroidTestKotlin
+> Task :app:javaPreCompilePleosDebugAndroidTest
+> Task :app:compilePleosDebugAndroidTestJavaWithJavac
+> Task :app:generatePleosDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergePleosDebugAndroidTestAssets
+> Task :app:compressPleosDebugAndroidTestAssets
+> Task :app:generatePleosDebugAndroidTestGlobalSynthetics
+> Task :app:checkPleosDebugAndroidTestDuplicateClasses
+> Task :app:desugarPleosDebugAndroidTestFileDependencies
+> Task :app:mergeExtDexPleosDebugAndroidTest
+> Task :app:mergeLibDexPleosDebugAndroidTest
+> Task :app:compressPleosDebugAndroidTestJavaRes
+> Task :app:mergePleosDebugAndroidTestJavaResource
+> Task :app:checkPleosDebugAndroidTestAarMetadata
+> Task :app:mapPleosDebugAndroidTestSourceSetPaths
+> Task :app:compilePleosDebugAndroidTestNavigationResources
+> Task :app:mergePleosDebugAndroidTestResources
+> Task :app:processPleosDebugAndroidTestResources
+> Task :app:dexBuilderPleosDebugAndroidTest
+> Task :app:mergeProjectDexPleosDebugAndroidTest
+> Task :app:mergePleosDebugAndroidTestJniLibFolders
+> Task :app:mergePleosDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripPleosDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:validateSigningPleosDebugAndroidTest
+> Task :app:writePleosDebugAndroidTestSigningConfigVersions
+> Task :app:packagePleosDebugAndroidTest
+> Task :app:createPleosDebugAndroidTestApkListingFileRedirect
+> Task :app:assemblePleosDebugAndroidTest
+
+BUILD SUCCESSFUL in 35s
+144 actionable tasks: 136 executed, 8 up-to-date
+Configuration cache entry stored.

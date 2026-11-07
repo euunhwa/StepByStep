@@ -1,0 +1,153 @@
+{
+  "purpose": "DIAGNOSTIC_REPLAY_NOT_TRAINING_DATA",
+  "appVersion": "0.12.0",
+  "source": "Stored non-demo manual console session, copied database inspected without modifying original",
+  "recordCreatedAtMs": 1794037087661,
+  "groundTruthLabelsAvailable": false,
+  "frameCount": 1890,
+  "rawYawPresentRatio": 1.0,
+  "maximumObservedKph": 73.00000305175782,
+  "replay": "Current compiled core CoachEngine and active document-derived configuration; private state inspected only in a temporary diagnostic JVM",
+  "segments": [
+    {
+      "kind": "turn",
+      "startSeconds": 21.541,
+      "durationSeconds": 3.275,
+      "integratedYawDeg": 56.428304967935944,
+      "yawSignCount": 2,
+      "peakYaw": 0.40736740009785444,
+      "maxKph": 27.0,
+      "coverage": 1.0,
+      "events": []
+    },
+    {
+      "kind": "turn",
+      "startSeconds": 26.04,
+      "durationSeconds": 1.434,
+      "integratedYawDeg": -4.515143037381123,
+      "yawSignCount": 1,
+      "peakYaw": 0.059813368598898374,
+      "maxKph": 19.000001335144045,
+      "coverage": 1.0,
+      "events": []
+    },
+    {
+      "kind": "turn",
+      "startSeconds": 61.514,
+      "durationSeconds": 1.839,
+      "integratedYawDeg": 300.7244162079581,
+      "yawSignCount": 1,
+      "peakYaw": 4.709071940775487,
+      "maxKph": 64.00000305175782,
+      "coverage": 1.0,
+      "events": []
+    },
+    {
+      "kind": "turn",
+      "startSeconds": 71.537,
+      "durationSeconds": 4.404,
+      "integratedYawDeg": 337.7111989924636,
+      "yawSignCount": 2,
+      "peakYaw": 2.351909232569792,
+      "maxKph": 52.00000076293946,
+      "coverage": 1.0,
+      "events": []
+    },
+    {
+      "kind": "turn",
+      "startSeconds": 79.732,
+      "durationSeconds": 3.799,
+      "integratedYawDeg": -25.81180227398268,
+      "yawSignCount": 1,
+      "peakYaw": 0.16535371502775387,
+      "maxKph": 31.000001907348633,
+      "coverage": 1.0,
+      "events": []
+    },
+    {
+      "kind": "parking",
+      "startSeconds": 92.312,
+      "durationSeconds": 19.435,
+      "integratedYawDeg": -34.007650904096224,
+      "yawSignCount": 1,
+      "peakYaw": 0.6869938195187542,
+      "maxKph": 10.000000476837158,
+      "coverage": 0.9781420765027322,
+      "reverseSteeringSustainedSignCount": 1,
+      "reverseYawSustainedSignCount": 1,
+      "events": [
+        "PARKING_UNKNOWN"
+      ]
+    },
+    {
+      "kind": "parking",
+      "startSeconds": 115.972,
+      "durationSeconds": 33.094,
+      "integratedYawDeg": -2.6876585581100314,
+      "yawSignCount": 2,
+      "peakYaw": 0.18336050105239987,
+      "maxKph": 8.000000381469727,
+      "coverage": 0.9872611464968153,
+      "reverseSteeringSustainedSignCount": 0,
+      "reverseYawSustainedSignCount": 0,
+      "events": [
+        "PARKING_UNKNOWN"
+      ]
+    },
+    {
+      "kind": "parking",
+      "startSeconds": 155.76,
+      "durationSeconds": 30.386,
+      "integratedYawDeg": 48.04305691801085,
+      "yawSignCount": 1,
+      "peakYaw": 0.25549528695068546,
+      "maxKph": 7.000000333786011,
+      "coverage": 0.9932203389830508,
+      "reverseSteeringSustainedSignCount": 2,
+      "reverseYawSustainedSignCount": 1,
+      "events": [
+        "PARKING_UNKNOWN"
+      ]
+    }
+  ],
+  "numericBoundaryIssue": {
+    "nominalLimitKph": 10,
+    "observedMaximumOfAbortedParkingSegmentKph": 10.000000476837158,
+    "comparison": "abs(speedMps)>parkingMaxMps",
+    "note": "A nominal 10 km/h value transported as Float lies slightly above the Double limit. The parking segment was aborted at this boundary."
+  },
+  "manualRecipeModelChecks": {
+    "scope": "Offline simulation of current console coasting physics, rounded integer km/h controls and current EmulatorDynamics/CoachEngine; not a newly performed manual UI test",
+    "procedure": "Begin at 12 km/h with zero accelerator/brake; steer for holdSeconds, then center. SDK steering has opposite sign to current 8088 controls.",
+    "results": [
+      {
+        "holdSeconds": 2.0,
+        "sdkSteering": 540.0,
+        "yawDelta": 87.15289469970477,
+        "score": 95,
+        "type": "LEFT",
+        "initialKph": 12,
+        "case": 0
+      },
+      {
+        "holdSeconds": 2.0,
+        "sdkSteering": -540.0,
+        "yawDelta": -87.15289469970477,
+        "score": 95,
+        "type": "RIGHT",
+        "initialKph": 12,
+        "case": 1
+      },
+      {
+        "holdSeconds": 5.0,
+        "sdkSteering": 540.0,
+        "yawDelta": 173.09235937100814,
+        "score": 95,
+        "type": "U_TURN",
+        "initialKph": 12,
+        "case": 2
+      }
+    ]
+  },
+  "productionCodeOrRulesChanged": false
+}

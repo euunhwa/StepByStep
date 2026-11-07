@@ -1,0 +1,18 @@
+{
+  "versionName": "0.9.1",
+  "versionCode": 10,
+  "deviceTests": 2,
+  "deviceTestsPassed": true,
+  "runtimeVoiceReceipts": 7,
+  "uniqueFirstSixCompliments": 6,
+  "adjacentComplimentsDistinct": true,
+  "voiceStates": [
+    "MUTED",
+    "MUTED",
+    "MUTED",
+    "MUTED",
+    "MUTED",
+    "MUTED",
+    "MUTED"
+  ]
+}

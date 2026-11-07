@@ -1,0 +1,11 @@
+
+com.example.easycar.RecordQueryFlowTest:.
+com.example.easycar.SubmissionDemoTest:
+SUBMISSION_DEMO_RESULTS=[{"type":"START","score":100,"kind":"PROVISIONAL"},{"type":"LEFT","score":100,"kind":"PROVISIONAL"},{"type":"RIGHT","score":100,"kind":"PROVISIONAL"},{"type":"U_TURN","score":100,"kind":"PROVISIONAL"},{"type":"STOP","score":100,"kind":"PROVISIONAL"},{"type":"T_PARK","score":100,"kind":"PROVISIONAL"},{"type":"PARALLEL_PARK","score":100,"kind":"PROVISIONAL"}]
+.
+
+Time: 97.467
+
+OK (2 tests)
+
+

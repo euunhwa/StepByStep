@@ -1,0 +1,102 @@
+{
+  "versionName": "0.9.2",
+  "versionCode": 11,
+  "unitTests": 108,
+  "deviceTests": 3,
+  "deviceTestsPassed": true,
+  "spoken": {
+    "elapsedMs": 44972,
+    "feedbacks": [
+      {
+        "type": "START",
+        "voiceState": "SPOKEN",
+        "samplesWhileSpeaking": 236,
+        "frozenProgressIndex": 113
+      },
+      {
+        "type": "LEFT",
+        "voiceState": "SPOKEN",
+        "samplesWhileSpeaking": 207,
+        "frozenProgressIndex": 228
+      },
+      {
+        "type": "RIGHT",
+        "voiceState": "SPOKEN",
+        "samplesWhileSpeaking": 238,
+        "frozenProgressIndex": 348
+      },
+      {
+        "type": "U_TURN",
+        "voiceState": "SPOKEN",
+        "samplesWhileSpeaking": 132,
+        "frozenProgressIndex": 488
+      },
+      {
+        "type": "STOP",
+        "voiceState": "SPOKEN",
+        "samplesWhileSpeaking": 201,
+        "frozenProgressIndex": 610
+      },
+      {
+        "type": "T_PARK",
+        "voiceState": "SPOKEN",
+        "samplesWhileSpeaking": 214,
+        "frozenProgressIndex": 764
+      },
+      {
+        "type": "PARALLEL_PARK",
+        "voiceState": "SPOKEN",
+        "samplesWhileSpeaking": 209,
+        "frozenProgressIndex": 887
+      }
+    ]
+  },
+  "muted": {
+    "elapsedMs": 25080,
+    "feedbacks": [
+      {
+        "type": "START",
+        "voiceState": "MUTED",
+        "samplesWhileSpeaking": 0,
+        "frozenProgressIndex": null
+      },
+      {
+        "type": "LEFT",
+        "voiceState": "MUTED",
+        "samplesWhileSpeaking": 0,
+        "frozenProgressIndex": null
+      },
+      {
+        "type": "RIGHT",
+        "voiceState": "MUTED",
+        "samplesWhileSpeaking": 0,
+        "frozenProgressIndex": null
+      },
+      {
+        "type": "U_TURN",
+        "voiceState": "MUTED",
+        "samplesWhileSpeaking": 0,
+        "frozenProgressIndex": null
+      },
+      {
+        "type": "STOP",
+        "voiceState": "MUTED",
+        "samplesWhileSpeaking": 0,
+        "frozenProgressIndex": null
+      },
+      {
+        "type": "T_PARK",
+        "voiceState": "MUTED",
+        "samplesWhileSpeaking": 0,
+        "frozenProgressIndex": null
+      },
+      {
+        "type": "PARALLEL_PARK",
+        "voiceState": "MUTED",
+        "samplesWhileSpeaking": 0,
+        "frozenProgressIndex": null
+      }
+    ]
+  },
+  "cardExpiredAfterMs": 5064
+}

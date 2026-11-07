@@ -1,0 +1,303 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Reusing configuration cache.
+> Task :core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core:compileKotlin
+> Task :core:compileJava NO-SOURCE
+> Task :core:processResources NO-SOURCE
+> Task :core:classes UP-TO-DATE
+
+> Task :core:exportDocumentFixtures
+START: 100 [] yaw=null
+LEFT: 100 [] yaw=89.62500000000018
+RIGHT: 100 [] yaw=-89.62500000000018
+U_TURN: 100 [] yaw=179.39999999999978
+STOP: 100 [] yaw=null
+T_PARK: 100 [] yaw=90.0000000000002
+PARALLEL_PARK: 100 [] yaw=3.4787316828507215E-16
+
+> Task :core:jar
+> Task :core:compileTestKotlin
+> Task :core:compileTestJava NO-SOURCE
+> Task :core:processTestResources NO-SOURCE
+> Task :core:testClasses UP-TO-DATE
+
+> Task :core:test
+
+AutomaticCoachingTest > forwardParkingUsesObservedSpaceAndDoesNotRequireReverseGear PASSED
+
+AutomaticCoachingTest > steeringReceiptTimeNeverBecomesMeasurementTimeEvenWhenValueQualityIsValid PASSED
+
+AutomaticCoachingTest > incompleteReverseIsNotReportedAsCompletedParking PASSED
+
+AutomaticCoachingTest > draftMeasurementsUseLongitudinalReferenceWithoutActivatingScore PASSED
+
+AutomaticCoachingTest > noSpaceIsUnconfirmedLowSpeedOperationWithActualCountsAndNoInventedPenalty PASSED
+
+AutomaticCoachingTest > legacySelectionAndScenarioNameCannotChangeRecognition PASSED
+
+AutomaticCoachingTest > staleUnverifiedAndChangingSpacesNeverBecomeKnownParkingTypes PASSED
+
+AutomaticCoachingTest > ambiguousButConfirmedSpaceKeepsCountAndHoldsType PASSED
+
+AutomaticCoachingTest > physicalSpaceAxesDetermineParkingTypeWithoutSelectedLabel PASSED
+
+AutomaticCoachingTest > oneUnselectedSessionRecognizesAllSevenAndPublishesBeforeSessionEnd PASSED
+
+AutomaticCoachingTest > exportedContinuousInputRecognizesAllSevenWithoutLoadingTruthOrContext PASSED
+
+AutomaticCoachingTest > allConfirmedParkingCountWeightsRemainVisibleWithTotalHeld PASSED
+
+DocumentDatasetTest > reverseEntryAbsorbsUnfinishedLowSpeedParkingLaunch PASSED
+
+DocumentDatasetTest > recognitionValidationPackUsesOnlySignalsAndTruthStaysOutsideFrames PASSED
+
+DocumentDatasetTest > sevenManeuversPublishBeforeSessionFinishAndNoDuplicationAtFinish PASSED
+
+DocumentDatasetTest > strictVersionedPairHasNoLegacyArbitraryFallback PASSED
+
+DocumentDatasetTest > missingDerivativesHoldRatherThanAwardFullScore PASSED
+
+DocumentDatasetTest > provenanceManifestAndOriginalDocumentAreTraceable PASSED
+
+DocumentDatasetTest > shortSpikeCurveAndOppositeBumpsAreNotFalselyCalledTurn PASSED
+
+DocumentDatasetTest > realServiceRecordingCanBeReplayedWithoutInventingYaw PASSED
+
+DocumentDatasetTest > evaluationMetricVectorPackChecksBoundariesAndParkingWeights PASSED
+
+DocumentDatasetTest > rapidTurnRequiresSpeedThroughoutBumpAndDuration PASSED
+
+DocumentDatasetTest > yawTurnBlocksSpeechEvenWithCenteredWheelAndScorerUsesNewRules PASSED
+
+DocumentDatasetTest > staleYawGapAndReceiptEstimateNeverBecomeMeasuredYaw PASSED
+
+DocumentDatasetTest > sub600msSpikeHasNoGradePenaltyButSustained600msDoes PASSED
+
+DocumentDatasetTest > yawSignControlsDirectionEvenWhenSteeringIsZero PASSED
+
+DocumentDatasetTest > measured100HzInputsAreAlignedTo10HzWithoutChangingYawSign PASSED
+
+DocumentDatasetTest > yawLossInUturnNeverReclassifiesRemainingHalfAsLeftTurn PASSED
+
+DocumentDatasetTest > onChangeGear500msPollingDoesNotExpireAt300ms PASSED
+
+EngineTest > stableGearsDebounceDuplicatesNeutralAndShortOscillation PASSED
+
+EngineTest > turnRecognitionRequiresHeadingAndRejectsCurveLaneChange PASSED
+
+EngineTest > strongerExceedanceNeverReducesPenalty PASSED
+
+EngineTest > weightedParkingCountsUseSameDetectorAndScorer PASSED
+
+EngineTest > profileSchemaAndUnknownConditionsAreChecked PASSED
+
+EngineTest > detectsPixelsAtKnownAnglesAndIntrusionAndNoLines PASSED
+
+EngineTest > unknownHarshBrakingDoesNotAssignFault PASSED
+
+EngineTest > sameCourseBadSpeedAndRoughSteeringCarryMeasuredDeductions PASSED
+
+EngineTest > onChangeStateReadDoesNotPretendToBeNewSensorMeasurement PASSED
+
+EngineTest > missingFinalEvidenceHoldsTotalButKeepsCountPenalty PASSED
+
+EngineTest > playbackSchedulingDoesNotEnterAnalysis PASSED
+
+EngineTest > gapsAndBadTimesDoNotProduceFakeDerivatives PASSED
+
+EngineTest > singleSampleNoiseDoesNotCreateHarshLaunch PASSED
+
+EngineTest > missingSteeringStillPreservesConfirmedParkingCountAndHoldsTotal PASSED
+
+EngineTest > restrictionsAndAudioFailClosedAndDeduplicate PASSED
+
+EvaluationPolicyTest > parserRejectsUnknownMetricsDuplicateMetricsAndBadValidatedLimits PASSED
+
+EvaluationPolicyTest > noGearMeansUnknownCountRatherThanObservedZero PASSED
+
+EvaluationPolicyTest > allBudgetsSumToOneHundredAndDraftCannotGrade PASSED
+
+EvaluationPolicyTest > unvalidatedProfileCannotActivateDespitePolicyFlag PASSED
+
+EvaluationPolicyTest > unknownBrakingCauseHoldsWholeLinkedGroupAndPreservesMeasurements PASSED
+
+EvaluationPolicyTest > correlatedAccelerationAndJerkTakeMaximumAndAssessmentsMatchAppliedTotal PASSED
+
+EvaluationPolicyTest > unavailableRequiredItemNeverRenormalizesOtherGroups PASSED
+
+EvaluationPolicyTest > exposureCannotBeDilutedByAddingNormalTailAndLargerExposureIsMonotonic PASSED
+
+EvaluationPolicyTest > turnBudgetsCapAtFortyThirtyThirtyWithNoDoubleCountedAssessments PASSED
+
+EvaluationPolicyTest > missingGearOrCriticalWindowHoldsTotalInsteadOfGivingHundred PASSED
+
+EvaluationPolicyTest > shorterThanThreeHundredMillisecondsDoesNotDeduct PASSED
+
+ImmediateFeedbackTest > visualFeedbackIsImmediateEvenWithMutedOrUnavailableVoice PASSED
+
+ImmediateFeedbackTest > expiredCardDoesNotPreventTheNextManeuverFromPublishing PASSED
+
+ImmediateFeedbackTest > completeDriveRecognizesAllFiveNonParkingSituationsWithoutLabels PASSED
+
+ImmediateFeedbackTest > stoppedWithTurnedWheelCanSpeakButMovingTurnAndReverseMustWait PASSED
+
+ImmediateFeedbackTest > receiptTimestampedSteeringCanDetectCandidateButNeverInventsSensorRate PASSED
+
+ImmediateFeedbackTest > voiceWaitsForActualPermissionAndExpiresWithoutHidingResult PASSED
+
+ImmediateFeedbackTest > phaseEvidenceComesFromSignalsAndKeepsDeductionTotals PASSED
+
+ImmediateFeedbackTest > parkingEmitsOnceThenRefinesActualPixelsWithoutAnotherVoiceEvent PASSED
+
+ImmediateFeedbackTest > rotationDecelerationDoesNotIncludeBrakingBeforeSteeringBegins PASSED
+
+ImmediateFeedbackTest > everyRecognizedTypeGetsItsOwnFeedbackWithoutFocusFiltering PASSED
+
+ImmediateFeedbackTest > everyRequestedSituationFinishesBeforeSessionEnds PASSED
+
+ImmediateFeedbackTest > cardExpiresWhileHistoryAndLateSpeechRemainAvailable PASSED
+
+ImmediateFeedbackTest > startAndStopAreNotBlockedByMissingSteering PASSED
+
+ProvisionalReferenceTest > arbitraryLimitsNeverLeakIntoExpertOrDraftProfiles PASSED
+
+ProvisionalReferenceTest > moderateLaunchNowFitsAndStrongerAccelerationStillDeducts PASSED
+
+ProvisionalReferenceTest > arbitraryDatasetIsMandatoryAndCannotClaimExpertValidation PASSED
+
+ProvisionalReferenceTest > recordedVehicleServiceFramesCanNowScoreTheObservedStop PASSED
+
+ProvisionalReferenceTest > receiptTimestampedSteeringStillHoldsItsMetricUnderProvisionalRules PASSED
+
+ProvisionalReferenceTest > absentRequiredSignalsStillHoldAndExplainTheActualCause PASSED
+
+ProvisionalReferenceTest > lateMissingDerivativesAreNeverRemovedAsGearWarmup PASSED
+
+ProvisionalReferenceTest > briefSubThresholdExposureDoesNotGetAHarshBrakingReason PASSED
+
+ProvisionalReferenceTest > scoreRefinementNeverDuplicatesVoiceOrExtendsTheCardLifetime PASSED
+
+ProvisionalReferenceTest > oneSubmissionDriveScoresAllSevenWithTheArbitraryNotice PASSED
+
+ProvisionalReferenceTest > observedBrakingComputesNinetyFromExposureAndPublishesAShortReason PASSED
+
+ProvisionalReferenceTest > observedBrakingStillHoldsMissingSignals PASSED
+
+ProvisionalReferenceTest > knownBrakingAndJerkPenaltiesAccumulateMoreGradually PASSED
+
+ProvisionalReferenceTest > moderateBrakingNoLongerTriggersAnUnknownHarshBrakingHold PASSED
+
+ProvisionalReferenceTest > observationModeRequiresItsExplicitMeaningAndNeverOverridesExpertCauseGate PASSED
+
+ProvisionalReferenceTest > provisionalScoreIsUsableWithoutPretendingVehicleCalibrationOrExpertApproval PASSED
+
+VideoCalibrationTest > unsupportedProjectionAndImpossibleBoundsAreRejected PASSED
+
+VideoCalibrationTest > validatesCalibrationAndMapsOnlyExplicitTimeRange PASSED
+
+VideoCalibrationTest > resizedActualPixelsUseCorrespondinglyScaledVehicleBounds PASSED
+
+VideoCalibrationTest > multipleSlotsAreHeldUntilUserSelectsAnActualDetectedPair PASSED
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:prePleosDebugBuild UP-TO-DATE
+> Task :app:generatePleosDebugBuildConfig UP-TO-DATE
+> Task :app:generatePleosDebugResources UP-TO-DATE
+> Task :app:packagePleosDebugResources UP-TO-DATE
+> Task :app:processPleosDebugNavigationResources UP-TO-DATE
+> Task :app:parsePleosDebugLocalResources UP-TO-DATE
+> Task :app:generatePleosDebugRFile UP-TO-DATE
+
+> Task :app:compilePleosDebugKotlin
+w: file:///Users/genius/AndroidStudioProjects/EasyCar/app/src/pleos/java/com/example/easycar/PleosBridge.kt:39:18 'val status: Int' is deprecated. Deprecated in Java.
+w: file:///Users/genius/AndroidStudioProjects/EasyCar/app/src/pleos/java/com/example/easycar/PleosBridge.kt:53:50 The corresponding parameter in the supertype 'SteeringWheelAngleListener' is named 'angle'. This may cause problems when calling this function with named arguments.
+w: file:///Users/genius/AndroidStudioProjects/EasyCar/app/src/pleos/java/com/example/easycar/PleosBridge.kt:54:31 The corresponding parameter in the supertype 'VehicleListener' is named 'e'. This may cause problems when calling this function with named arguments.
+w: file:///Users/genius/AndroidStudioProjects/EasyCar/app/src/pleos/java/com/example/easycar/PleosBridge.kt:63:32 The corresponding parameter in the supertype 'FusedLocationListener' is named 'location'. This may cause problems when calling this function with named arguments.
+w: file:///Users/genius/AndroidStudioProjects/EasyCar/app/src/pleos/java/com/example/easycar/PleosBridge.kt:90:49 'fun registerCallback(p0: CarPropertyManager.CarPropertyEventCallback!, p1: Int, p2: Float): Boolean' is deprecated. Deprecated in Java.
+w: file:///Users/genius/AndroidStudioProjects/EasyCar/app/src/pleos/java/com/example/easycar/PleosBridge.kt:137:35 'fun unregisterCallback(p0: CarPropertyManager.CarPropertyEventCallback!): Unit' is deprecated. Deprecated in Java.
+
+> Task :app:javaPreCompilePleosDebug UP-TO-DATE
+> Task :app:compilePleosDebugJavaWithJavac UP-TO-DATE
+> Task :app:checkPleosDebugAarMetadata UP-TO-DATE
+> Task :app:mapPleosDebugSourceSetPaths UP-TO-DATE
+> Task :app:compilePleosDebugNavigationResources UP-TO-DATE
+> Task :app:mergePleosDebugResources UP-TO-DATE
+> Task :app:createPleosDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksPleosDebug UP-TO-DATE
+> Task :app:processPleosDebugMainManifest UP-TO-DATE
+> Task :app:processPleosDebugManifest UP-TO-DATE
+> Task :app:processPleosDebugManifestForPackage UP-TO-DATE
+> Task :app:processPleosDebugResources UP-TO-DATE
+> Task :app:bundlePleosDebugClassesToRuntimeJar UP-TO-DATE
+> Task :app:bundlePleosDebugClassesToCompileJar UP-TO-DATE
+> Task :app:prePleosDebugUnitTestBuild UP-TO-DATE
+> Task :app:compilePleosDebugUnitTestKotlin
+> Task :app:javaPreCompilePleosDebugUnitTest UP-TO-DATE
+> Task :app:compilePleosDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:compressPleosDebugJavaRes UP-TO-DATE
+> Task :app:compressPleosDebugUnitTestJavaRes UP-TO-DATE
+> Task :app:extractPleosDebugUnitTestJavaRes UP-TO-DATE
+> Task :app:testPleosDebugUnitTest
+> Task :app:mergePleosDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generatePleosDebugAssets UP-TO-DATE
+> Task :app:mergePleosDebugAssets UP-TO-DATE
+> Task :app:compressPleosDebugAssets UP-TO-DATE
+> Task :app:generatePleosDebugGlobalSynthetics UP-TO-DATE
+> Task :app:checkPleosDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarPleosDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexPleosDebug UP-TO-DATE
+> Task :app:mergeLibDexPleosDebug
+> Task :app:mergePleosDebugJavaResource UP-TO-DATE
+> Task :app:dexBuilderPleosDebug UP-TO-DATE
+> Task :app:mergeProjectDexPleosDebug UP-TO-DATE
+> Task :app:mergePleosDebugJniLibFolders UP-TO-DATE
+> Task :app:mergePleosDebugNativeLibs UP-TO-DATE
+> Task :app:stripPleosDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningPleosDebug UP-TO-DATE
+> Task :app:writePleosDebugAppMetadata UP-TO-DATE
+> Task :app:writePleosDebugSigningConfigVersions UP-TO-DATE
+> Task :app:packagePleosDebug
+> Task :app:createPleosDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:assemblePleosDebug
+> Task :app:prePleosDebugAndroidTestBuild SKIPPED
+> Task :app:mergePleosDebugAndroidTestManifest UP-TO-DATE
+> Task :app:processPleosDebugAndroidTestManifest UP-TO-DATE
+> Task :app:generatePleosDebugAndroidTestBuildConfig UP-TO-DATE
+> Task :app:generatePleosDebugAndroidTestResources UP-TO-DATE
+> Task :app:packagePleosDebugAndroidTestResources UP-TO-DATE
+> Task :app:processPleosDebugAndroidTestNavigationResources UP-TO-DATE
+> Task :app:parsePleosDebugAndroidTestLocalResources UP-TO-DATE
+> Task :app:generatePleosDebugAndroidTestRFile UP-TO-DATE
+> Task :app:compilePleosDebugAndroidTestKotlin
+> Task :app:javaPreCompilePleosDebugAndroidTest UP-TO-DATE
+> Task :app:compilePleosDebugAndroidTestJavaWithJavac UP-TO-DATE
+> Task :app:generatePleosDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergePleosDebugAndroidTestAssets UP-TO-DATE
+> Task :app:compressPleosDebugAndroidTestAssets UP-TO-DATE
+> Task :app:generatePleosDebugAndroidTestGlobalSynthetics UP-TO-DATE
+> Task :app:checkPleosDebugAndroidTestDuplicateClasses UP-TO-DATE
+> Task :app:desugarPleosDebugAndroidTestFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexPleosDebugAndroidTest UP-TO-DATE
+> Task :app:mergeLibDexPleosDebugAndroidTest UP-TO-DATE
+> Task :app:compressPleosDebugAndroidTestJavaRes UP-TO-DATE
+> Task :app:mergePleosDebugAndroidTestJavaResource UP-TO-DATE
+> Task :app:checkPleosDebugAndroidTestAarMetadata UP-TO-DATE
+> Task :app:mapPleosDebugAndroidTestSourceSetPaths UP-TO-DATE
+> Task :app:compilePleosDebugAndroidTestNavigationResources UP-TO-DATE
+> Task :app:mergePleosDebugAndroidTestResources UP-TO-DATE
+> Task :app:processPleosDebugAndroidTestResources UP-TO-DATE
+> Task :app:dexBuilderPleosDebugAndroidTest UP-TO-DATE
+> Task :app:mergeProjectDexPleosDebugAndroidTest UP-TO-DATE
+> Task :app:mergePleosDebugAndroidTestJniLibFolders UP-TO-DATE
+> Task :app:mergePleosDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripPleosDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:validateSigningPleosDebugAndroidTest UP-TO-DATE
+> Task :app:writePleosDebugAndroidTestSigningConfigVersions UP-TO-DATE
+> Task :app:packagePleosDebugAndroidTest UP-TO-DATE
+> Task :app:createPleosDebugAndroidTestApkListingFileRedirect UP-TO-DATE
+> Task :app:assemblePleosDebugAndroidTest UP-TO-DATE
+
+BUILD SUCCESSFUL in 23s
+82 actionable tasks: 11 executed, 71 up-to-date
+Configuration cache entry reused.

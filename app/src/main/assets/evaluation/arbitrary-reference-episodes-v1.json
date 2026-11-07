@@ -1,0 +1,6558 @@
+{
+  "dataset_id": "arbitrary-evaluation-reference-0.2",
+  "notice": "평가용 데이터셋은 임의로 만든 자료이며 개선이 필요합니다.",
+  "episodes": [
+    {
+      "maneuver": "START",
+      "synthetic": true,
+      "expert_reviewed": false,
+      "reference_is_arbitrary": true,
+      "start_ms": 0,
+      "end_ms": 6800,
+      "samples": [
+        {
+          "time_ms": 0,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 1000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 1100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 1200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 1300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 1400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 1500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 1600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 1700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 1800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 1900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 2000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 2100,
+          "speed_mps": 0.10344827586206896,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 2200,
+          "speed_mps": 0.20689655172413793,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 2300,
+          "speed_mps": 0.3103448275862069,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 2400,
+          "speed_mps": 0.41379310344827586,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 2500,
+          "speed_mps": 0.5172413793103449,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 2600,
+          "speed_mps": 0.6206896551724138,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 2700,
+          "speed_mps": 0.7241379310344828,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 2800,
+          "speed_mps": 0.8275862068965517,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 2900,
+          "speed_mps": 0.9310344827586208,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 3000,
+          "speed_mps": 1.0344827586206897,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 3100,
+          "speed_mps": 1.1379310344827585,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 3200,
+          "speed_mps": 1.2413793103448276,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 3300,
+          "speed_mps": 1.3448275862068966,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 3400,
+          "speed_mps": 1.4482758620689655,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 3500,
+          "speed_mps": 1.5517241379310347,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 3600,
+          "speed_mps": 1.6551724137931034,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 3700,
+          "speed_mps": 1.7586206896551722,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 3800,
+          "speed_mps": 1.8620689655172415,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 3900,
+          "speed_mps": 1.9655172413793103,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 4000,
+          "speed_mps": 2.0689655172413794,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 4100,
+          "speed_mps": 2.1724137931034484,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 4200,
+          "speed_mps": 2.275862068965517,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 4300,
+          "speed_mps": 2.3793103448275863,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 4400,
+          "speed_mps": 2.4827586206896552,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 4500,
+          "speed_mps": 2.586206896551724,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 4600,
+          "speed_mps": 2.689655172413793,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 4700,
+          "speed_mps": 2.793103448275862,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 4800,
+          "speed_mps": 2.896551724137931,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 4900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 5000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 5100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 5200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 5300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 5400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 5500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 5600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 5700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 5800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 5900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 6000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 6100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 6200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 6300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 6400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 6500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 6600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 6700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 6800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        }
+      ]
+    },
+    {
+      "maneuver": "LEFT",
+      "synthetic": true,
+      "expert_reviewed": false,
+      "reference_is_arbitrary": true,
+      "start_ms": 8600,
+      "end_ms": 17900,
+      "samples": [
+        {
+          "time_ms": 8600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 8700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 8800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 8900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 9000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 9100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 9200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 9300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 9400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 9500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 9600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 9700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 9800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 9900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 10000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 10100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 10200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 10300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 10400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 10500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 10600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 10700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 10800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 10900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 11000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 11100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -9.579991471592157,
+          "gear": "DRIVE",
+          "heading_deg": 359.9233125100424
+        },
+        {
+          "time_ms": 11200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -19.13282741652577,
+          "gear": "DRIVE",
+          "heading_deg": 359.6967557539963
+        },
+        {
+          "time_ms": 11300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -28.631429283432972,
+          "gear": "DRIVE",
+          "heading_deg": 359.32558830260155
+        },
+        {
+          "time_ms": 11400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -38.04887225333238,
+          "gear": "DRIVE",
+          "heading_deg": 358.81506872659816
+        },
+        {
+          "time_ms": 11500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -47.35846156095383,
+          "gear": "DRIVE",
+          "heading_deg": 358.1704555967261
+        },
+        {
+          "time_ms": 11600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -56.53380816395079,
+          "gear": "DRIVE",
+          "heading_deg": 357.3970074837252
+        },
+        {
+          "time_ms": 11700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -65.548903545508,
+          "gear": "DRIVE",
+          "heading_deg": 356.4999829583356
+        },
+        {
+          "time_ms": 11800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -74.37819343830807,
+          "gear": "DRIVE",
+          "heading_deg": 355.4846405912971
+        },
+        {
+          "time_ms": 11900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -82.99665026087865,
+          "gear": "DRIVE",
+          "heading_deg": 354.35623895334965
+        },
+        {
+          "time_ms": 12000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -91.37984406099119,
+          "gear": "DRIVE",
+          "heading_deg": 353.1200366152333
+        },
+        {
+          "time_ms": 12100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -99.5040117650148,
+          "gear": "DRIVE",
+          "heading_deg": 351.7812921476879
+        },
+        {
+          "time_ms": 12200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -107.34612453693026,
+          "gear": "DRIVE",
+          "heading_deg": 350.3452641214535
+        },
+        {
+          "time_ms": 12300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -114.88395305606761,
+          "gear": "DRIVE",
+          "heading_deg": 348.81721110727
+        },
+        {
+          "time_ms": 12400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -122.09613052853089,
+          "gear": "DRIVE",
+          "heading_deg": 347.20239167587727
+        },
+        {
+          "time_ms": 12500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -128.96221325369672,
+          "gear": "DRIVE",
+          "heading_deg": 345.5060643980154
+        },
+        {
+          "time_ms": 12600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -135.46273857410492,
+          "gear": "DRIVE",
+          "heading_deg": 343.7334878444242
+        },
+        {
+          "time_ms": 12700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -141.57928004447564,
+          "gear": "DRIVE",
+          "heading_deg": 341.88992058584375
+        },
+        {
+          "time_ms": 12800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -147.29449966347042,
+          "gear": "DRIVE",
+          "heading_deg": 339.9806211930139
+        },
+        {
+          "time_ms": 12900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -152.59219702014076,
+          "gear": "DRIVE",
+          "heading_deg": 338.01084823667463
+        },
+        {
+          "time_ms": 13000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -157.45735521575304,
+          "gear": "DRIVE",
+          "heading_deg": 335.9858602875659
+        },
+        {
+          "time_ms": 13100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -161.87618343081945,
+          "gear": "DRIVE",
+          "heading_deg": 333.91091591642765
+        },
+        {
+          "time_ms": 13200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -165.83615601667432,
+          "gear": "DRIVE",
+          "heading_deg": 331.79127369399987
+        },
+        {
+          "time_ms": 13300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -169.326048000786,
+          "gear": "DRIVE",
+          "heading_deg": 329.63219219102245
+        },
+        {
+          "time_ms": 13400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -172.33596690516097,
+          "gear": "DRIVE",
+          "heading_deg": 327.43892997823536
+        },
+        {
+          "time_ms": 13500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -174.85738078764777,
+          "gear": "DRIVE",
+          "heading_deg": 325.21674562637855
+        },
+        {
+          "time_ms": 13600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -176.88314242665376,
+          "gear": "DRIVE",
+          "heading_deg": 322.970897706192
+        },
+        {
+          "time_ms": 13700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -178.4075095807213,
+          "gear": "DRIVE",
+          "heading_deg": 320.7066447884156
+        },
+        {
+          "time_ms": 13800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -179.42616126553503,
+          "gear": "DRIVE",
+          "heading_deg": 318.4292454437893
+        },
+        {
+          "time_ms": 13900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -179.9362100022215,
+          "gear": "DRIVE",
+          "heading_deg": 316.1439582430531
+        },
+        {
+          "time_ms": 14000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -179.9362100022215,
+          "gear": "DRIVE",
+          "heading_deg": 313.8560417569469
+        },
+        {
+          "time_ms": 14100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -179.42616126553503,
+          "gear": "DRIVE",
+          "heading_deg": 311.5707545562107
+        },
+        {
+          "time_ms": 14200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -178.4075095807213,
+          "gear": "DRIVE",
+          "heading_deg": 309.2933552115844
+        },
+        {
+          "time_ms": 14300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -176.88314242665376,
+          "gear": "DRIVE",
+          "heading_deg": 307.029102293808
+        },
+        {
+          "time_ms": 14400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -174.85738078764777,
+          "gear": "DRIVE",
+          "heading_deg": 304.78325437362145
+        },
+        {
+          "time_ms": 14500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -172.335966905161,
+          "gear": "DRIVE",
+          "heading_deg": 302.56107002176464
+        },
+        {
+          "time_ms": 14600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -169.326048000786,
+          "gear": "DRIVE",
+          "heading_deg": 300.36780780897755
+        },
+        {
+          "time_ms": 14700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -165.83615601667435,
+          "gear": "DRIVE",
+          "heading_deg": 298.20872630600013
+        },
+        {
+          "time_ms": 14800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -161.87618343081945,
+          "gear": "DRIVE",
+          "heading_deg": 296.08908408357235
+        },
+        {
+          "time_ms": 14900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -157.45735521575304,
+          "gear": "DRIVE",
+          "heading_deg": 294.0141397124341
+        },
+        {
+          "time_ms": 15000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -152.5921970201408,
+          "gear": "DRIVE",
+          "heading_deg": 291.98915176332537
+        },
+        {
+          "time_ms": 15100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -147.29449966347045,
+          "gear": "DRIVE",
+          "heading_deg": 290.0193788069861
+        },
+        {
+          "time_ms": 15200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -141.57928004447567,
+          "gear": "DRIVE",
+          "heading_deg": 288.11007941415625
+        },
+        {
+          "time_ms": 15300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -135.46273857410495,
+          "gear": "DRIVE",
+          "heading_deg": 286.2665121555758
+        },
+        {
+          "time_ms": 15400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -128.96221325369675,
+          "gear": "DRIVE",
+          "heading_deg": 284.4939356019846
+        },
+        {
+          "time_ms": 15500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -122.09613052853092,
+          "gear": "DRIVE",
+          "heading_deg": 282.79760832412273
+        },
+        {
+          "time_ms": 15600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -114.88395305606758,
+          "gear": "DRIVE",
+          "heading_deg": 281.18278889273
+        },
+        {
+          "time_ms": 15700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -107.34612453693029,
+          "gear": "DRIVE",
+          "heading_deg": 279.6547358785465
+        },
+        {
+          "time_ms": 15800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -99.5040117650148,
+          "gear": "DRIVE",
+          "heading_deg": 278.21870785231204
+        },
+        {
+          "time_ms": 15900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -91.37984406099119,
+          "gear": "DRIVE",
+          "heading_deg": 276.8799633847667
+        },
+        {
+          "time_ms": 16000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -82.99665026087871,
+          "gear": "DRIVE",
+          "heading_deg": 275.6437610466503
+        },
+        {
+          "time_ms": 16100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -74.37819343830806,
+          "gear": "DRIVE",
+          "heading_deg": 274.5153594087029
+        },
+        {
+          "time_ms": 16200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -65.54890354550798,
+          "gear": "DRIVE",
+          "heading_deg": 273.5000170416644
+        },
+        {
+          "time_ms": 16300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -56.53380816395079,
+          "gear": "DRIVE",
+          "heading_deg": 272.6029925162748
+        },
+        {
+          "time_ms": 16400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -47.35846156095383,
+          "gear": "DRIVE",
+          "heading_deg": 271.8295444032739
+        },
+        {
+          "time_ms": 16500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -38.048872253332384,
+          "gear": "DRIVE",
+          "heading_deg": 271.18493127340184
+        },
+        {
+          "time_ms": 16600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -28.63142928343298,
+          "gear": "DRIVE",
+          "heading_deg": 270.67441169739845
+        },
+        {
+          "time_ms": 16700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -19.132827416525785,
+          "gear": "DRIVE",
+          "heading_deg": 270.3032442460037
+        },
+        {
+          "time_ms": 16800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -9.579991471592177,
+          "gear": "DRIVE",
+          "heading_deg": 270.0766874899576
+        },
+        {
+          "time_ms": 16900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": -2.2043642384652358e-14,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 17000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 17100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 17200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 17300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 17400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 17500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 17600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 17700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 17800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 17900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        }
+      ]
+    },
+    {
+      "maneuver": "RIGHT",
+      "synthetic": true,
+      "expert_reviewed": false,
+      "reference_is_arbitrary": true,
+      "start_ms": 21600,
+      "end_ms": 30900,
+      "samples": [
+        {
+          "time_ms": 21600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 21700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 21800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 21900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 22000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 22100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 22200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 22300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 22400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 22500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 22600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 22700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 22800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 22900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 23000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 23100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 23200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 23300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 23400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 23500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 23600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 23700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 23800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 23900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 24000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 24100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 9.579991471592157,
+          "gear": "DRIVE",
+          "heading_deg": 270.0766874899576
+        },
+        {
+          "time_ms": 24200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 19.13282741652577,
+          "gear": "DRIVE",
+          "heading_deg": 270.3032442460037
+        },
+        {
+          "time_ms": 24300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 28.631429283432972,
+          "gear": "DRIVE",
+          "heading_deg": 270.67441169739845
+        },
+        {
+          "time_ms": 24400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 38.04887225333238,
+          "gear": "DRIVE",
+          "heading_deg": 271.18493127340184
+        },
+        {
+          "time_ms": 24500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 47.35846156095383,
+          "gear": "DRIVE",
+          "heading_deg": 271.8295444032739
+        },
+        {
+          "time_ms": 24600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 56.53380816395079,
+          "gear": "DRIVE",
+          "heading_deg": 272.6029925162748
+        },
+        {
+          "time_ms": 24700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 65.548903545508,
+          "gear": "DRIVE",
+          "heading_deg": 273.5000170416644
+        },
+        {
+          "time_ms": 24800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 74.37819343830807,
+          "gear": "DRIVE",
+          "heading_deg": 274.5153594087029
+        },
+        {
+          "time_ms": 24900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 82.99665026087865,
+          "gear": "DRIVE",
+          "heading_deg": 275.64376104665035
+        },
+        {
+          "time_ms": 25000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 91.37984406099119,
+          "gear": "DRIVE",
+          "heading_deg": 276.8799633847667
+        },
+        {
+          "time_ms": 25100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 99.5040117650148,
+          "gear": "DRIVE",
+          "heading_deg": 278.21870785231204
+        },
+        {
+          "time_ms": 25200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 107.34612453693026,
+          "gear": "DRIVE",
+          "heading_deg": 279.6547358785465
+        },
+        {
+          "time_ms": 25300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 114.88395305606761,
+          "gear": "DRIVE",
+          "heading_deg": 281.18278889273006
+        },
+        {
+          "time_ms": 25400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 122.09613052853089,
+          "gear": "DRIVE",
+          "heading_deg": 282.79760832412273
+        },
+        {
+          "time_ms": 25500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 128.96221325369672,
+          "gear": "DRIVE",
+          "heading_deg": 284.4939356019846
+        },
+        {
+          "time_ms": 25600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 135.46273857410492,
+          "gear": "DRIVE",
+          "heading_deg": 286.2665121555758
+        },
+        {
+          "time_ms": 25700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 141.57928004447564,
+          "gear": "DRIVE",
+          "heading_deg": 288.1100794141563
+        },
+        {
+          "time_ms": 25800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 147.29449966347042,
+          "gear": "DRIVE",
+          "heading_deg": 290.0193788069861
+        },
+        {
+          "time_ms": 25900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 152.59219702014076,
+          "gear": "DRIVE",
+          "heading_deg": 291.98915176332537
+        },
+        {
+          "time_ms": 26000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 157.45735521575304,
+          "gear": "DRIVE",
+          "heading_deg": 294.0141397124341
+        },
+        {
+          "time_ms": 26100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 161.87618343081945,
+          "gear": "DRIVE",
+          "heading_deg": 296.08908408357235
+        },
+        {
+          "time_ms": 26200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 165.83615601667432,
+          "gear": "DRIVE",
+          "heading_deg": 298.20872630600013
+        },
+        {
+          "time_ms": 26300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 169.326048000786,
+          "gear": "DRIVE",
+          "heading_deg": 300.36780780897755
+        },
+        {
+          "time_ms": 26400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 172.33596690516097,
+          "gear": "DRIVE",
+          "heading_deg": 302.56107002176464
+        },
+        {
+          "time_ms": 26500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 174.85738078764777,
+          "gear": "DRIVE",
+          "heading_deg": 304.78325437362145
+        },
+        {
+          "time_ms": 26600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 176.88314242665376,
+          "gear": "DRIVE",
+          "heading_deg": 307.029102293808
+        },
+        {
+          "time_ms": 26700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 178.4075095807213,
+          "gear": "DRIVE",
+          "heading_deg": 309.2933552115844
+        },
+        {
+          "time_ms": 26800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 179.42616126553503,
+          "gear": "DRIVE",
+          "heading_deg": 311.5707545562107
+        },
+        {
+          "time_ms": 26900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 179.9362100022215,
+          "gear": "DRIVE",
+          "heading_deg": 313.8560417569469
+        },
+        {
+          "time_ms": 27000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 179.9362100022215,
+          "gear": "DRIVE",
+          "heading_deg": 316.1439582430531
+        },
+        {
+          "time_ms": 27100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 179.42616126553503,
+          "gear": "DRIVE",
+          "heading_deg": 318.4292454437893
+        },
+        {
+          "time_ms": 27200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 178.4075095807213,
+          "gear": "DRIVE",
+          "heading_deg": 320.7066447884156
+        },
+        {
+          "time_ms": 27300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 176.88314242665376,
+          "gear": "DRIVE",
+          "heading_deg": 322.970897706192
+        },
+        {
+          "time_ms": 27400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 174.85738078764777,
+          "gear": "DRIVE",
+          "heading_deg": 325.21674562637855
+        },
+        {
+          "time_ms": 27500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 172.335966905161,
+          "gear": "DRIVE",
+          "heading_deg": 327.43892997823536
+        },
+        {
+          "time_ms": 27600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 169.326048000786,
+          "gear": "DRIVE",
+          "heading_deg": 329.63219219102245
+        },
+        {
+          "time_ms": 27700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 165.83615601667435,
+          "gear": "DRIVE",
+          "heading_deg": 331.79127369399987
+        },
+        {
+          "time_ms": 27800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 161.87618343081945,
+          "gear": "DRIVE",
+          "heading_deg": 333.91091591642765
+        },
+        {
+          "time_ms": 27900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 157.45735521575304,
+          "gear": "DRIVE",
+          "heading_deg": 335.9858602875659
+        },
+        {
+          "time_ms": 28000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 152.5921970201408,
+          "gear": "DRIVE",
+          "heading_deg": 338.01084823667463
+        },
+        {
+          "time_ms": 28100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 147.29449966347045,
+          "gear": "DRIVE",
+          "heading_deg": 339.9806211930139
+        },
+        {
+          "time_ms": 28200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 141.57928004447567,
+          "gear": "DRIVE",
+          "heading_deg": 341.88992058584375
+        },
+        {
+          "time_ms": 28300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 135.46273857410495,
+          "gear": "DRIVE",
+          "heading_deg": 343.7334878444242
+        },
+        {
+          "time_ms": 28400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 128.96221325369675,
+          "gear": "DRIVE",
+          "heading_deg": 345.5060643980154
+        },
+        {
+          "time_ms": 28500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 122.09613052853092,
+          "gear": "DRIVE",
+          "heading_deg": 347.20239167587727
+        },
+        {
+          "time_ms": 28600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 114.88395305606758,
+          "gear": "DRIVE",
+          "heading_deg": 348.81721110727
+        },
+        {
+          "time_ms": 28700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 107.34612453693029,
+          "gear": "DRIVE",
+          "heading_deg": 350.3452641214535
+        },
+        {
+          "time_ms": 28800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 99.5040117650148,
+          "gear": "DRIVE",
+          "heading_deg": 351.78129214768796
+        },
+        {
+          "time_ms": 28900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 91.37984406099119,
+          "gear": "DRIVE",
+          "heading_deg": 353.1200366152333
+        },
+        {
+          "time_ms": 29000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 82.99665026087871,
+          "gear": "DRIVE",
+          "heading_deg": 354.3562389533497
+        },
+        {
+          "time_ms": 29100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 74.37819343830806,
+          "gear": "DRIVE",
+          "heading_deg": 355.4846405912971
+        },
+        {
+          "time_ms": 29200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 65.54890354550798,
+          "gear": "DRIVE",
+          "heading_deg": 356.4999829583356
+        },
+        {
+          "time_ms": 29300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 56.53380816395079,
+          "gear": "DRIVE",
+          "heading_deg": 357.3970074837252
+        },
+        {
+          "time_ms": 29400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 47.35846156095383,
+          "gear": "DRIVE",
+          "heading_deg": 358.1704555967261
+        },
+        {
+          "time_ms": 29500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 38.048872253332384,
+          "gear": "DRIVE",
+          "heading_deg": 358.81506872659816
+        },
+        {
+          "time_ms": 29600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 28.63142928343298,
+          "gear": "DRIVE",
+          "heading_deg": 359.32558830260155
+        },
+        {
+          "time_ms": 29700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 19.132827416525785,
+          "gear": "DRIVE",
+          "heading_deg": 359.6967557539963
+        },
+        {
+          "time_ms": 29800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 9.579991471592177,
+          "gear": "DRIVE",
+          "heading_deg": 359.9233125100424
+        },
+        {
+          "time_ms": 29900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 2.2043642384652358e-14,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 30000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 30100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 30200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 30300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 30400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 30500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 30600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 30700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 30800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 30900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        }
+      ]
+    },
+    {
+      "maneuver": "U_TURN",
+      "synthetic": true,
+      "expert_reviewed": false,
+      "reference_is_arbitrary": true,
+      "start_ms": 34800,
+      "end_ms": 45800,
+      "samples": [
+        {
+          "time_ms": 34800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 34900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 35000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 35100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 35200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 35300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 35400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 35500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 35600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 35700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 35800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 35900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 36000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 36100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 36200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 36300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 36400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 36500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 36600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 36700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 36800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 36900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 37000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 0.0
+        },
+        {
+          "time_ms": 37100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 7.156172717446613,
+          "gear": "DRIVE",
+          "heading_deg": 0.08579443005521625
+        },
+        {
+          "time_ms": 37200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 14.301030054908585,
+          "gear": "DRIVE",
+          "heading_deg": 0.340257058772238
+        },
+        {
+          "time_ms": 37300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 21.423274524342858,
+          "gear": "DRIVE",
+          "heading_deg": 0.7590068939779826
+        },
+        {
+          "time_ms": 37400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 28.511644393298692,
+          "gear": "DRIVE",
+          "heading_deg": 1.3376629434994243
+        },
+        {
+          "time_ms": 37500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 35.55493149203148,
+          "gear": "DRIVE",
+          "heading_deg": 2.0718442151634804
+        },
+        {
+          "time_ms": 37600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 42.54199893592288,
+          "gear": "DRIVE",
+          "heading_deg": 2.957169716797239
+        },
+        {
+          "time_ms": 37700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 49.46179873518455,
+          "gear": "DRIVE",
+          "heading_deg": 3.989258456227617
+        },
+        {
+          "time_ms": 37800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 56.30338926400088,
+          "gear": "DRIVE",
+          "heading_deg": 5.163729441281532
+        },
+        {
+          "time_ms": 37900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 63.05595256148836,
+          "gear": "DRIVE",
+          "heading_deg": 6.476201679785959
+        },
+        {
+          "time_ms": 38000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 69.70881143711539,
+          "gear": "DRIVE",
+          "heading_deg": 7.922294179567928
+        },
+        {
+          "time_ms": 38100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 76.25144635353504,
+          "gear": "DRIVE",
+          "heading_deg": 9.497625948454356
+        },
+        {
+          "time_ms": 38200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 82.67351206013602,
+          "gear": "DRIVE",
+          "heading_deg": 11.197815994272275
+        },
+        {
+          "time_ms": 38300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 88.96485395101011,
+          "gear": "DRIVE",
+          "heading_deg": 13.018483324848546
+        },
+        {
+          "time_ms": 38400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 95.1155241214715,
+          "gear": "DRIVE",
+          "heading_deg": 14.955246948010199
+        },
+        {
+          "time_ms": 38500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 101.11579709773875,
+          "gear": "DRIVE",
+          "heading_deg": 17.00372587158421
+        },
+        {
+          "time_ms": 38600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 106.95618521490788,
+          "gear": "DRIVE",
+          "heading_deg": 19.159539103397492
+        },
+        {
+          "time_ms": 38700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 112.6274536189008,
+          "gear": "DRIVE",
+          "heading_deg": 21.41830565127708
+        },
+        {
+          "time_ms": 38800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 118.12063486866761,
+          "gear": "DRIVE",
+          "heading_deg": 23.77564452304989
+        },
+        {
+          "time_ms": 38900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 123.42704311555437,
+          "gear": "DRIVE",
+          "heading_deg": 26.227174726542955
+        },
+        {
+          "time_ms": 39000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 128.53828783741494,
+          "gear": "DRIVE",
+          "heading_deg": 28.768515269583133
+        },
+        {
+          "time_ms": 39100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 133.44628710575125,
+          "gear": "DRIVE",
+          "heading_deg": 31.395285159997457
+        },
+        {
+          "time_ms": 39200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 138.14328036490343,
+          "gear": "DRIVE",
+          "heading_deg": 34.103103405612956
+        },
+        {
+          "time_ms": 39300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 142.62184070308336,
+          "gear": "DRIVE",
+          "heading_deg": 36.88758901425649
+        },
+        {
+          "time_ms": 39400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 146.87488659584898,
+          "gear": "DRIVE",
+          "heading_deg": 39.74436099375504
+        },
+        {
+          "time_ms": 39500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 150.8956931034498,
+          "gear": "DRIVE",
+          "heading_deg": 42.66903835193568
+        },
+        {
+          "time_ms": 39600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 154.677902504339,
+          "gear": "DRIVE",
+          "heading_deg": 45.65724009662523
+        },
+        {
+          "time_ms": 39700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 158.21553434803806,
+          "gear": "DRIVE",
+          "heading_deg": 48.70458523565071
+        },
+        {
+          "time_ms": 39800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 161.50299491145822,
+          "gear": "DRIVE",
+          "heading_deg": 51.80669277683916
+        },
+        {
+          "time_ms": 39900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 164.53508604372624,
+          "gear": "DRIVE",
+          "heading_deg": 54.959181728017484
+        },
+        {
+          "time_ms": 40000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 167.30701338552967,
+          "gear": "DRIVE",
+          "heading_deg": 58.15767109701261
+        },
+        {
+          "time_ms": 40100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 169.8143939499842,
+          "gear": "DRIVE",
+          "heading_deg": 61.39777989165157
+        },
+        {
+          "time_ms": 40200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 172.05326305303691,
+          "gear": "DRIVE",
+          "heading_deg": 64.67512711976133
+        },
+        {
+          "time_ms": 40300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 174.0200805824467,
+          "gear": "DRIVE",
+          "heading_deg": 67.98533178916881
+        },
+        {
+          "time_ms": 40400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 175.71173659542916,
+          "gear": "DRIVE",
+          "heading_deg": 71.32401290770099
+        },
+        {
+          "time_ms": 40500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 177.12555623611573,
+          "gear": "DRIVE",
+          "heading_deg": 74.6867894831849
+        },
+        {
+          "time_ms": 40600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 178.25930396505032,
+          "gear": "DRIVE",
+          "heading_deg": 78.06928052344745
+        },
+        {
+          "time_ms": 40700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 179.11118709403695,
+          "gear": "DRIVE",
+          "heading_deg": 81.46710503631562
+        },
+        {
+          "time_ms": 40800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 179.67985862074795,
+          "gear": "DRIVE",
+          "heading_deg": 84.87588202961632
+        },
+        {
+          "time_ms": 40900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 179.9644193586118,
+          "gear": "DRIVE",
+          "heading_deg": 88.2912305111766
+        },
+        {
+          "time_ms": 41000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 179.9644193586118,
+          "gear": "DRIVE",
+          "heading_deg": 91.7087694888234
+        },
+        {
+          "time_ms": 41100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 179.67985862074795,
+          "gear": "DRIVE",
+          "heading_deg": 95.12411797038368
+        },
+        {
+          "time_ms": 41200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 179.11118709403695,
+          "gear": "DRIVE",
+          "heading_deg": 98.53289496368438
+        },
+        {
+          "time_ms": 41300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 178.25930396505035,
+          "gear": "DRIVE",
+          "heading_deg": 101.93071947655255
+        },
+        {
+          "time_ms": 41400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 177.12555623611573,
+          "gear": "DRIVE",
+          "heading_deg": 105.3132105168151
+        },
+        {
+          "time_ms": 41500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 175.71173659542916,
+          "gear": "DRIVE",
+          "heading_deg": 108.67598709229901
+        },
+        {
+          "time_ms": 41600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 174.0200805824467,
+          "gear": "DRIVE",
+          "heading_deg": 112.01466821083119
+        },
+        {
+          "time_ms": 41700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 172.05326305303694,
+          "gear": "DRIVE",
+          "heading_deg": 115.32487288023867
+        },
+        {
+          "time_ms": 41800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 169.8143939499842,
+          "gear": "DRIVE",
+          "heading_deg": 118.60222010834843
+        },
+        {
+          "time_ms": 41900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 167.30701338552967,
+          "gear": "DRIVE",
+          "heading_deg": 121.84232890298739
+        },
+        {
+          "time_ms": 42000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 164.53508604372624,
+          "gear": "DRIVE",
+          "heading_deg": 125.04081827198252
+        },
+        {
+          "time_ms": 42100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 161.50299491145825,
+          "gear": "DRIVE",
+          "heading_deg": 128.19330722316084
+        },
+        {
+          "time_ms": 42200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 158.2155343480381,
+          "gear": "DRIVE",
+          "heading_deg": 131.2954147643493
+        },
+        {
+          "time_ms": 42300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 154.677902504339,
+          "gear": "DRIVE",
+          "heading_deg": 134.34275990337483
+        },
+        {
+          "time_ms": 42400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 150.89569310344982,
+          "gear": "DRIVE",
+          "heading_deg": 137.33096164806437
+        },
+        {
+          "time_ms": 42500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 146.87488659584895,
+          "gear": "DRIVE",
+          "heading_deg": 140.25563900624496
+        },
+        {
+          "time_ms": 42600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 142.6218407030834,
+          "gear": "DRIVE",
+          "heading_deg": 143.1124109857435
+        },
+        {
+          "time_ms": 42700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 138.1432803649035,
+          "gear": "DRIVE",
+          "heading_deg": 145.89689659438704
+        },
+        {
+          "time_ms": 42800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 133.44628710575125,
+          "gear": "DRIVE",
+          "heading_deg": 148.60471484000254
+        },
+        {
+          "time_ms": 42900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 128.53828783741494,
+          "gear": "DRIVE",
+          "heading_deg": 151.2314847304168
+        },
+        {
+          "time_ms": 43000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 123.42704311555437,
+          "gear": "DRIVE",
+          "heading_deg": 153.7728252734571
+        },
+        {
+          "time_ms": 43100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 118.12063486866758,
+          "gear": "DRIVE",
+          "heading_deg": 156.2243554769501
+        },
+        {
+          "time_ms": 43200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 112.62745361890082,
+          "gear": "DRIVE",
+          "heading_deg": 158.58169434872298
+        },
+        {
+          "time_ms": 43300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 106.9561852149079,
+          "gear": "DRIVE",
+          "heading_deg": 160.8404608966025
+        },
+        {
+          "time_ms": 43400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 101.1157970977388,
+          "gear": "DRIVE",
+          "heading_deg": 162.99627412841585
+        },
+        {
+          "time_ms": 43500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 95.11552412147148,
+          "gear": "DRIVE",
+          "heading_deg": 165.0447530519898
+        },
+        {
+          "time_ms": 43600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 88.96485395101013,
+          "gear": "DRIVE",
+          "heading_deg": 166.9815166751514
+        },
+        {
+          "time_ms": 43700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 82.67351206013609,
+          "gear": "DRIVE",
+          "heading_deg": 168.80218400572767
+        },
+        {
+          "time_ms": 43800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 76.25144635353502,
+          "gear": "DRIVE",
+          "heading_deg": 170.50237405154564
+        },
+        {
+          "time_ms": 43900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 69.7088114371154,
+          "gear": "DRIVE",
+          "heading_deg": 172.07770582043213
+        },
+        {
+          "time_ms": 44000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 63.055952561488446,
+          "gear": "DRIVE",
+          "heading_deg": 173.52379832021404
+        },
+        {
+          "time_ms": 44100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 56.30338926400086,
+          "gear": "DRIVE",
+          "heading_deg": 174.83627055871852
+        },
+        {
+          "time_ms": 44200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 49.461798735184594,
+          "gear": "DRIVE",
+          "heading_deg": 176.01074154377238
+        },
+        {
+          "time_ms": 44300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 42.54199893592289,
+          "gear": "DRIVE",
+          "heading_deg": 177.04283028320276
+        },
+        {
+          "time_ms": 44400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 35.55493149203154,
+          "gear": "DRIVE",
+          "heading_deg": 177.92815578483646
+        },
+        {
+          "time_ms": 44500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 28.51164439329873,
+          "gear": "DRIVE",
+          "heading_deg": 178.66233705650052
+        },
+        {
+          "time_ms": 44600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 21.423274524342876,
+          "gear": "DRIVE",
+          "heading_deg": 179.24099310602207
+        },
+        {
+          "time_ms": 44700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 14.301030054908656,
+          "gear": "DRIVE",
+          "heading_deg": 179.6597429412277
+        },
+        {
+          "time_ms": 44800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 7.156172717446579,
+          "gear": "DRIVE",
+          "heading_deg": 179.91420556994478
+        },
+        {
+          "time_ms": 44900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 2.2043642384652358e-14,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 45000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 45100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 45200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 45300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 45400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 45500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 45600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 45700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 45800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        }
+      ]
+    },
+    {
+      "maneuver": "STOP",
+      "synthetic": true,
+      "expert_reviewed": false,
+      "reference_is_arbitrary": true,
+      "start_ms": 49200,
+      "end_ms": 56100,
+      "samples": [
+        {
+          "time_ms": 49200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 49300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 49400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 49500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 49600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 49700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 49800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 49900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 50000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 50100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 50200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 50300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 50400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 50500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 50600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 50700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 50800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 50900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 51000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 51100,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 51200,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 51300,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 51400,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 51500,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 51600,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 51700,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 51800,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 51900,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 52000,
+          "speed_mps": 3.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 52100,
+          "speed_mps": 2.896551724137931,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 52200,
+          "speed_mps": 2.793103448275862,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 52300,
+          "speed_mps": 2.689655172413793,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 52400,
+          "speed_mps": 2.586206896551724,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 52500,
+          "speed_mps": 2.4827586206896552,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 52600,
+          "speed_mps": 2.3793103448275863,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 52700,
+          "speed_mps": 2.275862068965517,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 52800,
+          "speed_mps": 2.1724137931034484,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 52900,
+          "speed_mps": 2.0689655172413794,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 53000,
+          "speed_mps": 1.9655172413793103,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 53100,
+          "speed_mps": 1.8620689655172415,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 53200,
+          "speed_mps": 1.7586206896551726,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 53300,
+          "speed_mps": 1.6551724137931034,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 53400,
+          "speed_mps": 1.5517241379310343,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 53500,
+          "speed_mps": 1.4482758620689653,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 53600,
+          "speed_mps": 1.3448275862068966,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 53700,
+          "speed_mps": 1.2413793103448278,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 53800,
+          "speed_mps": 1.1379310344827585,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 53900,
+          "speed_mps": 1.0344827586206897,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 54000,
+          "speed_mps": 0.9310344827586206,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 54100,
+          "speed_mps": 0.8275862068965517,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 54200,
+          "speed_mps": 0.7241379310344829,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 54300,
+          "speed_mps": 0.6206896551724137,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 54400,
+          "speed_mps": 0.5172413793103449,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 54500,
+          "speed_mps": 0.413793103448276,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 54600,
+          "speed_mps": 0.31034482758620685,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 54700,
+          "speed_mps": 0.206896551724138,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 54800,
+          "speed_mps": 0.10344827586206884,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 54900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 55000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 55100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 55200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 55300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 55400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 55500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 55600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 55700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 55800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 55900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 56000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 56100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        }
+      ]
+    },
+    {
+      "maneuver": "T_PARK",
+      "synthetic": true,
+      "expert_reviewed": false,
+      "reference_is_arbitrary": true,
+      "start_ms": 59000,
+      "end_ms": 90900,
+      "samples": [
+        {
+          "time_ms": 59000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 59100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 59200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 59300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 59400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 59500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 59600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 59700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 59800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 59900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 60000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 60100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 60200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 60300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 60400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 60500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 60600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 60700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 60800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 60900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 61000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 61100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 61200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 61300,
+          "speed_mps": -0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 180.0
+        },
+        {
+          "time_ms": 61400,
+          "speed_mps": -0.051683469626003314,
+          "steering_wheel_deg": 11.926954529077689,
+          "gear": "REVERSE",
+          "heading_deg": 180.0428972150276
+        },
+        {
+          "time_ms": 61500,
+          "speed_mps": -0.10328521706322867,
+          "steering_wheel_deg": 23.835050091514308,
+          "gear": "REVERSE",
+          "heading_deg": 180.1701285293861
+        },
+        {
+          "time_ms": 61600,
+          "speed_mps": -0.1547236493424762,
+          "steering_wheel_deg": 35.70545754057143,
+          "gear": "REVERSE",
+          "heading_deg": 180.37950344698896
+        },
+        {
+          "time_ms": 61700,
+          "speed_mps": -0.20591743172937946,
+          "steering_wheel_deg": 47.51940732216448,
+          "gear": "REVERSE",
+          "heading_deg": 180.66883147174968
+        },
+        {
+          "time_ms": 61800,
+          "speed_mps": -0.2567856163313385,
+          "steering_wheel_deg": 59.2582191533858,
+          "gear": "REVERSE",
+          "heading_deg": 181.03592210758177
+        },
+        {
+          "time_ms": 61900,
+          "speed_mps": -0.3072477700927764,
+          "steering_wheel_deg": 70.90333155987146,
+          "gear": "REVERSE",
+          "heading_deg": 181.47858485839862
+        },
+        {
+          "time_ms": 62000,
+          "speed_mps": -0.35722410197633286,
+          "steering_wheel_deg": 82.43633122530758,
+          "gear": "REVERSE",
+          "heading_deg": 181.9946292281138
+        },
+        {
+          "time_ms": 62100,
+          "speed_mps": -0.40663558912889525,
+          "steering_wheel_deg": 93.83898210666814,
+          "gear": "REVERSE",
+          "heading_deg": 182.58186472064074
+        },
+        {
+          "time_ms": 62200,
+          "speed_mps": -0.45540410183297153,
+          "steering_wheel_deg": 105.09325426914728,
+          "gear": "REVERSE",
+          "heading_deg": 183.23810083989298
+        },
+        {
+          "time_ms": 62300,
+          "speed_mps": -0.5034525270458333,
+          "steering_wheel_deg": 116.1813523951923,
+          "gear": "REVERSE",
+          "heading_deg": 183.961147089784
+        },
+        {
+          "time_ms": 62400,
+          "speed_mps": -0.5507048903310865,
+          "steering_wheel_deg": 127.08574392255841,
+          "gear": "REVERSE",
+          "heading_deg": 184.74881297422718
+        },
+        {
+          "time_ms": 62500,
+          "speed_mps": -0.5970864759898713,
+          "steering_wheel_deg": 137.78918676689338,
+          "gear": "REVERSE",
+          "heading_deg": 185.5989079971361
+        },
+        {
+          "time_ms": 62600,
+          "speed_mps": -0.6425239452017397,
+          "steering_wheel_deg": 148.27475658501686,
+          "gear": "REVERSE",
+          "heading_deg": 186.50924166242424
+        },
+        {
+          "time_ms": 62700,
+          "speed_mps": -0.6869454519884053,
+          "steering_wheel_deg": 158.52587353578582,
+          "gear": "REVERSE",
+          "heading_deg": 187.4776234740051
+        },
+        {
+          "time_ms": 62800,
+          "speed_mps": -0.7302807568170021,
+          "steering_wheel_deg": 168.52632849623126,
+          "gear": "REVERSE",
+          "heading_deg": 188.50186293579208
+        },
+        {
+          "time_ms": 62900,
+          "speed_mps": -0.7724613376632237,
+          "steering_wheel_deg": 178.26030869151313,
+          "gear": "REVERSE",
+          "heading_deg": 189.57976955169875
+        },
+        {
+          "time_ms": 63000,
+          "speed_mps": -0.813420498358728,
+          "steering_wheel_deg": 187.71242269816798,
+          "gear": "REVERSE",
+          "heading_deg": 190.7091528256385
+        },
+        {
+          "time_ms": 63100,
+          "speed_mps": -0.8530934740514883,
+          "steering_wheel_deg": 196.86772478111268,
+          "gear": "REVERSE",
+          "heading_deg": 191.88782226152495
+        },
+        {
+          "time_ms": 63200,
+          "speed_mps": -0.8914175336123371,
+          "steering_wheel_deg": 205.71173852592395,
+          "gear": "REVERSE",
+          "heading_deg": 193.11358736327145
+        },
+        {
+          "time_ms": 63300,
+          "speed_mps": -0.9283320788257747,
+          "steering_wheel_deg": 214.23047972902492,
+          "gear": "REVERSE",
+          "heading_deg": 194.3842576347916
+        },
+        {
+          "time_ms": 63400,
+          "speed_mps": -0.9637787402082036,
+          "steering_wheel_deg": 222.41047850958543,
+          "gear": "REVERSE",
+          "heading_deg": 195.69764257999873
+        },
+        {
+          "time_ms": 63500,
+          "speed_mps": -0.9977014693020803,
+          "steering_wheel_deg": 230.23880060817237,
+          "gear": "REVERSE",
+          "heading_deg": 197.05155170280648
+        },
+        {
+          "time_ms": 63600,
+          "speed_mps": -1.0300466273000466,
+          "steering_wheel_deg": 237.7030678384723,
+          "gear": "REVERSE",
+          "heading_deg": 198.44379450712825
+        },
+        {
+          "time_ms": 63700,
+          "speed_mps": -1.0607630698589092,
+          "steering_wheel_deg": 244.79147765974827,
+          "gear": "REVERSE",
+          "heading_deg": 199.87218049687755
+        },
+        {
+          "time_ms": 63800,
+          "speed_mps": -1.0898022279693595,
+          "steering_wheel_deg": 251.49282183908298,
+          "gear": "REVERSE",
+          "heading_deg": 201.33451917596784
+        },
+        {
+          "time_ms": 63900,
+          "speed_mps": -1.1171181847535594,
+          "steering_wheel_deg": 257.7965041738983,
+          "gear": "REVERSE",
+          "heading_deg": 202.8286200483126
+        },
+        {
+          "time_ms": 64000,
+          "speed_mps": -1.1426677480691638,
+          "steering_wheel_deg": 263.69255724673013,
+          "gear": "REVERSE",
+          "heading_deg": 204.35229261782536
+        },
+        {
+          "time_ms": 64100,
+          "speed_mps": -1.166410518804976,
+          "steering_wheel_deg": 269.1716581857637,
+          "gear": "REVERSE",
+          "heading_deg": 205.90334638841955
+        },
+        {
+          "time_ms": 64200,
+          "speed_mps": -1.1883089547602452,
+          "steering_wheel_deg": 274.2251434062104,
+          "gear": "REVERSE",
+          "heading_deg": 207.47959086400874
+        },
+        {
+          "time_ms": 64300,
+          "speed_mps": -1.208328430006603,
+          "steering_wheel_deg": 278.8450223092161,
+          "gear": "REVERSE",
+          "heading_deg": 209.07883554850633
+        },
+        {
+          "time_ms": 64400,
+          "speed_mps": -1.226437289638775,
+          "steering_wheel_deg": 283.02398991664035,
+          "gear": "REVERSE",
+          "heading_deg": 210.69888994582578
+        },
+        {
+          "time_ms": 64500,
+          "speed_mps": -1.242606899827489,
+          "steering_wheel_deg": 286.75543842172823,
+          "gear": "REVERSE",
+          "heading_deg": 212.33756355988066
+        },
+        {
+          "time_ms": 64600,
+          "speed_mps": -1.2568116930954483,
+          "steering_wheel_deg": 290.03346763741115,
+          "gear": "REVERSE",
+          "heading_deg": 213.99266589458443
+        },
+        {
+          "time_ms": 64700,
+          "speed_mps": -1.269029208744766,
+          "steering_wheel_deg": 292.8528943257152,
+          "gear": "REVERSE",
+          "heading_deg": 215.6620064538505
+        },
+        {
+          "time_ms": 64800,
+          "speed_mps": -1.2792401283719468,
+          "steering_wheel_deg": 295.2092603935262,
+          "gear": "REVERSE",
+          "heading_deg": 217.34339474159242
+        },
+        {
+          "time_ms": 64900,
+          "speed_mps": -1.2874283064142524,
+          "steering_wheel_deg": 297.09883994175055,
+          "gear": "REVERSE",
+          "heading_deg": 219.03464026172372
+        },
+        {
+          "time_ms": 65000,
+          "speed_mps": -1.2935807956791558,
+          "steering_wheel_deg": 298.51864515672827,
+          "gear": "REVERSE",
+          "heading_deg": 220.7335525181578
+        },
+        {
+          "time_ms": 65100,
+          "speed_mps": -1.297687867816513,
+          "steering_wheel_deg": 299.4664310345799,
+          "gear": "REVERSE",
+          "heading_deg": 222.4379410148082
+        },
+        {
+          "time_ms": 65200,
+          "speed_mps": -1.2997430287010852,
+          "steering_wheel_deg": 299.94069893101965,
+          "gear": "REVERSE",
+          "heading_deg": 224.14561525558832
+        },
+        {
+          "time_ms": 65300,
+          "speed_mps": -1.2997430287010852,
+          "steering_wheel_deg": 299.94069893101965,
+          "gear": "REVERSE",
+          "heading_deg": 225.85438474441168
+        },
+        {
+          "time_ms": 65400,
+          "speed_mps": -1.2976878678165131,
+          "steering_wheel_deg": 299.46643103457995,
+          "gear": "REVERSE",
+          "heading_deg": 227.5620589851918
+        },
+        {
+          "time_ms": 65500,
+          "speed_mps": -1.2935807956791558,
+          "steering_wheel_deg": 298.51864515672827,
+          "gear": "REVERSE",
+          "heading_deg": 229.2664474818422
+        },
+        {
+          "time_ms": 65600,
+          "speed_mps": -1.2874283064142527,
+          "steering_wheel_deg": 297.0988399417506,
+          "gear": "REVERSE",
+          "heading_deg": 230.96535973827628
+        },
+        {
+          "time_ms": 65700,
+          "speed_mps": -1.2792401283719468,
+          "steering_wheel_deg": 295.2092603935262,
+          "gear": "REVERSE",
+          "heading_deg": 232.65660525840752
+        },
+        {
+          "time_ms": 65800,
+          "speed_mps": -1.269029208744766,
+          "steering_wheel_deg": 292.8528943257152,
+          "gear": "REVERSE",
+          "heading_deg": 234.3379935461495
+        },
+        {
+          "time_ms": 65900,
+          "speed_mps": -1.2568116930954483,
+          "steering_wheel_deg": 290.03346763741115,
+          "gear": "REVERSE",
+          "heading_deg": 236.00733410541557
+        },
+        {
+          "time_ms": 66000,
+          "speed_mps": -1.242606899827489,
+          "steering_wheel_deg": 286.75543842172823,
+          "gear": "REVERSE",
+          "heading_deg": 237.66243644011934
+        },
+        {
+          "time_ms": 66100,
+          "speed_mps": -1.226437289638775,
+          "steering_wheel_deg": 283.02398991664035,
+          "gear": "REVERSE",
+          "heading_deg": 239.30111005417422
+        },
+        {
+          "time_ms": 66200,
+          "speed_mps": -1.2083284300066033,
+          "steering_wheel_deg": 278.8450223092161,
+          "gear": "REVERSE",
+          "heading_deg": 240.92116445149372
+        },
+        {
+          "time_ms": 66300,
+          "speed_mps": -1.188308954760245,
+          "steering_wheel_deg": 274.2251434062104,
+          "gear": "REVERSE",
+          "heading_deg": 242.52040913599126
+        },
+        {
+          "time_ms": 66400,
+          "speed_mps": -1.1664105188049763,
+          "steering_wheel_deg": 269.1716581857637,
+          "gear": "REVERSE",
+          "heading_deg": 244.09665361158045
+        },
+        {
+          "time_ms": 66500,
+          "speed_mps": -1.142667748069164,
+          "steering_wheel_deg": 263.69255724673013,
+          "gear": "REVERSE",
+          "heading_deg": 245.64770738217464
+        },
+        {
+          "time_ms": 66600,
+          "speed_mps": -1.1171181847535594,
+          "steering_wheel_deg": 257.7965041738983,
+          "gear": "REVERSE",
+          "heading_deg": 247.1713799516874
+        },
+        {
+          "time_ms": 66700,
+          "speed_mps": -1.0898022279693598,
+          "steering_wheel_deg": 251.492821839083,
+          "gear": "REVERSE",
+          "heading_deg": 248.66548082403222
+        },
+        {
+          "time_ms": 66800,
+          "speed_mps": -1.060763069858909,
+          "steering_wheel_deg": 244.79147765974824,
+          "gear": "REVERSE",
+          "heading_deg": 250.1278195031225
+        },
+        {
+          "time_ms": 66900,
+          "speed_mps": -1.0300466273000468,
+          "steering_wheel_deg": 237.70306783847232,
+          "gear": "REVERSE",
+          "heading_deg": 251.55620549287175
+        },
+        {
+          "time_ms": 67000,
+          "speed_mps": -0.9977014693020807,
+          "steering_wheel_deg": 230.23880060817245,
+          "gear": "REVERSE",
+          "heading_deg": 252.94844829719352
+        },
+        {
+          "time_ms": 67100,
+          "speed_mps": -0.9637787402082034,
+          "steering_wheel_deg": 222.4104785095854,
+          "gear": "REVERSE",
+          "heading_deg": 254.30235742000127
+        },
+        {
+          "time_ms": 67200,
+          "speed_mps": -0.9283320788257747,
+          "steering_wheel_deg": 214.23047972902492,
+          "gear": "REVERSE",
+          "heading_deg": 255.6157423652084
+        },
+        {
+          "time_ms": 67300,
+          "speed_mps": -0.8914175336123371,
+          "steering_wheel_deg": 205.71173852592395,
+          "gear": "REVERSE",
+          "heading_deg": 256.88641263672855
+        },
+        {
+          "time_ms": 67400,
+          "speed_mps": -0.8530934740514882,
+          "steering_wheel_deg": 196.86772478111263,
+          "gear": "REVERSE",
+          "heading_deg": 258.11217773847505
+        },
+        {
+          "time_ms": 67500,
+          "speed_mps": -0.8134204983587281,
+          "steering_wheel_deg": 187.712422698168,
+          "gear": "REVERSE",
+          "heading_deg": 259.2908471743615
+        },
+        {
+          "time_ms": 67600,
+          "speed_mps": -0.7724613376632238,
+          "steering_wheel_deg": 178.26030869151316,
+          "gear": "REVERSE",
+          "heading_deg": 260.42023044830125
+        },
+        {
+          "time_ms": 67700,
+          "speed_mps": -0.7302807568170026,
+          "steering_wheel_deg": 168.52632849623134,
+          "gear": "REVERSE",
+          "heading_deg": 261.4981370642079
+        },
+        {
+          "time_ms": 67800,
+          "speed_mps": -0.6869454519884052,
+          "steering_wheel_deg": 158.5258735357858,
+          "gear": "REVERSE",
+          "heading_deg": 262.5223765259949
+        },
+        {
+          "time_ms": 67900,
+          "speed_mps": -0.6425239452017398,
+          "steering_wheel_deg": 148.2747565850169,
+          "gear": "REVERSE",
+          "heading_deg": 263.4907583375757
+        },
+        {
+          "time_ms": 68000,
+          "speed_mps": -0.5970864759898717,
+          "steering_wheel_deg": 137.78918676689347,
+          "gear": "REVERSE",
+          "heading_deg": 264.40109200286383
+        },
+        {
+          "time_ms": 68100,
+          "speed_mps": -0.5507048903310863,
+          "steering_wheel_deg": 127.08574392255836,
+          "gear": "REVERSE",
+          "heading_deg": 265.2511870257728
+        },
+        {
+          "time_ms": 68200,
+          "speed_mps": -0.5034525270458335,
+          "steering_wheel_deg": 116.18135239519235,
+          "gear": "REVERSE",
+          "heading_deg": 266.03885291021606
+        },
+        {
+          "time_ms": 68300,
+          "speed_mps": -0.4554041018329721,
+          "steering_wheel_deg": 105.09325426914741,
+          "gear": "REVERSE",
+          "heading_deg": 266.761899160107
+        },
+        {
+          "time_ms": 68400,
+          "speed_mps": -0.40663558912889514,
+          "steering_wheel_deg": 93.8389821066681,
+          "gear": "REVERSE",
+          "heading_deg": 267.41813527935926
+        },
+        {
+          "time_ms": 68500,
+          "speed_mps": -0.3572241019763332,
+          "steering_wheel_deg": 82.43633122530765,
+          "gear": "REVERSE",
+          "heading_deg": 268.0053707718862
+        },
+        {
+          "time_ms": 68600,
+          "speed_mps": -0.30724777009277643,
+          "steering_wheel_deg": 70.90333155987148,
+          "gear": "REVERSE",
+          "heading_deg": 268.5214151416014
+        },
+        {
+          "time_ms": 68700,
+          "speed_mps": -0.2567856163313389,
+          "steering_wheel_deg": 59.2582191533859,
+          "gear": "REVERSE",
+          "heading_deg": 268.96407789241823
+        },
+        {
+          "time_ms": 68800,
+          "speed_mps": -0.20591743172937974,
+          "steering_wheel_deg": 47.519407322164554,
+          "gear": "REVERSE",
+          "heading_deg": 269.33116852825026
+        },
+        {
+          "time_ms": 68900,
+          "speed_mps": -0.15472364934247632,
+          "steering_wheel_deg": 35.70545754057146,
+          "gear": "REVERSE",
+          "heading_deg": 269.62049655301104
+        },
+        {
+          "time_ms": 69000,
+          "speed_mps": -0.10328521706322918,
+          "steering_wheel_deg": 23.835050091514425,
+          "gear": "REVERSE",
+          "heading_deg": 269.82987147061385
+        },
+        {
+          "time_ms": 69100,
+          "speed_mps": -0.05168346962600307,
+          "steering_wheel_deg": 11.926954529077632,
+          "gear": "REVERSE",
+          "heading_deg": 269.9571027849724
+        },
+        {
+          "time_ms": 69200,
+          "speed_mps": -1.5920408388915593e-16,
+          "steering_wheel_deg": 3.6739403974420595e-14,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 69300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 69400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 69500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 69600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 69700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 69800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 69900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 70000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 70100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 70200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 70300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 70400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 70500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 70600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 70700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 70800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 70900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 71000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 71100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 71200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 71300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 71400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 71500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 71600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 71700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 71800,
+          "speed_mps": 0.09875675416844033,
+          "steering_wheel_deg": 9.740984076140503,
+          "gear": "DRIVE",
+          "heading_deg": 270.97409840761406
+        },
+        {
+          "time_ms": 71900,
+          "speed_mps": 0.19481968152281007,
+          "steering_wheel_deg": 18.426381380690035,
+          "gear": "DRIVE",
+          "heading_deg": 271.842638138069
+        },
+        {
+          "time_ms": 72000,
+          "speed_mps": 0.2855684358222441,
+          "steering_wheel_deg": 25.114994347875857,
+          "gear": "DRIVE",
+          "heading_deg": 272.5114994347876
+        },
+        {
+          "time_ms": 72100,
+          "speed_mps": 0.3685276276138007,
+          "steering_wheel_deg": 29.08200797817991,
+          "gear": "DRIVE",
+          "heading_deg": 272.908200797818
+        },
+        {
+          "time_ms": 72200,
+          "speed_mps": 0.44143434640387896,
+          "steering_wheel_deg": 29.897534790200094,
+          "gear": "DRIVE",
+          "heading_deg": 272.98975347902
+        },
+        {
+          "time_ms": 72300,
+          "speed_mps": 0.5022998869575171,
+          "steering_wheel_deg": 27.473199799651724,
+          "gear": "DRIVE",
+          "heading_deg": 272.74731997996514
+        },
+        {
+          "time_ms": 72400,
+          "speed_mps": 0.5494639959930344,
+          "steering_wheel_deg": 22.07171732019395,
+          "gear": "DRIVE",
+          "heading_deg": 272.2071717320194
+        },
+        {
+          "time_ms": 72500,
+          "speed_mps": 0.5816401595635982,
+          "steering_wheel_deg": 14.27842179111221,
+          "gear": "DRIVE",
+          "heading_deg": 271.4278421791112
+        },
+        {
+          "time_ms": 72600,
+          "speed_mps": 0.5979506958040018,
+          "steering_wheel_deg": 4.937837708422021,
+          "gear": "DRIVE",
+          "heading_deg": 270.4937837708422
+        },
+        {
+          "time_ms": 72700,
+          "speed_mps": 0.5979506958040018,
+          "steering_wheel_deg": -4.9378377084220135,
+          "gear": "DRIVE",
+          "heading_deg": 269.5062162291578
+        },
+        {
+          "time_ms": 72800,
+          "speed_mps": 0.5816401595635982,
+          "steering_wheel_deg": -14.278421791112205,
+          "gear": "DRIVE",
+          "heading_deg": 268.5721578208888
+        },
+        {
+          "time_ms": 72900,
+          "speed_mps": 0.5494639959930345,
+          "steering_wheel_deg": -22.071717320193937,
+          "gear": "DRIVE",
+          "heading_deg": 267.7928282679806
+        },
+        {
+          "time_ms": 73000,
+          "speed_mps": 0.5022998869575171,
+          "steering_wheel_deg": -27.47319979965172,
+          "gear": "DRIVE",
+          "heading_deg": 267.25268002003486
+        },
+        {
+          "time_ms": 73100,
+          "speed_mps": 0.441434346403879,
+          "steering_wheel_deg": -29.897534790200094,
+          "gear": "DRIVE",
+          "heading_deg": 267.01024652098
+        },
+        {
+          "time_ms": 73200,
+          "speed_mps": 0.36852762761380076,
+          "steering_wheel_deg": -29.082007978179913,
+          "gear": "DRIVE",
+          "heading_deg": 267.091799202182
+        },
+        {
+          "time_ms": 73300,
+          "speed_mps": 0.28556843582224417,
+          "steering_wheel_deg": -25.114994347875864,
+          "gear": "DRIVE",
+          "heading_deg": 267.4885005652124
+        },
+        {
+          "time_ms": 73400,
+          "speed_mps": 0.19481968152281018,
+          "steering_wheel_deg": -18.426381380690042,
+          "gear": "DRIVE",
+          "heading_deg": 268.157361861931
+        },
+        {
+          "time_ms": 73500,
+          "speed_mps": 0.09875675416844042,
+          "steering_wheel_deg": -9.740984076140512,
+          "gear": "DRIVE",
+          "heading_deg": 269.02590159238594
+        },
+        {
+          "time_ms": 73600,
+          "speed_mps": 7.347880794884119e-17,
+          "steering_wheel_deg": -7.34788079488412e-15,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 73700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 73800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 73900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 74000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 74100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 74200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 74300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 74400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 74500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 74600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 74700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 74800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 74900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 75000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 75100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 75200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 75300,
+          "speed_mps": -0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 75400,
+          "speed_mps": -0.09875675416844033,
+          "steering_wheel_deg": 9.740984076140503,
+          "gear": "REVERSE",
+          "heading_deg": 270.97409840761406
+        },
+        {
+          "time_ms": 75500,
+          "speed_mps": -0.19481968152281007,
+          "steering_wheel_deg": 18.426381380690035,
+          "gear": "REVERSE",
+          "heading_deg": 271.842638138069
+        },
+        {
+          "time_ms": 75600,
+          "speed_mps": -0.2855684358222441,
+          "steering_wheel_deg": 25.114994347875857,
+          "gear": "REVERSE",
+          "heading_deg": 272.5114994347876
+        },
+        {
+          "time_ms": 75700,
+          "speed_mps": -0.3685276276138007,
+          "steering_wheel_deg": 29.08200797817991,
+          "gear": "REVERSE",
+          "heading_deg": 272.908200797818
+        },
+        {
+          "time_ms": 75800,
+          "speed_mps": -0.44143434640387896,
+          "steering_wheel_deg": 29.897534790200094,
+          "gear": "REVERSE",
+          "heading_deg": 272.98975347902
+        },
+        {
+          "time_ms": 75900,
+          "speed_mps": -0.5022998869575171,
+          "steering_wheel_deg": 27.473199799651724,
+          "gear": "REVERSE",
+          "heading_deg": 272.74731997996514
+        },
+        {
+          "time_ms": 76000,
+          "speed_mps": -0.5494639959930344,
+          "steering_wheel_deg": 22.07171732019395,
+          "gear": "REVERSE",
+          "heading_deg": 272.2071717320194
+        },
+        {
+          "time_ms": 76100,
+          "speed_mps": -0.5816401595635982,
+          "steering_wheel_deg": 14.27842179111221,
+          "gear": "REVERSE",
+          "heading_deg": 271.4278421791112
+        },
+        {
+          "time_ms": 76200,
+          "speed_mps": -0.5979506958040018,
+          "steering_wheel_deg": 4.937837708422021,
+          "gear": "REVERSE",
+          "heading_deg": 270.4937837708422
+        },
+        {
+          "time_ms": 76300,
+          "speed_mps": -0.5979506958040018,
+          "steering_wheel_deg": -4.9378377084220135,
+          "gear": "REVERSE",
+          "heading_deg": 269.5062162291578
+        },
+        {
+          "time_ms": 76400,
+          "speed_mps": -0.5816401595635982,
+          "steering_wheel_deg": -14.278421791112205,
+          "gear": "REVERSE",
+          "heading_deg": 268.5721578208888
+        },
+        {
+          "time_ms": 76500,
+          "speed_mps": -0.5494639959930345,
+          "steering_wheel_deg": -22.071717320193937,
+          "gear": "REVERSE",
+          "heading_deg": 267.7928282679806
+        },
+        {
+          "time_ms": 76600,
+          "speed_mps": -0.5022998869575171,
+          "steering_wheel_deg": -27.47319979965172,
+          "gear": "REVERSE",
+          "heading_deg": 267.25268002003486
+        },
+        {
+          "time_ms": 76700,
+          "speed_mps": -0.441434346403879,
+          "steering_wheel_deg": -29.897534790200094,
+          "gear": "REVERSE",
+          "heading_deg": 267.01024652098
+        },
+        {
+          "time_ms": 76800,
+          "speed_mps": -0.36852762761380076,
+          "steering_wheel_deg": -29.082007978179913,
+          "gear": "REVERSE",
+          "heading_deg": 267.091799202182
+        },
+        {
+          "time_ms": 76900,
+          "speed_mps": -0.28556843582224417,
+          "steering_wheel_deg": -25.114994347875864,
+          "gear": "REVERSE",
+          "heading_deg": 267.4885005652124
+        },
+        {
+          "time_ms": 77000,
+          "speed_mps": -0.19481968152281018,
+          "steering_wheel_deg": -18.426381380690042,
+          "gear": "REVERSE",
+          "heading_deg": 268.157361861931
+        },
+        {
+          "time_ms": 77100,
+          "speed_mps": -0.09875675416844042,
+          "steering_wheel_deg": -9.740984076140512,
+          "gear": "REVERSE",
+          "heading_deg": 269.02590159238594
+        },
+        {
+          "time_ms": 77200,
+          "speed_mps": -7.347880794884119e-17,
+          "steering_wheel_deg": -7.34788079488412e-15,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 77300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 77400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 77500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 77600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 77700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 77800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 77900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 78000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 78100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 78200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 78300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 78400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 78500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 78600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 78700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 78800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 78900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 79000,
+          "speed_mps": 0.09875675416844033,
+          "steering_wheel_deg": 9.740984076140503,
+          "gear": "DRIVE",
+          "heading_deg": 270.97409840761406
+        },
+        {
+          "time_ms": 79100,
+          "speed_mps": 0.19481968152281007,
+          "steering_wheel_deg": 18.426381380690035,
+          "gear": "DRIVE",
+          "heading_deg": 271.842638138069
+        },
+        {
+          "time_ms": 79200,
+          "speed_mps": 0.2855684358222441,
+          "steering_wheel_deg": 25.114994347875857,
+          "gear": "DRIVE",
+          "heading_deg": 272.5114994347876
+        },
+        {
+          "time_ms": 79300,
+          "speed_mps": 0.3685276276138007,
+          "steering_wheel_deg": 29.08200797817991,
+          "gear": "DRIVE",
+          "heading_deg": 272.908200797818
+        },
+        {
+          "time_ms": 79400,
+          "speed_mps": 0.44143434640387896,
+          "steering_wheel_deg": 29.897534790200094,
+          "gear": "DRIVE",
+          "heading_deg": 272.98975347902
+        },
+        {
+          "time_ms": 79500,
+          "speed_mps": 0.5022998869575171,
+          "steering_wheel_deg": 27.473199799651724,
+          "gear": "DRIVE",
+          "heading_deg": 272.74731997996514
+        },
+        {
+          "time_ms": 79600,
+          "speed_mps": 0.5494639959930344,
+          "steering_wheel_deg": 22.07171732019395,
+          "gear": "DRIVE",
+          "heading_deg": 272.2071717320194
+        },
+        {
+          "time_ms": 79700,
+          "speed_mps": 0.5816401595635982,
+          "steering_wheel_deg": 14.27842179111221,
+          "gear": "DRIVE",
+          "heading_deg": 271.4278421791112
+        },
+        {
+          "time_ms": 79800,
+          "speed_mps": 0.5979506958040018,
+          "steering_wheel_deg": 4.937837708422021,
+          "gear": "DRIVE",
+          "heading_deg": 270.4937837708422
+        },
+        {
+          "time_ms": 79900,
+          "speed_mps": 0.5979506958040018,
+          "steering_wheel_deg": -4.9378377084220135,
+          "gear": "DRIVE",
+          "heading_deg": 269.5062162291578
+        },
+        {
+          "time_ms": 80000,
+          "speed_mps": 0.5816401595635982,
+          "steering_wheel_deg": -14.278421791112205,
+          "gear": "DRIVE",
+          "heading_deg": 268.5721578208888
+        },
+        {
+          "time_ms": 80100,
+          "speed_mps": 0.5494639959930345,
+          "steering_wheel_deg": -22.071717320193937,
+          "gear": "DRIVE",
+          "heading_deg": 267.7928282679806
+        },
+        {
+          "time_ms": 80200,
+          "speed_mps": 0.5022998869575171,
+          "steering_wheel_deg": -27.47319979965172,
+          "gear": "DRIVE",
+          "heading_deg": 267.25268002003486
+        },
+        {
+          "time_ms": 80300,
+          "speed_mps": 0.441434346403879,
+          "steering_wheel_deg": -29.897534790200094,
+          "gear": "DRIVE",
+          "heading_deg": 267.01024652098
+        },
+        {
+          "time_ms": 80400,
+          "speed_mps": 0.36852762761380076,
+          "steering_wheel_deg": -29.082007978179913,
+          "gear": "DRIVE",
+          "heading_deg": 267.091799202182
+        },
+        {
+          "time_ms": 80500,
+          "speed_mps": 0.28556843582224417,
+          "steering_wheel_deg": -25.114994347875864,
+          "gear": "DRIVE",
+          "heading_deg": 267.4885005652124
+        },
+        {
+          "time_ms": 80600,
+          "speed_mps": 0.19481968152281018,
+          "steering_wheel_deg": -18.426381380690042,
+          "gear": "DRIVE",
+          "heading_deg": 268.157361861931
+        },
+        {
+          "time_ms": 80700,
+          "speed_mps": 0.09875675416844042,
+          "steering_wheel_deg": -9.740984076140512,
+          "gear": "DRIVE",
+          "heading_deg": 269.02590159238594
+        },
+        {
+          "time_ms": 80800,
+          "speed_mps": 7.347880794884119e-17,
+          "steering_wheel_deg": -7.34788079488412e-15,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 80900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 81000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 81100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 81200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 81300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 81400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 81500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 81600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 81700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 81800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 81900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 82000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 82100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 82200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 82300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 82400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 82500,
+          "speed_mps": -0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 82600,
+          "speed_mps": -0.09875675416844033,
+          "steering_wheel_deg": 9.740984076140503,
+          "gear": "REVERSE",
+          "heading_deg": 270.97409840761406
+        },
+        {
+          "time_ms": 82700,
+          "speed_mps": -0.19481968152281007,
+          "steering_wheel_deg": 18.426381380690035,
+          "gear": "REVERSE",
+          "heading_deg": 271.842638138069
+        },
+        {
+          "time_ms": 82800,
+          "speed_mps": -0.2855684358222441,
+          "steering_wheel_deg": 25.114994347875857,
+          "gear": "REVERSE",
+          "heading_deg": 272.5114994347876
+        },
+        {
+          "time_ms": 82900,
+          "speed_mps": -0.3685276276138007,
+          "steering_wheel_deg": 29.08200797817991,
+          "gear": "REVERSE",
+          "heading_deg": 272.908200797818
+        },
+        {
+          "time_ms": 83000,
+          "speed_mps": -0.44143434640387896,
+          "steering_wheel_deg": 29.897534790200094,
+          "gear": "REVERSE",
+          "heading_deg": 272.98975347902
+        },
+        {
+          "time_ms": 83100,
+          "speed_mps": -0.5022998869575171,
+          "steering_wheel_deg": 27.473199799651724,
+          "gear": "REVERSE",
+          "heading_deg": 272.74731997996514
+        },
+        {
+          "time_ms": 83200,
+          "speed_mps": -0.5494639959930344,
+          "steering_wheel_deg": 22.07171732019395,
+          "gear": "REVERSE",
+          "heading_deg": 272.2071717320194
+        },
+        {
+          "time_ms": 83300,
+          "speed_mps": -0.5816401595635982,
+          "steering_wheel_deg": 14.27842179111221,
+          "gear": "REVERSE",
+          "heading_deg": 271.4278421791112
+        },
+        {
+          "time_ms": 83400,
+          "speed_mps": -0.5979506958040018,
+          "steering_wheel_deg": 4.937837708422021,
+          "gear": "REVERSE",
+          "heading_deg": 270.4937837708422
+        },
+        {
+          "time_ms": 83500,
+          "speed_mps": -0.5979506958040018,
+          "steering_wheel_deg": -4.9378377084220135,
+          "gear": "REVERSE",
+          "heading_deg": 269.5062162291578
+        },
+        {
+          "time_ms": 83600,
+          "speed_mps": -0.5816401595635982,
+          "steering_wheel_deg": -14.278421791112205,
+          "gear": "REVERSE",
+          "heading_deg": 268.5721578208888
+        },
+        {
+          "time_ms": 83700,
+          "speed_mps": -0.5494639959930345,
+          "steering_wheel_deg": -22.071717320193937,
+          "gear": "REVERSE",
+          "heading_deg": 267.7928282679806
+        },
+        {
+          "time_ms": 83800,
+          "speed_mps": -0.5022998869575171,
+          "steering_wheel_deg": -27.47319979965172,
+          "gear": "REVERSE",
+          "heading_deg": 267.25268002003486
+        },
+        {
+          "time_ms": 83900,
+          "speed_mps": -0.441434346403879,
+          "steering_wheel_deg": -29.897534790200094,
+          "gear": "REVERSE",
+          "heading_deg": 267.01024652098
+        },
+        {
+          "time_ms": 84000,
+          "speed_mps": -0.36852762761380076,
+          "steering_wheel_deg": -29.082007978179913,
+          "gear": "REVERSE",
+          "heading_deg": 267.091799202182
+        },
+        {
+          "time_ms": 84100,
+          "speed_mps": -0.28556843582224417,
+          "steering_wheel_deg": -25.114994347875864,
+          "gear": "REVERSE",
+          "heading_deg": 267.4885005652124
+        },
+        {
+          "time_ms": 84200,
+          "speed_mps": -0.19481968152281018,
+          "steering_wheel_deg": -18.426381380690042,
+          "gear": "REVERSE",
+          "heading_deg": 268.157361861931
+        },
+        {
+          "time_ms": 84300,
+          "speed_mps": -0.09875675416844042,
+          "steering_wheel_deg": -9.740984076140512,
+          "gear": "REVERSE",
+          "heading_deg": 269.02590159238594
+        },
+        {
+          "time_ms": 84400,
+          "speed_mps": -7.347880794884119e-17,
+          "steering_wheel_deg": -7.34788079488412e-15,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 84500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 84600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 84700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 84800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 84900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 85000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 85100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 85200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 85300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 85400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 85500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 85600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 85700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 85800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 85900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 86000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 86100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 86200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 86300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 86400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 86500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 86600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 86700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 86800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 86900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 87000,
+          "speed_mps": 0.09875675416844033,
+          "steering_wheel_deg": 9.740984076140503,
+          "gear": "DRIVE",
+          "heading_deg": 270.97409840761406
+        },
+        {
+          "time_ms": 87100,
+          "speed_mps": 0.19481968152281007,
+          "steering_wheel_deg": 18.426381380690035,
+          "gear": "DRIVE",
+          "heading_deg": 271.842638138069
+        },
+        {
+          "time_ms": 87200,
+          "speed_mps": 0.2855684358222441,
+          "steering_wheel_deg": 25.114994347875857,
+          "gear": "DRIVE",
+          "heading_deg": 272.5114994347876
+        },
+        {
+          "time_ms": 87300,
+          "speed_mps": 0.3685276276138007,
+          "steering_wheel_deg": 29.08200797817991,
+          "gear": "DRIVE",
+          "heading_deg": 272.908200797818
+        },
+        {
+          "time_ms": 87400,
+          "speed_mps": 0.44143434640387896,
+          "steering_wheel_deg": 29.897534790200094,
+          "gear": "DRIVE",
+          "heading_deg": 272.98975347902
+        },
+        {
+          "time_ms": 87500,
+          "speed_mps": 0.5022998869575171,
+          "steering_wheel_deg": 27.473199799651724,
+          "gear": "DRIVE",
+          "heading_deg": 272.74731997996514
+        },
+        {
+          "time_ms": 87600,
+          "speed_mps": 0.5494639959930344,
+          "steering_wheel_deg": 22.07171732019395,
+          "gear": "DRIVE",
+          "heading_deg": 272.2071717320194
+        },
+        {
+          "time_ms": 87700,
+          "speed_mps": 0.5816401595635982,
+          "steering_wheel_deg": 14.27842179111221,
+          "gear": "DRIVE",
+          "heading_deg": 271.4278421791112
+        },
+        {
+          "time_ms": 87800,
+          "speed_mps": 0.5979506958040018,
+          "steering_wheel_deg": 4.937837708422021,
+          "gear": "DRIVE",
+          "heading_deg": 270.4937837708422
+        },
+        {
+          "time_ms": 87900,
+          "speed_mps": 0.5979506958040018,
+          "steering_wheel_deg": -4.9378377084220135,
+          "gear": "DRIVE",
+          "heading_deg": 269.5062162291578
+        },
+        {
+          "time_ms": 88000,
+          "speed_mps": 0.5816401595635982,
+          "steering_wheel_deg": -14.278421791112205,
+          "gear": "DRIVE",
+          "heading_deg": 268.5721578208888
+        },
+        {
+          "time_ms": 88100,
+          "speed_mps": 0.5494639959930345,
+          "steering_wheel_deg": -22.071717320193937,
+          "gear": "DRIVE",
+          "heading_deg": 267.7928282679806
+        },
+        {
+          "time_ms": 88200,
+          "speed_mps": 0.5022998869575171,
+          "steering_wheel_deg": -27.47319979965172,
+          "gear": "DRIVE",
+          "heading_deg": 267.25268002003486
+        },
+        {
+          "time_ms": 88300,
+          "speed_mps": 0.441434346403879,
+          "steering_wheel_deg": -29.897534790200094,
+          "gear": "DRIVE",
+          "heading_deg": 267.01024652098
+        },
+        {
+          "time_ms": 88400,
+          "speed_mps": 0.36852762761380076,
+          "steering_wheel_deg": -29.082007978179913,
+          "gear": "DRIVE",
+          "heading_deg": 267.091799202182
+        },
+        {
+          "time_ms": 88500,
+          "speed_mps": 0.28556843582224417,
+          "steering_wheel_deg": -25.114994347875864,
+          "gear": "DRIVE",
+          "heading_deg": 267.4885005652124
+        },
+        {
+          "time_ms": 88600,
+          "speed_mps": 0.19481968152281018,
+          "steering_wheel_deg": -18.426381380690042,
+          "gear": "DRIVE",
+          "heading_deg": 268.157361861931
+        },
+        {
+          "time_ms": 88700,
+          "speed_mps": 0.09875675416844042,
+          "steering_wheel_deg": -9.740984076140512,
+          "gear": "DRIVE",
+          "heading_deg": 269.02590159238594
+        },
+        {
+          "time_ms": 88800,
+          "speed_mps": 7.347880794884119e-17,
+          "steering_wheel_deg": -7.34788079488412e-15,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 88900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 89000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 89100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 89200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 89300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 89400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 89500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 89600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 89700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 89800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 89900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 90000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 90100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 90200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 90300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 90400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 90500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 90600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 90700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 90800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 90900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        }
+      ]
+    },
+    {
+      "maneuver": "PARALLEL_PARK",
+      "synthetic": true,
+      "expert_reviewed": false,
+      "reference_is_arbitrary": true,
+      "start_ms": 93700,
+      "end_ms": 110400,
+      "samples": [
+        {
+          "time_ms": 93700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 93800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 93900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 94000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 94100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 94200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 94300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 94400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 94500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 94600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 94700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 94800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 94900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 95000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 95100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 95200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 95300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 95400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 95500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 95600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 95700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 95800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 95900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 96000,
+          "speed_mps": -0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 96100,
+          "speed_mps": -0.051683469626003314,
+          "steering_wheel_deg": 11.917525045757154,
+          "gear": "REVERSE",
+          "heading_deg": 271.98625417429287
+        },
+        {
+          "time_ms": 96200,
+          "speed_mps": -0.10328521706322867,
+          "steering_wheel_deg": 23.75970366108224,
+          "gear": "REVERSE",
+          "heading_deg": 273.9599506101804
+        },
+        {
+          "time_ms": 96300,
+          "speed_mps": -0.1547236493424762,
+          "steering_wheel_deg": 35.45166577993573,
+          "gear": "REVERSE",
+          "heading_deg": 275.90861096332264
+        },
+        {
+          "time_ms": 96400,
+          "speed_mps": -0.20591743172937946,
+          "steering_wheel_deg": 46.91949105333407,
+          "gear": "REVERSE",
+          "heading_deg": 277.81991517555565
+        },
+        {
+          "time_ms": 96500,
+          "speed_mps": -0.2567856163313385,
+          "steering_wheel_deg": 58.09067619759615,
+          "gear": "REVERSE",
+          "heading_deg": 279.681779366266
+        },
+        {
+          "time_ms": 96600,
+          "speed_mps": -0.3072477700927764,
+          "steering_wheel_deg": 68.89459338344669,
+          "gear": "REVERSE",
+          "heading_deg": 281.48243223057443
+        },
+        {
+          "time_ms": 96700,
+          "speed_mps": -0.35722410197633286,
+          "steering_wheel_deg": 79.26293676789291,
+          "gear": "REVERSE",
+          "heading_deg": 283.2104894613155
+        },
+        {
+          "time_ms": 96800,
+          "speed_mps": -0.40663558912889525,
+          "steering_wheel_deg": 89.13015434575657,
+          "gear": "REVERSE",
+          "heading_deg": 284.8550257242928
+        },
+        {
+          "time_ms": 96900,
+          "speed_mps": -0.45540410183297153,
+          "steering_wheel_deg": 98.43386239055634,
+          "gear": "REVERSE",
+          "heading_deg": 286.40564373175937
+        },
+        {
+          "time_ms": 97000,
+          "speed_mps": -0.5034525270458333,
+          "steering_wheel_deg": 107.11523986451246,
+          "gear": "REVERSE",
+          "heading_deg": 287.85253997741876
+        },
+        {
+          "time_ms": 97100,
+          "speed_mps": -0.5507048903310865,
+          "steering_wheel_deg": 115.11940030408618,
+          "gear": "REVERSE",
+          "heading_deg": 289.1865667173477
+        },
+        {
+          "time_ms": 97200,
+          "speed_mps": -0.5970864759898713,
+          "steering_wheel_deg": 122.39573882987413,
+          "gear": "REVERSE",
+          "heading_deg": 290.39928980497905
+        },
+        {
+          "time_ms": 97300,
+          "speed_mps": -0.6425239452017397,
+          "steering_wheel_deg": 128.89825208694916,
+          "gear": "REVERSE",
+          "heading_deg": 291.4830420144915
+        },
+        {
+          "time_ms": 97400,
+          "speed_mps": -0.6869454519884053,
+          "steering_wheel_deg": 134.58582909288185,
+          "gear": "REVERSE",
+          "heading_deg": 292.43097151548034
+        },
+        {
+          "time_ms": 97500,
+          "speed_mps": -0.7302807568170021,
+          "steering_wheel_deg": 139.42251115460806,
+          "gear": "REVERSE",
+          "heading_deg": 293.2370851924347
+        },
+        {
+          "time_ms": 97600,
+          "speed_mps": -0.7724613376632237,
+          "steering_wheel_deg": 143.37771921086411,
+          "gear": "REVERSE",
+          "heading_deg": 293.89628653514404
+        },
+        {
+          "time_ms": 97700,
+          "speed_mps": -0.813420498358728,
+          "steering_wheel_deg": 146.4264471628576,
+          "gear": "REVERSE",
+          "heading_deg": 294.4044078604763
+        },
+        {
+          "time_ms": 97800,
+          "speed_mps": -0.8530934740514883,
+          "steering_wheel_deg": 148.54941997087528,
+          "gear": "REVERSE",
+          "heading_deg": 294.75823666181253
+        },
+        {
+          "time_ms": 97900,
+          "speed_mps": -0.8914175336123371,
+          "steering_wheel_deg": 149.73321551728995,
+          "gear": "REVERSE",
+          "heading_deg": 294.9555359195483
+        },
+        {
+          "time_ms": 98000,
+          "speed_mps": -0.9283320788257747,
+          "steering_wheel_deg": 149.97034946550983,
+          "gear": "REVERSE",
+          "heading_deg": 294.99505824425165
+        },
+        {
+          "time_ms": 98100,
+          "speed_mps": -0.9637787402082036,
+          "steering_wheel_deg": 149.25932257836413,
+          "gear": "REVERSE",
+          "heading_deg": 294.8765537630607
+        },
+        {
+          "time_ms": 98200,
+          "speed_mps": -0.9977014693020803,
+          "steering_wheel_deg": 147.6046301967631,
+          "gear": "REVERSE",
+          "heading_deg": 294.6007716994605
+        },
+        {
+          "time_ms": 98300,
+          "speed_mps": -1.0300466273000466,
+          "steering_wheel_deg": 145.01673381870557,
+          "gear": "REVERSE",
+          "heading_deg": 294.16945563645095
+        },
+        {
+          "time_ms": 98400,
+          "speed_mps": -1.0607630698589092,
+          "steering_wheel_deg": 141.51199495832017,
+          "gear": "REVERSE",
+          "heading_deg": 293.5853324930534
+        },
+        {
+          "time_ms": 98500,
+          "speed_mps": -1.0898022279693595,
+          "steering_wheel_deg": 137.1125717031052,
+          "gear": "REVERSE",
+          "heading_deg": 292.8520952838509
+        },
+        {
+          "time_ms": 98600,
+          "speed_mps": -1.1171181847535594,
+          "steering_wheel_deg": 131.84627862336507,
+          "gear": "REVERSE",
+          "heading_deg": 291.97437977056086
+        },
+        {
+          "time_ms": 98700,
+          "speed_mps": -1.1426677480691638,
+          "steering_wheel_deg": 125.7464109195415,
+          "gear": "REVERSE",
+          "heading_deg": 290.9577351532569
+        },
+        {
+          "time_ms": 98800,
+          "speed_mps": -1.166410518804976,
+          "steering_wheel_deg": 118.85153391923616,
+          "gear": "REVERSE",
+          "heading_deg": 289.80858898653935
+        },
+        {
+          "time_ms": 98900,
+          "speed_mps": -1.1883089547602452,
+          "steering_wheel_deg": 111.2052392547927,
+          "gear": "REVERSE",
+          "heading_deg": 288.5342065424654
+        },
+        {
+          "time_ms": 99000,
+          "speed_mps": -1.208328430006603,
+          "steering_wheel_deg": 102.85586926296197,
+          "gear": "REVERSE",
+          "heading_deg": 287.1426448771603
+        },
+        {
+          "time_ms": 99100,
+          "speed_mps": -1.226437289638775,
+          "steering_wheel_deg": 93.856211349084,
+          "gear": "REVERSE",
+          "heading_deg": 285.642701891514
+        },
+        {
+          "time_ms": 99200,
+          "speed_mps": -1.242606899827489,
+          "steering_wheel_deg": 84.26316424811567,
+          "gear": "REVERSE",
+          "heading_deg": 284.0438607080193
+        },
+        {
+          "time_ms": 99300,
+          "speed_mps": -1.2568116930954483,
+          "steering_wheel_deg": 74.13737829250844,
+          "gear": "REVERSE",
+          "heading_deg": 282.35622971541807
+        },
+        {
+          "time_ms": 99400,
+          "speed_mps": -1.269029208744766,
+          "steering_wheel_deg": 63.54287196127918,
+          "gear": "REVERSE",
+          "heading_deg": 280.5904786602132
+        },
+        {
+          "time_ms": 99500,
+          "speed_mps": -1.2792401283719468,
+          "steering_wheel_deg": 52.546627134573704,
+          "gear": "REVERSE",
+          "heading_deg": 278.7577711890956
+        },
+        {
+          "time_ms": 99600,
+          "speed_mps": -1.2874283064142524,
+          "steering_wheel_deg": 41.21816561265383,
+          "gear": "REVERSE",
+          "heading_deg": 276.8696942687756
+        },
+        {
+          "time_ms": 99700,
+          "speed_mps": -1.2935807956791558,
+          "steering_wheel_deg": 29.62910957669295,
+          "gear": "REVERSE",
+          "heading_deg": 274.9381849294488
+        },
+        {
+          "time_ms": 99800,
+          "speed_mps": -1.297687867816513,
+          "steering_wheel_deg": 17.85272877028573,
+          "gear": "REVERSE",
+          "heading_deg": 272.9754547950476
+        },
+        {
+          "time_ms": 99900,
+          "speed_mps": -1.2997430287010852,
+          "steering_wheel_deg": 5.963477264538816,
+          "gear": "REVERSE",
+          "heading_deg": 270.99391287742316
+        },
+        {
+          "time_ms": 100000,
+          "speed_mps": -1.2997430287010852,
+          "steering_wheel_deg": -5.963477264538846,
+          "gear": "REVERSE",
+          "heading_deg": 269.0060871225769
+        },
+        {
+          "time_ms": 100100,
+          "speed_mps": -1.2976878678165131,
+          "steering_wheel_deg": -17.85272877028569,
+          "gear": "REVERSE",
+          "heading_deg": 267.02454520495235
+        },
+        {
+          "time_ms": 100200,
+          "speed_mps": -1.2935807956791558,
+          "steering_wheel_deg": -29.62910957669285,
+          "gear": "REVERSE",
+          "heading_deg": 265.0618150705511
+        },
+        {
+          "time_ms": 100300,
+          "speed_mps": -1.2874283064142527,
+          "steering_wheel_deg": -41.218165612653785,
+          "gear": "REVERSE",
+          "heading_deg": 263.1303057312243
+        },
+        {
+          "time_ms": 100400,
+          "speed_mps": -1.2792401283719468,
+          "steering_wheel_deg": -52.546627134573605,
+          "gear": "REVERSE",
+          "heading_deg": 261.2422288109044
+        },
+        {
+          "time_ms": 100500,
+          "speed_mps": -1.269029208744766,
+          "steering_wheel_deg": -63.54287196127922,
+          "gear": "REVERSE",
+          "heading_deg": 259.4095213397868
+        },
+        {
+          "time_ms": 100600,
+          "speed_mps": -1.2568116930954483,
+          "steering_wheel_deg": -74.13737829250842,
+          "gear": "REVERSE",
+          "heading_deg": 257.64377028458193
+        },
+        {
+          "time_ms": 100700,
+          "speed_mps": -1.242606899827489,
+          "steering_wheel_deg": -84.26316424811559,
+          "gear": "REVERSE",
+          "heading_deg": 255.95613929198066
+        },
+        {
+          "time_ms": 100800,
+          "speed_mps": -1.226437289638775,
+          "steering_wheel_deg": -93.85621134908398,
+          "gear": "REVERSE",
+          "heading_deg": 254.35729810848602
+        },
+        {
+          "time_ms": 100900,
+          "speed_mps": -1.2083284300066033,
+          "steering_wheel_deg": -102.85586926296195,
+          "gear": "REVERSE",
+          "heading_deg": 252.85735512283964
+        },
+        {
+          "time_ms": 101000,
+          "speed_mps": -1.188308954760245,
+          "steering_wheel_deg": -111.20523925479272,
+          "gear": "REVERSE",
+          "heading_deg": 251.46579345753457
+        },
+        {
+          "time_ms": 101100,
+          "speed_mps": -1.1664105188049763,
+          "steering_wheel_deg": -118.85153391923609,
+          "gear": "REVERSE",
+          "heading_deg": 250.19141101346065
+        },
+        {
+          "time_ms": 101200,
+          "speed_mps": -1.142667748069164,
+          "steering_wheel_deg": -125.74641091954146,
+          "gear": "REVERSE",
+          "heading_deg": 249.04226484674314
+        },
+        {
+          "time_ms": 101300,
+          "speed_mps": -1.1171181847535594,
+          "steering_wheel_deg": -131.84627862336507,
+          "gear": "REVERSE",
+          "heading_deg": 248.02562022943914
+        },
+        {
+          "time_ms": 101400,
+          "speed_mps": -1.0898022279693598,
+          "steering_wheel_deg": -137.11257170310515,
+          "gear": "REVERSE",
+          "heading_deg": 247.14790471614913
+        },
+        {
+          "time_ms": 101500,
+          "speed_mps": -1.060763069858909,
+          "steering_wheel_deg": -141.5119949583202,
+          "gear": "REVERSE",
+          "heading_deg": 246.41466750694667
+        },
+        {
+          "time_ms": 101600,
+          "speed_mps": -1.0300466273000468,
+          "steering_wheel_deg": -145.01673381870555,
+          "gear": "REVERSE",
+          "heading_deg": 245.83054436354905
+        },
+        {
+          "time_ms": 101700,
+          "speed_mps": -0.9977014693020807,
+          "steering_wheel_deg": -147.60463019676305,
+          "gear": "REVERSE",
+          "heading_deg": 245.39922830053956
+        },
+        {
+          "time_ms": 101800,
+          "speed_mps": -0.9637787402082034,
+          "steering_wheel_deg": -149.25932257836413,
+          "gear": "REVERSE",
+          "heading_deg": 245.12344623693934
+        },
+        {
+          "time_ms": 101900,
+          "speed_mps": -0.9283320788257747,
+          "steering_wheel_deg": -149.97034946550983,
+          "gear": "REVERSE",
+          "heading_deg": 245.0049417557484
+        },
+        {
+          "time_ms": 102000,
+          "speed_mps": -0.8914175336123371,
+          "steering_wheel_deg": -149.73321551728998,
+          "gear": "REVERSE",
+          "heading_deg": 245.0444640804517
+        },
+        {
+          "time_ms": 102100,
+          "speed_mps": -0.8530934740514882,
+          "steering_wheel_deg": -148.54941997087528,
+          "gear": "REVERSE",
+          "heading_deg": 245.2417633381874
+        },
+        {
+          "time_ms": 102200,
+          "speed_mps": -0.8134204983587281,
+          "steering_wheel_deg": -146.42644716285764,
+          "gear": "REVERSE",
+          "heading_deg": 245.59559213952366
+        },
+        {
+          "time_ms": 102300,
+          "speed_mps": -0.7724613376632238,
+          "steering_wheel_deg": -143.37771921086411,
+          "gear": "REVERSE",
+          "heading_deg": 246.1037134648559
+        },
+        {
+          "time_ms": 102400,
+          "speed_mps": -0.7302807568170026,
+          "steering_wheel_deg": -139.4225111546081,
+          "gear": "REVERSE",
+          "heading_deg": 246.76291480756527
+        },
+        {
+          "time_ms": 102500,
+          "speed_mps": -0.6869454519884052,
+          "steering_wheel_deg": -134.58582909288182,
+          "gear": "REVERSE",
+          "heading_deg": 247.56902848451978
+        },
+        {
+          "time_ms": 102600,
+          "speed_mps": -0.6425239452017398,
+          "steering_wheel_deg": -128.89825208694916,
+          "gear": "REVERSE",
+          "heading_deg": 248.5169579855085
+        },
+        {
+          "time_ms": 102700,
+          "speed_mps": -0.5970864759898717,
+          "steering_wheel_deg": -122.39573882987422,
+          "gear": "REVERSE",
+          "heading_deg": 249.60071019502095
+        },
+        {
+          "time_ms": 102800,
+          "speed_mps": -0.5507048903310863,
+          "steering_wheel_deg": -115.11940030408616,
+          "gear": "REVERSE",
+          "heading_deg": 250.81343328265234
+        },
+        {
+          "time_ms": 102900,
+          "speed_mps": -0.5034525270458335,
+          "steering_wheel_deg": -107.11523986451247,
+          "gear": "REVERSE",
+          "heading_deg": 252.1474600225813
+        },
+        {
+          "time_ms": 103000,
+          "speed_mps": -0.4554041018329721,
+          "steering_wheel_deg": -98.43386239055644,
+          "gear": "REVERSE",
+          "heading_deg": 253.59435626824052
+        },
+        {
+          "time_ms": 103100,
+          "speed_mps": -0.40663558912889514,
+          "steering_wheel_deg": -89.13015434575654,
+          "gear": "REVERSE",
+          "heading_deg": 255.14497427570723
+        },
+        {
+          "time_ms": 103200,
+          "speed_mps": -0.3572241019763332,
+          "steering_wheel_deg": -79.26293676789297,
+          "gear": "REVERSE",
+          "heading_deg": 256.78951053868445
+        },
+        {
+          "time_ms": 103300,
+          "speed_mps": -0.30724777009277643,
+          "steering_wheel_deg": -68.89459338344669,
+          "gear": "REVERSE",
+          "heading_deg": 258.51756776942557
+        },
+        {
+          "time_ms": 103400,
+          "speed_mps": -0.2567856163313389,
+          "steering_wheel_deg": -58.090676197596245,
+          "gear": "REVERSE",
+          "heading_deg": 260.318220633734
+        },
+        {
+          "time_ms": 103500,
+          "speed_mps": -0.20591743172937974,
+          "steering_wheel_deg": -46.919491053334134,
+          "gear": "REVERSE",
+          "heading_deg": 262.1800848244443
+        },
+        {
+          "time_ms": 103600,
+          "speed_mps": -0.15472364934247632,
+          "steering_wheel_deg": -35.45166577993576,
+          "gear": "REVERSE",
+          "heading_deg": 264.09138903667736
+        },
+        {
+          "time_ms": 103700,
+          "speed_mps": -0.10328521706322918,
+          "steering_wheel_deg": -23.75970366108236,
+          "gear": "REVERSE",
+          "heading_deg": 266.0400493898196
+        },
+        {
+          "time_ms": 103800,
+          "speed_mps": -0.05168346962600307,
+          "steering_wheel_deg": -11.917525045757099,
+          "gear": "REVERSE",
+          "heading_deg": 268.01374582570713
+        },
+        {
+          "time_ms": 103900,
+          "speed_mps": -1.5920408388915593e-16,
+          "steering_wheel_deg": -3.6739403974420595e-14,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 104000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 104100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 104200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 104300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 104400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 104500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 104600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 104700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "REVERSE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 104800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 104900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 105000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 105100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 105200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 105300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 105400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 105500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "NEUTRAL",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 105600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 105700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 105800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 105900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 106000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 106100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 106200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 106300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 106400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 106500,
+          "speed_mps": 0.09875675416844033,
+          "steering_wheel_deg": 9.740984076140503,
+          "gear": "DRIVE",
+          "heading_deg": 270.97409840761406
+        },
+        {
+          "time_ms": 106600,
+          "speed_mps": 0.19481968152281007,
+          "steering_wheel_deg": 18.426381380690035,
+          "gear": "DRIVE",
+          "heading_deg": 271.842638138069
+        },
+        {
+          "time_ms": 106700,
+          "speed_mps": 0.2855684358222441,
+          "steering_wheel_deg": 25.114994347875857,
+          "gear": "DRIVE",
+          "heading_deg": 272.5114994347876
+        },
+        {
+          "time_ms": 106800,
+          "speed_mps": 0.3685276276138007,
+          "steering_wheel_deg": 29.08200797817991,
+          "gear": "DRIVE",
+          "heading_deg": 272.908200797818
+        },
+        {
+          "time_ms": 106900,
+          "speed_mps": 0.44143434640387896,
+          "steering_wheel_deg": 29.897534790200094,
+          "gear": "DRIVE",
+          "heading_deg": 272.98975347902
+        },
+        {
+          "time_ms": 107000,
+          "speed_mps": 0.5022998869575171,
+          "steering_wheel_deg": 27.473199799651724,
+          "gear": "DRIVE",
+          "heading_deg": 272.7473199799652
+        },
+        {
+          "time_ms": 107100,
+          "speed_mps": 0.5494639959930344,
+          "steering_wheel_deg": 22.07171732019395,
+          "gear": "DRIVE",
+          "heading_deg": 272.2071717320194
+        },
+        {
+          "time_ms": 107200,
+          "speed_mps": 0.5816401595635982,
+          "steering_wheel_deg": 14.27842179111221,
+          "gear": "DRIVE",
+          "heading_deg": 271.4278421791112
+        },
+        {
+          "time_ms": 107300,
+          "speed_mps": 0.5979506958040018,
+          "steering_wheel_deg": 4.937837708422021,
+          "gear": "DRIVE",
+          "heading_deg": 270.4937837708422
+        },
+        {
+          "time_ms": 107400,
+          "speed_mps": 0.5979506958040018,
+          "steering_wheel_deg": -4.9378377084220135,
+          "gear": "DRIVE",
+          "heading_deg": 269.50621622915787
+        },
+        {
+          "time_ms": 107500,
+          "speed_mps": 0.5816401595635982,
+          "steering_wheel_deg": -14.278421791112205,
+          "gear": "DRIVE",
+          "heading_deg": 268.57215782088883
+        },
+        {
+          "time_ms": 107600,
+          "speed_mps": 0.5494639959930345,
+          "steering_wheel_deg": -22.071717320193937,
+          "gear": "DRIVE",
+          "heading_deg": 267.79282826798067
+        },
+        {
+          "time_ms": 107700,
+          "speed_mps": 0.5022998869575171,
+          "steering_wheel_deg": -27.47319979965172,
+          "gear": "DRIVE",
+          "heading_deg": 267.25268002003486
+        },
+        {
+          "time_ms": 107800,
+          "speed_mps": 0.441434346403879,
+          "steering_wheel_deg": -29.897534790200094,
+          "gear": "DRIVE",
+          "heading_deg": 267.01024652098
+        },
+        {
+          "time_ms": 107900,
+          "speed_mps": 0.36852762761380076,
+          "steering_wheel_deg": -29.082007978179913,
+          "gear": "DRIVE",
+          "heading_deg": 267.0917992021821
+        },
+        {
+          "time_ms": 108000,
+          "speed_mps": 0.28556843582224417,
+          "steering_wheel_deg": -25.114994347875864,
+          "gear": "DRIVE",
+          "heading_deg": 267.48850056521246
+        },
+        {
+          "time_ms": 108100,
+          "speed_mps": 0.19481968152281018,
+          "steering_wheel_deg": -18.426381380690042,
+          "gear": "DRIVE",
+          "heading_deg": 268.157361861931
+        },
+        {
+          "time_ms": 108200,
+          "speed_mps": 0.09875675416844042,
+          "steering_wheel_deg": -9.740984076140512,
+          "gear": "DRIVE",
+          "heading_deg": 269.02590159238594
+        },
+        {
+          "time_ms": 108300,
+          "speed_mps": 7.347880794884119e-17,
+          "steering_wheel_deg": -7.34788079488412e-15,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 108400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 108500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 108600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 108700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 108800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 108900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 109000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 109100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "DRIVE",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 109200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 109300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 109400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 109500,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 109600,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 109700,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 109800,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 109900,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 110000,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 110100,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 110200,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 110300,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        },
+        {
+          "time_ms": 110400,
+          "speed_mps": 0.0,
+          "steering_wheel_deg": 0.0,
+          "gear": "PARK",
+          "heading_deg": 270.0
+        }
+      ]
+    }
+  ]
+}

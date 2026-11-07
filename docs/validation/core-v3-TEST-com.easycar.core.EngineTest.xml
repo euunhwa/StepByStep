@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.easycar.core.EngineTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2026-11-06T08:41:43.301Z" hostname="gim-yeongjaeui-MacBookPro.local" time="0.178">
+  <properties/>
+  <testcase name="stableGearsDebounceDuplicatesNeutralAndShortOscillation" classname="com.easycar.core.EngineTest" time="0.001"/>
+  <testcase name="turnRecognitionRequiresHeadingAndRejectsCurveLaneChange" classname="com.easycar.core.EngineTest" time="0.008"/>
+  <testcase name="strongerExceedanceNeverReducesPenalty" classname="com.easycar.core.EngineTest" time="0.003"/>
+  <testcase name="weightedParkingCountsUseSameDetectorAndScorer" classname="com.easycar.core.EngineTest" time="0.057"/>
+  <testcase name="profileSchemaAndUnknownConditionsAreChecked" classname="com.easycar.core.EngineTest" time="0.002"/>
+  <testcase name="detectsPixelsAtKnownAnglesAndIntrusionAndNoLines" classname="com.easycar.core.EngineTest" time="0.032"/>
+  <testcase name="unknownHarshBrakingDoesNotAssignFault" classname="com.easycar.core.EngineTest" time="0.002"/>
+  <testcase name="sameCourseBadSpeedAndRoughSteeringCarryMeasuredDeductions" classname="com.easycar.core.EngineTest" time="0.004"/>
+  <testcase name="onChangeStateReadDoesNotPretendToBeNewSensorMeasurement" classname="com.easycar.core.EngineTest" time="0.0"/>
+  <testcase name="missingFinalEvidenceHoldsTotalButKeepsCountPenalty" classname="com.easycar.core.EngineTest" time="0.002"/>
+  <testcase name="playbackSchedulingDoesNotEnterAnalysis" classname="com.easycar.core.EngineTest" time="0.062"/>
+  <testcase name="gapsAndBadTimesDoNotProduceFakeDerivatives" classname="com.easycar.core.EngineTest" time="0.0"/>
+  <testcase name="singleSampleNoiseDoesNotCreateHarshLaunch" classname="com.easycar.core.EngineTest" time="0.001"/>
+  <testcase name="missingSteeringStillPreservesConfirmedParkingCountAndHoldsTotal" classname="com.easycar.core.EngineTest" time="0.002"/>
+  <testcase name="restrictionsAndAudioFailClosedAndDeduplicate" classname="com.easycar.core.EngineTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

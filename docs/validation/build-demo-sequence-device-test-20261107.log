@@ -1,0 +1,74 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.6.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Calculating task graph as no cached configuration is available for tasks: :app:assemblePleosDebugAndroidTest
+> Task :core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core:compileKotlin UP-TO-DATE
+> Task :core:compileJava NO-SOURCE
+> Task :core:processResources NO-SOURCE
+> Task :core:classes UP-TO-DATE
+> Task :core:jar UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:prePleosDebugBuild UP-TO-DATE
+> Task :app:generatePleosDebugBuildConfig UP-TO-DATE
+> Task :app:generatePleosDebugResources UP-TO-DATE
+> Task :app:packagePleosDebugResources UP-TO-DATE
+> Task :app:processPleosDebugNavigationResources UP-TO-DATE
+> Task :app:parsePleosDebugLocalResources UP-TO-DATE
+> Task :app:generatePleosDebugRFile UP-TO-DATE
+> Task :app:compilePleosDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompilePleosDebug UP-TO-DATE
+> Task :app:compilePleosDebugJavaWithJavac UP-TO-DATE
+> Task :app:checkPleosDebugAarMetadata UP-TO-DATE
+> Task :app:mapPleosDebugSourceSetPaths UP-TO-DATE
+> Task :app:compilePleosDebugNavigationResources UP-TO-DATE
+> Task :app:mergePleosDebugResources UP-TO-DATE
+> Task :app:createPleosDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksPleosDebug UP-TO-DATE
+> Task :app:processPleosDebugMainManifest UP-TO-DATE
+> Task :app:processPleosDebugManifest UP-TO-DATE
+> Task :app:processPleosDebugManifestForPackage UP-TO-DATE
+> Task :app:processPleosDebugResources UP-TO-DATE
+> Task :app:bundlePleosDebugClassesToCompileJar UP-TO-DATE
+> Task :app:prePleosDebugAndroidTestBuild SKIPPED
+> Task :app:mergePleosDebugAndroidTestManifest UP-TO-DATE
+> Task :app:processPleosDebugAndroidTestManifest UP-TO-DATE
+> Task :app:generatePleosDebugAndroidTestBuildConfig UP-TO-DATE
+> Task :app:generatePleosDebugAndroidTestResources UP-TO-DATE
+> Task :app:packagePleosDebugAndroidTestResources UP-TO-DATE
+> Task :app:processPleosDebugAndroidTestNavigationResources UP-TO-DATE
+> Task :app:parsePleosDebugAndroidTestLocalResources UP-TO-DATE
+> Task :app:generatePleosDebugAndroidTestRFile UP-TO-DATE
+> Task :app:compilePleosDebugAndroidTestKotlin
+> Task :app:javaPreCompilePleosDebugAndroidTest UP-TO-DATE
+> Task :app:compilePleosDebugAndroidTestJavaWithJavac UP-TO-DATE
+> Task :app:generatePleosDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergePleosDebugAndroidTestAssets UP-TO-DATE
+> Task :app:compressPleosDebugAndroidTestAssets UP-TO-DATE
+> Task :app:generatePleosDebugAndroidTestGlobalSynthetics UP-TO-DATE
+> Task :app:checkPleosDebugAndroidTestDuplicateClasses UP-TO-DATE
+> Task :app:desugarPleosDebugAndroidTestFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexPleosDebugAndroidTest UP-TO-DATE
+> Task :app:mergeLibDexPleosDebugAndroidTest UP-TO-DATE
+> Task :app:compressPleosDebugAndroidTestJavaRes UP-TO-DATE
+> Task :app:mergePleosDebugAndroidTestJavaResource UP-TO-DATE
+> Task :app:checkPleosDebugAndroidTestAarMetadata UP-TO-DATE
+> Task :app:mapPleosDebugAndroidTestSourceSetPaths UP-TO-DATE
+> Task :app:compilePleosDebugAndroidTestNavigationResources UP-TO-DATE
+> Task :app:mergePleosDebugAndroidTestResources UP-TO-DATE
+> Task :app:processPleosDebugAndroidTestResources UP-TO-DATE
+> Task :app:dexBuilderPleosDebugAndroidTest
+> Task :app:mergeProjectDexPleosDebugAndroidTest
+> Task :app:mergePleosDebugAndroidTestJniLibFolders UP-TO-DATE
+> Task :app:mergePleosDebugJniLibFolders UP-TO-DATE
+> Task :app:mergePleosDebugNativeLibs UP-TO-DATE
+> Task :app:mergePleosDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripPleosDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:validateSigningPleosDebugAndroidTest UP-TO-DATE
+> Task :app:writePleosDebugAndroidTestSigningConfigVersions UP-TO-DATE
+> Task :app:packagePleosDebugAndroidTest
+> Task :app:createPleosDebugAndroidTestApkListingFileRedirect UP-TO-DATE
+> Task :app:assemblePleosDebugAndroidTest
+
+BUILD SUCCESSFUL in 12s
+56 actionable tasks: 4 executed, 52 up-to-date
+Configuration cache entry stored.

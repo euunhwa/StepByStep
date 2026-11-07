@@ -1,0 +1,54 @@
+{
+  "packageName": "com.example.easycar",
+  "appDescription": "Reads the user's selected local driving practice records and explains their stored maneuver results and deductions.",
+  "version": "0.11.0",
+  "actionCalls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "GET_LAST_RESULT",
+        "description": "Retrieves the most recent stored maneuver result within the user's selected local practice session.",
+        "component": "activity",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "sessionId": {"type": "string", "description": "Identifier of an already selected and authorized local practice session."},
+            "maneuverType": {"type": "string", "description": "Maneuver category to retrieve.", "enum": ["LEFT", "RIGHT", "U_TURN", "START", "STOP", "ACCELERATION", "DECELERATION", "T_PARK", "PARALLEL_PARK", "PARKING_UNKNOWN", "UNKNOWN"]}
+          },
+          "required": []
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "EXPLAIN_RESULT",
+        "description": "Explains the saved score, deductions and evaluation holds of a result within the user's selected practice session.",
+        "component": "activity",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "sessionId": {"type": "string", "description": "Identifier of an already selected and authorized local practice session."},
+            "resultId": {"type": "string", "description": "Identifier of a stored maneuver result within the selected session."}
+          },
+          "required": []
+        }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "SUMMARIZE_SESSION",
+        "description": "Summarizes observed strengths, repeated recorded deductions and unresolved evaluations in the selected local practice session.",
+        "component": "activity",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "sessionId": {"type": "string", "description": "Identifier of an already selected and authorized local practice session."}
+          },
+          "required": []
+        }
+      }
+    }
+  ]
+}

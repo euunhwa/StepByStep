@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.easycar.core.AutomaticCoachingTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-11-06T11:27:19.207Z" hostname="gim-yeongjaeui-MacBookPro.local" time="0.148">
+  <properties/>
+  <testcase name="forwardParkingUsesObservedSpaceAndDoesNotRequireReverseGear" classname="com.easycar.core.AutomaticCoachingTest" time="0.054"/>
+  <testcase name="steeringReceiptTimeNeverBecomesMeasurementTimeEvenWhenValueQualityIsValid" classname="com.easycar.core.AutomaticCoachingTest" time="0.004"/>
+  <testcase name="incompleteReverseIsNotReportedAsCompletedParking" classname="com.easycar.core.AutomaticCoachingTest" time="0.004"/>
+  <testcase name="draftMeasurementsUseLongitudinalReferenceWithoutActivatingScore" classname="com.easycar.core.AutomaticCoachingTest" time="0.003"/>
+  <testcase name="noSpaceIsUnconfirmedLowSpeedOperationWithActualCountsAndNoInventedPenalty" classname="com.easycar.core.AutomaticCoachingTest" time="0.002"/>
+  <testcase name="legacySelectionAndScenarioNameCannotChangeRecognition" classname="com.easycar.core.AutomaticCoachingTest" time="0.013"/>
+  <testcase name="staleUnverifiedAndChangingSpacesNeverBecomeKnownParkingTypes" classname="com.easycar.core.AutomaticCoachingTest" time="0.005"/>
+  <testcase name="ambiguousButConfirmedSpaceKeepsCountAndHoldsType" classname="com.easycar.core.AutomaticCoachingTest" time="0.002"/>
+  <testcase name="physicalSpaceAxesDetermineParkingTypeWithoutSelectedLabel" classname="com.easycar.core.AutomaticCoachingTest" time="0.003"/>
+  <testcase name="oneUnselectedSessionRecognizesAllSevenAndPublishesBeforeSessionEnd" classname="com.easycar.core.AutomaticCoachingTest" time="0.006"/>
+  <testcase name="exportedContinuousInputRecognizesAllSevenWithoutLoadingTruthOrContext" classname="com.easycar.core.AutomaticCoachingTest" time="0.043"/>
+  <testcase name="allConfirmedParkingCountWeightsRemainVisibleWithTotalHeld" classname="com.easycar.core.AutomaticCoachingTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

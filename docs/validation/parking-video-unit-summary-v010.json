@@ -1,0 +1,20 @@
+{
+  "appVersion": "0.10.0",
+  "visionVersion": "parking-vision-2.0",
+  "date": "2026-11-07",
+  "jdk": 17,
+  "sourceType": "SYNTHETIC_PIXELS_AND_BUNDLED_SYNTHETIC_MP4",
+  "core": {
+    "tests": 131,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "app": {
+    "tests": 5,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "apkSha256": "a16a16f678c460f783981d9af3f2ed4e2aabc1cba0c24605e8f91adf2d95266e"
+}

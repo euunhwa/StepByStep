@@ -1,0 +1,14 @@
+--------- beginning of main
+11-04 15:18:13.938  7215  7254 I EasyCarValidation: demo speech status=Android 한국어 음성 준비됨
+11-04 15:22:25.038  7460  7498 I EasyCarValidation: demo speech status=Android 한국어 음성 준비됨
+11-04 15:22:25.104  7460  7498 I EasyCarValidation: demo short speech accepted=true
+11-04 15:22:29.010  7460  7498 I EasyCarValidation: demo short speech completed
+11-04 15:25:43.759  7730  7778 I EasyCarValidation: demo speech status=Android 한국어 음성 준비됨
+11-04 15:25:43.766  7730  7778 I EasyCarValidation: demo short speech accepted=true
+11-04 15:25:46.221  7730  7778 I EasyCarValidation: demo short speech completed
+11-04 15:29:56.016  8014  8045 I EasyCarValidation: demo speech status=Android 한국어 음성 준비됨
+11-04 15:29:56.021  8014  8045 I EasyCarValidation: demo short speech accepted=true
+11-04 15:29:58.346  8014  8045 I EasyCarValidation: demo short speech completed
+11-04 15:34:17.326  8311  8336 I EasyCarValidation: demo speech status=Android 한국어 음성 준비됨
+11-04 15:34:17.335  8311  8336 I EasyCarValidation: demo short speech accepted=true
+11-04 15:34:19.687  8311  8336 I EasyCarValidation: demo short speech completed

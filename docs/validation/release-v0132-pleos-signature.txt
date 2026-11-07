@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): false
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=EasyCar Submission, OU=Development, O=EasyCar, C=KR
+Signer #1 certificate SHA-256 digest: f4e4ca5b9ab49fb5464651341e6066d8cf017bfa8bd36f5762ea3b11fdfbb3dc
+Signer #1 certificate SHA-1 digest: f03c50cf0ddce2ba7f90a2bfd4c432a8a2ea9a4b
+Signer #1 certificate MD5 digest: ae808ab5bc6b8d3fbcd833c40709b700
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: b7c3fe29f47febe1242ff8df29a2377e0b026118191fa7dc0536265a4a245de6
+Signer #1 public key SHA-1 digest: 9aee16051e28d2a17c890c0ab622961396277691
+Signer #1 public key MD5 digest: ae2962978dbac518cdd0b01f9e5309ec

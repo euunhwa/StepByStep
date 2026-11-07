@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.easycar.core.EvaluationPolicyTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-11-06T13:34:00.763Z" hostname="gim-yeongjaeui-MacBookPro.local" time="0.009">
+  <properties/>
+  <testcase name="parserRejectsUnknownMetricsDuplicateMetricsAndBadValidatedLimits" classname="com.easycar.core.EvaluationPolicyTest" time="0.002"/>
+  <testcase name="noGearMeansUnknownCountRatherThanObservedZero" classname="com.easycar.core.EvaluationPolicyTest" time="0.001"/>
+  <testcase name="allBudgetsSumToOneHundredAndDraftCannotGrade" classname="com.easycar.core.EvaluationPolicyTest" time="0.0"/>
+  <testcase name="unvalidatedProfileCannotActivateDespitePolicyFlag" classname="com.easycar.core.EvaluationPolicyTest" time="0.001"/>
+  <testcase name="unknownBrakingCauseHoldsWholeLinkedGroupAndPreservesMeasurements" classname="com.easycar.core.EvaluationPolicyTest" time="0.001"/>
+  <testcase name="correlatedAccelerationAndJerkTakeMaximumAndAssessmentsMatchAppliedTotal" classname="com.easycar.core.EvaluationPolicyTest" time="0.0"/>
+  <testcase name="unavailableRequiredItemNeverRenormalizesOtherGroups" classname="com.easycar.core.EvaluationPolicyTest" time="0.001"/>
+  <testcase name="exposureCannotBeDilutedByAddingNormalTailAndLargerExposureIsMonotonic" classname="com.easycar.core.EvaluationPolicyTest" time="0.001"/>
+  <testcase name="turnBudgetsCapAtFortyThirtyThirtyWithNoDoubleCountedAssessments" classname="com.easycar.core.EvaluationPolicyTest" time="0.001"/>
+  <testcase name="missingGearOrCriticalWindowHoldsTotalInsteadOfGivingHundred" classname="com.easycar.core.EvaluationPolicyTest" time="0.001"/>
+  <testcase name="shorterThanThreeHundredMillisecondsDoesNotDeduct" classname="com.easycar.core.EvaluationPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-06",
+  "timezone": "Asia/Seoul",
+  "scope": "NO_EMULATOR_NO_BUILD_NO_TRAINING_NO_BULK_DOWNLOAD",
+  "datasets": [
+    {
+      "id": "interaction_hf_current",
+      "name": "INTERACTION",
+      "priority": 1,
+      "purpose": [
+        "회전/곡선/차로변경 인식",
+        "주변 차량·지도 맥락 연구"
+      ],
+      "primary_urls": [
+        "https://huggingface.co/datasets/INTERACTION-dataset/INTERACTION-dataset",
+        "https://github.com/interaction-dataset/interaction-dataset"
+      ],
+      "access": "공개 현재 배포처; 전체 파일 미다운로드",
+      "verified": "공식 데이터 카드 저장·검토",
+      "signals": [
+        "timestamp_ms",
+        "x",
+        "y",
+        "vx",
+        "vy",
+        "psi_rad",
+        "length",
+        "width",
+        "Lanelet2 map"
+      ],
+      "labels": "참가자 유형·궤적·지도; EasyCar 일곱 동작/전문가 점수 라벨은 추가 작성 필요",
+      "missing": [
+        "실제 P/R/N/D",
+        "핸들 각도",
+        "페달",
+        "T자/평행주차 정답",
+        "전문가 코칭 점수"
+      ],
+      "license": {
+        "dataset": "CC-BY-4.0 (현재 HF 데이터 카드)",
+        "code": "BSD-3-Clause (도구)",
+        "note": "이전 사이트 종료 및 HF 이전을 카드가 명시; 배포본과 카드 해시 고정"
+      },
+      "readiness": "RECOGNITION_RESEARCH_NOT_SCORING_REFERENCE"
+    },
+    {
+      "id": "dlp",
+      "name": "Dragon Lake Parking",
+      "priority": 1,
+      "purpose": [
+        "주차 접근/이동/종료 경로 인식",
+        "주차 공간·차량 자세 연구"
+      ],
+      "primary_urls": [
+        "https://datadryad.org/dataset/doi:10.5061/dryad.tht76hf5b",
+        "https://sites.google.com/berkeley.edu/dlp-dataset",
+        "https://api.datacite.org/dois/10.5061/dryad.tht76hf5b"
+      ],
+      "access": "공개 JSON 약 8.02GB; 원본 영상/주석은 별도 요청. 이번 전체 데이터 미다운로드",
+      "verified": "DOI 메타데이터·README/도구 스키마 검토; 다운로드 파일은 web 경로 403으로 확보하지 않음",
+      "signals": [
+        "trajectory coords",
+        "heading",
+        "speed",
+        "acceleration",
+        "vehicle dimensions",
+        "frames",
+        "parking map from toolkit"
+      ],
+      "labels": "참가자/궤적/프레임·고정 장애물; T자/평행주차 균형 라벨 존재는 미확인",
+      "missing": [
+        "실제 기어",
+        "핸들 각도",
+        "페달",
+        "전문가 안전 점수",
+        "평행주차 충분 표본 확인"
+      ],
+      "license": {
+        "dataset": "DataCite DOI rightsList: CC0-1.0",
+        "code": "GPL-3.0 (Python 도구)",
+        "note": "원 사이트는 비상업·재배포 금지를 명시. DOI 공개 JSON과 별도 원본 영상/배포 조건의 범위가 달라 상용 이용 전 권리 범위를 확인; CC0를 영상 전체에 확대하지 않음"
+      },
+      "readiness": "PARKING_RESEARCH_WITH_LICENSE_SCOPE_CHECK"
+    },
+    {
+      "id": "nuscenes_can",
+      "name": "nuScenes CAN bus expansion",
+      "priority": 2,
+      "purpose": [
+        "속도/조향/가감속 전처리",
+        "회전 인식 특징 연구"
+      ],
+      "primary_urls": [
+        "https://github.com/nutonomy/nuscenes-devkit/blob/master/python-sdk/nuscenes/can_bus/README.md",
+        "https://www.nuscenes.org/data-format"
+      ],
+      "access": "등록/로그인 필요; 이번 실제 데이터 미다운로드",
+      "verified": "제작자 CAN 스키마와 공식 이용 안내 확인",
+      "signals": [
+        "IMU 100Hz",
+        "pose 50Hz",
+        "steer angle feedback 100Hz",
+        "vehicle monitor 2Hz",
+        "velocity",
+        "gear_position",
+        "brake"
+      ],
+      "labels": "장면/객체/지도; 동작 구간과 전문가 코칭 점수는 별도",
+      "missing": [
+        "검증된 현대/기아 차종별 모범 기준",
+        "신뢰 가능한 전체 R→D 라벨",
+        "긴 주차 동작 전체 보장"
+      ],
+      "license": {
+        "dataset": "무료 비상업 연구용; 상용은 별도 라이선스 문의",
+        "code": "Apache-2.0 (devkit)",
+        "note": "제작자도 CAN을 experimental로 표기. gear_position 0/7 관찰을 앱의 P/R/N/D로 임의 대응하지 않음"
+      },
+      "readiness": "REGISTERED_RESEARCH_CANDIDATE"
+    },
+    {
+      "id": "comma2k19",
+      "name": "comma2k19",
+      "priority": 2,
+      "purpose": [
+        "CAN 속도/핸들 시각 정합",
+        "고속도로 곡선·차로변경 오탐 방지 연구"
+      ],
+      "primary_urls": [
+        "https://github.com/commaai/comma2k19",
+        "https://raw.githubusercontent.com/commaai/comma2k19/master/README.md",
+        "https://raw.githubusercontent.com/commaai/comma2k19/master/LICENSE"
+      ],
+      "access": "공개 GitHub 소형 예제; 전체 약 100GB 미다운로드",
+      "verified": "CAN 배열 4개 159680bytes 실제 파싱·발행 blob 해시 대조",
+      "signals": [
+        "CAN speed",
+        "steering angle",
+        "wheel speed",
+        "GNSS",
+        "IMU"
+      ],
+      "labels": "통근 기록; 일곱 동작/전문가 점수 라벨 없음",
+      "missing": [
+        "주차 공간",
+        "검토한 4개 파일의 실제 기어",
+        "주차/유턴 대표성",
+        "전문가 평가"
+      ],
+      "license": {
+        "dataset": "GitHub 예제는 저장소 LICENSE 범위 확인; 외부 전체 배포본 조건은 별도 확인",
+        "code": "MIT",
+        "note": "고속도로 약 1분 예제 검사 결과는 모범 기준이 아니며 전체 데이터 품질 추정이 아님"
+      },
+      "readiness": "SMALL_SAMPLE_PARSED_NOT_EXPERT_REFERENCE"
+    },
+    {
+      "id": "hdd",
+      "name": "Honda HDD",
+      "priority": 3,
+      "purpose": [
+        "좌/우회전·유턴·차로변경·일반 주차 인식"
+      ],
+      "primary_urls": [
+        "https://usa.honda-ri.com/HDD"
+      ],
+      "access": "비상업용; 대학 소속/대학 이메일로 신청 필요. 신청/다운로드 안 함",
+      "verified": "제작자 설명과 요청 조건 확인",
+      "signals": [
+        "front camera",
+        "GPS",
+        "CAN"
+      ],
+      "labels": "목표 지향 행동. Park가 T자/평행으로 구분됨을 확인하지 못함",
+      "missing": [
+        "바로 쓸 수 있는 전문가 점수",
+        "공개 무신청 접근",
+        "모든 일곱 유형의 상세 라벨 확인"
+      ],
+      "license": {
+        "dataset": "비상업용·대학 소속 신청",
+        "code": "여기서는 도구 코드 미사용",
+        "note": "접근이 확보되기 전 개발의 필수 의존성으로 두지 않음"
+      },
+      "readiness": "ACCESS_CONDITIONAL"
+    },
+    {
+      "id": "nuplan",
+      "name": "nuPlan",
+      "priority": 3,
+      "purpose": [
+        "승차감/평가 지표 정의 참고",
+        "추후 조건별 모범 궤적 후보"
+      ],
+      "primary_urls": [
+        "https://www.nuplan.org/",
+        "https://github.com/motional/nuplan-devkit/blob/master/docs/metrics_description.md"
+      ],
+      "access": "대규모 데이터는 등록·비상업 조건; 이번 다운로드 안 함",
+      "verified": "공식 metric 문서 및 수치 YAML 확인",
+      "signals": [
+        "ego trajectory",
+        "map",
+        "agents",
+        "traffic metadata"
+      ],
+      "labels": "수동 주행 및 시나리오; EasyCar 점수는 별도",
+      "missing": [
+        "한국 차종·주차 환경의 검증된 허용 범위",
+        "실제 R→D 전문가 평가"
+      ],
+      "license": {
+        "dataset": "비상업 무료 제공 안내; 이용 범위 확인 필요",
+        "code": "데이터와 코드 권리는 분리 확인",
+        "note": "comfort 기준은 플래너 벤치마크 수치이며 안전운전 판정 규칙이 아님"
+      },
+      "readiness": "BENCHMARK_DEFINITIONS_ONLY"
+    }
+  ]
+}

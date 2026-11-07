@@ -1,0 +1,20 @@
+[
+  {
+    "flavor": "demo",
+    "path": "/Users/genius/AndroidStudioProjects/EasyCar/app/build/outputs/apk/demo/debug/app-demo-debug.apk",
+    "bytes": 34043409,
+    "sha256": "2f20e8fe735a2be6f22001491ff47f7c527cd92194f8bde675de083c083e97fb",
+    "version": "0.3.0",
+    "policy": "evaluation-design-0.1",
+    "score_status": "HELD_DRAFT"
+  },
+  {
+    "flavor": "pleos",
+    "path": "/Users/genius/AndroidStudioProjects/EasyCar/app/build/outputs/apk/pleos/debug/app-pleos-debug.apk",
+    "bytes": 56847772,
+    "sha256": "8760ac9f6fad5d6b49c72623db07d18ddbed786c72ec03644d9046779c306316",
+    "version": "0.3.0",
+    "policy": "evaluation-design-0.1",
+    "score_status": "HELD_DRAFT"
+  }
+]

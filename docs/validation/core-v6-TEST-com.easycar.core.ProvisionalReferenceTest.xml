@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.easycar.core.ProvisionalReferenceTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-11-06T11:27:19.565Z" hostname="gim-yeongjaeui-MacBookPro.local" time="0.021">
+  <properties/>
+  <testcase name="arbitraryLimitsNeverLeakIntoExpertOrDraftProfiles" classname="com.easycar.core.ProvisionalReferenceTest" time="0.001"/>
+  <testcase name="moderateLaunchNowFitsAndStrongerAccelerationStillDeducts" classname="com.easycar.core.ProvisionalReferenceTest" time="0.002"/>
+  <testcase name="arbitraryDatasetIsMandatoryAndCannotClaimExpertValidation" classname="com.easycar.core.ProvisionalReferenceTest" time="0.001"/>
+  <testcase name="receiptTimestampedSteeringStillHoldsItsMetricUnderProvisionalRules" classname="com.easycar.core.ProvisionalReferenceTest" time="0.001"/>
+  <testcase name="absentRequiredSignalsStillHoldAndExplainTheActualCause" classname="com.easycar.core.ProvisionalReferenceTest" time="0.0"/>
+  <testcase name="lateMissingDerivativesAreNeverRemovedAsGearWarmup" classname="com.easycar.core.ProvisionalReferenceTest" time="0.001"/>
+  <testcase name="scoreRefinementNeverDuplicatesVoiceOrExtendsTheCardLifetime" classname="com.easycar.core.ProvisionalReferenceTest" time="0.001"/>
+  <testcase name="oneSubmissionDriveScoresAllSevenWithTheArbitraryNotice" classname="com.easycar.core.ProvisionalReferenceTest" time="0.01"/>
+  <testcase name="knownBrakingAndJerkPenaltiesAccumulateMoreGradually" classname="com.easycar.core.ProvisionalReferenceTest" time="0.002"/>
+  <testcase name="moderateBrakingNoLongerTriggersAnUnknownHarshBrakingHold" classname="com.easycar.core.ProvisionalReferenceTest" time="0.001"/>
+  <testcase name="provisionalScoreIsUsableWithoutPretendingVehicleCalibrationOrExpertApproval" classname="com.easycar.core.ProvisionalReferenceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

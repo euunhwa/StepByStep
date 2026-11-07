@@ -1,0 +1,12 @@
+
+com.example.easycar.DemoFlowTest:.
+com.example.easycar.ExampleInstrumentedTest:.
+com.example.easycar.PersistenceAndVideoTest:...
+com.example.easycar.ServiceLifecycleTest:.
+com.example.easycar.SpeechAvailabilityTest:.
+
+Time: 40.467
+
+OK (7 tests)
+
+

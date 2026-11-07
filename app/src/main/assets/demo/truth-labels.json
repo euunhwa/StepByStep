@@ -1,0 +1,725 @@
+[
+  {
+    "id": "auto-drive",
+    "title": "자동 코칭 · 일곱 동작 연속 주행",
+    "synthetic": true,
+    "maneuverOrderTruth": [
+      "START",
+      "LEFT",
+      "RIGHT",
+      "U_TURN",
+      "STOP",
+      "T_PARK",
+      "PARALLEL_PARK"
+    ],
+    "angleTruthDeg": 1.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 111100
+    }
+  },
+  {
+    "id": "drive-course",
+    "title": "전체 주행 · 출발부터 정지까지",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "left",
+    "title": "좌회전 · 기본 연습",
+    "synthetic": true,
+    "turnTruth": "LEFT",
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "right",
+    "title": "우회전 · 기본 연습",
+    "synthetic": true,
+    "turnTruth": "RIGHT",
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "uturn",
+    "title": "유턴 · 제한된 데모 코스",
+    "synthetic": true,
+    "turnTruth": "U_TURN",
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "fast-left",
+    "title": "좌회전 · 진입 속도 높음",
+    "synthetic": true,
+    "turnTruth": "LEFT",
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "rough-right",
+    "title": "우회전 · 급격한 조향",
+    "synthetic": true,
+    "turnTruth": "RIGHT",
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "curve",
+    "title": "곡선 도로 · 회전 확정 안 함",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "low-heading",
+    "title": "진행 방향 신뢰도 부족",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "fast-right",
+    "title": "우회전 · 진입 속도 높음",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "fast-uturn",
+    "title": "유턴 · 진입 속도 높음",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "rough-left",
+    "title": "좌회전 · 급격한 조향",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "rough-uturn",
+    "title": "유턴 · 급격한 조향",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "smooth-start-stop",
+    "title": "부드러운 출발과 정지",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "rough-start-stop",
+    "title": "급출발과 거친 정지",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "unknown-brake",
+    "title": "급감속 · 원인 미확인",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": false,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "start-smooth",
+    "title": "출발 · 부드러운 연습",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "start-rough",
+    "title": "출발 · 급격한 속도 변화",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "stop-smooth",
+    "title": "정지 · 부드러운 연습",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "stop-rough",
+    "title": "정지 · 급격한 속도 변화",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "lane-change",
+    "title": "차로 변경 · S자 조향",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "park-t_park-0-normal",
+    "title": "T자 주차 · R→D 0회",
+    "synthetic": true,
+    "parkingCountTruth": 0,
+    "angleTruthDeg": 1.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 15000
+    }
+  },
+  {
+    "id": "park-t_park-1-normal",
+    "title": "T자 주차 · R→D 1회",
+    "synthetic": true,
+    "parkingCountTruth": 1,
+    "angleTruthDeg": 1.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 19400
+    }
+  },
+  {
+    "id": "park-t_park-2-normal",
+    "title": "T자 주차 · R→D 2회",
+    "synthetic": true,
+    "parkingCountTruth": 2,
+    "angleTruthDeg": 1.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 26600
+    }
+  },
+  {
+    "id": "park-t_park-3-normal",
+    "title": "T자 주차 · R→D 3회",
+    "synthetic": true,
+    "parkingCountTruth": 3,
+    "angleTruthDeg": 1.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 34600
+    }
+  },
+  {
+    "id": "park-t_park-4-normal",
+    "title": "T자 주차 · R→D 4회",
+    "synthetic": true,
+    "parkingCountTruth": 4,
+    "angleTruthDeg": 1.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 41800
+    }
+  },
+  {
+    "id": "park-t_park-5-normal",
+    "title": "T자 주차 · R→D 5회",
+    "synthetic": true,
+    "parkingCountTruth": 5,
+    "angleTruthDeg": 1.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 49800
+    }
+  },
+  {
+    "id": "park-parallel_park-0-normal",
+    "title": "평행주차 · R→D 0회",
+    "synthetic": true,
+    "parkingCountTruth": 0,
+    "angleTruthDeg": 1.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 15000
+    }
+  },
+  {
+    "id": "park-parallel_park-1-normal",
+    "title": "평행주차 · R→D 1회",
+    "synthetic": true,
+    "parkingCountTruth": 1,
+    "angleTruthDeg": 1.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 19400
+    }
+  },
+  {
+    "id": "park-parallel_park-2-normal",
+    "title": "평행주차 · R→D 2회",
+    "synthetic": true,
+    "parkingCountTruth": 2,
+    "angleTruthDeg": 1.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 26600
+    }
+  },
+  {
+    "id": "park-parallel_park-3-normal",
+    "title": "평행주차 · R→D 3회",
+    "synthetic": true,
+    "parkingCountTruth": 3,
+    "angleTruthDeg": 1.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 34600
+    }
+  },
+  {
+    "id": "park-parallel_park-4-normal",
+    "title": "평행주차 · R→D 4회",
+    "synthetic": true,
+    "parkingCountTruth": 4,
+    "angleTruthDeg": 1.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 41800
+    }
+  },
+  {
+    "id": "park-parallel_park-5-normal",
+    "title": "평행주차 · R→D 5회",
+    "synthetic": true,
+    "parkingCountTruth": 5,
+    "angleTruthDeg": 1.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 49800
+    }
+  },
+  {
+    "id": "park-t_park-3-tilted",
+    "title": "T자 주차 · R→D 3회 · 정렬 기울어짐",
+    "synthetic": true,
+    "parkingCountTruth": 3,
+    "angleTruthDeg": 10.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 34600
+    }
+  },
+  {
+    "id": "park-t_park-3-intrusion",
+    "title": "T자 주차 · R→D 3회 · 선 침범",
+    "synthetic": true,
+    "parkingCountTruth": 3,
+    "angleTruthDeg": 1.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 34600
+    }
+  },
+  {
+    "id": "park-t_park-3-occluded",
+    "title": "T자 주차 · R→D 3회 · 선 가림",
+    "synthetic": true,
+    "parkingCountTruth": 3,
+    "angleTruthDeg": 1.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 34600
+    }
+  },
+  {
+    "id": "park-t_park-3-missing",
+    "title": "T자 주차 · R→D 3회 · 영상 없음",
+    "synthetic": true,
+    "parkingCountTruth": 3,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "park-t_park-3-speed",
+    "title": "T자 주차 · R→D 3회 · 이동 속도 높음",
+    "synthetic": true,
+    "parkingCountTruth": 3,
+    "angleTruthDeg": 1.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 34600
+    }
+  },
+  {
+    "id": "parking-space-missing",
+    "title": "공간 근거 없음 · 주차 유형 보류",
+    "synthetic": true,
+    "angleTruthDeg": 1.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 26600
+    }
+  },
+  {
+    "id": "parking-space-ambiguous",
+    "title": "사선 주차 공간 · 유형 보류",
+    "synthetic": true,
+    "angleTruthDeg": 1.0,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "entryReferenceHeading": 0.0,
+      "dataSource": "합성 데모 데이터"
+    },
+    "sync": {
+      "videoStartMs": 0,
+      "videoEndMs": 4000,
+      "signalStartMs": 0,
+      "signalEndMs": 26600
+    }
+  },
+  {
+    "id": "delayed",
+    "title": "신호 지연 · 평가 보류",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "gap",
+    "title": "신호 누락 · 공백 처리",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "disconnect",
+    "title": "연결 끊김 · 자동 데모 전환 없음",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "out-of-order",
+    "title": "역순·중복 신호",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  },
+  {
+    "id": "restrictions",
+    "title": "주행 제한·오디오 중단",
+    "synthetic": true,
+    "context": {
+      "courseId": "demo-pad-a",
+      "vehicleId": "synthetic-sedan",
+      "controlled": true,
+      "selectionSource": "사용자 동작 선택 없이 자동 관측",
+      "dataSource": "합성 데모 데이터"
+    }
+  }
+]
