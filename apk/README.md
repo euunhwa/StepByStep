@@ -1,5 +1,7 @@
 # 설치용 Pleos 릴리스 APK · 0.13.2
 
+> 소스는 0.13.3(기록 DB v2, 인식 1.0.2)입니다. 이 APK는 0.13.2 빌드이며 전용 서명키로 다시 빌드·서명해야 0.13.3 APK가 됩니다.
+
 [EasyCar_Pleos_release.apk](EasyCar_Pleos_release.apk): Pleos용, 앱 ID `com.example.easycar`. 제출 패키지에는 일반 Android Phone용 APK를 포함하지 않습니다.
 
 디버그가 비활성인 release 빌드를 전용 키로 서명했습니다. [SHA256SUMS](SHA256SUMS)와 [메타데이터](release-metadata.json)에 파일 해시·버전·인증서 해시를 기록했습니다. 개인 키와 암호는 포함하지 않습니다. `.idsig`는 일반 설치에는 필요하지 않은 서명 보조 파일입니다.

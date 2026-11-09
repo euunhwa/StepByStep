@@ -20,6 +20,9 @@ import com.example.easycar.runtime.*
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 
+// Pleos Connect v2.1 runs Android 14 car services. The non-deprecated replacements
+// (subscribePropertyEvents, getPropertyStatus) are Android 15+ and would fail there.
+@Suppress("DEPRECATION")
 class PleosBridge(private val context:Context):PlatformBridge {
     private val emulated=Build.HARDWARE in setOf("ranchu","goldfish") || Build.MODEL.contains("emulator",true)
     // This explicitly labelled debug simulation is never enabled on a physical vehicle.
@@ -53,8 +56,8 @@ class PleosBridge(private val context:Context):PlatformBridge {
     }
     private fun unavailable(id:Int,message:String) { if(id==VehiclePropertyIds.PERF_VEHICLE_SPEED) { speed=null;mutable.value=mutable.value.copy(speed=message) } else { gear=null;mutable.value=mutable.value.copy(gear=message) } }
     private val wheelListener=object:SteeringWheelAngleListener {
-        override fun onSteeringWheelAngleUpdated(value:Float?) { receiveWheel(value) }
-        override fun onFailed(exception:Exception) { steering=null;mutable.value=mutable.value.copy(steering=error(exception)) }
+        override fun onSteeringWheelAngleUpdated(angle:Float?) { receiveWheel(angle) }
+        override fun onFailed(e:Exception) { steering=null;mutable.value=mutable.value.copy(steering=error(e)) }
     }
     private fun receiveWheel(value:Float?) {
         val t=now()
@@ -63,11 +66,11 @@ class PleosBridge(private val context:Context):PlatformBridge {
         mutable.value=mutable.value.copy(steering=value?.let { "${formatValue(it.toDouble())}° · 측정 시각 미제공" } ?: "조향 신호 없음")
     }
     private val locationListener=object:FusedLocationListener {
-        override fun onChanged(data:LocationData?) {
-            if(data==null) { heading=null;mutable.value=mutable.value.copy(heading="위치·진행 방향 없음");return }
+        override fun onChanged(location:LocationData?) {
+            if(location==null) { heading=null;mutable.value=mutable.value.copy(heading="위치·진행 방향 없음");return }
             // SDK field units exist, but timestamp clock domain and confidence semantics need OEM verification.
-            heading=Signal(data.heading.toDouble(),now(),now(),"degree:heading","Pleos FusedLocation 1.1.3 · 원시 시각=${data.timestampMillis}, 신뢰도=${data.confidence}",Quality.LOW_CONFIDENCE)
-            mutable.value=mutable.value.copy(heading="${formatValue(data.heading.toDouble())}° · 품질 기준 확인 필요")
+            heading=Signal(location.heading.toDouble(),now(),now(),"degree:heading","Pleos FusedLocation 1.1.3 · 원시 시각=${location.timestampMillis}, 신뢰도=${location.confidence}",Quality.LOW_CONFIDENCE)
+            mutable.value=mutable.value.copy(heading="${formatValue(location.heading.toDouble())}° · 품질 기준 확인 필요")
         }
         override fun onError(exception:Exception) { heading=null;mutable.value=mutable.value.copy(heading=error(exception)) }
     }

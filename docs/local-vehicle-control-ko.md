@@ -5,8 +5,8 @@
 ## 연결과 실제 입력 확인
 
 ```sh
-/Users/genius/Library/Android/sdk/platform-tools/adb devices
-/Users/genius/Library/Android/sdk/platform-tools/adb -s <Pleos-serial> forward tcp:8088 tcp:8088
+adb devices
+adb -s <Pleos-serial> forward tcp:8088 tcp:8088
 ```
 
 PC 브라우저에서 `http://127.0.0.1:8088/`을 엽니다. 여러 에뮬레이터가 있으면 반드시 Pleos의 serial을 지정합니다. 포트가 사용 중이면 호스트 쪽만 `tcp:18088`로 바꾸고 브라우저에서 18088로 접속할 수 있습니다.

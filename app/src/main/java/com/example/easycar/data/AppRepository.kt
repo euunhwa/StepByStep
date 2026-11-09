@@ -25,6 +25,8 @@ interface SessionStore {
     suspend fun save(record:SessionRecord)
     suspend fun delete(id:String)
 }
+/** 300 frames ≈ 0.3–0.5 MB of JSON per row, well inside SQLite's 2 MB CursorWindow. */
+private const val FRAME_CHUNK_SIZE=300
 class AppRepository(private val context:Context,databaseName:String="easycar.db"):SessionStore {
     private val db=Room.databaseBuilder(context,EasyCarDatabase::class.java,databaseName).build()
     private val gson=Gson(); private val mutex=Mutex();private val deletedIds=mutableSetOf<String>()
@@ -42,28 +44,67 @@ class AppRepository(private val context:Context,databaseName:String="easycar.db"
         Unit
     } }
     suspend fun load()=withContext(Dispatchers.IO) { mutex.withLock { reload() } }
-    private fun reload() {
-        val dao=db.sessions()
+    private fun readPayload(id:String):String {
+        val dao=db.sessions();val size=dao.payloadLength(id) ?: 0
         // SQLite CursorWindow cannot hold a full long-drive JSON row. Read bounded text slices;
         // SQLite length/substr both count characters, so Korean text remains intact.
-        state.value=dao.ids().mapNotNull { id ->
-            val size=dao.payloadLength(id)
-            val payload=buildString(size) {
-                var offset=1
-                while(offset<=size) { append(dao.payloadChunk(id,offset,65536));offset+=65536 }
-            }
-            runCatching { gson.fromJson(payload,SessionRecord::class.java) }.getOrNull()
+        return buildString(size) {
+            var offset=1
+            while(offset<=size) { append(dao.payloadChunk(id,offset,65536));offset+=65536 }
         }
     }
+    private fun entity(record:SessionRecord)=SessionEntity().also { it.id=record.id;it.createdAt=record.createdAt;it.payload=gson.toJson(record.copy(frames=emptyList())) }
+    /** Writes the frameless payload and, when the record carries frames, the frame chunks, atomically. */
+    private fun persist(record:SessionRecord)=db.runInTransaction {
+        if(record.frames.isNotEmpty()) writeFrames(record)
+        db.sessions().save(entity(record))
+    }
+    /**
+     * [records] holds every session without its raw frames; read them on demand with [frames].
+     * v1 rows still embed frames in the payload: they move to frame_chunks once, here. If that
+     * fails the transaction rolls back and [frames] keeps reading them from the payload.
+     */
+    private fun reload() {
+        state.value=db.sessions().ids().mapNotNull { id ->
+            val record=runCatching { gson.fromJson(readPayload(id),SessionRecord::class.java) }.getOrNull() ?: return@mapNotNull null
+            if(record.frames.isNotEmpty()) runCatching { persist(record) }
+            record.copy(frames=emptyList())
+        }
+    }
+    /** Raw frames of one session, oldest first. Empty when the session has none. */
+    suspend fun frames(id:String):List<VehicleFrame> = withContext(Dispatchers.IO) { mutex.withLock {
+        val dao=db.sessions();val chunks=dao.frameChunkPayloads(id)
+        if(chunks.isNotEmpty()) chunks.flatMap { gson.fromJson(it,Array<VehicleFrame>::class.java).asList() }
+        else if(dao.payloadLength(id)!=null) runCatching { gson.fromJson(readPayload(id),SessionRecord::class.java).frames.toList() }.getOrDefault(emptyList())
+        else emptyList()
+    } }
+    /**
+     * Raw frames are immutable inputs ordered by event time, so a save either extends the stored
+     * tail (append only the new frames) or replaces it (rewrite all chunks). Runs inside [persist].
+     */
+    private fun writeFrames(record:SessionRecord) {
+        val dao=db.sessions();val frames=record.frames;val lastStored=dao.lastFrameTimeMs(record.id)
+        val tail=if(lastStored==null) -1 else frames.indexOfLast {it.timeMs==lastStored}.let {if(it<0) -1 else it+1}
+        var seq=if(tail<0) 0 else (dao.lastFrameChunkSeq(record.id) ?: -1)+1
+        if(tail<0) dao.deleteFrameChunks(record.id) else dao.deleteFrameChunksBefore(record.id,frames.first().timeMs)
+        (if(tail<0) frames else frames.subList(tail,frames.size)).chunked(FRAME_CHUNK_SIZE).forEach {part->
+            dao.insertFrameChunk(FrameChunkEntity().also {it.sessionId=record.id;it.seq=seq++;it.lastTimeMs=part.last().timeMs;it.payload=gson.toJson(part)})
+        }
+    }
+    /**
+     * A record with no frames leaves the stored frames untouched: copies taken from [records] never
+     * carry them. A non-empty list is appended when it continues the stored tail, otherwise it replaces it.
+     */
     override suspend fun save(record:SessionRecord)=withContext(Dispatchers.IO) { mutex.withLock {
         if(record.id in deletedIds) return@withLock
         if((state.value.firstOrNull {it.id==record.id}?.revision ?: -1)>record.revision) return@withLock
-        db.sessions().save(SessionEntity().also { it.id=record.id;it.createdAt=record.createdAt;it.payload=gson.toJson(record) })
-        state.value=(state.value.filterNot {it.id==record.id}+record).sortedByDescending {it.createdAt}
+        persist(record)
+        state.value=(state.value.filterNot {it.id==record.id}+record.copy(frames=emptyList())).sortedByDescending {it.createdAt}
     } }
     override suspend fun delete(id:String)=withContext(Dispatchers.IO) { mutex.withLock {
         val record=state.value.firstOrNull { it.id==id }
-        db.sessions().delete(id);deletedIds+=id
+        db.runInTransaction { db.sessions().delete(id);db.sessions().deleteFrameChunks(id) }
+        deletedIds+=id
         record?.videoFile?.let { path -> val f=File(path);if(f.canonicalPath.startsWith(File(context.filesDir,"videos").canonicalPath+File.separator)) f.delete() }
         state.value=state.value.filterNot {it.id==id}
         context.preferences.edit {if(it[gleoSession]==id) it.remove(gleoSession)}

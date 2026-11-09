@@ -50,7 +50,6 @@ val Amber=Color(0xffffd28a)
     var selectedId by rememberSaveable { mutableStateOf<String?>(null) }
     var calibrationPositionMs by rememberSaveable { mutableStateOf<Long?>(null) }
     var detailId by rememberSaveable { mutableStateOf<String?>(null) }
-    var lastFinished by rememberSaveable { mutableStateOf<String?>(null) }
     LaunchedEffect(Unit) {if(page !in setOf("home","records","settings","report","video","record-query")) page="home"}
     val selected=records.firstOrNull { it.id==selectedId }
     val filePicker=rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { it?.let(model::importVideo) }
@@ -59,7 +58,7 @@ val Amber=Color(0xffffd28a)
     val permissions=rememberLauncherForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { model.retryVehicle() }
     LaunchedEffect(drive.error) { drive.error?.let { model.message.value=it } }
     LaunchedEffect(voice,drive.running) { if(!drive.running && listOf("없음","오류","실패","응답 지연").any {voice.contains(it)}) model.message.value=voice }
-    LaunchedEffect(drive.finishedId) { drive.finishedId?.let { if(it!=lastFinished) { lastFinished=it;selectedId=it;page="report" } } }
+    LaunchedEffect(drive.finishedId) { drive.finishedId?.let { if(model.claimFinishedReport(it)) { selectedId=it;page="report" } } }
     val locked=!platform.ux.allowsReview() || drive.simulatedRestriction
     MaterialTheme(colorScheme=darkColorScheme(primary=Mint,onPrimary=Ink,background=Ink,surface=Panel,onSurface=White,onBackground=White,secondary=Mint,outline=Muted),typography=Typography()) {
         Surface(Modifier.fillMaxSize(),color=Ink) {
@@ -92,7 +91,7 @@ val Amber=Color(0xffffd28a)
                             page=="record-query" && selected!=null -> RecordQueryScreen(selected,locked,{page="report"},{json->model.queryLocalRecord(selected.id,json)},model::speak,
                                 gleoSelected=settings.gleoSessionId==selected.id,onGleoSelection=if(BuildConfig.FLAVOR=="pleos") ({enabled->model.selectGleoRecord(if(enabled) selected.id else null)}) else null)
                             page=="report" && selected!=null -> ReportScreen(selected,{ detailId=it },{ page="video" },{ page="home" },model::speak,{ model.delete(selected.id);selectedId=null;page="records" },{ selected.demoCaseId?.let { model.startDemo(it,1,selected.id) } },{page="record-query"})
-                            page=="video" && selected!=null -> VideoReview(selected,{ page="report" },locked,{position->calibrationPositionMs=position;calibrationPicker.launch(arrayOf("application/json","text/*","application/octet-stream"))},{ratio,position->model.selectParkingTarget(selected.id,ratio,position)},videoAnalyzing,{position->model.analyzeVideoWindow(selected.id,position)},{position->model.clearParkingTarget(selected.id,position)})
+                            page=="video" && selected!=null -> VideoReview(selected,{ page="report" },locked,{position->calibrationPositionMs=position;calibrationPicker.launch(arrayOf("application/json","text/*","application/octet-stream"))},{ratio,position->model.selectParkingTarget(selected.id,ratio,position)},videoAnalyzing,{position->model.analyzeVideoWindow(selected.id,position)},{position->model.clearParkingTarget(selected.id,position)},loadFrames=model::frames)
                             page=="records" || page=="report" -> RecordsScreen(records,{ selectedId=it;page="report" },{ filePicker.launch(arrayOf("video/*")) },{name->model.createVideoExample(name) {id->selectedId=id;page="video"}})
                             page=="settings" -> SettingsScreen(settings,platform,model::updateSettings,model::deleteAll,model::retryVehicle,{ permissions.launch(arrayOf("android.car.permission.CAR_SPEED","pleos.car.permission.CAR_DRIVE","pleos.car.permission.FUSED_LOCATION","pleos.car.permission.TTS_SERVICE")) },{model.selectGleoRecord(null)})
                             else -> HomeScreen(records,platform,model.liveFrame,model::startCoaching) { selectedId=it;page="report" }

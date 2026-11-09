@@ -26,14 +26,14 @@ Unable to strip the following libraries, packaging them as they are: libandroidx
 > Task :app:generatePleosReleaseRFile
 
 > Task :app:compilePleosReleaseKotlin
-w: file:///Users/genius/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/main/java/com/example/easycar/gleo/GleoRecordBridge.kt:35:55 'field protectionLevel: Int' is deprecated. Deprecated in Java.
-w: file:///Users/genius/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/main/java/com/example/easycar/gleo/GleoRecordBridge.kt:35:90 'static field PROTECTION_MASK_BASE: Int' is deprecated. Deprecated in Java.
-w: file:///Users/genius/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/pleos/java/com/example/easycar/PleosBridge.kt:42:18 'val status: Int' is deprecated. Deprecated in Java.
-w: file:///Users/genius/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/pleos/java/com/example/easycar/PleosBridge.kt:56:50 The corresponding parameter in the supertype 'SteeringWheelAngleListener' is named 'angle'. This may cause problems when calling this function with named arguments.
-w: file:///Users/genius/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/pleos/java/com/example/easycar/PleosBridge.kt:57:31 The corresponding parameter in the supertype 'VehicleListener' is named 'e'. This may cause problems when calling this function with named arguments.
-w: file:///Users/genius/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/pleos/java/com/example/easycar/PleosBridge.kt:66:32 The corresponding parameter in the supertype 'FusedLocationListener' is named 'location'. This may cause problems when calling this function with named arguments.
-w: file:///Users/genius/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/pleos/java/com/example/easycar/PleosBridge.kt:93:49 'fun registerCallback(p0: CarPropertyManager.CarPropertyEventCallback!, p1: Int, p2: Float): Boolean' is deprecated. Deprecated in Java.
-w: file:///Users/genius/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/pleos/java/com/example/easycar/PleosBridge.kt:145:35 'fun unregisterCallback(p0: CarPropertyManager.CarPropertyEventCallback!): Unit' is deprecated. Deprecated in Java.
+w: file:///Users/<user>/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/main/java/com/example/easycar/gleo/GleoRecordBridge.kt:35:55 'field protectionLevel: Int' is deprecated. Deprecated in Java.
+w: file:///Users/<user>/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/main/java/com/example/easycar/gleo/GleoRecordBridge.kt:35:90 'static field PROTECTION_MASK_BASE: Int' is deprecated. Deprecated in Java.
+w: file:///Users/<user>/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/pleos/java/com/example/easycar/PleosBridge.kt:42:18 'val status: Int' is deprecated. Deprecated in Java.
+w: file:///Users/<user>/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/pleos/java/com/example/easycar/PleosBridge.kt:56:50 The corresponding parameter in the supertype 'SteeringWheelAngleListener' is named 'angle'. This may cause problems when calling this function with named arguments.
+w: file:///Users/<user>/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/pleos/java/com/example/easycar/PleosBridge.kt:57:31 The corresponding parameter in the supertype 'VehicleListener' is named 'e'. This may cause problems when calling this function with named arguments.
+w: file:///Users/<user>/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/pleos/java/com/example/easycar/PleosBridge.kt:66:32 The corresponding parameter in the supertype 'FusedLocationListener' is named 'location'. This may cause problems when calling this function with named arguments.
+w: file:///Users/<user>/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/pleos/java/com/example/easycar/PleosBridge.kt:93:49 'fun registerCallback(p0: CarPropertyManager.CarPropertyEventCallback!, p1: Int, p2: Float): Boolean' is deprecated. Deprecated in Java.
+w: file:///Users/<user>/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/pleos/java/com/example/easycar/PleosBridge.kt:145:35 'fun unregisterCallback(p0: CarPropertyManager.CarPropertyEventCallback!): Unit' is deprecated. Deprecated in Java.
 
 > Task :app:javaPreCompilePleosRelease
 > Task :app:compilePleosReleaseJavaWithJavac
@@ -93,8 +93,8 @@ Unable to strip the following libraries, packaging them as they are: libandroidx
 > Task :app:generateDemoReleaseRFile
 
 > Task :app:compileDemoReleaseKotlin
-w: file:///Users/genius/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/main/java/com/example/easycar/gleo/GleoRecordBridge.kt:35:55 'field protectionLevel: Int' is deprecated. Deprecated in Java.
-w: file:///Users/genius/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/main/java/com/example/easycar/gleo/GleoRecordBridge.kt:35:90 'static field PROTECTION_MASK_BASE: Int' is deprecated. Deprecated in Java.
+w: file:///Users/<user>/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/main/java/com/example/easycar/gleo/GleoRecordBridge.kt:35:55 'field protectionLevel: Int' is deprecated. Deprecated in Java.
+w: file:///Users/<user>/CODEX/Pleos%20%E1%84%8B%E1%85%A2%E1%86%B8%20%E1%84%80%E1%85%A2%E1%84%87%E1%85%A1%E1%86%AF/work/easycar-document-v9/app/src/main/java/com/example/easycar/gleo/GleoRecordBridge.kt:35:90 'static field PROTECTION_MASK_BASE: Int' is deprecated. Deprecated in Java.
 
 > Task :app:javaPreCompileDemoRelease
 > Task :app:compileDemoReleaseJavaWithJavac

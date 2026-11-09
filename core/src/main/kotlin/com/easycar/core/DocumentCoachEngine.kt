@@ -5,6 +5,7 @@ import kotlin.math.*
 /** Three independent event paths: longitudinal, yaw bumps, and R→parking segments. No input labels. */
 internal class DocumentCoachEngine(profile:ReferenceProfile,context:PracticeContext,private val d:DocumentDataset) {
     private val r=d.recognition
+    private val parkingLimitMps=r.parkingMaxMps+r.parkingSpeedEpsilonMps
     private val pipeline=TelemetryPipeline(DetectionConfig(maxSignalAgeMs=r.maxSignalAgeMs,maxGapMs=r.maxFrameGapMs))
     private val scorer=DocumentScorer(profile,context,d)
     private val completed=mutableListOf<ManeuverResult>()
@@ -17,6 +18,9 @@ internal class DocumentCoachEngine(profile:ReferenceProfile,context:PracticeCont
     private var stopping:MutableList<Motion>?=null;private var decQuiet:Long?=null
     private var acceleration:MutableList<Motion>?=null;private var accQuiet:Long?=null
     private var turn:MutableList<Motion>?=null;private var yawQuiet:Long?=null
+    // An incomplete one-sign turn (e.g. paused to yield) may continue with a same-sign bump within turnPauseMaxMs.
+    private var pendingTurn:List<Motion>?=null
+    private var settledGear:Gear?=null;private var parkingFromPark=false
     private var yawReady=true;private var yawRecoverySince:Long?=null
     private var parking:MutableList<Motion>?=null;private var parkingOnset=0L;private var parkingStopped:Long?=null
     private var gearCounter=GearTransitionCounter(r.gearStableMs);private val stableGear=GearTransitionCounter(r.gearStableMs)
@@ -46,7 +50,7 @@ internal class DocumentCoachEngine(profile:ReferenceProfile,context:PracticeCont
         if(m.gap || m.speedMps==null || m.gear==null) {
             abort("속도·기어 신호 공백 또는 1초 초과 입력 중단")
             recent.clear();idle.clear();yawMean.clear();wasIdle=false;stopArmed=false;stoppedSince=null
-            stableGear.update(null,m.timeMs);yawReady=false;yawRecoverySince=null;parkRearm=false
+            stableGear.update(null,m.timeMs);yawReady=false;yawRecoverySince=null;parkRearm=false;settledGear=null
             return completed.drop(before)
         }
         recent+=m;while(recent.isNotEmpty() && m.timeMs-recent.first().timeMs>r.preRollMs) recent.removeFirst()
@@ -62,16 +66,19 @@ internal class DocumentCoachEngine(profile:ReferenceProfile,context:PracticeCont
             if(m.timeMs-idle.first().timeMs>=r.idleWindowMs && values.all {it<=r.stoppedMps} && std<=r.idleStdMaxMps) wasIdle=true
         } else stoppedSince=null
         val gear=stableGear.update(m.gear,m.timeMs)
+        if(gear==Gear.PARK || gear==Gear.DRIVE) settledGear=gear
         if(!parkRearm && gear==Gear.DRIVE && m.gear==Gear.DRIVE && !stopped) {
             if(rearmSince==null) rearmSince=m.timeMs
             if(m.timeMs-rearmSince!!>=r.gearStableMs) parkRearm=true
         } else rearmSince=null
         if(!parkRearm && gear==Gear.PARK && stopped && wasIdle) parkRearm=true
-        if(parking==null && parkRearm && gear==Gear.REVERSE && m.gear==Gear.REVERSE && abs(m.speedMps)<=r.parkingMaxMps+r.parkingSpeedEpsilonMps) {
-            val lastFast=recent.indexOfLast {abs(it.speedMps ?: 0.0)>r.parkingMaxMps+r.parkingSpeedEpsilonMps}
+        if(parking==null && parkRearm && gear==Gear.REVERSE && m.gear==Gear.REVERSE && abs(m.speedMps)<=parkingLimitMps) {
+            val lastFast=recent.indexOfLast {abs(it.speedMps ?: 0.0)>parkingLimitMps}
             parking=recent.drop(lastFast+1).toMutableList();parkingOnset=m.timeMs
             gearCounter=GearTransitionCounter(r.gearStableMs);parking!!.forEach {gearCounter.update(it.gear,it.timeMs)}
-            parkBoundary=null;parkingStopped=null
+            parkBoundary=null;parkingStopped=null;pendingTurn=null
+            // R entered from a settled P (N ignored) is a departure candidate, not necessarily a parking attempt.
+            parkingFromPark=settledGear==Gear.PARK
             // Absorb incomplete low-speed preparation into this parking episode. Completed events are retained.
             launch=null;stopping=null;acceleration=null;decQuiet=null;accQuiet=null;stopArmed=false;wasIdle=false
         }
@@ -84,8 +91,10 @@ internal class DocumentCoachEngine(profile:ReferenceProfile,context:PracticeCont
                 if(parkBoundary==null) parkBoundary=m.timeMs
                 if(m.ignitionOn==false || longStop || m.timeMs-parkBoundary!!>=r.gearStableMs) finishParking(a)
             } else parkBoundary=null
-            if(parking!=null && (abs(m.speedMps)>r.parkingMaxMps+r.parkingSpeedEpsilonMps || m.timeMs-parkingOnset>r.parkingTimeoutMs)) {
-                emit(ManeuverType.PARKING_UNKNOWN,a,gearCounter.reverseToDriveCount,holds=listOf("주차 속도 범위 이탈 또는 종료 시간 초과"),interrupted=true)
+            if(parking!=null && (abs(m.speedMps)>parkingLimitMps || m.timeMs-parkingOnset>r.parkingTimeoutMs)) {
+                // Leaving a space (P → R → driving away in D) is not a parking attempt: record nothing.
+                val departure=parkingFromPark && m.gear==Gear.DRIVE && abs(m.speedMps)>parkingLimitMps
+                if(!departure) emit(ManeuverType.PARKING_UNKNOWN,a,gearCounter.reverseToDriveCount,holds=listOf("주차 속도 범위 이탈 또는 종료 시간 초과"),interrupted=true)
                 parking=null;parkRearm=false
             }
         }
@@ -132,8 +141,9 @@ internal class DocumentCoachEngine(profile:ReferenceProfile,context:PracticeCont
             stopping?.let {a->append(a,m);if(stopped && wasIdle) {emit(ManeuverType.STOP,a,flags=longitudinalFlags(a,false));stopping=null;stopArmed=false}}
         }
         // Missing yaw cannot be replaced by the currently low-confidence GNSS heading or by steering.
+        pendingTurn?.let {p->if(m.timeMs-p.last().timeMs>r.turnPauseMaxMs) pendingTurn=null}
         if(m.yawRadps==null) {
-            yawReady=false;yawRecoverySince=null
+            yawReady=false;yawRecoverySince=null;pendingTurn=null
             turn?.let {emit(ManeuverType.UNKNOWN,it,holds=listOf("차량 yaw rate 신호 누락"),interrupted=true)};turn=null;yawQuiet=null
         } else if(!yawReady) {
             if(abs(m.yawRadps)<r.yawBumpRadps) {
@@ -142,7 +152,11 @@ internal class DocumentCoachEngine(profile:ReferenceProfile,context:PracticeCont
             } else yawRecoverySince=null
         } else if(m.gear==Gear.DRIVE && parking==null && abs(m.speedMps)>=r.movingMps) {
             val high=abs(m.yawRadps)>=r.yawBumpRadps
-            if(turn==null && high) {turn=mutableListOf(m);yawQuiet=null}
+            if(turn==null && high) {
+                // A pending segment is one-sign and starts on a high bump, so its first sample carries the sign.
+                val resumed=pendingTurn?.takeIf {p->m.timeMs-p.first().timeMs<=r.turnTimeoutMs && (p.first().yawRadps!!>0)==(m.yawRadps>0)}
+                turn=(resumed.orEmpty()+m).toMutableList();pendingTurn=null;yawQuiet=null
+            }
             turn?.let {a->
                 if(high) {append(a,m);yawQuiet=null} else if(yawQuiet==null) yawQuiet=m.timeMs
                 if(m.timeMs-a.first().timeMs>r.turnTimeoutMs) {
@@ -166,6 +180,9 @@ internal class DocumentCoachEngine(profile:ReferenceProfile,context:PracticeCont
             abs(delta) in r.turnMinDeg..r.turnMaxDeg->if(delta>0) ManeuverType.LEFT else ManeuverType.RIGHT
             else->ManeuverType.UNKNOWN
         }
+        // A one-sign segment short of turnMinDeg may be a turn interrupted by slowing (yielding). Keep it
+        // briefly; a same-sign bump within turnPauseMaxMs continues it, otherwise it is dropped as before.
+        pendingTurn=if(type==ManeuverType.UNKNOWN && signs.size==1 && abs(delta)<r.turnMinDeg) a.toList() else null
         // Small bumps include lane changes and curves; no road-width input means no lane-change claim.
         if(type!=ManeuverType.UNKNOWN) {
             val minKph=(a.mapNotNull {it.speedMps?.let(::abs)}.minOrNull() ?: 0.0)*3.6
@@ -217,7 +234,7 @@ internal class DocumentCoachEngine(profile:ReferenceProfile,context:PracticeCont
         listOf(launch to ManeuverType.START,stopping to ManeuverType.STOP,acceleration to ManeuverType.ACCELERATION,turn to ManeuverType.UNKNOWN,parking to ManeuverType.PARKING_UNKNOWN).forEach {(a,type)->
             if(!a.isNullOrEmpty()) emit(type,a,holds=listOf(reason),interrupted=true)
         }
-        launch=null;stopping=null;acceleration=null;turn=null;parking=null;decQuiet=null;accQuiet=null;yawQuiet=null
+        launch=null;stopping=null;acceleration=null;turn=null;parking=null;decQuiet=null;accQuiet=null;yawQuiet=null;pendingTurn=null
     }
     fun finish(cancelled:Boolean):List<ManeuverResult> {abort(if(cancelled) "사용자가 동작을 중단함" else "동작 종료 전 코칭 종료");return results}
 }

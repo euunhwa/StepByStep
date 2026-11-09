@@ -7,6 +7,7 @@ No scores, maneuver labels, vehicle frames or camera frames are injected into Ea
 """
 import argparse
 import json
+import os
 from pathlib import Path
 import subprocess
 import threading
@@ -18,7 +19,7 @@ import uuid
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--adb', default='/Users/genius/Library/Android/sdk/platform-tools/adb')
+    parser.add_argument('--adb', default=os.path.join(os.environ['ANDROID_HOME'], 'platform-tools', 'adb') if os.environ.get('ANDROID_HOME') else 'adb')
     parser.add_argument('--output', required=True)
     args = parser.parse_args()
     output = Path(args.output).resolve()

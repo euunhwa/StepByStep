@@ -8,7 +8,7 @@ EasyCar는 출발·정지·회전·주차 연습을 돌아볼 수 있도록 만�
 | --- | --- |
 | 프로젝트명 | Hyundai Pleos App EasyCar |
 | GitHub 저장소 | [euunhwa/DriveCoach](https://github.com/euunhwa/DriveCoach) |
-| 앱 이름 / 현재 버전 | EasyCar / `0.13.2` (`versionCode 18`) |
+| 앱 이름 / 현재 버전 | EasyCar / 소스 `0.13.3` (`versionCode 19`) · `apk/`의 서명 릴리스는 `0.13.2` |
 | 대상 환경 | Pleos Connect `v2.1.0` 에뮬레이터 기준 개발·검증 |
 | 구현 방식 | 차량 신호 기반 규칙 인식 + 문헌 기반 평가 초안 + 한국어 화면·음성 피드백 |
 | 현재 단계 | 에뮬레이터에서 기능을 검증한 시제품 |
@@ -144,9 +144,9 @@ yawRate = signedSpeed / 2.7 × tan((steeringWheelDeg / 15) × π / 180)
 | --- | --- |
 | 출발 | 4초 이상 안정 정차를 확인한 뒤 D에서 0.7m/s 이상 이동 |
 | 정지 | 주행·감속을 관측한 뒤 4초 정차로 완료 확인 |
-| 좌·우회전 | 유효한 yaw의 지속 구간을 적분해 방향 변화 60~120°와 부호 확인 |
+| 좌·우회전 | 유효한 yaw의 지속 구간을 적분해 방향 변화 60~120°와 부호 확인. 감속·양보로 끊긴 같은 방향 구간은 10초 안에 이어지면 합침 |
 | 유턴 | 같은 회전 구간의 방향 변화 절댓값 150~210° |
-| 주차 진입·종료 | 10km/h 이하에서 안정된 R단 진입 후 전후진 누적, P+정차 또는 장기 정차 등으로 종료 확인 |
+| 주차 진입·종료 | 10km/h 이하에서 안정된 R단 진입 후 전후진 누적, P+정차 또는 장기 정차 등으로 종료 확인. P에서 후진해 그대로 주행으로 떠나는 출차는 기록하지 않음 |
 | T자 주차 후보 | 전진 준비·후진 구간의 방향 변화와 한 방향 조향 패턴 확인 |
 | 평행주차 후보 | 작은 최종 방향 변화와 후진 중 양방향 조향·yaw 패턴 확인 |
 
@@ -190,7 +190,7 @@ yawRate = signedSpeed / 2.7 × tan((steeringWheelDeg / 15) × π / 180)
 | 차량 입력 | AAOS `CarPropertyManager`, Pleos Vehicle `2.3.2` |
 | 음성 | Pleos TextToSpeech `3.3.1`의 기기 내 모드, demo 빌드의 Android TTS |
 | 위치 연결 | Pleos FusedLocation `1.1.3`; 현재 heading은 회전 판별의 대체 신호로 사용하지 않음 |
-| 빌드 | Gradle Wrapper `9.6.0`, Android Gradle Plugin `9.5.0`, JDK `17` |
+| 빌드 | Gradle Wrapper `9.6.0`, Android Gradle Plugin `9.5.0`, JDK `17`(없으면 자동 다운로드) |
 | Android 설정 | `compileSdk 37`, `targetSdk 34`, `minSdk 28` |
 | 검사 | JUnit 4, Android 계측 검사, Compose UI 검사 |
 
@@ -244,7 +244,7 @@ flowchart TD
 
 ### 준비 사항
 
-1. JDK 17을 준비합니다.
+1. Gradle 실행용 JDK(17 이상)를 준비합니다. 빌드에 필요한 JDK 17이 없으면 Gradle이 foojay 설정([settings.gradle.kts](settings.gradle.kts), [gradle-daemon-jvm.properties](gradle/gradle-daemon-jvm.properties))으로 내려받습니다. 최초 1회 네트워크가 필요합니다.
 2. 프로젝트의 AGP·Gradle 설정을 지원하는 Android Studio 또는 명령행 Android 개발 환경을 준비합니다.
 3. Android SDK Platform 37과 Platform Tools(`adb`)를 설치합니다.
 4. Pleos 연동을 확인하려면 Pleos Connect v2.1.0 에뮬레이터를 별도로 준비합니다.
@@ -277,7 +277,9 @@ sdk.dir=/absolute/path/to/Android/sdk
 
 Gradle은 현재 작업자 1개, JVM 최대 힙 1536MB, CPU 2코어 기준으로 설정되어 있습니다. 모든 의존성이 캐시된 환경에서만 선택적으로 `--offline`을 사용할 수 있습니다.
 
-새 저장소용 패키지에는 별도 서명한 **Pleos 릴리스 APK**가 `apk/`에 들어 있습니다. 위 Gradle 명령은 서명 전 APK를 생성합니다. 이후 빌드의 서명 방법과 환경변수는 [서명·제출 안내](docs/repository-handoff-ko.md)에 설명했습니다. 개인 서명키와 암호는 포함하지 않습니다.
+0.13.3부터 release 빌드는 R8 코드·리소스 축소를 사용하고(저장 JSON 모델과 Pleos SDK는 유지, [proguard-rules.pro](app/proguard-rules.pro)) 검증용 데이터와 이전 데모 신호를 APK에 넣지 않습니다. 서명 전 APK 크기는 약 46.7MB에서 16.5MB로 줄었습니다.
+
+새 저장소용 패키지에는 별도 서명한 **Pleos 릴리스 APK(0.13.2)**가 `apk/`에 들어 있습니다. 소스는 0.13.3이며 기록 DB가 v2로 바뀌었으므로, 0.13.3을 설치한 기기에 0.13.2를 다시 설치(다운그레이드)하지 마세요. 위 Gradle 명령은 서명 전 APK를 생성합니다. 이후 빌드의 서명 방법과 환경변수는 [서명·제출 안내](docs/repository-handoff-ko.md)에 설명했습니다. 개인 서명키와 암호는 포함하지 않습니다.
 
 ## 8. 설치와 실행
 
@@ -374,6 +376,7 @@ adb -s "$PLEOS_SERIAL" shell am instrument -w \
 | 범위 | 확인 결과 | 근거 |
 | --- | --- | --- |
 | 0.11.0 기록 조회·Gleo 연결 준비 | 코어158개·앱9개·장치14개 통과, 모의 호출3개 성공. 실제 Room 기록 조회와 점수 보존 확인 | [구현·검증](docs/gleo-record-query-ko.md) |
+| 0.13.3 저장·인식·빌드 정리 | 코어172개·앱21개 단위 통과, 장치30개 중29개 통과(1개는 순서 의존 현상으로 단독 재실행 통과). v1→v2 기록 DB 업그레이드, 프레임 분리 저장, 축소 release의 7개 데모 동작을 에뮬레이터에서 확인했습니다. | [변경 이력](docs/datasets/CHANGELOG-ko.md) |
 | 0.13.2 새 저장소 제출 준비 | 캐시·개인 설정을 제외한 별도 사본에서 단위 186개 통과. 서명된 Pleos Release의 기록 조회·7개 내장 데모 동작 계측 2개 통과. Phone APK는 제출에서 제외합니다. | [검증 결과](docs/validation/submission-ready-v0132.json) |
 | 0.13.2 사용자 문구 정리 | 기존 디버그 빌드 검증에서 코어165개·앱21개(단위 검사 합계186개)·장치19개 통과. 홈 네 항목과 설정 유지, 기술 문구 비노출, 원래 점수·기록 보존, 폭별 영상/코칭 화면을 확인했습니다. | [검증 결과](docs/validation/friendly-ui-v0132.json) |
 | 0.13.1 세 메뉴·이전 주차 동작 복원 | 코어165개·앱15개·장치18개 통과. 홈·기록·설정만 표시하며 화면 녹화 서비스/실험 자산을 APK에서 제외했습니다. 기존 영상 복기·Gleo·과거 기록 호환을 확인했습니다. | [검증 결과](docs/validation/three-page-restore-v0131.json) |
@@ -394,7 +397,7 @@ adb -s "$PLEOS_SERIAL" shell am instrument -w \
 
 | 역할 | 파일 | 버전 / 성격 |
 | --- | --- | --- |
-| 인식 기준 | [recognition.json](app/src/main/assets/datasets/document-v1/recognition.json) | `recognition-document-1.0.1` |
+| 인식 기준 | [recognition.json](app/src/main/assets/datasets/document-v1/recognition.json) | `recognition-document-1.0.2` |
 | 평가 기준 | [evaluation.json](app/src/main/assets/datasets/document-v1/evaluation.json) | `evaluation-document-1.0` |
 | 프로필 | [document-derived-v1.json](app/src/main/assets/profiles/document-derived-v1.json) | `document-derived-1.0` |
 | 인식 검증 | [recognition-validation.json](app/src/main/assets/datasets/document-v1/recognition-validation.json) | 정상 7개 동작을 포함한 사례와 yaw 누락·단위 오류·시각 오류 등 4개 합성 사례 |

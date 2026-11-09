@@ -9,8 +9,8 @@ android {
         applicationId = "com.example.easycar"
         minSdk = 28
         targetSdk = 34
-        versionCode = 18
-        versionName = "0.13.2"
+        versionCode = 19
+        versionName = "0.13.3"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         javaCompileOptions.annotationProcessorOptions.arguments["room.schemaLocation"] = "$projectDir/schemas"
     }
@@ -19,10 +19,26 @@ android {
         create("demo") { dimension = "platform"; applicationIdSuffix = ".demo" }
         create("pleos") { dimension = "platform" }
     }
+    buildTypes {
+        release {
+            // Serialized models and Pleos SDKs are kept whole; see proguard-rules.pro.
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+    }
     compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
     useLibrary("android.car", false)
     buildFeatures { compose = true; buildConfig = true }
     testOptions { unitTests.isReturnDefaultValues = true }
+}
+androidComponents {
+    onVariants(selector().withBuildType("release")) { variant ->
+        // Release APKs skip test-only fixtures: the validation packs are read by :core tests from the
+        // source tree, and legacy demo/signals are regenerated in code by DemoCatalog when absent.
+        variant.androidResources.ignoreAssetsPatterns.addAll(
+            "recognition-validation.json", "evaluation-validation.json", "<dir>signals")
+    }
 }
 dependencies {
     implementation(project(":core"))

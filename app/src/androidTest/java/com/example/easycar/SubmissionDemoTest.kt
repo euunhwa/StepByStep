@@ -35,7 +35,8 @@ class SubmissionDemoTest {
         saved.results.forEach {assertNotNull("${it.type}: ${it.holdReasons}",it.score);assertEquals("PROVISIONAL",it.scoreKind);assertTrue(it.scoreBasis!!.contains("임의"))}
         assertEquals("document-derived-1.0",saved.profileVersion)
         assertTrue(saved.results.all {it.evaluationPolicyVersion=="evaluation-document-1.0"})
-        assertTrue(saved.frames.all {it.yawRate?.source=="SYNTHETIC_DOCUMENT_VALIDATION"})
+        val frames=runBlocking {app.repository.frames(id)}
+        assertTrue(frames.isNotEmpty() && frames.all {it.yawRate?.source=="SYNTHETIC_DOCUMENT_VALIDATION"})
         val feedback=saved.feedbacks!!
         assertEquals(saved.results.map {it.score},feedback.map {it.score})
         InstrumentationRegistry.getInstrumentation().sendStatus(0,Bundle().apply {

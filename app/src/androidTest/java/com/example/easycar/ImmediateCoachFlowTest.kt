@@ -27,7 +27,7 @@ class ImmediateCoachFlowTest {
         runBlocking {app.repository.updateSettings(UserSettings(consent=true,smallWindowOnStart=false,muted=false,voiceIntervalSeconds=3,demoInput=true))}
         ui.waitUntil(20000) {app.bridge.state.value.ux.allowsReview() && ui.onAllNodesWithTag("start-submission-demo").fetchSemanticsNodes().isNotEmpty()}
         ui.onNodeWithTag("training-T_PARK").assertDoesNotExist()
-        ui.onNodeWithTag("start-submission-demo").performScrollTo().performClick()
+        ui.onNodeWithTag("start-submission-demo").performClick()
         ui.waitUntil(15000) {app.runtime.state.value.running && app.runtime.state.value.record?.id!=null}
         val sessionId=app.runtime.state.value.record!!.id
         val types=listOf(ManeuverType.START,ManeuverType.LEFT,ManeuverType.RIGHT,ManeuverType.U_TURN,ManeuverType.STOP,ManeuverType.T_PARK,ManeuverType.PARALLEL_PARK)
@@ -45,7 +45,7 @@ class ImmediateCoachFlowTest {
             assertTrue("$type feedback body fits",body.top>=viewport.top && body.bottom<=viewport.bottom)
             val receipt=live.feedbackHistory.single {it.type==type}
             assertNotNull(receipt.score);assertEquals("PROVISIONAL",receipt.scoreKind);assertTrue(receipt.visualDelayMs!!<=1000)
-            assertTrue(receipt.eventEndMs<DemoCatalog.case("auto-drive").frames.last().timeMs)
+            assertTrue(receipt.eventEndMs<DocumentDemoCatalog.automaticDrive.frames.last().timeMs)
         }
         ui.waitUntil(45000) {!app.runtime.state.value.running && app.runtime.state.value.finishedId==sessionId}
         val saved=app.repository.records.value.first {it.id==sessionId}
@@ -58,7 +58,7 @@ class ImmediateCoachFlowTest {
         val app=ui.activity.application as EasyCarApplication
         runBlocking {app.repository.updateSettings(UserSettings(consent=true,smallWindowOnStart=false,muted=false))}
         val previous=app.runtime.state.value.record?.id
-        ui.runOnIdle {ContextCompat.startForegroundService(ui.activity,Intent(ui.activity,CoachingService::class.java).putExtra("demo","left").putExtra("speed",4))}
+        ui.runOnIdle {ContextCompat.startForegroundService(ui.activity,Intent(ui.activity,CoachingService::class.java).putExtra("demo","auto-drive").putExtra("speed",4))}
         ui.waitUntil(15000) {app.runtime.state.value.running && app.runtime.state.value.record?.id!=null && app.runtime.state.value.record?.id!=previous}
         val id=app.runtime.state.value.record!!.id
         ui.waitUntil(45000) {app.runtime.state.value.feedbackHistory.any {it.type==ManeuverType.LEFT && it.voiceState==VoiceState.SPEAKING} && app.runtime.state.value.running}
@@ -74,12 +74,18 @@ class ImmediateCoachFlowTest {
         runBlocking {app.repository.updateSettings(UserSettings(consent=true,smallWindowOnStart=false,muted=true))}
         ui.waitUntil(15000) {app.bridge.state.value.ux.allowsReview()}
         val previous=app.runtime.state.value.record?.id
-        ui.runOnIdle {ContextCompat.startForegroundService(ui.activity,Intent(ui.activity,CoachingService::class.java).putExtra("demo","left").putExtra("speed",4))}
+        ui.runOnIdle {ContextCompat.startForegroundService(ui.activity,Intent(ui.activity,CoachingService::class.java).putExtra("demo","auto-drive").putExtra("speed",4))}
         ui.waitUntil(15000) {app.runtime.state.value.running && app.runtime.state.value.record?.id!=null && app.runtime.state.value.record?.id!=previous}
-        ui.waitUntil(30000) {app.runtime.state.value.feedback?.type==ManeuverType.LEFT}
+        // The seven-maneuver demo reaches the next turn ~3 s later at speed 4; pause on the left-turn card
+        // (the card still expires on its normal timer) so the UI assertions below see that card.
+        var paused=false
+        ui.waitUntil(30000) {(app.runtime.state.value.feedback?.type==ManeuverType.LEFT).also {left->
+            if(left && !paused) {paused=true;InstrumentationRegistry.getInstrumentation().runOnMainSync {app.runtime.pauseDemo()}}}}
         assertEquals(VoiceState.MUTED,app.runtime.state.value.feedback?.voiceState)
         val mini=ui.onAllNodesWithTag("mini-coach").fetchSemanticsNodes().isNotEmpty()
         ui.onNodeWithTag(if(mini) "mini-coach" else "live-feedback").assertExists();ui.onNodeWithText("좌회전 완료").assertExists()
+        // The seven-maneuver demo continues after the left turn; end it instead of waiting it out.
+        ui.activity.startService(Intent(ui.activity,CoachingService::class.java).setAction("stop"))
         ui.waitUntil(30000) {!app.runtime.state.value.running}
         runBlocking {app.repository.updateSettings(UserSettings(consent=true,smallWindowOnStart=false,muted=false))}
     }

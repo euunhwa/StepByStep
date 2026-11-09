@@ -207,10 +207,10 @@
             },
             "originalUriBaseIds": {
                 "%SRCROOT%": {
-                    "uri": "file:///Users/genius/CODEX/Pleos%20앱%20개발/work/easycar-mini-window/"
+                    "uri": "file:///Users/<user>/CODEX/Pleos%20앱%20개발/work/easycar-mini-window/"
                 },
                 "USER_HOME": {
-                    "uri": "file:///Users/genius/CODEX/Pleos%20앱%20개발/work/easycar-mini-window/"
+                    "uri": "file:///Users/<user>/CODEX/Pleos%20앱%20개발/work/easycar-mini-window/"
                 }
             },
             "results": [

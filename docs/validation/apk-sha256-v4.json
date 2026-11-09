@@ -2,7 +2,7 @@
   {
     "flavor": "demo",
     "version": "0.4.0",
-    "path": "/Users/genius/AndroidStudioProjects/EasyCar/app/build/outputs/apk/demo/debug/app-demo-debug.apk",
+    "path": "/Users/<user>/AndroidStudioProjects/EasyCar/app/build/outputs/apk/demo/debug/app-demo-debug.apk",
     "bytes": 34109548,
     "sha256": "2699eb97e28206aabc5d34aaae68726dc03f20286ce90b075ff4cace4b650fff",
     "same_as_staged_build": false
@@ -10,7 +10,7 @@
   {
     "flavor": "pleos",
     "version": "0.4.0",
-    "path": "/Users/genius/AndroidStudioProjects/EasyCar/app/build/outputs/apk/pleos/debug/app-pleos-debug.apk",
+    "path": "/Users/<user>/AndroidStudioProjects/EasyCar/app/build/outputs/apk/pleos/debug/app-pleos-debug.apk",
     "bytes": 56897563,
     "sha256": "fd6b64e8dce4d566dec309e6c1ae375d07d9bf95f21ee0c6972d8317ed754ba3",
     "same_as_staged_build": false

@@ -59,6 +59,6 @@ class PersistenceAndVideoTest {
         assertTrue(com.google.gson.Gson().toJson(saved).toByteArray().size>2*1024*1024)
         val a=AppRepository(context,name);a.save(saved);a.close()
         val b=AppRepository(context,name)
-        try {b.load();assertEquals(saved,b.records.value.single())} finally {b.close();context.deleteDatabase(name)}
+        try {b.load();assertEquals(saved.copy(frames=emptyList()),b.records.value.single());assertEquals(saved.frames,b.frames(saved.id))} finally {b.close();context.deleteDatabase(name)}
     }
 }

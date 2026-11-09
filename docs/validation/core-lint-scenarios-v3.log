@@ -205,8 +205,8 @@ restrictions	START@6.8:보류, LEFT@12.9:보류, STOP@18.1:보류
 > Task :app:lintAnalyzeDemoDebugUnitTest
 
 > Task :app:lintReportDemoDebug
-Wrote HTML report to file:///Users/genius/CODEX/Pleos%20앱%20개발/work/easycar-v3/app/build/reports/lint-results-demoDebug.html
-Wrote SARIF report to file:///Users/genius/CODEX/Pleos%20앱%20개발/work/easycar-v3/app/build/reports/lint-results-demoDebug.sarif
+Wrote HTML report to file:///Users/<user>/CODEX/Pleos%20앱%20개발/work/easycar-v3/app/build/reports/lint-results-demoDebug.html
+Wrote SARIF report to file:///Users/<user>/CODEX/Pleos%20앱%20개발/work/easycar-v3/app/build/reports/lint-results-demoDebug.sarif
 
 > Task :app:lintDemoDebug
 > Task :app:prePleosDebugBuild UP-TO-DATE
@@ -240,8 +240,8 @@ Wrote SARIF report to file:///Users/genius/CODEX/Pleos%20앱%20개발/work/easyc
 > Task :app:lintAnalyzePleosDebugUnitTest
 
 > Task :app:lintReportPleosDebug
-Wrote HTML report to file:///Users/genius/CODEX/Pleos%20앱%20개발/work/easycar-v3/app/build/reports/lint-results-pleosDebug.html
-Wrote SARIF report to file:///Users/genius/CODEX/Pleos%20앱%20개발/work/easycar-v3/app/build/reports/lint-results-pleosDebug.sarif
+Wrote HTML report to file:///Users/<user>/CODEX/Pleos%20앱%20개발/work/easycar-v3/app/build/reports/lint-results-pleosDebug.html
+Wrote SARIF report to file:///Users/<user>/CODEX/Pleos%20앱%20개발/work/easycar-v3/app/build/reports/lint-results-pleosDebug.sarif
 
 > Task :app:lintPleosDebug
 

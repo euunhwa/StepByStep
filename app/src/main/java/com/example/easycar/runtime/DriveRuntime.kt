@@ -29,6 +29,12 @@ class DriveRuntime(private val app:EasyCarApplication) {
     private var settings=UserSettings()
     private var revision=0L
     private var feedbackTimer:Job?=null
+    // finishedId stays set after a session ends; the report for it opens once, not on every new activity.
+    private var reportShownSessionId:String?=null
+    fun claimFinishedReport(id:String):Boolean {
+        if(reportShownSessionId==id) return false
+        reportShownSessionId=id;return true
+    }
     fun start(scope:CoroutineScope,demoId:String?,speed:Int,resumeId:String?,finished:()->Unit) {
         if(job?.isActive==true && mutable.value.running) return
         reviewJob?.cancel();val prior=job

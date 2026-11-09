@@ -1,6 +1,6 @@
 # EasyCar 0.5.0 · 차량 입력과 임의 평가셋 검증
 
-확인일 2026-11-06 / Asia·Seoul. 실제 프로젝트 `/Users/genius/AndroidStudioProjects/EasyCar`에서 최종 APK를 빌드하고 Pleos Connect v2.1.0 한 대에 설치했다. CPU2코어·RAM3GB로 제한했고 Gradle과 에뮬레이터를 동시에 실행하지 않았다. 검증 종료 후 코칭은 정지했으며, 앱 홈·에뮬레이터와 localhost:8088 포워딩은 사용자가 계속 조작할 수 있도록 유지했다. 최종 HTTP 응답200을 확인했다.
+확인일 2026-11-06 / Asia·Seoul. 실제 프로젝트 `/Users/<user>/AndroidStudioProjects/EasyCar`에서 최종 APK를 빌드하고 Pleos Connect v2.1.0 한 대에 설치했다. CPU2코어·RAM3GB로 제한했고 Gradle과 에뮬레이터를 동시에 실행하지 않았다. 검증 종료 후 코칭은 정지했으며, 앱 홈·에뮬레이터와 localhost:8088 포워딩은 사용자가 계속 조작할 수 있도록 유지했다. 최종 HTTP 응답200을 확인했다.
 
 ## 동작 변경
 
