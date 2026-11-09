@@ -43,6 +43,7 @@ class EasyCarViewModel(application:Application):AndroidViewModel(application) {
         startLive()
     }
     fun startSubmissionDemo()=startDemo("auto-drive")
+    fun startParkingDemo(id:String)=startDemo(id)
     private fun startLive() {
         if(!allowed()) return
         runCatching { ContextCompat.startForegroundService(app,Intent(app,CoachingService::class.java)) }.onFailure { message.value="차량 코칭을 시작하지 못했어요: ${it.message}" }
