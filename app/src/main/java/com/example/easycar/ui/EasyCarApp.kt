@@ -52,6 +52,8 @@ val Amber=Color(0xffffd28a)
     var detailId by rememberSaveable { mutableStateOf<String?>(null) }
     LaunchedEffect(Unit) {if(page !in setOf("home","records","settings","report","video","record-query")) page="home"}
     val selected=records.firstOrNull { it.id==selectedId }
+    // A detail id that is not in the selected record falls through to that record's report.
+    val detail=selected?.results?.firstOrNull { it.id==detailId }
     val filePicker=rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { it?.let(model::importVideo) }
     val calibrationPicker=rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri->selectedId?.let {id->uri?.let {model.attachCalibration(id,it,calibrationPositionMs)}} }
     val notifications=rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) {}
@@ -88,7 +90,7 @@ val Amber=Color(0xffffd28a)
                             !settings.consent -> Welcome { model.updateSettings(settings.copy(consent=true));if(android.os.Build.VERSION.SDK_INT>=33) notifications.launch(Manifest.permission.POST_NOTIFICATIONS) }
                             page=="home" && compactWindow -> SplitHomeScreen(platform,model::startCoaching,model::retryVehicle)
                             page=="home" -> HomeScreen(records,platform,model.liveFrame,model::startCoaching) { selectedId=it;page="report" }
-                            page=="report" && selected!=null && detailId!=null -> selected.results.firstOrNull { it.id==detailId }?.let { DetailScreen(it,{ detailId=null },model::speakCoaching) {from,to->model.frames(selected.id,from,to)} }
+                            page=="report" && selected!=null && detail!=null -> DetailScreen(detail,{ detailId=null },model::speakCoaching) {from,to->model.frames(selected.id,from,to)}
                             page=="record-query" && selected!=null -> RecordQueryScreen(selected,locked,{page="report"},{json->model.queryLocalRecord(selected.id,json)},model::speak,
                                 gleoSelected=settings.gleoSessionId==selected.id,onGleoSelection=if(BuildConfig.FLAVOR=="pleos") ({enabled->model.selectGleoRecord(if(enabled) selected.id else null)}) else null)
                             page=="report" && selected!=null -> ReportScreen(selected,{ detailId=it },{ page="video" },{ page="home" },model::speak,{ model.delete(selected.id);selectedId=null;page="records" },{ selected.demoCaseId?.let { model.startDemo(it,1,selected.id) } },{page="record-query"})
