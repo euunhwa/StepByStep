@@ -90,7 +90,7 @@ object DocumentDemoCatalog {
      * wheel turned at a finite rate the recorded net rotation is about 90°.
      */
     val beginnerTPark:DemoCase by lazy {
-        val spec=VehicleSpec.GRANDEUR_GN7_PE;fun rad(d:Double)=d*PI/180
+        val spec=VehicleSpec.GRANDEUR_GN7_PE
         val frames=drive(listOf(
             Move(Gear.DRIVE,1.5,listOf(6.0 to 0.0,8*rad(25.0) to 1/8.0)),
             Move(Gear.REVERSE,.8,listOf(4.3*rad(41.0) to -1/4.3)),
@@ -108,16 +108,16 @@ object DocumentDemoCatalog {
      * the recorded net rotation is then about 0°.
      */
     val parallelPark:DemoCase by lazy {
-        val spec=VehicleSpec.GRANDEUR_GN7_PE;fun rad(d:Double)=d*PI/180
+        val spec=VehicleSpec.GRANDEUR_GN7_PE
         val r=1.1*spec.minRearAxleRadiusM
         val frames=drive(listOf(
             Move(Gear.DRIVE,1.5,listOf(9.0 to 0.0)),
-            Move(Gear.REVERSE,.8,listOf(r*rad(PARALLEL_ARC_DEG) to -1/r)),
-            Move(Gear.REVERSE,.8,listOf(r*rad(PARALLEL_COUNTER_DEG) to 1/r)),
+            Move(Gear.REVERSE,.8,listOf(r*rad(45.0) to -1/r)),
+            Move(Gear.REVERSE,.8,listOf(r*rad(50.0) to 1/r)),
             Move(Gear.DRIVE,.5,listOf(.8 to 0.0))),spec)
         DemoCase("park-parallel","평행 주차 · 후진→전진 1회","주차",PracticeContext(null,null,false,dataSource="합성 주차 데모 · 실차 데이터 아님"),frames)
     }
-    private const val PARALLEL_ARC_DEG=45.0;private const val PARALLEL_COUNTER_DEG=50.0
+    private fun rad(deg:Double)=deg*PI/180
 
     fun case(id:String):DemoCase?=when(id) {"auto-drive"->automaticDrive;"park-beginner"->beginnerTPark;"park-parallel"->parallelPark;else->null}
 }

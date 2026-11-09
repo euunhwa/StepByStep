@@ -44,7 +44,7 @@ internal class DocumentCoachEngine(profile:ReferenceProfile,context:PracticeCont
     private fun releaseHeldTurn(keep:Boolean) {
         val h=heldTurn ?: return
         heldTurn=null
-        if(keep) completed+=scorer.evaluate(h.type,h.samples,0,h.flags,emptyList(),false)
+        if(keep) emit(h.type,h.samples,flags=h.flags)
         completed+=queuedBehindTurn;queuedBehindTurn.clear()
     }
     /** Recent samples since the car last exceeded parking speed: the pre-roll of a parking segment. */

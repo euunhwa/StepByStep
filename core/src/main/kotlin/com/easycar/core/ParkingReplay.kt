@@ -142,7 +142,11 @@ enum class ReferenceKind(val title:String) { T_REVERSE("T자(직각) 후진 주�
 /** A pose on a planned path; [curvature] (1/m, CCW positive) is that of the segment ending here. */
 data class PlanPose(val xM:Double,val yM:Double,val headingRad:Double,val reverse:Boolean,val curvature:Double=0.0)
 data class SlotRect(val minX:Double,val maxX:Double,val minY:Double,val maxY:Double)
-data class ReferencePath(val poses:List<PlanPose>,val reverseStart:PlanPose,val slot:SlotRect,val neighbours:List<SlotRect>)
+data class ReferencePath(val poses:List<PlanPose>,val slot:SlotRect,val neighbours:List<SlotRect>) {
+    val reverseStart:PlanPose=reverseStartOf(poses)
+}
+/** The pose where the driver stops and shifts to R: the last one before the first reverse step. */
+private fun reverseStartOf(poses:List<PlanPose>)=poses[poses.indexOfFirst {it.reverse}-1]
 
 /**
  * An example of a model manoeuvre ending at the same final pose as [ReconstructedPath.anchoredToEnd]:
@@ -195,8 +199,6 @@ object ReferenceParkingPath {
     private fun endAtOrigin(poses:List<PlanPose>):List<PlanPose> {
         val end=poses.last();return poses.map {it.copy(xM=it.xM-end.xM,yM=it.yM-end.yM)}
     }
-    /** The pose where the driver stops and shifts to R: the last one before the first reverse step. */
-    private fun reverseStartOf(poses:List<PlanPose>)=poses[poses.indexOfFirst {it.reverse}-1]
 
     // Plans are deterministic per kind and vehicle; the perpendicular one searches 141 candidates.
     private val cache=java.util.concurrent.ConcurrentHashMap<Pair<ReferenceKind,VehicleSpec>,ReferencePath>()
@@ -204,7 +206,7 @@ object ReferenceParkingPath {
     /** [side] > 0 puts the approach and reverse start on the +x side of the slot. */
     fun build(kind:ReferenceKind,spec:VehicleSpec,side:Int):ReferencePath {
         val path=cache.getOrPut(kind to spec) {when(kind) {ReferenceKind.T_REVERSE->perpendicular(spec);ReferenceKind.PARALLEL_REVERSE->parallel(spec)}}
-        return if(side>=0) path else path.copy(poses=path.poses.map(::mirror),reverseStart=mirror(path.reverseStart),
+        return if(side>=0) path else path.copy(poses=path.poses.map(::mirror),
             slot=mirror(path.slot),neighbours=path.neighbours.map(::mirror))
     }
 
@@ -224,7 +226,7 @@ object ReferenceParkingPath {
         // Choose the reverse-start angle where this geometry agrees with the observed regression.
         val thetaDeg=(20..160).map {it*.5}.minBy {t->abs(t-(OHAMA_SLOPE*lateral(reverseStartOf(plan(t)))+OHAMA_INTERCEPT))}
         val poses=plan(thetaDeg)
-        return ReferencePath(poses,reverseStartOf(poses),slot,
+        return ReferencePath(poses,slot,
             listOf(slot.copy(minX=slot.minX-T_SLOT_W,maxX=slot.minX),slot.copy(minX=slot.maxX,maxX=slot.maxX+T_SLOT_W)))
     }
 
@@ -235,7 +237,7 @@ object ReferenceParkingPath {
         val phi=acos(1-offset/(2*radius))
         val poses=endAtOrigin(drive(PlanPose(offset,0.0,PI/2,false),listOf(Segment(false,0.0,4.0),
             Segment(true,1/radius,radius*phi),Segment(true,-1/radius,radius*phi))))
-        return ReferencePath(poses,reverseStartOf(poses),slot,
+        return ReferencePath(poses,slot,
             listOf(slot.copy(minY=slot.minY-P_SLOT_L,maxY=slot.minY),slot.copy(minY=slot.maxY,maxY=slot.maxY+P_SLOT_L)))
     }
 }
