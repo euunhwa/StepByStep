@@ -58,7 +58,7 @@ val Amber=Color(0xffffd28a)
     val permissions=rememberLauncherForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { model.retryVehicle() }
     LaunchedEffect(drive.error) { drive.error?.let { model.message.value=it } }
     LaunchedEffect(voice,drive.running) { if(!drive.running && voice.phase==SpeechPhase.FAILED) model.message.value=voice.text }
-    LaunchedEffect(drive.finishedId) { drive.finishedId?.let { if(model.claimFinishedReport(it)) { selectedId=it;page="report" } } }
+    LaunchedEffect(drive.finishedId) { drive.finishedId?.let { if(model.claimFinishedReport(it)) { selectedId=it;detailId=null;page="report" } } }
     val locked=!platform.ux.allowsReview() || drive.simulatedRestriction
     MaterialTheme(colorScheme=darkColorScheme(primary=Mint,onPrimary=Ink,background=Ink,surface=Panel,onSurface=White,onBackground=White,secondary=Mint,outline=Muted),typography=Typography()) {
         Surface(Modifier.fillMaxSize(),color=Ink) {
