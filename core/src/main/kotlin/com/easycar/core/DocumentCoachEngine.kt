@@ -20,6 +20,14 @@ internal class DocumentCoachEngine(profile:ReferenceProfile,context:PracticeCont
     private var turn:MutableList<Motion>?=null;private var yawQuiet:Long?=null
     // An incomplete one-sign turn (e.g. paused to yield) may continue with a same-sign bump within turnPauseMaxMs.
     private var pendingTurn:List<Motion>?=null
+    // A slow (≤ parking speed) LEFT/RIGHT may be the forward swing before reverse parking or a forward-in
+    // park. It is held for turnParkingHoldMs: R absorbs it into the parking segment, P makes it a forward
+    // park, and driving on (faster, or the hold expiring in D) emits it as the turn it is. Results that
+    // complete meanwhile (e.g. a STOP while waiting) queue behind it, so the hold is not cut short and
+    // the output keeps the order in which the manoeuvres happened.
+    private class HeldTurn(val type:ManeuverType,val samples:List<Motion>,val flags:Map<String,Double>)
+    private var heldTurn:HeldTurn?=null
+    private val queuedBehindTurn=mutableListOf<ManeuverResult>()
     private var settledGear:Gear?=null;private var parkingFromPark=false
     private var yawReady=true;private var yawRecoverySince:Long?=null
     private var parking:MutableList<Motion>?=null;private var parkingOnset=0L;private var parkingStopped:Long?=null
@@ -28,8 +36,21 @@ internal class DocumentCoachEngine(profile:ReferenceProfile,context:PracticeCont
     val reverseToDriveCount get()=gearCounter.reverseToDriveCount
     val activeType get()=when {parking!=null->"주차 관측 중";turn!=null->"회전 중";launch!=null->"출발 중";stopping!=null->"감속 중";lastMotion?.yawRadps==null->"차량 관측 중 · yaw 신호 미수신";else->"다음 동작 대기 중"}
     private fun emit(type:ManeuverType,a:List<Motion>,count:Int=0,flags:Map<String,Double> = emptyMap(),holds:List<String> = emptyList(),interrupted:Boolean=false) {
-        if(a.isNotEmpty()) completed+=scorer.evaluate(type,a,count,flags,holds,interrupted)
+        if(a.isEmpty()) return
+        val result=scorer.evaluate(type,a,count,flags,holds,interrupted)
+        if(heldTurn!=null) queuedBehindTurn+=result else completed+=result
     }
+    /** Resolve the held turn: emit it ([keep]) or drop it into a parking segment, then release the queue. */
+    private fun releaseHeldTurn(keep:Boolean) {
+        val h=heldTurn ?: return
+        heldTurn=null
+        if(keep) completed+=scorer.evaluate(h.type,h.samples,0,h.flags,emptyList(),false)
+        completed+=queuedBehindTurn;queuedBehindTurn.clear()
+    }
+    /** Recent samples since the car last exceeded parking speed: the pre-roll of a parking segment. */
+    private fun lowSpeedTail():List<Motion> = recent.drop(recent.indexOfLast {abs(it.speedMps ?: 0.0)>parkingLimitMps}+1)
+    /** Drop incomplete longitudinal candidates absorbed by a parking segment. Completed events are retained. */
+    private fun clearLongitudinal() {launch=null;stopping=null;acceleration=null;decQuiet=null;accQuiet=null;stopArmed=false}
     fun accept(frame:VehicleFrame):List<ManeuverResult> {
         val before=completed.size
         if(frame.timeMs<=lastSeenMs) return emptyList()
@@ -67,20 +88,24 @@ internal class DocumentCoachEngine(profile:ReferenceProfile,context:PracticeCont
         } else stoppedSince=null
         val gear=stableGear.update(m.gear,m.timeMs)
         if(gear==Gear.PARK || gear==Gear.DRIVE) settledGear=gear
+        heldTurn?.let {h->
+            if(parking==null && gear==Gear.PARK && stopped) finishForwardParking()
+            else if(abs(m.speedMps)>parkingLimitMps || (m.gear==Gear.DRIVE && m.timeMs-h.samples.last().timeMs>r.turnParkingHoldMs)) releaseHeldTurn(true)
+        }
         if(!parkRearm && gear==Gear.DRIVE && m.gear==Gear.DRIVE && !stopped) {
             if(rearmSince==null) rearmSince=m.timeMs
             if(m.timeMs-rearmSince!!>=r.gearStableMs) parkRearm=true
         } else rearmSince=null
         if(!parkRearm && gear==Gear.PARK && stopped && wasIdle) parkRearm=true
         if(parking==null && parkRearm && gear==Gear.REVERSE && m.gear==Gear.REVERSE && abs(m.speedMps)<=parkingLimitMps) {
-            val lastFast=recent.indexOfLast {abs(it.speedMps ?: 0.0)>parkingLimitMps}
-            parking=recent.drop(lastFast+1).toMutableList();parkingOnset=m.timeMs
+            parking=lowSpeedTail().toMutableList();parkingOnset=m.timeMs
             gearCounter=GearTransitionCounter(r.gearStableMs);parking!!.forEach {gearCounter.update(it.gear,it.timeMs)}
             parkBoundary=null;parkingStopped=null;pendingTurn=null
+            releaseHeldTurn(false) // a slow swing just before R is part of this parking, already inside the pre-roll
             // R entered from a settled P (N ignored) is a departure candidate, not necessarily a parking attempt.
             parkingFromPark=settledGear==Gear.PARK
             // Absorb incomplete low-speed preparation into this parking episode. Completed events are retained.
-            launch=null;stopping=null;acceleration=null;decQuiet=null;accQuiet=null;stopArmed=false;wasIdle=false
+            clearLongitudinal();wasIdle=false
         }
         parking?.let {a->
             append(a,m);gearCounter.update(m.gear,m.timeMs)
@@ -186,8 +211,11 @@ internal class DocumentCoachEngine(profile:ReferenceProfile,context:PracticeCont
         // Small bumps include lane changes and curves; no road-width input means no lane-change claim.
         if(type!=ManeuverType.UNKNOWN) {
             val minKph=(a.mapNotNull {it.speedMps?.let(::abs)}.minOrNull() ?: 0.0)*3.6
-            emit(type,a,flags=mapOf("yawDeltaDeg" to delta,"rapidTurn" to if(type!=ManeuverType.U_TURN && minKph>=r.rapidTurnMinKph && duration<=r.rapidTurnMaxMs) 1.0 else 0.0,
-                "rapidUTurn" to if(type==ManeuverType.U_TURN && minKph>=r.rapidUTurnMinKph && duration<=r.rapidUTurnMaxMs) 1.0 else 0.0))
+            val flags=mapOf("yawDeltaDeg" to delta,"rapidTurn" to if(type!=ManeuverType.U_TURN && minKph>=r.rapidTurnMinKph && duration<=r.rapidTurnMaxMs) 1.0 else 0.0,
+                "rapidUTurn" to if(type==ManeuverType.U_TURN && minKph>=r.rapidUTurnMinKph && duration<=r.rapidUTurnMaxMs) 1.0 else 0.0)
+            val slow=a.all {abs(it.speedMps ?: 0.0)<=parkingLimitMps}
+            if(slow && type!=ManeuverType.U_TURN) {releaseHeldTurn(true);heldTurn=HeldTurn(type,a,flags)}
+            else emit(type,a,flags=flags)
         }
         turn=null;yawQuiet=null
     }
@@ -203,7 +231,8 @@ internal class DocumentCoachEngine(profile:ReferenceProfile,context:PracticeCont
     }
     private fun finishParking(a:List<Motion>) {
         val delta=integral(a);val coverage=a.count {it.yawRadps!=null}.toDouble()/a.size
-        val reverse=a.filter {it.gear==Gear.REVERSE}
+        // Only moving reverse samples: turning the wheel while stopped in R does not shape the path.
+        val reverse=a.filter {it.gear==Gear.REVERSE && abs(it.speedMps ?: 0.0)>r.stoppedMps}
         val steering=sustainedSigns(reverse,{it.steeringDeg},r.steeringNoiseDeg)
         val yaw=sustainedSigns(reverse,{it.yawRadps},r.yawBumpRadps)
         val type=when {
@@ -214,6 +243,14 @@ internal class DocumentCoachEngine(profile:ReferenceProfile,context:PracticeCont
         }
         emit(type,a,gearCounter.reverseToDriveCount,mapOf("yawDeltaDeg" to delta),if(type==ManeuverType.PARKING_UNKNOWN) listOf("yaw·조향 패턴 부족 또는 주차 유형 경계") else emptyList())
         parking=null;parkRearm=false;parkBoundary=null;wasIdle=false;recent.clear()
+    }
+    /** A held slow turn followed by a stop in P without R: a forward-in park. The type is not classified. */
+    private fun finishForwardParking() {
+        releaseHeldTurn(false)
+        val a=lowSpeedTail()
+        clearLongitudinal();pendingTurn=null
+        emit(ManeuverType.PARKING_UNKNOWN,a,0,mapOf("yawDeltaDeg" to integral(a),"forwardIn" to 1.0),listOf("후진 없이 전진으로 주차 · 주차 유형은 판정하지 않음"))
+        parkRearm=false;wasIdle=false;recent.clear()
     }
     private fun hasRun(a:List<Motion>,threshold:Double,positive:Boolean):Boolean {
         var run=0L
@@ -231,6 +268,7 @@ internal class DocumentCoachEngine(profile:ReferenceProfile,context:PracticeCont
         else mapOf("harshDeceleration" to if(hasRun(a,r.harshDecelerationMps2,false)) 1.0 else 0.0,"harshStop" to if(final<=r.harshStopMaxKph && hasRun(a,r.harshDecelerationMps2,false)) 1.0 else 0.0)
     }
     private fun abort(reason:String) {
+        releaseHeldTurn(true) // a completed turn stays completed
         listOf(launch to ManeuverType.START,stopping to ManeuverType.STOP,acceleration to ManeuverType.ACCELERATION,turn to ManeuverType.UNKNOWN,parking to ManeuverType.PARKING_UNKNOWN).forEach {(a,type)->
             if(!a.isNullOrEmpty()) emit(type,a,holds=listOf(reason),interrupted=true)
         }
