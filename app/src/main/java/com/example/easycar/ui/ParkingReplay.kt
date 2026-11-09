@@ -35,12 +35,13 @@ private const val FAST_KPH=7.0
 /** Length of the steering guide drawn ahead of the leading bumper. */
 private const val GUIDE_M=2.0
 
-/** Top-down replay of a parking manoeuvre rebuilt from speed, gear and steering. Display only; never scored. */
+/**
+ * Top-down replay of a parking manoeuvre rebuilt from speed, gear and steering. Display only; never scored.
+ * [frames] are the manoeuvre's own, from [ManeuverResult.startMs] to [ManeuverResult.endMs].
+ */
 @Composable fun ParkingReplayCard(result:ManeuverResult,frames:List<VehicleFrame>,spec:VehicleSpec=VehicleSpec.GRANDEUR_GN7_PE) {
     val path by produceState<ReconstructedPath?>(null,result.id,frames.size) {
-        value=withContext(Dispatchers.Default) {
-            TrajectoryReconstructor(spec).reconstruct(frames.filter {it.timeMs in result.startMs..result.endMs}).anchoredToEnd()
-        }
+        value=withContext(Dispatchers.Default) {TrajectoryReconstructor(spec).reconstruct(frames).anchoredToEnd()}
     }
     CardPanel(Modifier.fillMaxWidth().testTag("parking-replay")) {
         Text("주차 궤적 다시 보기",fontSize=24.sp,fontWeight=FontWeight.Bold)

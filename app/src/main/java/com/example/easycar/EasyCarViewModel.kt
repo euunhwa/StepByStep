@@ -28,6 +28,7 @@ class EasyCarViewModel(application:Application):AndroidViewModel(application) {
     val message=MutableStateFlow<String?>(null)
     fun claimFinishedReport(id:String)=app.runtime.claimFinishedReport(id)
     suspend fun frames(id:String)=app.repository.frames(id)
+    suspend fun frames(id:String,fromMs:Long,toMs:Long)=app.repository.frames(id,fromMs,toMs)
     init { viewModelScope.launch { settings.filter { it.consent }.collect { app.repository.prune(it.retentionDays) } } }
     fun updateSettings(s:UserSettings) { viewModelScope.launch { app.repository.updateSettings(s) } }
     fun selectGleoRecord(id:String?) { viewModelScope.launch {

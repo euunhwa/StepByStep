@@ -88,12 +88,21 @@ class AppRepository(private val context:Context,databaseName:String="easycar.db"
         }
     }
     /** Raw frames of one session, oldest first. Empty when the session has none. */
-    suspend fun frames(id:String):List<VehicleFrame> = withContext(Dispatchers.IO) { mutex.withLock {
-        val dao=db.sessions();val chunks=dao.frameChunkPayloads(id)
-        if(chunks.isNotEmpty()) chunks.flatMap { gson.fromJson(it,Array<VehicleFrame>::class.java).asList() }
-        else if(dao.payloadLength(id)!=null) runCatching { gson.fromJson(readPayload(id),SessionRecord::class.java).frames.toList() }.getOrDefault(emptyList())
-        else emptyList()
-    } }
+    suspend fun frames(id:String):List<VehicleFrame> = readFrames(id,null)
+    /** Raw frames of one session within [fromMs]..[toMs], parsing only the chunks that overlap it. */
+    suspend fun frames(id:String,fromMs:Long,toMs:Long):List<VehicleFrame> = readFrames(id,fromMs..toMs)
+    private suspend fun readFrames(id:String,window:LongRange?):List<VehicleFrame> = withContext(Dispatchers.IO) {
+        // Read under the lock; parse outside it so a long read does not hold up saves.
+        val (chunks,legacy)=mutex.withLock {
+            val dao=db.sessions()
+            val chunks=if(window==null) dao.frameChunkPayloads(id) else dao.frameChunkPayloadsBetween(id,window.first,window.last)
+            val legacy=if(chunks.isEmpty() && dao.lastFrameChunkSeq(id)==null && dao.payloadLength(id)!=null) readPayload(id) else null
+            chunks to legacy
+        }
+        val all=if(chunks.isNotEmpty()) chunks.flatMap { gson.fromJson(it,Array<VehicleFrame>::class.java).asList() }
+            else legacy?.let { runCatching { gson.fromJson(it,SessionRecord::class.java).frames.toList() }.getOrNull() } ?: emptyList()
+        if(window==null) all else all.filter { it.timeMs in window }
+    }
     /** Adds [frames] after the last stored chunk. Runs inside a transaction. */
     private fun appendChunks(id:String,frames:List<VehicleFrame>) {
         val dao=db.sessions();var seq=(dao.lastFrameChunkSeq(id) ?: -1)+1

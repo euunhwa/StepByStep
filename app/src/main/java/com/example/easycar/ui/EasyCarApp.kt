@@ -88,7 +88,7 @@ val Amber=Color(0xffffd28a)
                             !settings.consent -> Welcome { model.updateSettings(settings.copy(consent=true));if(android.os.Build.VERSION.SDK_INT>=33) notifications.launch(Manifest.permission.POST_NOTIFICATIONS) }
                             page=="home" && compactWindow -> SplitHomeScreen(platform,model::startCoaching,model::retryVehicle)
                             page=="home" -> HomeScreen(records,platform,model.liveFrame,model::startCoaching) { selectedId=it;page="report" }
-                            page=="report" && selected!=null && detailId!=null -> selected.results.firstOrNull { it.id==detailId }?.let { DetailScreen(it,{ detailId=null },model::speakCoaching) {model.frames(selected.id)} }
+                            page=="report" && selected!=null && detailId!=null -> selected.results.firstOrNull { it.id==detailId }?.let { DetailScreen(it,{ detailId=null },model::speakCoaching) {from,to->model.frames(selected.id,from,to)} }
                             page=="record-query" && selected!=null -> RecordQueryScreen(selected,locked,{page="report"},{json->model.queryLocalRecord(selected.id,json)},model::speak,
                                 gleoSelected=settings.gleoSessionId==selected.id,onGleoSelection=if(BuildConfig.FLAVOR=="pleos") ({enabled->model.selectGleoRecord(if(enabled) selected.id else null)}) else null)
                             page=="report" && selected!=null -> ReportScreen(selected,{ detailId=it },{ page="video" },{ page="home" },model::speak,{ model.delete(selected.id);selectedId=null;page="records" },{ selected.demoCaseId?.let { model.startDemo(it,1,selected.id) } },{page="record-query"})
@@ -289,9 +289,9 @@ fun dateText(time:Long)=SimpleDateFormat("M월 d일  HH:mm",Locale.KOREA).format
     }
     if(deleteDialog) AlertDialog(onDismissRequest={deleteDialog=false},title={Text("연습 기록을 삭제할까요?")},text={Text("이 연습의 기록과 함께 저장된 사용자 영상이 기기에서 삭제돼요.")},confirmButton={TextButton(onClick={deleteDialog=false;onDelete()}) {Text("삭제")}},dismissButton={TextButton(onClick={deleteDialog=false}) {Text("취소")}})
 }
-@Composable private fun DetailScreen(r:ManeuverResult,onBack:()->Unit,onSpeak:(ManeuverResult)->Unit,loadFrames:suspend ()->List<VehicleFrame>) {
-    // Keep only this manoeuvre's window; a session can hold up to an hour of frames.
-    val frames by produceState(emptyList<VehicleFrame>(),r.id) {if(isParking(r.type)) value=loadFrames().filter {it.timeMs in r.startMs..r.endMs}}
+@Composable private fun DetailScreen(r:ManeuverResult,onBack:()->Unit,onSpeak:(ManeuverResult)->Unit,loadFrames:suspend (fromMs:Long,toMs:Long)->List<VehicleFrame>) {
+    // Read only this manoeuvre's window; a session can hold up to an hour of frames.
+    val frames by produceState(emptyList<VehicleFrame>(),r.id) {if(isParking(r.type)) value=loadFrames(r.startMs,r.endMs)}
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).testTag("user-maneuver-detail")) {
         Row(verticalAlignment=Alignment.CenterVertically) {
             Action("← 연습 요약",secondary=true,onClick=onBack)
