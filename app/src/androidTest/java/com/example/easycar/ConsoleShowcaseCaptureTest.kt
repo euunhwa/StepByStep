@@ -43,9 +43,9 @@ class ConsoleShowcaseCaptureTest {
             while(!stop.exists() && SystemClock.elapsedRealtime()<deadline && app.runtime.state.value.running) {
                 val state=app.runtime.state.value
                 val frame=app.bridge.latestFrame.value
-                val json=gson.toJson(mapOf("id" to id,"ready" to (frame?.yawRate!=null && state.motion!=null && state.record?.frames?.isNotEmpty()==true),
+                val json=gson.toJson(mapOf("id" to id,"ready" to (frame?.yawRate!=null && state.motion!=null && (state.record?.progressIndex ?: 0)>0),
                     "observedAtMs" to SystemClock.elapsedRealtime(),"motion" to state.motion,
-                    "source" to state.record?.source,"voiceStatus" to app.runtime.voiceStatus.value,
+                    "source" to state.record?.source,"voiceStatus" to app.runtime.voiceStatus.value.text,"voicePhase" to app.runtime.voiceStatus.value.phase,
                     "feedbacks" to state.feedbackHistory,"results" to state.record?.results,
                     "lastFrame" to frame,"error" to state.error))
                 File(app.filesDir,"capture-state.tmp").also {it.writeText(json);it.renameTo(snapshot)}

@@ -28,19 +28,20 @@ class LiveConsoleInputTest {
         ui.waitUntil(20000) {ui.onAllNodesWithTag("start-coaching").fetchSemanticsNodes().isNotEmpty() && app.bridge.state.value.ux.allowsReview()}
         ui.onNodeWithTag("start-submission-demo").assertExists()
         ui.onNodeWithTag("start-coaching").performScrollTo().performClick()
-        ui.waitUntil(15000) {app.runtime.state.value.running && (app.runtime.state.value.record?.frames?.size ?: 0)>15}
+        ui.waitUntil(15000) {app.runtime.state.value.running && (app.runtime.state.value.record?.progressIndex ?: 0)>15}
         val id=app.runtime.state.value.record!!.id
         assertNull(app.runtime.state.value.record!!.demoCaseId)
         File(app.filesDir,"validation-live-v5-ready.json").writeText(Gson().toJson(mapOf("ready" to true,"sessionId" to id,"phase" to "WAITING_FOR_LOCALHOST_DRIVE")))
         try {
-            ui.waitUntil(150000) {app.runtime.state.value.record?.frames?.any {it.speed?.value?.let {v->kotlin.math.abs(v)>1.0}==true}==true}
+            ui.waitUntil(150000) {app.runtime.recentFrames().any {it.speed?.value?.let {v->kotlin.math.abs(v)>1.0}==true}}
             ui.waitUntil(60000) {app.runtime.state.value.feedbackHistory.any {it.type==ManeuverType.STOP} || app.runtime.state.value.error!=null}
             assertNull(app.runtime.state.value.error)
             val record=app.runtime.state.value.record!!
+            val frames=app.runtime.recentFrames()
             assertEquals(id,record.id);assertNull(record.demoCaseId)
-            assertTrue(record.frames.any {it.gear?.value==Gear.DRIVE})
-            assertTrue(record.frames.filter {it.speed!=null}.all {it.speed!!.source.startsWith("AAOS")})
-            assertTrue(record.frames.all {it.parkingScene==null})
+            assertTrue(frames.any {it.gear?.value==Gear.DRIVE})
+            assertTrue(frames.filter {it.speed!=null}.all {it.speed!!.source.startsWith("AAOS")})
+            assertTrue(frames.all {it.parkingScene==null})
             assertTrue(record.results.any {it.type==ManeuverType.START})
             assertTrue(record.results.all {it.scoreKind=="PROVISIONAL" && it.scoreBasis?.contains("임의")==true})
             assertTrue(record.results.none {it.coaching.contains("필요한 정보가 부족해")})

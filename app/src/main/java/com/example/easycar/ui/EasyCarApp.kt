@@ -57,7 +57,7 @@ val Amber=Color(0xffffd28a)
     val notifications=rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) {}
     val permissions=rememberLauncherForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { model.retryVehicle() }
     LaunchedEffect(drive.error) { drive.error?.let { model.message.value=it } }
-    LaunchedEffect(voice,drive.running) { if(!drive.running && listOf("없음","오류","실패","응답 지연").any {voice.contains(it)}) model.message.value=voice }
+    LaunchedEffect(voice,drive.running) { if(!drive.running && voice.phase==SpeechPhase.FAILED) model.message.value=voice.text }
     LaunchedEffect(drive.finishedId) { drive.finishedId?.let { if(model.claimFinishedReport(it)) { selectedId=it;page="report" } } }
     val locked=!platform.ux.allowsReview() || drive.simulatedRestriction
     MaterialTheme(colorScheme=darkColorScheme(primary=Mint,onPrimary=Ink,background=Ink,surface=Panel,onSurface=White,onBackground=White,secondary=Mint,outline=Muted),typography=Typography()) {
@@ -67,7 +67,7 @@ val Amber=Color(0xffffd28a)
                 val roomyHeader=maxWidth>=1000.dp
                 val showConnectionBadge=maxWidth>=900.dp
                 if(smallWindow.active || smallWindow.entering || (compactWindow && (drive.running || locked))) {
-                    MiniCoachScreen(drive,smallWindow.active || smallWindow.entering,model::stop,model.evaluationPolicy.datasetNotice,locked,model::pauseDemo)
+                    MiniCoachScreen(drive,smallWindow.active || smallWindow.entering,model::stop,model.evaluationPolicy.datasetNotice,locked,{model.setDemoPaused(!drive.paused)})
                 } else {
             Row(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.safeDrawing)) {
                 if(!compactWindow) MainNavigation(page,drive.running || locked) { page=it;detailId=null }
@@ -76,14 +76,14 @@ val Amber=Color(0xffffd28a)
                         Text("EasyCar",fontSize=28.sp,fontWeight=FontWeight.Bold,color=Mint)
                         if(roomyHeader) Text("  /  차근차근, 나의 운전",fontSize=16.sp,color=Muted)
                         Spacer(Modifier.weight(1f))
-                        if(showConnectionBadge) Badge(if(drive.running) "●  자동 코칭 중" else if(locked) "주행 제한" else if(platform.connection.contains("연결됨")) "차량 연결됨" else "연결 확인",if(locked) Amber else Mint)
+                        if(showConnectionBadge) Badge(if(drive.running) "●  자동 코칭 중" else if(locked) "주행 제한" else if(platform.vehicleConnected) "차량 연결됨" else "연결 확인",if(locked) Amber else Mint)
                         if(!drive.running && !locked && settings.consent) {Spacer(Modifier.width(12.dp));Action("데모",Modifier.testTag("start-submission-demo"),secondary=true,onClick=model::startSubmissionDemo)}
                     }
                     if(compactWindow) {Spacer(Modifier.height(12.dp));MainNavigation(page,false,compact=true) {page=it;detailId=null}}
                     Spacer(Modifier.height(if(compactWindow) 16.dp else 26.dp))
                     Box(Modifier.weight(1f).fillMaxWidth()) {
                         when {
-                            drive.running || locked -> DriveScreen(drive,locked,platform,model::stop,model::retryVehicle,voice,model::pauseDemo,{onMinimize()},smallWindow)
+                            drive.running || locked -> DriveScreen(drive,locked,platform,model::stop,model::retryVehicle,voice.text,{model.setDemoPaused(!drive.paused)},{onMinimize()},smallWindow)
                             !settings.consent -> Welcome { model.updateSettings(settings.copy(consent=true));if(android.os.Build.VERSION.SDK_INT>=33) notifications.launch(Manifest.permission.POST_NOTIFICATIONS) }
                             page=="home" && compactWindow -> SplitHomeScreen(platform,model::startCoaching,model::retryVehicle)
                             page=="home" -> HomeScreen(records,platform,model.liveFrame,model::startCoaching) { selectedId=it;page="report" }

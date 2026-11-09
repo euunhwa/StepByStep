@@ -77,12 +77,12 @@ class PleosBridge(private val context:Context):PlatformBridge {
     override fun start() {
         if(started) return;started=true;val generation=++epoch
         if(!context.packageManager.hasSystemFeature(PackageManager.FEATURE_AUTOMOTIVE)) { mutable.value=PlatformState(connection="일반 Android 기기 · 데모를 선택해 주세요",ux=UxState(true,false));return }
-        mutable.value=mutable.value.copy(connection="Pleos 차량 서비스 연결 중")
+        mutable.value=mutable.value.copy(connection="Pleos 차량 서비스 연결 중",vehicleConnected=false)
         try {
             car=Car.createCar(context,Handler(Looper.getMainLooper()),Car.CAR_WAIT_TIMEOUT_DO_NOT_WAIT) { connected,ready ->
                 if(!started || generation!=epoch) return@createCar
-                if(!ready) { speed=null;gear=null;applyUx(null);mutable.value=mutable.value.copy(connection="차량 연결 끊김");return@createCar }
-                mutable.value=mutable.value.copy(connection=if(emulatorDynamics!=null) "AAOS 연결됨 · $modelNotice" else "AAOS 연결됨 · 신호별 지원 상태 확인")
+                if(!ready) { speed=null;gear=null;applyUx(null);mutable.value=mutable.value.copy(connection="차량 연결 끊김",vehicleConnected=false);return@createCar }
+                mutable.value=mutable.value.copy(connection=if(emulatorDynamics!=null) "AAOS 연결됨 · $modelNotice" else "AAOS 연결됨 · 신호별 지원 상태 확인",vehicleConnected=true)
                 runCatching {
                     ux=connected.getCarManager(Car.CAR_UX_RESTRICTION_SERVICE) as CarUxRestrictionsManager
                     ux?.registerListener(restrictionsListener);applyUx(ux?.currentCarUxRestrictions)
@@ -96,9 +96,9 @@ class PleosBridge(private val context:Context):PlatformBridge {
                             else if(properties?.registerCallback(callback,id,10f)!=true) unavailable(id,"구독 거부됨")
                         } catch(e:Exception) { unavailable(id,error(e)) }
                     }
-                }.onFailure { mutable.value=mutable.value.copy(connection="차량 속성 서비스 실패") }
+                }.onFailure { mutable.value=mutable.value.copy(connection="차량 속성 서비스 실패",vehicleConnected=false) }
             }
-        } catch(e:Exception) { mutable.value=mutable.value.copy(connection=error(e)) }
+        } catch(e:Exception) { mutable.value=mutable.value.copy(connection=error(e),vehicleConnected=false) }
         try {
             sdk=Vehicle(context).also { it.initialize() };wheel=sdk?.getSteeringWheel()
             scope.launch {
@@ -149,7 +149,7 @@ class PleosBridge(private val context:Context):PlatformBridge {
         runCatching { wheel?.unregisterSteeringWheelAngle(wheelListener) };runCatching { sdk?.release() }
         runCatching { location?.unregisterFusedLocationCallback(locationListener);location?.release() }
         runCatching { car?.disconnect() };car=null;sdk=null;wheel=null;properties=null;ux=null;location=null
-        speed=null;gear=null;steering=null;heading=null;latest.value=null;mutable.value=mutable.value.copy(ux=UxState(),connection="차량 연결 중지됨")
+        speed=null;gear=null;steering=null;heading=null;latest.value=null;mutable.value=mutable.value.copy(ux=UxState(),connection="차량 연결 중지됨",vehicleConnected=false)
     }
     override fun release() { stop();scope.cancel() }
 }

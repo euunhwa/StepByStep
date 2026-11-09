@@ -14,7 +14,7 @@ import com.example.easycar.runtime.PlatformState
 
 /** The split home keeps the primary action; raw signal panels and history stay in their full views. */
 @Composable internal fun SplitHomeScreen(platform:PlatformState,onStart:()->Unit,onRetry:()->Unit) {
-    val connected=platform.connection.contains("연결됨")
+    val connected=platform.vehicleConnected
     BoxWithConstraints(Modifier.fillMaxSize().testTag("split-home")) {
         if(maxHeight<480.dp) Column(Modifier.fillMaxSize(),verticalArrangement=Arrangement.Center) {
             Text(if(connected) "차량 연결됨" else "차량 연결 확인 필요",fontSize=16.sp,lineHeight=23.sp,color=if(connected) Mint else Amber)

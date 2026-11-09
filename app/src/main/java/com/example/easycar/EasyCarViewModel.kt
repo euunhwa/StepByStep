@@ -53,7 +53,7 @@ class EasyCarViewModel(application:Application):AndroidViewModel(application) {
         return !drive.value.running
     }
     fun stop() { app.startService(Intent(app,CoachingService::class.java).setAction("stop")) }
-    fun pauseDemo() {app.startService(Intent(app,CoachingService::class.java).setAction("pause"))}
+    fun setDemoPaused(paused:Boolean) {app.startService(Intent(app,CoachingService::class.java).setAction("pause").putExtra("paused",paused))}
     fun cancel() {app.startService(Intent(app,CoachingService::class.java).setAction("cancel"))}
     fun retryVehicle() { if(!drive.value.running) { app.bridge.stop();app.bridge.start() } }
     fun delete(id:String) { viewModelScope.launch { app.repository.delete(id) } }
