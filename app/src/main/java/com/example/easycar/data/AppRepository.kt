@@ -14,6 +14,12 @@ import java.io.File
 
 private val Context.preferences by preferencesDataStore("easycar_settings")
 data class UserSettings(val consent:Boolean=false,val saveVideo:Boolean=false,val muted:Boolean=false,val retentionDays:Int=30,val voiceIntervalSeconds:Int=6,val demoInput:Boolean?=null,val smallWindowOnStart:Boolean=true,val gleoSessionId:String?=null)
+/**
+ * Stored as one Gson JSON payload. Gson does not apply Kotlin default values: a field missing from an
+ * older payload comes back null (or 0/false for primitives) even when declared non-null. So a field
+ * added later must be nullable, or a primitive whose zero value is a safe default.
+ * [frames] is filled only for whole-record writes and legacy payloads; see [SessionStore].
+ */
 data class SessionRecord(val id:String,val title:String,val createdAt:Long,val source:String,val profileVersion:String,
     val state:Lifecycle,val results:List<ManeuverResult>,val frames:List<VehicleFrame>,val demoCaseId:String?=null,
     val progressIndex:Int=0,val videoAsset:String?=null,val videoFile:String?=null,val videoDurationMs:Long?=null,
@@ -22,7 +28,17 @@ data class SessionRecord(val id:String,val title:String,val createdAt:Long,val s
 }
 interface SessionStore {
     val records:StateFlow<List<SessionRecord>>
+    /**
+     * Writes the record. A record carrying frames replaces the stored frames with them; a frameless
+     * record (every copy taken from [records]) leaves the stored frames untouched.
+     */
     suspend fun save(record:SessionRecord)
+    /**
+     * A running session's checkpoint: writes the frameless record and appends [frames] after the stored
+     * ones, atomically. Frames are appended even when the record itself is stale, because they are
+     * immutable inputs the caller will not send again. Chunks that end before [keepFromMs] are dropped.
+     */
+    suspend fun append(record:SessionRecord,frames:List<VehicleFrame>,keepFromMs:Long?=null)
     suspend fun delete(id:String)
 }
 /** 300 frames ≈ 0.3–0.5 MB of JSON per row, well inside SQLite's 2 MB CursorWindow. */
@@ -54,9 +70,9 @@ class AppRepository(private val context:Context,databaseName:String="easycar.db"
         }
     }
     private fun entity(record:SessionRecord)=SessionEntity().also { it.id=record.id;it.createdAt=record.createdAt;it.payload=gson.toJson(record.copy(frames=emptyList())) }
-    /** Writes the frameless payload and, when the record carries frames, the frame chunks, atomically. */
+    /** Writes the frameless payload and, when the record carries frames, replaces the stored frames, atomically. */
     private fun persist(record:SessionRecord)=db.runInTransaction {
-        if(record.frames.isNotEmpty()) writeFrames(record)
+        if(record.frames.isNotEmpty()) { db.sessions().deleteFrameChunks(record.id);appendChunks(record.id,record.frames) }
         db.sessions().save(entity(record))
     }
     /**
@@ -78,28 +94,31 @@ class AppRepository(private val context:Context,databaseName:String="easycar.db"
         else if(dao.payloadLength(id)!=null) runCatching { gson.fromJson(readPayload(id),SessionRecord::class.java).frames.toList() }.getOrDefault(emptyList())
         else emptyList()
     } }
-    /**
-     * Raw frames are immutable inputs ordered by event time, so a save either extends the stored
-     * tail (append only the new frames) or replaces it (rewrite all chunks). Runs inside [persist].
-     */
-    private fun writeFrames(record:SessionRecord) {
-        val dao=db.sessions();val frames=record.frames;val lastStored=dao.lastFrameTimeMs(record.id)
-        val tail=if(lastStored==null) -1 else frames.indexOfLast {it.timeMs==lastStored}.let {if(it<0) -1 else it+1}
-        var seq=if(tail<0) 0 else (dao.lastFrameChunkSeq(record.id) ?: -1)+1
-        if(tail<0) dao.deleteFrameChunks(record.id) else dao.deleteFrameChunksBefore(record.id,frames.first().timeMs)
-        (if(tail<0) frames else frames.subList(tail,frames.size)).chunked(FRAME_CHUNK_SIZE).forEach {part->
-            dao.insertFrameChunk(FrameChunkEntity().also {it.sessionId=record.id;it.seq=seq++;it.lastTimeMs=part.last().timeMs;it.payload=gson.toJson(part)})
+    /** Adds [frames] after the last stored chunk. Runs inside a transaction. */
+    private fun appendChunks(id:String,frames:List<VehicleFrame>) {
+        val dao=db.sessions();var seq=(dao.lastFrameChunkSeq(id) ?: -1)+1
+        frames.chunked(FRAME_CHUNK_SIZE).forEach {part->
+            dao.insertFrameChunk(FrameChunkEntity().also {it.sessionId=id;it.seq=seq++;it.lastTimeMs=part.last().timeMs;it.payload=gson.toJson(part)})
         }
     }
-    /**
-     * A record with no frames leaves the stored frames untouched: copies taken from [records] never
-     * carry them. A non-empty list is appended when it continues the stored tail, otherwise it replaces it.
-     */
-    override suspend fun save(record:SessionRecord)=withContext(Dispatchers.IO) { mutex.withLock {
-        if(record.id in deletedIds) return@withLock
-        if((state.value.firstOrNull {it.id==record.id}?.revision ?: -1)>record.revision) return@withLock
-        persist(record)
+    private fun isStale(record:SessionRecord)=(state.value.firstOrNull {it.id==record.id}?.revision ?: -1)>record.revision
+    private fun publish(record:SessionRecord) {
         state.value=(state.value.filterNot {it.id==record.id}+record.copy(frames=emptyList())).sortedByDescending {it.createdAt}
+    }
+    override suspend fun save(record:SessionRecord)=withContext(Dispatchers.IO) { mutex.withLock {
+        if(record.id in deletedIds || isStale(record)) return@withLock
+        persist(record)
+        publish(record)
+    } }
+    override suspend fun append(record:SessionRecord,frames:List<VehicleFrame>,keepFromMs:Long?)=withContext(Dispatchers.IO) { mutex.withLock {
+        if(record.id in deletedIds) return@withLock
+        val stale=isStale(record)
+        db.runInTransaction {
+            appendChunks(record.id,frames)
+            keepFromMs?.let {db.sessions().deleteFrameChunksBefore(record.id,it)}
+            if(!stale) db.sessions().save(entity(record))
+        }
+        if(!stale) publish(record)
     } }
     override suspend fun delete(id:String)=withContext(Dispatchers.IO) { mutex.withLock {
         val record=state.value.firstOrNull { it.id==id }

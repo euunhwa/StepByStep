@@ -80,7 +80,7 @@ class ImmediateCoachFlowTest {
         // (the card still expires on its normal timer) so the UI assertions below see that card.
         var paused=false
         ui.waitUntil(30000) {(app.runtime.state.value.feedback?.type==ManeuverType.LEFT).also {left->
-            if(left && !paused) {paused=true;InstrumentationRegistry.getInstrumentation().runOnMainSync {app.runtime.pauseDemo()}}}}
+            if(left && !paused) {paused=true;InstrumentationRegistry.getInstrumentation().runOnMainSync {app.runtime.setDemoPaused(true)}}}}
         assertEquals(VoiceState.MUTED,app.runtime.state.value.feedback?.voiceState)
         val mini=ui.onAllNodesWithTag("mini-coach").fetchSemanticsNodes().isNotEmpty()
         ui.onNodeWithTag(if(mini) "mini-coach" else "live-feedback").assertExists();ui.onNodeWithText("좌회전 완료").assertExists()

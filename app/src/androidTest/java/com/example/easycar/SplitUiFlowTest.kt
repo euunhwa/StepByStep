@@ -59,7 +59,7 @@ class SplitUiFlowTest {
             }
             ui.runOnIdle {size.value=840 to 1000}
             ui.onNodeWithTag("start-coaching").performClick()
-            ui.waitUntil(15000) {app.runtime.state.value.running && (app.runtime.state.value.record?.frames?.size ?: 0)>10}
+            ui.waitUntil(15000) {app.runtime.state.value.running && (app.runtime.state.value.record?.progressIndex ?: 0)>10}
             val id=app.runtime.state.value.record!!.id
             assertNull(app.runtime.state.value.record!!.demoCaseId)
             for(dimensions in listOf(840 to 1000,600 to 480,1280 to 360)) {
@@ -79,7 +79,7 @@ class SplitUiFlowTest {
                 "menus" to listOf("홈","기록","설정"),"sameSessionAcrossResizes" to id,
                 "inputMode" to "VEHICLE_SERVICE","layoutProbe" to "COMPOSE_CONSTRAINED_AREA",
                 "demoCaseId" to app.runtime.state.value.record!!.demoCaseId,
-                "frames" to app.runtime.state.value.record!!.frames.size,
+                "frames" to app.runtime.state.value.record!!.progressIndex,
                 "sizes" to listOf("840x1000","600x480","1280x360","1280x900"))))
             ui.onNodeWithTag("end-drive").performClick()
             ui.waitUntil(15000) {!app.runtime.state.value.running}
