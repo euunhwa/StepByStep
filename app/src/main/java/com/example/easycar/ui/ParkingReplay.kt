@@ -1,6 +1,5 @@
 package com.example.easycar.ui
 
-import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -11,6 +10,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.drawWithCache
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
@@ -142,51 +142,57 @@ private fun speedColor(kph:Double?)=when {kph==null->Muted;kph<=SLOW_KPH->Mint;k
         path.poses.forEach {body(it.xM,it.yM,it.headingRad)}
         reference?.poses?.forEach {body(it.xM,it.yM,it.headingRad)}
         slots.firstOrNull()?.let {include(it.minX,it.minY);include(it.maxX,it.maxY)}
-        listOf(minX-1.0,maxX+1.0,minY-1.0,maxY+1.0)
+        SlotRect(minX-1.0,maxX+1.0,minY-1.0,maxY+1.0)
     }
-    Canvas(Modifier.fillMaxWidth().height(480.dp).clip(RoundedCornerShape(16.dp)).background(Ink).testTag("parking-replay-canvas")) {
-        val now=time()
+    Spacer(Modifier.fillMaxWidth().height(480.dp).clip(RoundedCornerShape(16.dp)).background(Ink).testTag("parking-replay-canvas").drawWithCache {
         val (minX,maxX,minY,maxY)=bounds
         val scale=min(size.width/(maxX-minX),size.height/(maxY-minY)).toFloat()
         val ox=(size.width-((maxX-minX)*scale).toFloat())/2;val oy=(size.height-((maxY-minY)*scale).toFloat())/2
         fun o(x:Double,y:Double)=Offset(ox+((x-minX)*scale).toFloat(),size.height-oy-((y-minY)*scale).toFloat())
 
+        // Built once per size and inputs; only the played part of the trail, the cars and the guide change with time.
         // 1 m grid for a sense of scale.
-        var grid=floor(minX);while(grid<=maxX) {drawLine(PanelLight.copy(alpha=.45f),o(grid,minY),o(grid,maxY),1f);grid+=1.0}
-        grid=floor(minY);while(grid<=maxY) {drawLine(PanelLight.copy(alpha=.45f),o(minX,grid),o(maxX,grid),1f);grid+=1.0}
-
-        val dash=PathEffect.dashPathEffect(floatArrayOf(18f,12f))
-        slots.forEachIndexed {i,r->
-            val outline=Path().apply {moveTo(o(r.minX,r.minY));lineTo(o(r.maxX,r.minY));lineTo(o(r.maxX,r.maxY));lineTo(o(r.minX,r.maxY));close()}
-            drawPath(outline,if(i==0) Mint.copy(alpha=.7f) else Muted.copy(alpha=.35f),style=Stroke(2.dp.toPx(),pathEffect=dash))
+        val grid=Path().apply {
+            var g=floor(minX);while(g<=maxX) {moveTo(o(g,minY));lineTo(o(g,maxY));g+=1.0}
+            g=floor(minY);while(g<=maxY) {moveTo(o(minX,g));lineTo(o(maxX,g));g+=1.0}
         }
-        reference?.let {r->
-            val line=Path().apply {moveTo(o(r.poses[0].xM,r.poses[0].yM));for(i in 1 until r.poses.size) lineTo(o(r.poses[i].xM,r.poses[i].yM))}
-            drawPath(line,White.copy(alpha=.5f),style=Stroke(3.dp.toPx(),pathEffect=dash,cap=StrokeCap.Round))
-            drawCar(spec,r.reverseStart.xM,r.reverseStart.yM,r.reverseStart.headingRad,::o,White.copy(alpha=.2f),fill=false)
-            if(showModel) {
-                // The model car moves along the reference in step with the replay so the two can be compared.
-                val start=path.poses.first().timeMs;val span=(path.poses.last().timeMs-start).coerceAtLeast(1)
-                val m=r.poses[(((now-start).toDouble()/span).coerceIn(0.0,1.0)*(r.poses.size-1)).toInt()]
-                drawCar(spec,m.xM,m.yM,m.headingRad,::o,White.copy(alpha=.7f),fill=true,wheelRad=if(showGuide) atan(m.curvature*spec.wheelbaseM) else null)
+        val dash=PathEffect.dashPathEffect(floatArrayOf(18f,12f))
+        val slotOutlines=slots.map {r->Path().apply {moveTo(o(r.minX,r.minY));lineTo(o(r.maxX,r.minY));lineTo(o(r.maxX,r.maxY));lineTo(o(r.minX,r.maxY));close()}}
+        val referenceLine=reference?.let {r->Path().apply {moveTo(o(r.poses[0].xM,r.poses[0].yM));for(i in 1 until r.poses.size) lineTo(o(r.poses[i].xM,r.poses[i].yM))}}
+        val points=path.poses.map {o(it.xM,it.yM)}
+        val colors=path.poses.map {speedColor(it.speedMps?.times(3.6))}
+        val markers=path.events.mapNotNull {e->path.poseAt(e.timeMs)?.let {p->(if(e.kind==ReplayEventKind.REVERSE_TO_DRIVE) Amber else White) to o(p.xM,p.yM)}}
+        val trailWidth=4.dp.toPx();val markerRadius=6.dp.toPx()
+        onDrawBehind {
+            val now=time()
+            drawPath(grid,PanelLight.copy(alpha=.45f),style=Stroke(1f))
+            slotOutlines.forEachIndexed {i,outline->
+                drawPath(outline,if(i==0) Mint.copy(alpha=.7f) else Muted.copy(alpha=.35f),style=Stroke(2.dp.toPx(),pathEffect=dash))
+            }
+            reference?.let {r->
+                drawPath(referenceLine!!,White.copy(alpha=.5f),style=Stroke(3.dp.toPx(),pathEffect=dash,cap=StrokeCap.Round))
+                drawCar(spec,r.reverseStart.xM,r.reverseStart.yM,r.reverseStart.headingRad,::o,White.copy(alpha=.2f),fill=false)
+                if(showModel) {
+                    // The model car moves along the reference in step with the replay so the two can be compared.
+                    val start=path.poses.first().timeMs;val span=(path.poses.last().timeMs-start).coerceAtLeast(1)
+                    val m=r.poses[(((now-start).toDouble()/span).coerceIn(0.0,1.0)*(r.poses.size-1)).toInt()]
+                    drawCar(spec,m.xM,m.yM,m.headingRad,::o,White.copy(alpha=.7f),fill=true,wheelRad=if(showGuide) atan(m.curvature*spec.wheelbaseM) else null)
+                }
+            }
+            for(i in 1 until points.size) {
+                val b=path.poses[i]
+                if(b.afterGap) continue
+                drawLine(colors[i],points[i-1],points[i],trailWidth,StrokeCap.Round,alpha=if(b.timeMs<=now) 1f else .22f)
+            }
+            markers.forEach {(color,at)->drawCircle(color,markerRadius,at)}
+            path.poseAt(now)?.let {p->
+                val steering=path.steeringAt(now)
+                val reverse=when(p.gear) {Gear.DRIVE->false;Gear.REVERSE->true;else->null}
+                if(showGuide && steering!=null && reverse!=null) drawGuide(spec,p,spec.curvatureFor(steering),reverse,::o)
+                drawCar(spec,p.xM,p.yM,p.headingRad,::o,Mint,fill=true,wheelRad=if(showGuide) steering?.let {spec.roadWheelRad(it)} else null)
             }
         }
-        for(i in 1 until path.poses.size) {
-            val a=path.poses[i-1];val b=path.poses[i]
-            if(b.afterGap) continue
-            val color=speedColor(b.speedMps?.times(3.6)).copy(alpha=if(b.timeMs<=now) 1f else .22f)
-            drawLine(color,o(a.xM,a.yM),o(b.xM,b.yM),4.dp.toPx(),StrokeCap.Round)
-        }
-        path.events.forEach {e->
-            path.poseAt(e.timeMs)?.let {p->drawCircle(if(e.kind==ReplayEventKind.REVERSE_TO_DRIVE) Amber else White,6.dp.toPx(),o(p.xM,p.yM))}
-        }
-        path.poseAt(now)?.let {p->
-            val steering=path.steeringAt(now)
-            val reverse=when(p.gear) {Gear.DRIVE->false;Gear.REVERSE->true;else->null}
-            if(showGuide && steering!=null && reverse!=null) drawGuide(spec,p,spec.curvatureFor(steering),reverse,::o)
-            drawCar(spec,p.xM,p.yM,p.headingRad,::o,Mint,fill=true,wheelRad=if(showGuide) steering?.let {spec.roadWheelRad(it)} else null)
-        }
-    }
+    })
 }
 
 /** Body outline around the rear-axle centre; the front edge is drawn brighter to show which way the car faces. */
