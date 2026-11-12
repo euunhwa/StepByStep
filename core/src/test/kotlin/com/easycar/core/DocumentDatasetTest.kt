@@ -18,7 +18,7 @@ class DocumentDatasetTest {
     private fun engine()=CoachEngine(profile,context,evaluationPolicy=policy)
     @Test fun strictVersionedPairHasNoLegacyArbitraryFallback() {
         assertTrue(policy.budgets.isEmpty());assertTrue(policy.provisionalLimits.isEmpty());assertFalse(policy.realWorldScoringEnabled)
-        assertEquals("recognition-document-1.0.2",data.recognitionVersion)
+        assertEquals("recognition-document-1.0.3",data.recognitionVersion)
         assertTrue(runCatching {CoachEngine(profile,context)}.isFailure)
         assertTrue(runCatching {DocumentDataset.fromJson(recognition.replace("\"yawBumpRadps\"","\"typo\""),evaluation)}.isFailure)
         assertTrue(runCatching {DocumentDataset.fromJson(recognition,evaluation.replace("\"expertValidated\": false","\"expertValidated\": true"))}.isFailure)

@@ -52,6 +52,17 @@ class FrameChunkStorageTest {
         assertEquals(frames(100..449),b.frames("chunk-test"));b.close()
     }
 
+    @Test fun aWindowedReadReturnsExactlyTheFramesInTheWindow()=withDb {name->
+        val a=AppRepository(context,name)
+        // Chunks: seq0=0..299, seq1=300..599, seq2=600..899, seq3=900..949.
+        a.append(record(1),frames(0..899));a.append(record(2),frames(900..949))
+        assertEquals(frames(250..650),a.frames("chunk-test",250*100L,650*100L))
+        assertEquals(frames(299..300),a.frames("chunk-test",299*100L,300*100L))
+        assertEquals(frames(920..949),a.frames("chunk-test",920*100L,99_999_999L))
+        assertTrue(a.frames("chunk-test",100_000L,200_000L).isEmpty())
+        a.close()
+    }
+
     @Test fun aStaleRecordKeepsTheNewerPayloadButStillAppendsItsFrames()=withDb {name->
         val a=AppRepository(context,name)
         a.append(record(5),frames(0..9))

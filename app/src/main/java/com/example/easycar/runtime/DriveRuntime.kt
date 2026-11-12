@@ -123,8 +123,11 @@ class DriveRuntime(private val app:EasyCarApplication) {
         }
     }
     private suspend fun replay(id:String,speed:Int,resumeId:String?) {
-        val c=if(id=="auto-drive") DocumentDemoCatalog.automaticDrive else DemoCatalog.case(id)
-        val frames=runCatching {app.assets.open(if(id=="auto-drive") "datasets/document-v1/auto-drive.json" else "demo/signals/$id.json").bufferedReader().use {Gson().fromJson(it,Array<VehicleFrame>::class.java).toList()}}.getOrElse {c.frames}
+        val document=DocumentDemoCatalog.case(id)
+        val c=document ?: DemoCatalog.case(id)
+        // auto-drive and the legacy demos have exported fixtures; other document demos are generated in code.
+        val asset=when {id=="auto-drive"->"datasets/document-v1/auto-drive.json";document!=null->null;else->"demo/signals/$id.json"}
+        val frames=asset?.let {a->runCatching {app.assets.open(a).bufferedReader().use {Gson().fromJson(it,Array<VehicleFrame>::class.java).toList()}}.getOrNull()} ?: c.frames
         val old=app.repository.records.value.firstOrNull {it.id==resumeId && it.demoCaseId==id}
         require(old==null || old.profileVersion==app.profile.version) {"이전 평가 버전의 기록은 복기만 가능해요. 새 코칭을 시작해 주세요."}
         val e=CoachEngine(app.profile,c.context,evaluationPolicy=app.evaluationPolicy);engine=e
@@ -137,7 +140,7 @@ class DriveRuntime(private val app:EasyCarApplication) {
             videoSync=if(c.videoAngle!=null) VideoSync(0,4000,frames.first().timeMs,frames.last().timeMs) else null,
             calibration=if(c.videoAngle!=null) SyntheticParkingFrames.calibration else null,practiceContext=c.context))
         frames.take(begin).forEach {e.accept(it)}
-        mutable.value=mutable.value.copy(running=true,stage="일곱 동작을 자동으로 관측하고 있어요")
+        mutable.value=mutable.value.copy(running=true,stage=if(c.group=="주차") "주차 동작을 관측하고 있어요" else "일곱 동작을 자동으로 관측하고 있어요")
         for(i in begin until frames.size) {
             while(mutable.value.paused) {delay(100)}
             val frame=frames[i]

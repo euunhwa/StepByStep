@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "recognition-document-1.0.2",
+  "id": "recognition-document-1.0.3",
   "sourceSha256": "97b5e83658d26483efd9cb261542e50ac75306d0474b14f5e7474a1d48a9211e",
   "validationStatus": "DOCUMENT_DERIVED_DRAFT",
   "expertValidated": false,
@@ -25,6 +25,7 @@
     "yawMinimumMs": 1500,
     "yawQuietMs": 500,
     "turnPauseMaxMs": 10000,
+    "turnParkingHoldMs": 8000,
     "turnTimeoutMs": 30000,
     "turnMinDeg": 60.0,
     "turnMaxDeg": 120.0,

@@ -1,21 +1,15 @@
 package com.easycar.core
 
-import java.io.File
 import kotlin.math.PI
 import org.junit.Assert.*
 import org.junit.Test
 
 /** recognition-document-1.0.2: turns paused by slowing, and leaving a parking space. */
 class TurnPauseAndDepartureTest {
-    private val assets=File("../app/src/main/assets")
-    private val profile=ReferenceProfile.fromJson(File(assets,"profiles/document-derived-v1.json").readText())
-    private val policy=EvaluationPolicy.fromDocumentJson(
-        File(assets,"datasets/document-v1/recognition.json").readText(),
-        File(assets,"datasets/document-v1/evaluation.json").readText())
     private val yaw90=(PI/2)/6.0 // 90° over 6 s
 
     private inner class Drive {
-        val engine=CoachEngine(profile,PracticeContext(null,null,dataSource="TURN_PAUSE_TEST"),evaluationPolicy=policy)
+        val engine=DocumentFixtures.engine(PracticeContext(null,null,dataSource="TURN_PAUSE_TEST"))
         var t=0L;private set
         /** Each sample is 100 ms; [at] maps seconds into the segment to (speed, steering, yaw). */
         fun seg(seconds:Double,gear:Gear,at:(Double)->Triple<Double,Double,Double>) {

@@ -19,20 +19,16 @@ class VoiceCoordinator(
     /** The receipt our engine is speaking, or was last asked to speak. */
     var activeVoiceId:String?=null;private set
     private var speechWasStarted=false
-    private var interruptedVoice=false
     val phase:SpeechPhase? get()=speech?.status?.value?.phase
 
     /** Applies one engine status. Returns true when it concerned an active receipt. */
     fun onStatus(status:SpeechStatus):Boolean {
         val id=activeVoiceId ?: return false
         when(status.phase) {
-            SpeechPhase.INTERRUPTED->{feedbacks.interrupted(id);activeVoiceId=null;speechWasStarted=false}
+            SpeechPhase.INTERRUPTED->{feedbacks.interrupted(id);activeVoiceId=null}
             SpeechPhase.SPEAKING->{speechWasStarted=true;feedbacks.started(id)}
-            SpeechPhase.FAILED->{feedbacks.finished(id,true);activeVoiceId=null;speechWasStarted=false}
-            SpeechPhase.READY->if(speechWasStarted) {
-                if(!interruptedVoice) feedbacks.finished(id)
-                activeVoiceId=null;speechWasStarted=false;interruptedVoice=false
-            }
+            SpeechPhase.FAILED->{feedbacks.finished(id,true);activeVoiceId=null}
+            SpeechPhase.READY->if(speechWasStarted) {feedbacks.finished(id);activeVoiceId=null}
             SpeechPhase.INITIALIZING->{}
         }
         return true
@@ -47,14 +43,12 @@ class VoiceCoordinator(
         val ownSpeech=activeVoiceId!=null
         val availability=audio(ownSpeech)
         val conditions=guidanceConditions(motion,if(simulatedBusy) false else availability.idle,muted,yawThresholdRadps=yawThresholdRadps)
-        if(ownSpeech && (conditions.reversingOrTurning || availability.idle==false || simulatedBusy)) {
-            activeVoiceId?.let {feedbacks.interrupted(it)};interruptedVoice=true;speech?.stop();activeVoiceId=null;speechWasStarted=false
-        }
+        if(ownSpeech && (conditions.reversingOrTurning || availability.idle==false || simulatedBusy)) interrupt()
         val accepted=feedbacks.process(conditions,activeVoiceId!=null,if(simulatedBusy) "우선 오디오 시험 상태 · 종료 후 안내" else availability.reason,expirePending=!demo) {r->
             val ready=phase.let {it==SpeechPhase.READY || it==SpeechPhase.INTERRUPTED}
             ready && speech?.speak(r.resultId,r.voiceText ?: r.text)==true
         }
-        if(accepted!=null) {activeVoiceId=accepted.resultId;speechWasStarted=false;interruptedVoice=false}
+        if(accepted!=null) {activeVoiceId=accepted.resultId;speechWasStarted=false}
     }
 
     /** True when a demo may hold playback for speech: the car is stopped or straight, not turning or reversing. */
