@@ -10,7 +10,7 @@ data class DocumentRecognition(
     val stoppedMps:Double,val idleWindowMs:Long,val idleStdMaxMps:Double,val movingMps:Double,
     val preRollMs:Long,val startWindowMs:Long,val stopWindowMs:Long,val stopCandidateMps2:Double,val stopArmMps:Double,
     val yawMeanWindowMs:Long,val yawBumpRadps:Double,val yawPeakRadps:Double,val yawMinimumMs:Long,
-    val yawQuietMs:Long,val turnTimeoutMs:Long,val turnMinDeg:Double,val turnMaxDeg:Double,
+    val yawQuietMs:Long,val turnPauseMaxMs:Long,val turnParkingHoldMs:Long,val turnTimeoutMs:Long,val turnMinDeg:Double,val turnMaxDeg:Double,
     val uTurnMinDeg:Double,val uTurnMaxDeg:Double,val harshRunMs:Long,
     val harshStartMaxKph:Double,val harshStartMps2:Double,val harshAccelerationMinKph:Double,
     val harshAccelerationMps2:Double,val harshDecelerationMps2:Double,val harshStopMaxKph:Double,
@@ -46,6 +46,7 @@ data class DocumentDataset(val recognitionVersion:String,val evaluationVersion:S
             val r=parse(a,DocumentRecognition::class.java);val e=parse(b,DocumentEvaluation::class.java)
             require(r.minimumCoverage in .9..1.0 && r.turnMinDeg<r.turnMaxDeg && r.turnMaxDeg<r.uTurnMinDeg && r.uTurnMaxDeg<=220)
             require(r.resamplePeriodMs==100L && r.derivativeWarmupMs>=200)
+            require(r.turnPauseMaxMs<r.turnTimeoutMs && r.turnParkingHoldMs in 2000..20000)
             require(r.yawBumpRadps<r.yawPeakRadps && r.maxSampleGapMs<=200 && r.idleWindowMs in 4000..5000 && r.harshRunMs>=600)
             require(r.parkingSpeedEpsilonMps<=0.00001)
             require(r.parkingTMinDeg<r.parkingTMaxDeg && r.parkingParallelMaxDeg<r.parkingTMinDeg)

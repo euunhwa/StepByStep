@@ -34,7 +34,8 @@ import kotlin.math.abs
 
 @Composable fun VideoReview(
     record:SessionRecord,onBack:()->Unit,restricted:Boolean,onImportCalibration:(Long)->Unit,
-    onSelectTarget:(Double,Long)->Unit,analyzing:Boolean=false,onAnalyzeWindow:(Long)->Unit={},onClearTarget:(Long)->Unit={}
+    onSelectTarget:(Double,Long)->Unit,analyzing:Boolean=false,onAnalyzeWindow:(Long)->Unit={},onClearTarget:(Long)->Unit={},
+    loadFrames:suspend (String)->List<VehicleFrame> = {emptyList()}
 ) {
     val context=LocalContext.current
     val file=remember(record.id,record.videoFile,record.videoAsset) {
@@ -52,9 +53,9 @@ import kotlin.math.abs
     val synthetic=record.parkingCapture?.inputSource=="SYNTHETIC_REPLAY" || (record.videoFile==null && record.videoAsset?.startsWith("demo/video/")==true)
     val calibration=record.calibration
     val signalTime=record.videoSync?.signalTime(position)
-    val frame=remember(record.id,signalTime) {
-        signalTime?.let {t->record.frames.minByOrNull {abs(it.timeMs-t)}?.takeIf {abs(it.timeMs-t)<=1000}}
-    }
+    // Stored records carry no frames in memory; read this session's frames once when the screen opens.
+    val frames by produceState(record.frames,record.id) {if(value.isEmpty()) value=loadFrames(record.id)}
+    val frame=remember(record.id,signalTime,frames) {signalTime?.let {t->nearestFrame(frames,t)}}
     DisposableEffect(record.id) {onDispose {player?.stopPlayback()}}
     LaunchedEffect(playing) {
         while(playing) {position=(player?.currentPosition?.toLong() ?: position).coerceIn(0,duration-1);delay(200)}
@@ -179,4 +180,10 @@ import kotlin.math.abs
             else Row(horizontalArrangement=Arrangement.spacedBy(20.dp)) {videoPane(Modifier.weight(1.2f));observations(Modifier.weight(1f))}
         }
     }
+}
+
+/** Frames are time-ordered: binary-search the insertion point and keep the closer neighbour within 1 s. */
+internal fun nearestFrame(frames:List<VehicleFrame>,timeMs:Long):VehicleFrame? {
+    val i=frames.binarySearchBy(timeMs) {it.timeMs}.let {if(it>=0) it else -it-1}
+    return listOfNotNull(frames.getOrNull(i-1),frames.getOrNull(i)).minByOrNull {abs(it.timeMs-timeMs)}?.takeIf {abs(it.timeMs-timeMs)<=1000}
 }

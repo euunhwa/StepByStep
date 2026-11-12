@@ -26,6 +26,9 @@ class EasyCarViewModel(application:Application):AndroidViewModel(application) {
     val profile=app.profile
     val evaluationPolicy=app.evaluationPolicy
     val message=MutableStateFlow<String?>(null)
+    fun claimFinishedReport(id:String)=app.runtime.claimFinishedReport(id)
+    suspend fun frames(id:String)=app.repository.frames(id)
+    suspend fun frames(id:String,fromMs:Long,toMs:Long)=app.repository.frames(id,fromMs,toMs)
     init { viewModelScope.launch { settings.filter { it.consent }.collect { app.repository.prune(it.retentionDays) } } }
     fun updateSettings(s:UserSettings) { viewModelScope.launch { app.repository.updateSettings(s) } }
     fun selectGleoRecord(id:String?) { viewModelScope.launch {
@@ -41,6 +44,7 @@ class EasyCarViewModel(application:Application):AndroidViewModel(application) {
         startLive()
     }
     fun startSubmissionDemo()=startDemo("auto-drive")
+    fun startParkingDemo(id:String)=startDemo(id)
     private fun startLive() {
         if(!allowed()) return
         runCatching { ContextCompat.startForegroundService(app,Intent(app,CoachingService::class.java)) }.onFailure { message.value="차량 코칭을 시작하지 못했어요: ${it.message}" }
@@ -51,7 +55,7 @@ class EasyCarViewModel(application:Application):AndroidViewModel(application) {
         return !drive.value.running
     }
     fun stop() { app.startService(Intent(app,CoachingService::class.java).setAction("stop")) }
-    fun pauseDemo() {app.startService(Intent(app,CoachingService::class.java).setAction("pause"))}
+    fun setDemoPaused(paused:Boolean) {app.startService(Intent(app,CoachingService::class.java).setAction("pause").putExtra("paused",paused))}
     fun cancel() {app.startService(Intent(app,CoachingService::class.java).setAction("cancel"))}
     fun retryVehicle() { if(!drive.value.running) { app.bridge.stop();app.bridge.start() } }
     fun delete(id:String) { viewModelScope.launch { app.repository.delete(id) } }

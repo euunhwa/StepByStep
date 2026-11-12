@@ -50,16 +50,17 @@ val Amber=Color(0xffffd28a)
     var selectedId by rememberSaveable { mutableStateOf<String?>(null) }
     var calibrationPositionMs by rememberSaveable { mutableStateOf<Long?>(null) }
     var detailId by rememberSaveable { mutableStateOf<String?>(null) }
-    var lastFinished by rememberSaveable { mutableStateOf<String?>(null) }
     LaunchedEffect(Unit) {if(page !in setOf("home","records","settings","report","video","record-query")) page="home"}
     val selected=records.firstOrNull { it.id==selectedId }
+    // A detail id that is not in the selected record falls through to that record's report.
+    val detail=selected?.results?.firstOrNull { it.id==detailId }
     val filePicker=rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { it?.let(model::importVideo) }
     val calibrationPicker=rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri->selectedId?.let {id->uri?.let {model.attachCalibration(id,it,calibrationPositionMs)}} }
     val notifications=rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) {}
     val permissions=rememberLauncherForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { model.retryVehicle() }
     LaunchedEffect(drive.error) { drive.error?.let { model.message.value=it } }
-    LaunchedEffect(voice,drive.running) { if(!drive.running && listOf("없음","오류","실패","응답 지연").any {voice.contains(it)}) model.message.value=voice }
-    LaunchedEffect(drive.finishedId) { drive.finishedId?.let { if(it!=lastFinished) { lastFinished=it;selectedId=it;page="report" } } }
+    LaunchedEffect(voice,drive.running) { if(!drive.running && voice.phase==SpeechPhase.FAILED) model.message.value=voice.text }
+    LaunchedEffect(drive.finishedId) { drive.finishedId?.let { if(model.claimFinishedReport(it)) { selectedId=it;detailId=null;page="report" } } }
     val locked=!platform.ux.allowsReview() || drive.simulatedRestriction
     MaterialTheme(colorScheme=darkColorScheme(primary=Mint,onPrimary=Ink,background=Ink,surface=Panel,onSurface=White,onBackground=White,secondary=Mint,outline=Muted),typography=Typography()) {
         Surface(Modifier.fillMaxSize(),color=Ink) {
@@ -68,7 +69,7 @@ val Amber=Color(0xffffd28a)
                 val roomyHeader=maxWidth>=1000.dp
                 val showConnectionBadge=maxWidth>=900.dp
                 if(smallWindow.active || smallWindow.entering || (compactWindow && (drive.running || locked))) {
-                    MiniCoachScreen(drive,smallWindow.active || smallWindow.entering,model::stop,model.evaluationPolicy.datasetNotice,locked,model::pauseDemo)
+                    MiniCoachScreen(drive,smallWindow.active || smallWindow.entering,model::stop,model.evaluationPolicy.datasetNotice,locked,{model.setDemoPaused(!drive.paused)})
                 } else {
             Row(Modifier.fillMaxSize().windowInsetsPadding(WindowInsets.safeDrawing)) {
                 if(!compactWindow) MainNavigation(page,drive.running || locked) { page=it;detailId=null }
@@ -77,22 +78,23 @@ val Amber=Color(0xffffd28a)
                         Text("EasyCar",fontSize=28.sp,fontWeight=FontWeight.Bold,color=Mint)
                         if(roomyHeader) Text("  /  차근차근, 나의 운전",fontSize=16.sp,color=Muted)
                         Spacer(Modifier.weight(1f))
-                        if(showConnectionBadge) Badge(if(drive.running) "●  자동 코칭 중" else if(locked) "주행 제한" else if(platform.connection.contains("연결됨")) "차량 연결됨" else "연결 확인",if(locked) Amber else Mint)
-                        if(!drive.running && !locked && settings.consent) {Spacer(Modifier.width(12.dp));Action("데모",Modifier.testTag("start-submission-demo"),secondary=true,onClick=model::startSubmissionDemo)}
+                        if(showConnectionBadge) Badge(if(drive.running) "●  자동 코칭 중" else if(locked) "주행 제한" else if(platform.vehicleConnected) "차량 연결됨" else "연결 확인",if(locked) Amber else Mint)
+                        if(!drive.running && !locked && settings.consent) {Spacer(Modifier.width(12.dp));Action("T자 데모",Modifier.testTag("start-t-park-demo"),secondary=true) {model.startParkingDemo("park-beginner")};Spacer(Modifier.width(12.dp))
+                            Action("평행 데모",Modifier.testTag("start-parallel-park-demo"),secondary=true) {model.startParkingDemo("park-parallel")};Spacer(Modifier.width(12.dp));Action("데모",Modifier.testTag("start-submission-demo"),secondary=true,onClick=model::startSubmissionDemo)}
                     }
                     if(compactWindow) {Spacer(Modifier.height(12.dp));MainNavigation(page,false,compact=true) {page=it;detailId=null}}
                     Spacer(Modifier.height(if(compactWindow) 16.dp else 26.dp))
                     Box(Modifier.weight(1f).fillMaxWidth()) {
                         when {
-                            drive.running || locked -> DriveScreen(drive,locked,platform,model::stop,model::retryVehicle,voice,model::pauseDemo,{onMinimize()},smallWindow)
+                            drive.running || locked -> DriveScreen(drive,locked,platform,model::stop,model::retryVehicle,voice.text,{model.setDemoPaused(!drive.paused)},{onMinimize()},smallWindow)
                             !settings.consent -> Welcome { model.updateSettings(settings.copy(consent=true));if(android.os.Build.VERSION.SDK_INT>=33) notifications.launch(Manifest.permission.POST_NOTIFICATIONS) }
                             page=="home" && compactWindow -> SplitHomeScreen(platform,model::startCoaching,model::retryVehicle)
                             page=="home" -> HomeScreen(records,platform,model.liveFrame,model::startCoaching) { selectedId=it;page="report" }
-                            page=="report" && selected!=null && detailId!=null -> selected.results.firstOrNull { it.id==detailId }?.let { DetailScreen(it,{ detailId=null },model::speakCoaching) }
+                            page=="report" && selected!=null && detail!=null -> DetailScreen(detail,{ detailId=null },model::speakCoaching) {from,to->model.frames(selected.id,from,to)}
                             page=="record-query" && selected!=null -> RecordQueryScreen(selected,locked,{page="report"},{json->model.queryLocalRecord(selected.id,json)},model::speak,
                                 gleoSelected=settings.gleoSessionId==selected.id,onGleoSelection=if(BuildConfig.FLAVOR=="pleos") ({enabled->model.selectGleoRecord(if(enabled) selected.id else null)}) else null)
                             page=="report" && selected!=null -> ReportScreen(selected,{ detailId=it },{ page="video" },{ page="home" },model::speak,{ model.delete(selected.id);selectedId=null;page="records" },{ selected.demoCaseId?.let { model.startDemo(it,1,selected.id) } },{page="record-query"})
-                            page=="video" && selected!=null -> VideoReview(selected,{ page="report" },locked,{position->calibrationPositionMs=position;calibrationPicker.launch(arrayOf("application/json","text/*","application/octet-stream"))},{ratio,position->model.selectParkingTarget(selected.id,ratio,position)},videoAnalyzing,{position->model.analyzeVideoWindow(selected.id,position)},{position->model.clearParkingTarget(selected.id,position)})
+                            page=="video" && selected!=null -> VideoReview(selected,{ page="report" },locked,{position->calibrationPositionMs=position;calibrationPicker.launch(arrayOf("application/json","text/*","application/octet-stream"))},{ratio,position->model.selectParkingTarget(selected.id,ratio,position)},videoAnalyzing,{position->model.analyzeVideoWindow(selected.id,position)},{position->model.clearParkingTarget(selected.id,position)},loadFrames=model::frames)
                             page=="records" || page=="report" -> RecordsScreen(records,{ selectedId=it;page="report" },{ filePicker.launch(arrayOf("video/*")) },{name->model.createVideoExample(name) {id->selectedId=id;page="video"}})
                             page=="settings" -> SettingsScreen(settings,platform,model::updateSettings,model::deleteAll,model::retryVehicle,{ permissions.launch(arrayOf("android.car.permission.CAR_SPEED","pleos.car.permission.CAR_DRIVE","pleos.car.permission.FUSED_LOCATION","pleos.car.permission.TTS_SERVICE")) },{model.selectGleoRecord(null)})
                             else -> HomeScreen(records,platform,model.liveFrame,model::startCoaching) { selectedId=it;page="report" }
@@ -289,7 +291,9 @@ fun dateText(time:Long)=SimpleDateFormat("M월 d일  HH:mm",Locale.KOREA).format
     }
     if(deleteDialog) AlertDialog(onDismissRequest={deleteDialog=false},title={Text("연습 기록을 삭제할까요?")},text={Text("이 연습의 기록과 함께 저장된 사용자 영상이 기기에서 삭제돼요.")},confirmButton={TextButton(onClick={deleteDialog=false;onDelete()}) {Text("삭제")}},dismissButton={TextButton(onClick={deleteDialog=false}) {Text("취소")}})
 }
-@Composable private fun DetailScreen(r:ManeuverResult,onBack:()->Unit,onSpeak:(ManeuverResult)->Unit) {
+@Composable private fun DetailScreen(r:ManeuverResult,onBack:()->Unit,onSpeak:(ManeuverResult)->Unit,loadFrames:suspend (fromMs:Long,toMs:Long)->List<VehicleFrame>) {
+    // Read only this manoeuvre's window; a session can hold up to an hour of frames.
+    val frames by produceState(emptyList<VehicleFrame>(),r.id) {if(isParking(r.type)) value=loadFrames(r.startMs,r.endMs)}
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).testTag("user-maneuver-detail")) {
         Row(verticalAlignment=Alignment.CenterVertically) {
             Action("← 연습 요약",secondary=true,onClick=onBack)
@@ -310,6 +314,7 @@ fun dateText(time:Long)=SimpleDateFormat("M월 d일  HH:mm",Locale.KOREA).format
             }
         }
         Spacer(Modifier.height(18.dp))
+        if(isParking(r.type)) ParkingReplayCard(r,frames)
         CardPanel(Modifier.fillMaxWidth()) {
             Text("연습 정보",fontSize=23.sp,fontWeight=FontWeight.Bold)
             r.measurements["maxSpeedMps"]?.takeIf {it.isFinite()}?.let {speed->
@@ -337,7 +342,7 @@ private fun userNoticeText(raw:String):String {
     return "지금은 작업을 완료하지 못했어요. 잠시 후 다시 시도해 주세요."
 }
 
-private fun userGear(gear:Gear?):String=when(gear) {
+fun userGear(gear:Gear?):String=when(gear) {
     Gear.PARK->"P";Gear.REVERSE->"R";Gear.NEUTRAL->"N";Gear.DRIVE->"D";else->"—"
 }
 

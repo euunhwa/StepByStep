@@ -1,6 +1,6 @@
 # 실행 검증 기록 · EasyCar v0.2.0
 
-확인일: **2026-11-05, Asia/Seoul**. 사용자 지정 디렉터리 `/Users/genius/AndroidStudioProjects/EasyCar`에서 생성한 APK를 설치해 검사했습니다. 합성 데모/에뮬레이터의 구현 검증이며 실차 평가 정확도나 차량 앱 배포 승인이 아닙니다.
+확인일: **2026-11-05, Asia/Seoul**. 사용자 지정 디렉터리 `/Users/<user>/AndroidStudioProjects/EasyCar`에서 생성한 APK를 설치해 검사했습니다. 합성 데모/에뮬레이터의 구현 검증이며 실차 평가 정확도나 차량 앱 배포 승인이 아닙니다.
 
 ## 최종 결과
 

@@ -207,7 +207,7 @@
             },
             "originalUriBaseIds": {
                 "%SRCROOT%": {
-                    "uri": "file:///Users/genius/AndroidStudioProjects/EasyCar/"
+                    "uri": "file:///Users/<user>/AndroidStudioProjects/EasyCar/"
                 }
             },
             "results": [

@@ -1,6 +1,6 @@
 # 데이터셋 관리
 
-2026-11-07 · 앱0.13.2 · 인식 recognition-document-1.0.1 / 평가 evaluation-document-1.0 / 프로필 document-derived-1.0.
+2026-11-09 · 앱0.13.2 · 인식 recognition-document-1.0.2 / 평가 evaluation-document-1.0 / 프로필 document-derived-1.0.
 
 | 종류 | 활성 실행 설정 | 관리 문서 | 검증 데이터 |
 |---|---|---|---|

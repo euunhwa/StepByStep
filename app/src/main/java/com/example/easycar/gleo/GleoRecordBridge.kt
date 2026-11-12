@@ -32,7 +32,7 @@ object GleoContract {
     fun available(context:Context):Boolean = try {
         val pm=context.packageManager
         @Suppress("DEPRECATION") val permission=pm.getPermissionInfo(CALLER_PERMISSION,0)
-        permission.packageName==PACKAGE && permission.protectionLevel and PermissionInfo.PROTECTION_MASK_BASE==PermissionInfo.PROTECTION_SIGNATURE &&
+        permission.packageName==PACKAGE && permission.protection==PermissionInfo.PROTECTION_SIGNATURE &&
             pm.checkPermission(CALLER_PERMISSION,PACKAGE)==PackageManager.PERMISSION_GRANTED
     } catch(_:Exception) {false}
 

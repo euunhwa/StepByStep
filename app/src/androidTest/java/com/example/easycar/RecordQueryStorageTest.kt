@@ -35,7 +35,8 @@ class RecordQueryStorageTest {
             assertEquals(4,response.result!!.reverseToDriveCount);assertEquals(15,response.result!!.appliedDeductionTotal)
             val callback=RecordQueryProtocol.callbackPreview(response)
             assertFalse(callback.contains("RAW_SIGNAL_NOT_FOR_CALLBACK"));assertFalse(callback.contains("not-a-real-private-video"))
-            assertEquals(before,Gson().toJson(second.records.value.single()))
+            assertEquals(Gson().toJson(saved.copy(frames=emptyList())),Gson().toJson(second.records.value.single()))
+            assertEquals(before,Gson().toJson(second.records.value.single().copy(frames=second.frames(saved.id))))
             File(app.filesDir,"validation-gleo-query-storage-v011.json").writeText(Gson().toJson(mapOf("storedRecordUnchanged" to true,"query" to response,"callbackPreview" to JsonParser.parseString(callback))))
         } finally {second.close();app.deleteDatabase(name)}
     }
@@ -66,7 +67,7 @@ class RecordQueryStorageTest {
             assertEquals(RecordQueryStatus.HELD,held.status);assertNull(held.result!!.score)
             val history=gateway.execute(RecordQueryProtocol.request(RecordQueryAction.EXPLAIN_RESULT,old.id,legacy.id),access(old.id))
             assertEquals(100,history.result!!.score);assertTrue(history.result!!.historical);assertNull(history.result!!.evaluationPolicyVersion)
-            assertEquals(old,repository.records.value.single())
+            assertEquals(old.copy(frames=emptyList()),repository.records.value.single());assertEquals(old.frames,repository.frames(old.id))
         } finally {repository.close();app.deleteDatabase(name)}
     }
 }

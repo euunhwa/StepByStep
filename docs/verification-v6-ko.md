@@ -1,6 +1,6 @@
 # EasyCar0.6.0 · 평가 완화와 다음 동작 대기 검증
 
-확인일 2026-11-06 / Asia·Seoul. 실제 프로젝트 `/Users/genius/AndroidStudioProjects/EasyCar`에서 빌드 후 Pleos Connect v2.1.0 한 대에 설치했다. CPU2코어·RAM3GB를 사용했고 Gradle과 에뮬레이터를 동시에 실행하지 않았다.
+확인일 2026-11-06 / Asia·Seoul. 실제 프로젝트 `/Users/<user>/AndroidStudioProjects/EasyCar`에서 빌드 후 Pleos Connect v2.1.0 한 대에 설치했다. CPU2코어·RAM3GB를 사용했고 Gradle과 에뮬레이터를 동시에 실행하지 않았다.
 
 ## 변경 사항
 

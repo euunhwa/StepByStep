@@ -26,7 +26,7 @@ class CoachingService:Service() {
     }
     override fun onStartCommand(intent:Intent?,flags:Int,startId:Int):Int {
         if(intent?.action in setOf("stop","cancel")) { scope.launch { app.runtime.stop(intent?.action=="cancel");stopSelf(startId) };return START_NOT_STICKY }
-        if(intent?.action=="pause") {app.runtime.pauseDemo();return START_NOT_STICKY}
+        if(intent?.action=="pause") {app.runtime.setDemoPaused(intent.getBooleanExtra("paused",true));return START_NOT_STICKY}
         if(app.runtime.state.value.running) return START_NOT_STICKY
         val nm=getSystemService(NotificationManager::class.java)
         nm.createNotificationChannel(NotificationChannel("coaching","EasyCar 코칭",NotificationManager.IMPORTANCE_LOW))

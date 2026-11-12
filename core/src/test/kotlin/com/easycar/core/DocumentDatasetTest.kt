@@ -18,7 +18,7 @@ class DocumentDatasetTest {
     private fun engine()=CoachEngine(profile,context,evaluationPolicy=policy)
     @Test fun strictVersionedPairHasNoLegacyArbitraryFallback() {
         assertTrue(policy.budgets.isEmpty());assertTrue(policy.provisionalLimits.isEmpty());assertFalse(policy.realWorldScoringEnabled)
-        assertEquals("recognition-document-1.0.1",data.recognitionVersion)
+        assertEquals("recognition-document-1.0.3",data.recognitionVersion)
         assertTrue(runCatching {CoachEngine(profile,context)}.isFailure)
         assertTrue(runCatching {DocumentDataset.fromJson(recognition.replace("\"yawBumpRadps\"","\"typo\""),evaluation)}.isFailure)
         assertTrue(runCatching {DocumentDataset.fromJson(recognition,evaluation.replace("\"expertValidated\": false","\"expertValidated\": true"))}.isFailure)
@@ -100,7 +100,8 @@ class DocumentDatasetTest {
         assertTrue(e.results.none {it.type in setOf(ManeuverType.LEFT,ManeuverType.RIGHT,ManeuverType.U_TURN)})
         assertTrue(e.results.all {it.evaluationPolicyVersion=="evaluation-document-1.0"})
         assertTrue(e.results.none {r->r.holdReasons.any {it.contains("속도·기어 신호 공백")}})
-        File("../docs/validation/document-v9-real-recording-replay.json").writeText(Gson().toJson(e.results))
+        // Replay output is a build artifact; writing it under docs/ dirtied a tracked file on every run.
+        File("build/document-replay").apply {mkdirs()}.resolve("real-recording-replay.json").writeText(Gson().toJson(e.results))
     }
     @Test fun onChangeGear500msPollingDoesNotExpireAt300ms() {
         val base=DocumentDemoCatalog.automaticDrive.frames.take(160)

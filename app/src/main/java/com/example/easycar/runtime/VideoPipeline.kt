@@ -25,7 +25,7 @@ class LocalVideoInput(private val context:Context):VideoInput {
         return f
     }
     override fun finalFrame(record:SessionRecord):PixelFrame? {
-        val time=record.results.lastOrNull {isParking(it.type)}?.endMs ?: record.frames.lastOrNull()?.timeMs
+        val time=record.results.lastOrNull {isParking(it.type)}?.endMs ?: record.frames.lastOrNull()?.timeMs ?: record.videoSync?.signalEndMs
         return if(time!=null && record.videoSync!=null) frameAt(record,time) else decode(record,null)
     }
     fun frameAt(record:SessionRecord,signalTimeMs:Long):PixelFrame? {

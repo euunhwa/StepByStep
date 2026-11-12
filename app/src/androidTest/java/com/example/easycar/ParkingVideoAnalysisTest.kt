@@ -68,7 +68,7 @@ class ParkingVideoAnalysisTest {
             val updated=app.repository.records.value.first {it.id==original.id}
             assertNotNull(updated.alignment?.angleDeg)
             assertEquals(original.results,updated.results);assertEquals(original.feedbacks,updated.feedbacks)
-            assertEquals(original.frames,updated.frames);assertEquals(original.error,updated.error)
+            assertEquals(original.frames,runBlocking {app.repository.frames(original.id)});assertEquals(original.error,updated.error)
             assertEquals(PARKING_VISION_VERSION,updated.alignment?.algorithmVersion)
             assertEquals(5,updated.alignment?.sampledFrames)
             instrumentation.runOnMainSync {model.selectParkingTarget(original.id,.5,2500)}
@@ -91,6 +91,6 @@ class ParkingVideoAnalysisTest {
         val first=AppRepository(app,name)
         try {first.save(updated)} finally {first.close()}
         val second=AppRepository(app,name)
-        try {second.load();assertEquals(updated,second.records.value.single())} finally {second.close();app.deleteDatabase(name)}
+        try {second.load();assertEquals(updated.copy(frames=emptyList()),second.records.value.single());assertEquals(updated.frames,second.frames(updated.id))} finally {second.close();app.deleteDatabase(name)}
     }
 }

@@ -1,8 +1,8 @@
 Traceback (most recent call last):
-  File "/Users/genius/CODEX/Pleos 앱 개발/work/easycar-document-v9/tools/check_parking_capture_console.py", line 103, in <module>
+  File "/Users/<user>/CODEX/Pleos 앱 개발/work/easycar-document-v9/tools/check_parking_capture_console.py", line 103, in <module>
     main()
     ~~~~^^
-  File "/Users/genius/CODEX/Pleos 앱 개발/work/easycar-document-v9/tools/check_parking_capture_console.py", line 74, in main
+  File "/Users/<user>/CODEX/Pleos 앱 개발/work/easycar-document-v9/tools/check_parking_capture_console.py", line 74, in main
     if state.returncode == 0 and json.loads(state.stdout).get('ready'):
                                  ~~~~~~~~~~^^^^^^^^^^^^^^
   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/json/__init__.py", line 352, in loads

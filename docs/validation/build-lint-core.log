@@ -219,15 +219,15 @@ EngineTest > restrictionsAndAudioFailClosedAndDeduplicate PASSED
 > Task :app:lintAnalyzeDemoDebug
 
 > Task :app:lintReportDemoDebug
-Wrote HTML report to file:///Users/genius/CODEX/Pleos%20앱%20개발/work/easycar-source/app/build/reports/lint-results-demoDebug.html
-Wrote SARIF report to file:///Users/genius/CODEX/Pleos%20앱%20개발/work/easycar-source/app/build/reports/lint-results-demoDebug.sarif
+Wrote HTML report to file:///Users/<user>/CODEX/Pleos%20앱%20개발/work/easycar-source/app/build/reports/lint-results-demoDebug.html
+Wrote SARIF report to file:///Users/<user>/CODEX/Pleos%20앱%20개발/work/easycar-source/app/build/reports/lint-results-demoDebug.sarif
 
 > Task :app:lintDemoDebug
 > Task :app:lintAnalyzePleosDebug
 
 > Task :app:lintReportPleosDebug
-Wrote HTML report to file:///Users/genius/CODEX/Pleos%20앱%20개발/work/easycar-source/app/build/reports/lint-results-pleosDebug.html
-Wrote SARIF report to file:///Users/genius/CODEX/Pleos%20앱%20개발/work/easycar-source/app/build/reports/lint-results-pleosDebug.sarif
+Wrote HTML report to file:///Users/<user>/CODEX/Pleos%20앱%20개발/work/easycar-source/app/build/reports/lint-results-pleosDebug.html
+Wrote SARIF report to file:///Users/<user>/CODEX/Pleos%20앱%20개발/work/easycar-source/app/build/reports/lint-results-pleosDebug.sarif
 
 > Task :app:lintPleosDebug
 

@@ -1,5 +1,5 @@
 {
-  "id": "document-datasets-1.0.1",
+  "id": "document-datasets-1.0.3",
   "sourceType": "DOCUMENT_RULES_AND_ARBITRARY_SYNTHETIC_VALIDATION",
   "expertValidated": false,
   "requiresImprovement": true,
@@ -20,7 +20,7 @@
   "filesSha256": {
     "auto-drive.json": "3d713ae22cfeaafa9a215bccc7a39ef3f811bc9697b703d418e53f0149fb2319",
     "recognition-validation.json": "ad2722892020a27c21a53495a6aa5a10788abb5f94347aad326659a9889011b2",
-    "recognition.json": "46be3037715ad2b827749f3ea40523e1360c99c0bdcf5faf3bde81c3f293cd17",
+    "recognition.json": "c00721f66817b4d16e3fef82801e27fc529786a40a9c216e50262155c8fe06cd",
     "evaluation-validation.json": "4b4f3ad78f3b6752d5dd15e0f4168592a353566fea9166b4878597da73cefaa0",
     "evaluation.json": "72b1f59b121d88d05858bc66df9769170219a694607be519be190a34b9921aa7"
   }
