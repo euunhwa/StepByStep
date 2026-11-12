@@ -23,7 +23,8 @@ class SpeechAvailabilityTest {
         assertNotNull("음성 엔진 초기화는 성공 또는 명시적인 실패를 알려야 합니다",status)
         if(status?.phase==SpeechPhase.READY) {
             var accepted=false
-            instrumentation.runOnMainSync { accepted=output.speak("validation-short","EasyCar 음성 안내 시험입니다.") }
+            val appName=instrumentation.targetContext.getString(R.string.app_name)
+            instrumentation.runOnMainSync { accepted=output.speak("validation-short","$appName 음성 안내 시험입니다.") }
             Log.i("EasyCarValidation","${BuildConfig.FLAVOR} short speech accepted=$accepted")
             if(accepted) {
                 val started=withTimeoutOrNull(12000) { output.status.first {it.phase==SpeechPhase.SPEAKING || it.phase==SpeechPhase.FAILED} }

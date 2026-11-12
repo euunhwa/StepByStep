@@ -24,7 +24,7 @@ import kotlinx.coroutines.flow.StateFlow
     CardPanel(Modifier.fillMaxWidth().testTag("live-signal-panel")) {
         Text("지금 들어오는 차량 신호",fontSize=23.sp,fontWeight=FontWeight.Bold)
         for(row in values.chunked(2)) Row(Modifier.fillMaxWidth().padding(top=18.dp),horizontalArrangement=Arrangement.spacedBy(20.dp)) {
-            row.forEach {(label,value)->Column(Modifier.weight(1f)) {Text(label,fontSize=15.sp,color=Muted);Text(value,fontSize=23.sp,color=Mint,modifier=Modifier.padding(top=5.dp))}}
+            row.forEach {(label,value)->Column(Modifier.weight(1f)) {Text(label,fontSize=15.sp,color=GuideMuted);Text(value,fontSize=23.sp,color=GuideForest,modifier=Modifier.padding(top=5.dp))}}
         }
     }
 }
