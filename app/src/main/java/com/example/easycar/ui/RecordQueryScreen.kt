@@ -62,8 +62,8 @@ import kotlinx.coroutines.launch
                 }
                 Text("켜면 Gleo에게 이 연습의 점수와 감점 이유를 물어볼 수 있어요. 영상은 보내지 않으며 선택한 기록만 연결해요.",fontSize=16.sp,lineHeight=24.sp,color=Muted)
                 if(gleoSelected) {
-                    val appName=stringResource(R.string.app_name)
-                    Text("Gleo에게 ‘$appName 최근 주차 결과 알려줘’, ‘$appName 감점 이유 알려줘’라고 말해 보세요.",fontSize=16.sp,lineHeight=24.sp,color=Mint,modifier=Modifier.padding(top=10.dp))
+                    val invokeWord=stringResource(R.string.gleo_invoke_word)
+                    Text("Gleo에게 ‘$invokeWord 최근 주차 결과 알려줘’, ‘$invokeWord 감점 이유 알려줘’라고 말해 보세요.",fontSize=16.sp,lineHeight=24.sp,color=Mint,modifier=Modifier.padding(top=10.dp))
                 }
             }
         }
