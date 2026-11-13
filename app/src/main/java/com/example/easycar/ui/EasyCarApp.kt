@@ -19,6 +19,7 @@ import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -26,6 +27,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.easycar.core.*
 import com.example.easycar.BuildConfig
 import com.example.easycar.EasyCarViewModel
+import com.example.easycar.R
 import com.example.easycar.data.*
 import com.example.easycar.runtime.*
 import java.text.SimpleDateFormat
@@ -38,6 +40,7 @@ val Ink=Color(0xff101b23);val Panel=Color(0xff192932);val PanelLight=Color(0xff2
 val Mint=Color(0xff9ae7c4);val Muted=Color(0xffa6b8c2);val White=Color(0xffeef4f2)
 val Amber=Color(0xffffd28a)
 @Composable fun EasyCarApp(model:EasyCarViewModel,miniWindow:StateFlow<MiniWindowState>,onMinimize:()->Boolean) {
+    val appName=stringResource(R.string.app_name)
     val smallWindow by miniWindow.collectAsStateWithLifecycle()
     val settings by model.settings.collectAsStateWithLifecycle()
     val records by model.records.collectAsStateWithLifecycle()
@@ -75,8 +78,8 @@ val Amber=Color(0xffffd28a)
                 if(!compactWindow) MainNavigation(page,drive.running || locked) { page=it;detailId=null }
                 Column(Modifier.weight(1f).fillMaxHeight().padding(horizontal=if(compactWindow) 20.dp else 32.dp,vertical=if(compactWindow) 16.dp else 24.dp)) {
                     Row(Modifier.fillMaxWidth(),verticalAlignment=Alignment.CenterVertically) {
-                        Text("EasyCar",fontSize=28.sp,fontWeight=FontWeight.Bold,color=Mint)
-                        if(roomyHeader) Text("  /  차근차근, 나의 운전",fontSize=16.sp,color=Muted)
+                        Text(appName,fontSize=28.sp,fontWeight=FontWeight.Bold,color=Mint)
+                        if(roomyHeader) Text("  /  나의 운전 연습",fontSize=16.sp,color=Muted)
                         Spacer(Modifier.weight(1f))
                         if(showConnectionBadge) Badge(if(drive.running) "●  자동 코칭 중" else if(locked) "주행 제한" else if(platform.vehicleConnected) "차량 연결됨" else "연결 확인",if(locked) Amber else Mint)
                         if(!drive.running && !locked && settings.consent) {Spacer(Modifier.width(12.dp));Action("T자 데모",Modifier.testTag("start-t-park-demo"),secondary=true) {model.startParkingDemo("park-beginner")};Spacer(Modifier.width(12.dp))
@@ -104,7 +107,7 @@ val Amber=Color(0xffffd28a)
                     Text("점수는 연습을 돌아보기 위한 참고용이에요.",fontSize=13.sp,color=Muted)
                 }
             }
-            if(message!=null) AlertDialog(onDismissRequest={model.message.value=null},title={Text("EasyCar 안내")},text={Text(if(page=="settings") message!! else userNoticeText(message!!))},confirmButton={TextButton(onClick={model.message.value=null}) { Text("확인",fontSize=20.sp) }})
+            if(message!=null) AlertDialog(onDismissRequest={model.message.value=null},title={Text("$appName 안내")},text={Text(if(page=="settings") message!! else userNoticeText(message!!))},confirmButton={TextButton(onClick={model.message.value=null}) { Text("확인",fontSize=20.sp) }})
                 }
             }
         }
@@ -119,10 +122,11 @@ val Amber=Color(0xffffd28a)
 }
 @Composable fun Heading(title:String,subtitle:String?=null) { Text(title,fontSize=34.sp,fontWeight=FontWeight.Bold,color=White);if(subtitle!=null) { Spacer(Modifier.height(8.dp));Text(subtitle,fontSize=18.sp,color=Muted,lineHeight=26.sp) } }
 @Composable private fun Welcome(onAgree:()->Unit) {
+    val appName=stringResource(R.string.app_name)
     BoxWithConstraints(Modifier.fillMaxSize()) {
         if(maxWidth<900.dp) {
             Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
-                Heading("익숙해질 때까지, EasyCar와 함께.","출발부터 주차까지, 내 조작을 차분히 돌아보세요.")
+                Heading("익숙해질 때까지, ${appName}과 함께.","출발부터 주차까지, 내 조작을 차분히 돌아보세요.")
                 Spacer(Modifier.height(22.dp))
                 CardPanel(Modifier.fillMaxWidth()) {
                     Text("시작하기 전에",fontSize=25.sp,fontWeight=FontWeight.Bold)
@@ -134,7 +138,7 @@ val Amber=Color(0xffffd28a)
     Row(Modifier.fillMaxSize(),verticalAlignment=Alignment.CenterVertically,horizontalArrangement=Arrangement.spacedBy(44.dp)) {
         Column(Modifier.weight(1f)) {
             Badge("처음 만나는 나의 운전 코치")
-            Spacer(Modifier.height(24.dp));Text("익숙해질 때까지,\nEasyCar와 함께.",fontSize=48.sp,lineHeight=62.sp,fontWeight=FontWeight.Bold)
+            Spacer(Modifier.height(24.dp));Text("익숙해질 때까지,\n${appName}과 함께.",fontSize=48.sp,lineHeight=62.sp,fontWeight=FontWeight.Bold)
             Spacer(Modifier.height(20.dp));Text("출발부터 주차까지, 내 조작을 차분히 돌아보고\n다음 연습 목표를 찾아보세요.",fontSize=23.sp,color=Muted,lineHeight=34.sp)
             Spacer(Modifier.height(32.dp));RoadArt(Modifier.fillMaxWidth().height(210.dp))
         }

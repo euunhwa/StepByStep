@@ -32,15 +32,15 @@ object GleoRecordProtocol {
         val local=JsonParser.parseString(RecordQueryProtocol.callbackPreview(response)).asJsonObject
         local.addProperty("functionName",action)
         local.addProperty("mode",if(muted) "silent" else "voice")
-        if(response.status==RecordQueryStatus.CONSENT_REQUIRED) local.addProperty("message","Enable Gleo access to a selected practice record in EasyCar before requesting saved results.")
-        if(response.status==RecordQueryStatus.SCOPE_REQUIRED) local.addProperty("message","Select a practice record and enable its Gleo access in EasyCar before requesting saved results.")
+        if(response.status==RecordQueryStatus.CONSENT_REQUIRED) local.addProperty("message","Enable Gleo access to a selected practice record in the app before requesting saved results.")
+        if(response.status==RecordQueryStatus.SCOPE_REQUIRED) local.addProperty("message","Select a practice record and enable its Gleo access in the app before requesting saved results.")
         val data=gson.toJsonTree(response).asJsonObject.apply {
             remove("transport");remove("externallyDispatched");remove("requestId");remove("action")
         }
         local.addProperty("data",gson.toJson(JsonArray().apply {add(data)}))
         if(gson.toJson(local).toByteArray(Charsets.UTF_8).size>MAX_CALLBACK_BYTES) {
             // Preserve the result's meaning; do not send a misleading partial explanation.
-            return failure(action,"The saved explanation exceeds the response limit. Open the selected practice record in EasyCar to review it.",muted)
+            return failure(action,"The saved explanation exceeds the response limit. Open the selected practice record in the app to review it.",muted)
         }
         return gson.toJson(local)
     }

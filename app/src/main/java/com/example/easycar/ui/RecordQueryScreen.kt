@@ -7,11 +7,13 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.easycar.core.*
 import com.example.easycar.BuildConfig
+import com.example.easycar.R
 import com.example.easycar.data.SessionRecord
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
@@ -59,7 +61,10 @@ import kotlinx.coroutines.launch
                     Switch(checked=gleoSelected,onCheckedChange=select,modifier=Modifier.testTag("gleo-record-access"))
                 }
                 Text("켜면 Gleo에게 이 연습의 점수와 감점 이유를 물어볼 수 있어요. 영상은 보내지 않으며 선택한 기록만 연결해요.",fontSize=16.sp,lineHeight=24.sp,color=Muted)
-                if(gleoSelected) Text("Gleo에게 ‘이지카 최근 주차 결과 알려줘’, ‘이지카 감점 이유 알려줘’라고 말해 보세요.",fontSize=16.sp,lineHeight=24.sp,color=Mint,modifier=Modifier.padding(top=10.dp))
+                if(gleoSelected) {
+                    val appName=stringResource(R.string.app_name)
+                    Text("Gleo에게 ‘$appName 최근 주차 결과 알려줘’, ‘$appName 감점 이유 알려줘’라고 말해 보세요.",fontSize=16.sp,lineHeight=24.sp,color=Mint,modifier=Modifier.padding(top=10.dp))
+                }
             }
         }
         Box {

@@ -28,13 +28,14 @@ class CoachingService:Service() {
         if(intent?.action in setOf("stop","cancel")) { scope.launch { app.runtime.stop(intent?.action=="cancel");stopSelf(startId) };return START_NOT_STICKY }
         if(intent?.action=="pause") {app.runtime.setDemoPaused(intent.getBooleanExtra("paused",true));return START_NOT_STICKY}
         if(app.runtime.state.value.running) return START_NOT_STICKY
+        val appName=getString(R.string.app_name)
         val nm=getSystemService(NotificationManager::class.java)
-        nm.createNotificationChannel(NotificationChannel("coaching","EasyCar 코칭",NotificationManager.IMPORTANCE_LOW))
-        ServiceCompat.startForeground(this,110,notification("EasyCar · 일곱 동작 자동 코칭","다른 앱을 사용해도 코칭과 음성을 계속합니다"),if(android.os.Build.VERSION.SDK_INT>=34) ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE else 0)
+        nm.createNotificationChannel(NotificationChannel("coaching","$appName 코칭",NotificationManager.IMPORTANCE_LOW))
+        ServiceCompat.startForeground(this,110,notification("$appName · 일곱 동작 자동 코칭","다른 앱을 사용해도 코칭과 음성을 계속합니다"),if(android.os.Build.VERSION.SDK_INT>=34) ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE else 0)
         app.runtime.start(scope,intent?.getStringExtra("demo"),intent?.getIntExtra("speed",1) ?: 1,intent?.getStringExtra("resume")) { stopSelf(startId) }
         notificationJob?.cancel()
         notificationJob=scope.launch {
-            app.runtime.state.map {state->state.feedback?.let {"EasyCar · 최근 ${it.title}" to it.text} ?: ("EasyCar · 자동 코칭 중" to "다른 앱을 사용해도 코칭과 음성을 계속합니다")}
+            app.runtime.state.map {state->state.feedback?.let {"$appName · 최근 ${it.title}" to it.text} ?: ("$appName · 자동 코칭 중" to "다른 앱을 사용해도 코칭과 음성을 계속합니다")}
                 .distinctUntilChanged().collect {(title,text)->runCatching {nm.notify(110,notification(title,text))}}
         }
         return START_NOT_STICKY

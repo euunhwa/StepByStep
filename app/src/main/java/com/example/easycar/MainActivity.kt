@@ -64,7 +64,7 @@ class MainActivity:ComponentActivity() {
             b.setActions(listOf(RemoteAction(Icon.createWithResource(this,R.drawable.ic_coaching_stop),"코칭 종료","진행 중인 코칭을 종료합니다",stop)))
         } else b.setActions(emptyList())
         if(Build.VERSION.SDK_INT>=31) b.setAutoEnterEnabled(running && autoSmallWindow).setSeamlessResizeEnabled(false)
-        if(Build.VERSION.SDK_INT>=33) b.setTitle("EasyCar 자동 코칭").setSubtitle(if(running) "동작 종료 후 짧은 피드백" else "코칭 완료")
+        if(Build.VERSION.SDK_INT>=33) b.setTitle("${getString(R.string.app_name)} 자동 코칭").setSubtitle(if(running) "동작 종료 후 짧은 피드백" else "코칭 완료")
         return b.build()
     }
     private fun updatePipParams() {

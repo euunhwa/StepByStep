@@ -8,6 +8,7 @@ import android.content.pm.PermissionInfo
 import com.easycar.core.*
 import com.example.easycar.EasyCarApplication
 import com.example.easycar.BuildConfig
+import com.example.easycar.R
 import com.example.easycar.data.*
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
@@ -54,8 +55,8 @@ class GleoQueryHandler(private val settings:suspend ()->UserSettings,private val
         fun denied(status:RecordQueryStatus,text:String)=RecordQueryResponse(requestId=null,action=action,status=status,answer=text)
         if(parsed is QueryParseResult.Failure) return denied(parsed.status,parsed.message) to true
         val initial=settings()
-        if(!initial.consent) return denied(RecordQueryStatus.CONSENT_REQUIRED,"EasyCar에서 시작 안내에 동의한 뒤 기록을 연결해 주세요.") to initial.muted
-        val id=initial.gleoSessionId ?: return denied(RecordQueryStatus.SCOPE_REQUIRED,"EasyCar에서 조회할 기록을 선택하고 Gleo 연결을 켜 주세요.") to initial.muted
+        if(!initial.consent) return denied(RecordQueryStatus.CONSENT_REQUIRED,"앱에서 시작 안내에 동의한 뒤 기록을 연결해 주세요.") to initial.muted
+        val id=initial.gleoSessionId ?: return denied(RecordQueryStatus.SCOPE_REQUIRED,"앱에서 조회할 기록을 선택하고 Gleo 연결을 켜 주세요.") to initial.muted
         if(!reviewAllowed()) return denied(RecordQueryStatus.REVIEW_UNAVAILABLE,"정차 상태가 확인된 뒤 저장 기록을 조회해 주세요.") to initial.muted
         val original=records().firstOrNull {it.id==id} ?: return denied(RecordQueryStatus.NOT_FOUND,"연결한 연습 기록이 삭제되었어요. 다른 기록을 선택해 주세요.") to initial.muted
         val request=(parsed as QueryParseResult.Success).request
@@ -78,6 +79,7 @@ class GleoRecordBridge(private val app:EasyCarApplication) {
     val lastDelivery=delivery.asStateFlow()
     suspend fun receive(intent:Intent) {
         val action=GleoContract.normalizedAction(intent.action) ?: return
+        val appName=app.getString(R.string.app_name)
         val parsed=GleoContract.request(intent)
         if(!mutex.tryLock()) {
             dispatch(action,"BUSY",GleoRecordProtocol.failure(action,"Another record query is in progress. Please try again."));return
@@ -94,10 +96,10 @@ class GleoRecordBridge(private val app:EasyCarApplication) {
                     app.bridge.state.value.ux.allowsReview() && !app.runtime.state.value.running
                 },{app.repository.records.value},app.profile.version,app.evaluationPolicy.version).execute(action,parsed)
             }
-            if(result==null) dispatch(action,"TIMEOUT",GleoRecordProtocol.failure(action,"The record query timed out. Please try again after opening EasyCar."))
+            if(result==null) dispatch(action,"TIMEOUT",GleoRecordProtocol.failure(action,"The record query timed out. Please try again after opening $appName."))
             else dispatch(action,result.first.status.name,GleoRecordProtocol.callback(action,result.first,result.second))
         } catch(e:CancellationException) {throw e}
-        catch(_:Exception) {dispatch(action,"ERROR",GleoRecordProtocol.failure(action,"The saved record could not be read. Please open EasyCar and try again."))}
+        catch(_:Exception) {dispatch(action,"ERROR",GleoRecordProtocol.failure(action,"The saved record could not be read. Please open $appName and try again."))}
         finally {
             if(!app.visible && !app.runtime.state.value.running) app.bridge.stop()
             mutex.unlock()

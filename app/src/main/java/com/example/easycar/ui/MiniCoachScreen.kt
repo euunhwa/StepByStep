@@ -10,15 +10,18 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.easycar.R
 import com.example.easycar.runtime.DriveState
 import kotlinx.coroutines.delay
 
 /** Shared by system PiP and the Pleos side pane. In PiP the system supplies all touch controls. */
 @Composable fun MiniCoachScreen(drive:DriveState,inPip:Boolean,onStop:()->Unit,datasetNotice:String?=null,restricted:Boolean=false,onResume:()->Unit={}) {
+    val appName=stringResource(R.string.app_name)
     var now by remember(drive.record?.id) {mutableLongStateOf(SystemClock.elapsedRealtime())}
     LaunchedEffect(drive.record?.id,drive.feedback?.resultId,drive.running) {
         now=SystemClock.elapsedRealtime()
@@ -43,7 +46,7 @@ import kotlinx.coroutines.delay
                 Row(verticalAlignment=Alignment.CenterVertically) {
                     Box(Modifier.size(if(pane) 9.dp else 6.dp).clip(RoundedCornerShape(50)).background(if(drive.running) Mint else Muted))
                     Spacer(Modifier.width(7.dp))
-                    Text(if(drive.record?.demoCaseId!=null) "EasyCar · 데모" else "EasyCar",fontSize=if(pane) 16.sp else if(dense) 10.sp else if(tiny) 11.sp else 13.sp,color=Muted,maxLines=1,overflow=TextOverflow.Ellipsis,modifier=Modifier.weight(1f))
+                    Text(if(drive.record?.demoCaseId!=null) "$appName · 데모" else appName,fontSize=if(pane) 16.sp else if(dense) 10.sp else if(tiny) 11.sp else 13.sp,color=Muted,maxLines=1,overflow=TextOverflow.Ellipsis,modifier=Modifier.weight(1f))
                     if(content.freshFeedback) Text(liveScoreCaption(content.score),fontSize=if(pane) 36.sp else if(dense) 10.sp else if(tiny) 11.sp else 13.sp,color=scoreColor(content.score),modifier=Modifier.testTag("mini-feedback-score"))
                 }
                 Spacer(Modifier.height(if(pane) 24.dp else if(dense) 4.dp else if(tiny) 6.dp else 10.dp))
