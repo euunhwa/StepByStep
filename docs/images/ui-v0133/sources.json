@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "appName": "차근차근 (StepByStep)",
+  "appVersion": "0.13.3",
+  "sourceCommit": "7e7ea8aaa3cb9002524a201988da6c66c352b097",
+  "captureDate": "2026-11-13",
+  "extractionDate": "2026-11-13",
+  "sourceArchiveRootRelativeToRepository": "../demo-film-green-guide-20261113",
+  "sourceArchiveIncluded": false,
+  "method": "AVFoundation AVAssetImageGenerator exact native-frame extraction to PNG; app views losslessly cropped without resizing; OS split screen preserved in full. No editorial overlays or fabricated UI.",
+  "inputContext": "Pleos emulator with built-in synthetic demo inputs. navigation-split is P gear and stationary; no route-driving integration claimed. record-query displays local saved-record evidence with Gleo connection enabled.",
+  "sources": {
+    "raw/auto-take2/original.mp4": {
+      "sha256": "8deeafdb5804f1537c75fc77e84f033cf47df035e6bc2adb47579a454ffec5d4",
+      "nativeWidth": 2560,
+      "nativeHeight": 1440
+    },
+    "raw/tpark-take2/original.mp4": {
+      "sha256": "1e49a548e326fc5240230268b0533881b5875c7252bfaccc927d55b766c5355c",
+      "nativeWidth": 2560,
+      "nativeHeight": 1440
+    },
+    "raw/parallel/original.mp4": {
+      "sha256": "9ceabb8b01dab1d762bb14a3f8c347fd0b9f79725820cf16fd03d1678814a75d",
+      "nativeWidth": 2560,
+      "nativeHeight": 1440
+    },
+    "raw/native-extra/original.mp4": {
+      "sha256": "9dae54f2c57966d0a1d57cd7fa6f1dec0e79f51048d616e4baa0883c2d203adf",
+      "nativeWidth": 2560,
+      "nativeHeight": 1440
+    },
+    "raw/gleo-take2/original.mp4": {
+      "sha256": "e0ec7c9b7f4d8af291a37db50c796d086cd8789e7a44065f3f1c92a7336ab828",
+      "nativeWidth": 2560,
+      "nativeHeight": 1440
+    }
+  },
+  "files": [
+    {
+      "file": "welcome.png",
+      "descriptionKo": "시작 안내와 안전·정보 처리 동의",
+      "source": "raw/auto-take2/original.mp4",
+      "requestedTimeSeconds": 4,
+      "actualTimeSeconds": 3.9930444444444446,
+      "cropXYWH": [
+        854,
+        90,
+        1680,
+        1210
+      ],
+      "width": 1680,
+      "height": 1210,
+      "sha256": "e14ce074fd06d8652e2c9ced7413af6e3759399fa8a9ed97d43071a7222510fd"
+    },
+    {
+      "file": "home.png",
+      "descriptionKo": "홈의 코칭 시작·내장 데모·현재 차량 신호",
+      "source": "raw/auto-take2/original.mp4",
+      "requestedTimeSeconds": 12,
+      "actualTimeSeconds": 11.9896,
+      "cropXYWH": [
+        854,
+        90,
+        1680,
+        1210
+      ],
+      "width": 1680,
+      "height": 1210,
+      "sha256": "d37f1e24b99416699636badd57234917d3b449b0f26f93a79db53ee7d80457bc"
+    },
+    {
+      "file": "start-100.png",
+      "descriptionKo": "출발 완료 100점 코칭 카드",
+      "source": "raw/auto-take2/original.mp4",
+      "requestedTimeSeconds": 36,
+      "actualTimeSeconds": 35.97312222222222,
+      "cropXYWH": [
+        854,
+        90,
+        1680,
+        1210
+      ],
+      "width": 1680,
+      "height": 1210,
+      "sha256": "dc17fd872469a2fc217921fef50368a1c9700824340a85ea5bcbe92fc9fb7c22"
+    },
+    {
+      "file": "tparking-90.png",
+      "descriptionKo": "T자 주차 완료 90점 코칭 카드",
+      "source": "raw/tpark-take2/original.mp4",
+      "requestedTimeSeconds": 50,
+      "actualTimeSeconds": 49.998155555555556,
+      "cropXYWH": [
+        854,
+        90,
+        1680,
+        1210
+      ],
+      "width": 1680,
+      "height": 1210,
+      "sha256": "738cb1572a58a932a1ff1635554bf4925761d5453534897247c4328faca66ad2"
+    },
+    {
+      "file": "tparking-detail.png",
+      "descriptionKo": "T자 주차 리플레이 상세와 감점 근거: 급격한 페달 조작5점·전후진 반복5점",
+      "source": "raw/tpark-take2/original.mp4",
+      "requestedTimeSeconds": 105,
+      "actualTimeSeconds": 104.9987,
+      "cropXYWH": [
+        854,
+        90,
+        1680,
+        1210
+      ],
+      "width": 1680,
+      "height": 1210,
+      "sha256": "359d62e987e28d66f82ecdeec804a0707c9af93e3143eb9cf43f5ba369ce79b3"
+    },
+    {
+      "file": "tparking-replay.png",
+      "descriptionKo": "T자 주차 궤적 재생 중, 모범 경로와 비교",
+      "source": "raw/tpark-take2/original.mp4",
+      "requestedTimeSeconds": 79,
+      "actualTimeSeconds": 78.97924444444445,
+      "cropXYWH": [
+        854,
+        90,
+        1680,
+        1210
+      ],
+      "width": 1680,
+      "height": 1210,
+      "sha256": "385e50cade472c989589987f6c165f70dadc089a8bad891491cea0c0d43928c3"
+    },
+    {
+      "file": "parallel-100.png",
+      "descriptionKo": "평행주차 완료 100점 코칭 카드",
+      "source": "raw/parallel/original.mp4",
+      "requestedTimeSeconds": 38,
+      "actualTimeSeconds": 37.9946,
+      "cropXYWH": [
+        854,
+        90,
+        1680,
+        1210
+      ],
+      "width": 1680,
+      "height": 1210,
+      "sha256": "d0d5a1b8d37c60f8050c76371d9604596ae01404a2d5a1c9eadacb3d39eb6b38"
+    },
+    {
+      "file": "parallel-replay.png",
+      "descriptionKo": "평행주차 궤적 재생과 100점 저장 기록",
+      "source": "raw/parallel/original.mp4",
+      "requestedTimeSeconds": 65,
+      "actualTimeSeconds": 64.96287777777778,
+      "cropXYWH": [
+        854,
+        90,
+        1680,
+        1210
+      ],
+      "width": 1680,
+      "height": 1210,
+      "sha256": "a69b92985e6e620002b93cce05cda2eea314eee7295bd497bf16452e499dd98e"
+    },
+    {
+      "file": "session-summary.png",
+      "descriptionKo": "합성 일곱 동작 세션 연습 요약, 평균100점",
+      "source": "raw/auto-take2/original.mp4",
+      "requestedTimeSeconds": 151,
+      "actualTimeSeconds": 150.96933333333334,
+      "cropXYWH": [
+        854,
+        90,
+        1680,
+        1210
+      ],
+      "width": 1680,
+      "height": 1210,
+      "sha256": "2df935c985b230bee6c18c4ebf09bbd171b3168deb7dda8cd11284dbfc5e05b1"
+    },
+    {
+      "file": "navigation-split.png",
+      "descriptionKo": "실제 OS 분할 화면에서 내비게이션과 차근차근의 P단 정차 대기",
+      "source": "raw/native-extra/original.mp4",
+      "requestedTimeSeconds": 67,
+      "actualTimeSeconds": 66.99174444444445,
+      "cropXYWH": null,
+      "width": 2560,
+      "height": 1440,
+      "sha256": "e5fe86b76918b39935ce3c3df63b817d37ac8e333ed0538c4d1841fb2baaf33f"
+    },
+    {
+      "file": "record-query.png",
+      "descriptionKo": "저장 T자 주차90점의 감점 이유와 Gleo 연결을 켠 질문 화면; 표시 답변은 로컬 저장 근거 조회",
+      "source": "raw/gleo-take2/original.mp4",
+      "requestedTimeSeconds": 66,
+      "actualTimeSeconds": 65.97084444444444,
+      "cropXYWH": [
+        854,
+        90,
+        1680,
+        1210
+      ],
+      "width": 1680,
+      "height": 1210,
+      "sha256": "efa76f859f8a2dae0140c02c078d75919d4c122635f95add208db71bc6bdbae2"
+    }
+  ]
+}

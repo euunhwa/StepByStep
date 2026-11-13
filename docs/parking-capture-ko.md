@@ -1,5 +1,7 @@
 # 주차 녹화·최종 배치 실험 기록(현재 앱에서 제외)
 
+> 최신 화면은 [현재 UI 캡처](ui-screenshots-ko.md), 최신 시연은 [영상 안내](../media/README.md)에서 확인할 수 있습니다. 아래 화면·로그는 현재 앱에서 제외한 0.13.0 실험의 검증 근거로 보존합니다.
+
 현재0.13.1은 사용자 요청으로 이 기능을 앱에서 제외했다. 상위 메뉴는 홈·기록·설정만 제공한다. 아래는0.13.0 당시 구현·검증 기록이며 현재 사용법이 아니다. 실험 원본은 [보관 폴더](../experimental/parking-capture-v013/README.md)에 있다. 실제 탑뷰 제공 조건은 [현재 README](../README.md)에 유지한다.
 
 2026-11-07 · 보관 실험 앱0.13.0(code16) · `parking-outcome-draft-1.0`
@@ -59,4 +61,4 @@ Android 구현 근거: [MediaProjection](https://developer.android.com/media/gro
 - 추가2회: 기본 카메라 화면을 실제 MP4에서 확인했고,8088→DDS→AAOS 신호133개로 R→D2회·P 자동 완료·13,617ms 영상 저장을 확인했다. 이 실제 입력의 점수는 보정 탑뷰 부족이라는 이유로 보류됐다. 다른 신호 누락 사유는 없었다.
 - 실제8088 재현: 에뮬레이터와 로컬8088 연결 및 최신 앱/계측 APK 설치 후 `python3 tools/check_parking_capture_console.py --output docs/validation`. 이 도구는 시스템 공유 승인을 시험 UI로 클릭하고 모의 차량 기어/속도를 바꾼 뒤 P/0으로 돌린다. 일반 회귀 묶음에는 외부 콘솔 대기를 포함하지 않는다. 준비 파일 동시 읽기 실패를 수정한 이력도 검증 기록에 남겼다.
 
-![합성 영상에서 검출한 최종 배치와95점 기록](validation/parking-capture-flow-v013.png)
+과거 화면 근거: [0.13.0 합성 영상에서 검출한 최종 배치와95점 기록](validation/parking-capture-flow-v013.png). 현재 앱의 화면은 [최신 UI 캡처](ui-screenshots-ko.md)에서 확인할 수 있습니다.

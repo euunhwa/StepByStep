@@ -1,0 +1,19 @@
+{
+  "file": "Demo-Vid.mp4",
+  "sourceFileName": "Demo-Vid.mp4",
+  "updatedDate": "2026-11-13",
+  "appVersion": "0.13.3",
+  "sourceCommit": "7e7ea8aaa3cb9002524a201988da6c66c352b097",
+  "bytes": 44082172,
+  "sha256": "80c203a9fb218fe5501d8943535a3bc061f75462f03f4b342205ce410216dc32",
+  "sourceCopiedWithoutModification": true,
+  "durationSeconds": 400,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "videoCodec": "H.264",
+  "audioTracks": 1,
+  "chaptersFile": "chapters-v0.13.3.txt",
+  "input": "Pleos emulator, built-in synthetic driving input; actual app UI and Gleo responses",
+  "notes": "T parking 90 and 100 results use different synthetic inputs. Trajectory is estimated for review. Navigation split scene is parked."
+}
