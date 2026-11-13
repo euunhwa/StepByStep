@@ -22,8 +22,8 @@ import kotlin.math.max
     Spacer(Modifier.height(24.dp));Text("동작 직후 제공한 피드백",fontSize=25.sp,fontWeight=FontWeight.Bold);Spacer(Modifier.height(14.dp))
     receipts.forEach {f->
         CardPanel(Modifier.fillMaxWidth()) {
-            Row {Text(f.title,fontSize=23.sp,fontWeight=FontWeight.SemiBold,modifier=Modifier.weight(1f));Text(liveScoreCaption(f.score),fontSize=18.sp,color=scoreColor(f.score))}
-            Spacer(Modifier.height(10.dp));Text(feedbackReasonCaption(f),fontSize=20.sp,lineHeight=30.sp,color=Mint)
+            Row {Text(f.title,fontSize=23.sp,fontWeight=FontWeight.SemiBold,modifier=Modifier.weight(1f));Text(liveScoreCaption(f.score),fontSize=18.sp,color=reviewScoreColor(f.score))}
+            Spacer(Modifier.height(10.dp));Text(feedbackReasonCaption(f),fontSize=20.sp,lineHeight=30.sp,color=GuideGreen)
             val voice=when(f.voiceState) {
                 VoiceState.SPOKEN->"음성 안내 완료"
                 VoiceState.SPEAKING->"음성 안내 중"
@@ -32,7 +32,7 @@ import kotlin.math.max
                 VoiceState.FAILED->"음성 안내를 재생하지 못했어요"
                 VoiceState.EXPIRED->"화면 안내를 확인해 주세요"
             }
-            Spacer(Modifier.height(10.dp));Text(voice,fontSize=16.sp,lineHeight=24.sp,color=Muted)
+            Spacer(Modifier.height(10.dp));Text(voice,fontSize=16.sp,lineHeight=24.sp,color=GuideMuted)
         };Spacer(Modifier.height(10.dp))
     }
 }

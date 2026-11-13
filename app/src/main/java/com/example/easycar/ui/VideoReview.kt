@@ -10,11 +10,13 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.asImageBitmap
@@ -98,18 +100,34 @@ import kotlin.math.abs
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).testTag("parking-video-review")) {
         TextButton(onClick=onBack) {Text("← 연습 요약")}
         Heading("주차 영상 분석",if(synthetic) "예제 영상으로 주차 위치를 살펴보세요." else "주차선과 차량 위치를 살펴보세요.")
-        Spacer(Modifier.height(12.dp))
-        TextButton(onClick={onImportCalibration(position)},enabled=!restricted && !analyzing) {Text("영상 분석 설정 불러오기")}
-        Text(if(calibration==null) "영상에 맞는 분석 설정을 먼저 불러와 주세요." else "여러 칸이 보이면 영상을 멈추고 확인할 칸 안쪽을 누르세요.",fontSize=17.sp,color=Muted)
-        if(calibration?.targetCenterPx!=null) TextButton(onClick={onClearTarget(position)},enabled=!restricted && !analyzing) {Text("대상 칸 선택 해제")}
         Spacer(Modifier.height(16.dp))
+        val calibrationControls: @Composable () -> Unit = {
+            Button(
+                onClick={onImportCalibration(position)},enabled=!restricted && !analyzing,
+                modifier=Modifier.fillMaxWidth().heightIn(min=48.dp),
+                shape=RoundedCornerShape(14.dp),
+                colors=ButtonDefaults.buttonColors(containerColor=GuideCanvas,contentColor=GuideInk)
+            ) {Text("영상 분석 설정 불러오기")}
+            Text(
+                if(calibration==null) "영상에 맞는 분석 설정을 먼저 불러와 주세요."
+                else "여러 칸이 보이면 영상을 멈추고 확인할 칸 안쪽을 누르세요.",
+                fontSize=16.sp,color=GuideMuted,lineHeight=24.sp,modifier=Modifier.padding(top=8.dp)
+            )
+            if(calibration?.targetCenterPx!=null) TextButton(onClick={onClearTarget(position)},enabled=!restricted && !analyzing) {
+                Text("대상 칸 선택 해제")
+            }
+        }
         if(file==null || !file.isFile) {
-            CardPanel(Modifier.fillMaxWidth()) {Text("영상을 열 수 없어요",fontSize=24.sp,color=Amber)}
+            CardPanel(Modifier.fillMaxWidth()) {
+                Text("영상을 열 수 없어요",fontSize=24.sp,fontWeight=FontWeight.Bold,color=MaterialTheme.colorScheme.error)
+                Spacer(Modifier.height(14.dp))
+                calibrationControls()
+            }
         } else BoxWithConstraints(Modifier.fillMaxWidth()) {
             val videoPane:@Composable (Modifier)->Unit = {modifier->
-                Column(modifier) {
+                CardPanel(modifier) {
                     Box(Modifier.fillMaxWidth().aspectRatio((bitmap?.width?.toFloat() ?: 480f)/(bitmap?.height?.toFloat() ?: 360f))
-                        .background(androidx.compose.ui.graphics.Color.Black)
+                        .clip(RoundedCornerShape(16.dp)).background(GuideDrive)
                         .pointerInput(calibration,playing,analyzing,evidence) {
                             detectTapGestures {point->
                                 if(calibration!=null && !playing && !restricted && !analyzing) {
@@ -133,54 +151,109 @@ import kotlin.math.abs
                         bitmap?.let {b->
                             Canvas(Modifier.fillMaxSize()) {
                                 val sx=size.width/b.width;val sy=size.height/b.height
-                                evidence?.lines?.forEach {line->drawLine(Mint,Offset(line.top.x.toFloat()*sx,line.top.y.toFloat()*sy),Offset(line.bottom.x.toFloat()*sx,line.bottom.y.toFloat()*sy),3.dp.toPx())}
+                                evidence?.lines?.forEach {line->
+                                    val start=Offset(line.top.x.toFloat()*sx,line.top.y.toFloat()*sy)
+                                    val end=Offset(line.bottom.x.toFloat()*sx,line.bottom.y.toFloat()*sy)
+                                    drawLine(GuideDrive.copy(alpha=.82f),start,end,5.dp.toPx())
+                                    drawLine(GuideRoute,start,end,2.5.dp.toPx())
+                                }
                                 calibration?.forDimensions(b.width,b.height)?.let {c->
                                     val left=c.vehicleLeftPx.toFloat()*sx;val top=c.vehicleTopPx.toFloat()*sy
                                     val width=(c.vehicleRightPx-c.vehicleLeftPx).toFloat()*sx;val height=(c.vehicleBottomPx-c.vehicleTopPx).toFloat()*sy
-                                    drawRect((if(evidence?.intrusion==true) ScoreRed else Amber).copy(alpha=.18f),Offset(left,top),Size(width,height))
+                                    val vehicleColor=if(evidence?.intrusion==true) VideoIntrusion else GuideRoute
+                                    drawRect(vehicleColor.copy(alpha=.22f),Offset(left,top),Size(width,height))
                                     val cx=left+width/2
-                                    drawLine(Amber,Offset(cx,top),Offset(cx,top+height),2.dp.toPx())
+                                    drawLine(vehicleColor,Offset(cx,top),Offset(cx,top+height),2.dp.toPx())
+                                    c.targetCenterPx?.takeIf {it.isFinite() && it in 0.0..b.width.toDouble()}?.let {target->
+                                        val center=Offset(target.toFloat()*sx,size.height/2)
+                                        val radius=8.dp.toPx()
+                                        drawCircle(GuideForest,radius,center)
+                                        drawCircle(GuideRoute,radius,center,style=androidx.compose.ui.graphics.drawscope.Stroke(2.dp.toPx()))
+                                    }
                                 }
                             }
                         }
+                        if(synthetic) Text("예제 영상",fontSize=14.sp,fontWeight=FontWeight.SemiBold,color=GuidePaper,
+                            modifier=Modifier.align(Alignment.TopStart).padding(10.dp)
+                                .background(GuideForest,RoundedCornerShape(12.dp)).padding(horizontal=10.dp,vertical=5.dp))
                     }
                     Slider(value=position.toFloat().coerceIn(0f,(duration-1).toFloat()),onValueChange={position=it.toLong();player?.seekTo(position.toInt())},
-                        valueRange=0f..(duration-1).coerceAtLeast(1).toFloat(),enabled=!restricted && !analyzing,modifier=Modifier.heightIn(min=56.dp))
-                    Row(verticalAlignment=Alignment.CenterVertically) {
-                        TextButton(onClick={
-                            if(playing) {player?.pause();playing=false;playRequested=false}
-                            else if(!restricted && !analyzing) {if(position>duration-300) position=0;playRequested=true;player?.seekTo(position.toInt())}
-                        },enabled=!restricted && !analyzing) {Text(if(playing) "일시 정지" else if(playRequested) "재생 준비 중" else "영상 재생")}
-                        Text("${formatValue(position/1000.0)} / ${formatValue(duration/1000.0)}초",fontSize=17.sp,color=Muted)
+                        valueRange=0f..(duration-1).coerceAtLeast(1).toFloat(),enabled=!restricted && !analyzing,
+                        modifier=Modifier.fillMaxWidth().heightIn(min=48.dp),
+                        colors=SliderDefaults.colors(thumbColor=GuideGreen,activeTrackColor=GuideGreen,inactiveTrackColor=GuideLine))
+                    Text("${formatValue(position/1000.0)} / ${formatValue(duration/1000.0)}초",fontSize=16.sp,color=GuideMuted)
+                    Spacer(Modifier.height(14.dp))
+                    BoxWithConstraints(Modifier.fillMaxWidth()) {
+                        val play: @Composable (Modifier) -> Unit = { control ->
+                            Button(onClick={
+                                if(playing) {player?.pause();playing=false;playRequested=false}
+                                else if(!restricted && !analyzing) {if(position>duration-300) position=0;playRequested=true;player?.seekTo(position.toInt())}
+                            },enabled=!restricted && !analyzing,modifier=control.heightIn(min=50.dp),
+                                shape=RoundedCornerShape(14.dp),
+                                colors=ButtonDefaults.buttonColors(containerColor=GuideCanvas,contentColor=GuideInk)) {
+                                Text(if(playing) "일시 정지" else if(playRequested) "재생 준비 중" else "영상 재생")
+                            }
+                        }
+                        val analyze: @Composable (Modifier) -> Unit = { control ->
+                            Button(onClick={player?.pause();playing=false;playRequested=false;onAnalyzeWindow(position)},
+                                enabled=!restricted && !analyzing && !playing,
+                                modifier=control.heightIn(min=50.dp).testTag("analyze-parking-window"),
+                                shape=RoundedCornerShape(14.dp),
+                                colors=ButtonDefaults.buttonColors(containerColor=GuideForest,contentColor=GuidePaper)) {
+                                Text(if(analyzing) "주차 장면 확인 중…" else "이 장면 분석 · 저장")
+                            }
+                        }
+                        if(maxWidth<420.dp) Column(verticalArrangement=Arrangement.spacedBy(8.dp)) {
+                            play(Modifier.fillMaxWidth())
+                            analyze(Modifier.fillMaxWidth())
+                        } else Row(Modifier.fillMaxWidth(),horizontalArrangement=Arrangement.SpaceBetween,
+                            verticalAlignment=Alignment.CenterVertically) {
+                            play(Modifier)
+                            analyze(Modifier)
+                        }
                     }
-                    Button(onClick={player?.pause();playing=false;playRequested=false;onAnalyzeWindow(position)},enabled=!restricted && !analyzing && !playing,
-                        modifier=Modifier.fillMaxWidth().heightIn(min=56.dp).testTag("analyze-parking-window")) {Text(if(analyzing) "주차 장면 확인 중…" else "이 장면 분석 · 저장")}
-                    error?.let {Text(it,color=Amber,fontSize=17.sp,modifier=Modifier.padding(top=8.dp).testTag("parking-video-error"))}
+                    error?.let {Text(it,color=MaterialTheme.colorScheme.error,fontSize=17.sp,modifier=Modifier.padding(top=8.dp).testTag("parking-video-error"))}
                 }
             }
             val observations:@Composable (Modifier)->Unit = {modifier->
                 CardPanel(modifier.testTag("parking-observations")) {
-                    Text("선택한 주차 장면",fontSize=23.sp,fontWeight=FontWeight.Bold)
-                    Text(videoPlacementTitle(evidence),fontSize=25.sp,color=if(evidence?.reason==null && evidence?.angleDeg!=null && evidence?.intrusion!=null) Mint else Amber,modifier=Modifier.padding(top=12.dp).testTag("parking-frame-angle"))
-                    Text(videoPlacementAdvice(evidence),fontSize=18.sp,color=Muted,lineHeight=27.sp,modifier=Modifier.padding(top=12.dp).testTag("parking-frame-advice"))
-                    Spacer(Modifier.height(18.dp));HorizontalDivider();Spacer(Modifier.height(18.dp))
-                    Text("저장한 분석 결과",fontSize=22.sp,fontWeight=FontWeight.Bold)
+                    Text("선택한 주차 장면",fontSize=23.sp,fontWeight=FontWeight.Bold,color=GuideInk)
+                    if(calibration?.targetCenterPx!=null) Text("대상 칸 선택됨",fontSize=15.sp,fontWeight=FontWeight.SemiBold,color=GuideForest,
+                        modifier=Modifier.padding(top=12.dp).background(GuideSelected,RoundedCornerShape(14.dp))
+                            .padding(horizontal=12.dp,vertical=7.dp))
+                    Text(videoPlacementTitle(evidence),fontSize=20.sp,fontWeight=FontWeight.SemiBold,
+                        color=if(evidence?.intrusion==true) MaterialTheme.colorScheme.error else GuideInk,
+                        modifier=Modifier.padding(top=12.dp).testTag("parking-frame-angle"))
+                    Text(videoPlacementAdvice(evidence),fontSize=17.sp,color=GuideMuted,lineHeight=25.sp,modifier=Modifier.padding(top=8.dp).testTag("parking-frame-advice"))
+                    Spacer(Modifier.height(14.dp))
+                    calibrationControls()
+                    HorizontalDivider(Modifier.padding(vertical=16.dp),color=GuideLine)
+                    Text("저장한 분석 결과",fontSize=22.sp,fontWeight=FontWeight.Bold,color=GuideInk)
                     val saved=record.alignment
-                    Text(if(saved?.sampledFrames!=null) "영상 ${formatValue(saved.frameTimeMs/1000.0)}초에서 저장한 결과예요." else "차량이 멈춘 장면을 선택하고 분석 결과를 저장해 주세요.",fontSize=17.sp,color=Muted,modifier=Modifier.padding(top=10.dp))
-                    Text(if(saved?.sampledFrames!=null) videoPlacementAdvice(saved) else "아직 저장한 분석 결과가 없어요.",fontSize=18.sp,lineHeight=27.sp,color=if(saved?.reason!=null) Amber else Mint,modifier=Modifier.padding(top=10.dp).testTag("parking-window-result"))
-                    Spacer(Modifier.height(16.dp))
+                    Column(Modifier.fillMaxWidth().padding(top=12.dp).background(GuideCanvas,RoundedCornerShape(14.dp)).padding(14.dp),
+                        verticalArrangement=Arrangement.spacedBy(8.dp)) {
+                        Text(if(saved?.sampledFrames!=null) videoPlacementAdvice(saved) else "아직 저장한 분석 결과가 없어요.",
+                            fontSize=17.sp,fontWeight=FontWeight.SemiBold,lineHeight=25.sp,
+                            color=if(saved?.reason!=null || saved?.intrusion==true) MaterialTheme.colorScheme.error else GuideInk,
+                            modifier=Modifier.testTag("parking-window-result"))
+                        Text(if(saved?.sampledFrames!=null) "영상 ${formatValue(saved.frameTimeMs/1000.0)}초에서 저장한 결과예요."
+                            else "차량이 멈춘 장면을 선택하고 분석 결과를 저장해 주세요.",fontSize=16.sp,color=GuideMuted,lineHeight=24.sp)
+                    }
                     if(frame!=null) {
                         val gear=when(frame.gear?.value) {Gear.PARK->"P";Gear.REVERSE->"R";Gear.NEUTRAL->"N";Gear.DRIVE->"D";else->"—"}
-                        Text("이 장면의 주행 정보\n속도 ${frame.speed?.value?.let {formatValue(abs(it)*3.6)} ?: "—"} km/h · 기어 $gear",fontSize=17.sp,color=Muted)
+                        Text("이 장면의 주행 정보\n속도 ${frame.speed?.value?.let {formatValue(abs(it)*3.6)} ?: "—"} km/h · 기어 $gear",
+                            fontSize=17.sp,color=GuideMuted,modifier=Modifier.padding(top=14.dp))
                     }
-                    Text("표시된 주차선과 차량 위치를 확인하세요.\n영상 분석 결과는 연습 점수와 별도로 저장해요.",fontSize=15.sp,color=Muted,lineHeight=24.sp,modifier=Modifier.padding(top=14.dp))
+                    Text("영상 분석 결과는 연습 점수와 별도로 저장해요.",fontSize=15.sp,color=GuideMuted,lineHeight=24.sp,modifier=Modifier.padding(top=14.dp))
                 }
             }
             if(maxWidth<850.dp) Column(verticalArrangement=Arrangement.spacedBy(18.dp)) {videoPane(Modifier.fillMaxWidth());observations(Modifier.fillMaxWidth())}
-            else Row(horizontalArrangement=Arrangement.spacedBy(20.dp)) {videoPane(Modifier.weight(1.2f));observations(Modifier.weight(1f))}
+            else Row(horizontalArrangement=Arrangement.spacedBy(20.dp)) {videoPane(Modifier.weight(1.85f));observations(Modifier.weight(1f))}
         }
     }
 }
+
+private val VideoIntrusion=androidx.compose.ui.graphics.Color(0xFFF09A87)
 
 /** Frames are time-ordered: binary-search the insertion point and keep the closer neighbour within 1 s. */
 internal fun nearestFrame(frames:List<VehicleFrame>,timeMs:Long):VehicleFrame? {
