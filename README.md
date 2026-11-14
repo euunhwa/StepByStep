@@ -9,16 +9,16 @@
 | 앱 이름 | 차근차근 (StepByStep) |
 | GitHub 저장소 | [euunhwa/StepByStep](https://github.com/euunhwa/StepByStep) |
 | 현재 소스 | `0.13.3` (`versionCode 19`) |
-| 저장소의 서명 APK | [apk/EasyCar_Pleos_release.apk](apk/EasyCar_Pleos_release.apk) · `0.13.2` (`versionCode 18`) |
+| 저장소의 서명 APK | [apk/EasyCar_Pleos_release.apk](apk/EasyCar_Pleos_release.apk) · `0.13.3` (`versionCode 19`) |
 | 개발·검증 환경 | Pleos Connect `v2.1.0` · Android 14 (API 34) · CPU 2코어 · RAM 3072MB |
 | 화면 규격 | `0.13.3` 앱 영역 캡처 1680×1210 px · 시스템 분할 캡처 2560×1440 px · [캡처 안내](docs/ui-screenshots-ko.md) |
 | 구현 방식 | 차량 신호 기반 규칙 인식 + 문헌 기반 평가 초안 + 한국어 화면·음성 피드백 |
 | 현재 단계 | 에뮬레이터에서 기능을 검증한 시제품 |
-| 문서 기준일 | 2026-11-13 |
+| 문서 기준일 | 2026-11-14 |
 
 [최신 시연 영상](media/Demo-Vid.mp4) · [APK 설치와 실행](#8-설치와-실행) · [소스 빌드와 환경 설정](#7-개발-환경과-빌드) · [제출용 파일](#14-제출용-파일)
 
-저장소에 있는 `0.13.2` APK는 앱 이름 변경과 주차 궤적 재생 추가 이전에 서명한 빌드입니다.
+저장소 APK는 현재 소스 `0.13.3`에서 빌드한 **차근차근 (StepByStep)**입니다. 기존 다운로드 링크를 유지하기 위해 파일명은 `EasyCar_Pleos_release.apk`를 사용하며, 앱 이름 변경과 주차 궤적 재생을 포함합니다.
 
 > 현재 점수는 **관측된 조작 지표에 대한 임시 점수**입니다. 평가 배점과 합성 검증 데이터는 전문가·실차 검증과 개선이 필요합니다. 100점이 도로 안전성이나 주차 성공을 보증하지 않습니다.
 
@@ -87,9 +87,10 @@ Pleos 에뮬레이터의 내장 합성 입력을 사용한 시연입니다. T자
 | --- | --- |
 | ![차근차근 0.13.3 홈과 차량 연결 상태](docs/images/ui-v0133/home.png) | ![차근차근 0.13.3 T자 주차 기록과 감점 이유](docs/images/ui-v0133/tparking-detail.png) |
 
-| 출발 완료 · 100점 | T자 주차 완료 · 90점 |
-| --- | --- |
+| 출발 완료 · 100점                                                      | T자 주차 완료 · 90점                                                        |
+| ----------------------------------------------------------------- | --------------------------------------------------------------------- |
 | ![차근차근 0.13.3 출발 완료 100점 피드백](docs/images/ui-v0133/start-100.png) | ![차근차근 0.13.3 T자 주차 완료 90점 피드백](docs/images/ui-v0133/tparking-90.png) |
+|                                                                   |                                                                       |
 
 | 주차 궤적 다시 보기 | 내비와 분할 배치 · 정차 상태 |
 | --- | --- |
@@ -124,12 +125,12 @@ Pleos 에뮬레이터의 내장 합성 입력을 사용한 시연입니다. T자
 
 **빌드 종류**(`pleos` / `demo`)와 **실행 시 입력 선택**(코칭 시작 / 내장 데모)은 별개입니다. `pleos` 빌드에서도 내장 데모를 실행할 수 있습니다.
 
-| 실행 경로 | 입력 출처 | 현재 사용 범위 |
-| --- | --- | --- |
-| `pleos` 빌드 → 코칭 시작 | AAOS 속도·기어, Pleos 핸들 각도 등 차량 서비스 입력 | 연결·권한·신호 품질을 확인하며 관측합니다. 실차용 브리지에는 검증된 yaw 공급자가 없어 회전·주차 유형 평가를 보류합니다. |
-| `pleosDebug` 에뮬레이터 → 코칭 시작 + 8088 조작 | Virtual Console → DDS → 차량 서비스 → 앱 | 속도·기어·핸들은 수신값을 사용하고 yaw만 명시적 모델로 보완해 7개 유형을 시연합니다. |
-| 우측 상단 데모 | 앱에 포함된 합성 `auto-drive.json` | 7개 주요 동작과 완료 피드백·음성·기록 흐름을 재현합니다. |
-| `demo` 빌드 | 합성 데모 + Android 기기 내 한국어 TTS | Pleos 차량 서비스 없이 UI와 데모를 확인하는 경로입니다. 한국어 오프라인 음성이 없으면 글로 안내합니다. |
+| 실행 경로                                | 입력 출처                               | 현재 사용 범위                                                               |
+| ------------------------------------ | ----------------------------------- | ---------------------------------------------------------------------- |
+| `pleos` 빌드 → 코칭 시작                   | AAOS 속도·기어, Pleos 핸들 각도 등 차량 서비스 입력 | 연결·권한·신호 품질을 확인하며 관측합니다. 실차용 브리지에는 검증된 yaw 공급자가 없어 회전·주차 유형 평가를 보류합니다. |
+| `pleosDebug` 에뮬레이터 → 코칭 시작 + 8088 조작 | Virtual Console → DDS → 차량 서비스 → 앱  | 속도·기어·핸들은 수신값을 사용하고 yaw만 명시적 모델로 보완해 7개 유형을 시연합니다.                     |
+| 우측 상단 데모                             | 앱에 포함된 합성 `auto-drive.json`         | 7개 주요 동작과 완료 피드백·음성·기록 흐름을 재현합니다.                                      |
+| `demo` 빌드                            | 합성 데모 + Android 기기 내 한국어 TTS        | Pleos 차량 서비스 없이 UI와 데모를 확인하는 경로입니다. 한국어 오프라인 음성이 없으면 글로 안내합니다.         |
 
 ### 에뮬레이터 yaw 모델
 
@@ -290,15 +291,17 @@ sdk.dir=/absolute/path/to/Android/sdk
 
 Gradle은 현재 작업자 1개, JVM 최대 힙 1536MB, CPU 2코어 기준으로 설정되어 있습니다. 모든 의존성이 캐시된 환경에서만 선택적으로 `--offline`을 사용할 수 있습니다.
 
-0.13.3부터 release 빌드는 R8 코드·리소스 축소를 사용하고(저장 JSON 모델과 Pleos SDK는 유지, [proguard-rules.pro](app/proguard-rules.pro)) 검증용 데이터와 이전 데모 신호를 APK에 넣지 않습니다. 서명 전 APK 크기는 약 46.7MB에서 16.5MB로 줄었습니다.
+0.13.3부터 release 빌드는 R8 코드·리소스 축소를 사용하고(저장 JSON 모델과 Pleos SDK는 유지, [proguard-rules.pro](app/proguard-rules.pro)) 검증용 데이터와 이전 데모 신호를 APK에 넣지 않습니다. 현재 서명 APK 크기는 약 16.7MB입니다.
 
 위 Gradle 명령은 서명 전 APK를 생성합니다. 제출용 APK는 현재 소스에서 `:app:assemblePleosRelease`로 빌드하고, 서명 후 Pleos Connect에서 설치와 내장 데모를 확인합니다. `0.13.3`에서는 기록 DB가 v2로 바뀌었으므로 `0.13.2` APK를 확인할 때는 별도 검증 환경을 사용하세요. [서명·제출 안내](docs/repository-handoff-ko.md)
 
 ## 8. 설치와 실행
 
-### 저장소의 서명 APK 설치 · 0.13.2
+### 저장소의 서명 APK 설치 · 0.13.3
 
-현재 받을 수 있는 파일은 [Pleos 서명 APK 0.13.2](apk/EasyCar_Pleos_release.apk)입니다. 파일 해시는 [SHA256SUMS](apk/SHA256SUMS), 설치·계측 이력은 [0.13.2 검증 기록](docs/validation/submission-ready-v0132.json)에서 확인할 수 있습니다.
+현재 받을 수 있는 파일은 [Pleos 서명 APK 0.13.3](apk/EasyCar_Pleos_release.apk)(`versionCode 19`)입니다. 파일 해시·버전·인증서 해시는 [SHA256SUMS](apk/SHA256SUMS)와 [메타데이터](apk/release-metadata.json)에서 확인할 수 있습니다. [0.13.2 검증 기록](docs/validation/submission-ready-v0132.json)은 이전 APK의 설치·계측 이력입니다.
+
+2026-11-14 최종 서명본은 분리된 Pleos 에뮬레이터에서 기존 0.13.2로부터의 업데이트, 7개 동작 데모, T자 주차 궤적 재생과 앱 재시작 후 기록 보존을 확인했습니다. 서명·해시·빌드·단위 검사 확인 결과는 [0.13.3 릴리스 검증 기록](docs/validation/release-v0133-20261114.json)에 정리했습니다.
 
 ```sh
 adb install -r apk/EasyCar_Pleos_release.apk
@@ -337,7 +340,7 @@ Pleos 빌드는 속도·기어·Pleos 차량 읽기·위치·TTS 관련 권한�
 
 ### 내장 데모 실행
 
-첫 실행 안내에 동의한 뒤 정차 상태에서 홈 우측 상단의 **데모**를 선택하면 번들 합성 데이터로 출발 → 좌회전 → 우회전 → 유턴 → 정지 → T자 주차 → 평행주차를 재생합니다.
+첫 실행 안내에 동의한 뒤 정차 상태에서 홈의 **데모로 연습하기 → 데모**를 선택하면 번들 합성 데이터로 출발 → 좌회전 → 우회전 → 유턴 → 정지 → T자 주차 → 평행주차를 재생합니다.
 
 - 원본 데이터는 896프레임, 89.5초 분량입니다. 음성 대기 때문에 실제 데모 완료 시간은 달라질 수 있습니다.
 - 음성을 켜면 동작 완료 안내가 끝난 후 다음 동작으로 진행하고, 마지막 안내가 끝난 뒤 요약을 엽니다.
@@ -367,7 +370,7 @@ adb -s "$PLEOS_SERIAL" forward tcp:8088 tcp:8088
 
 ### Pleos Connect 검증 환경
 
-기존 서명 APK의 설치·계측 환경은 **Pleos Connect v2.1.0, Android 14(API 34), Android 사용자 10**이었습니다. 화면 캡처는 **2560×1440 px**입니다. 별도 창 크기 확인에서는 기본 앱 창 약 **1682×1210 dp**, 내비게이션과 나눈 앱 창 약 **841×1210 dp**를 기록했습니다. 최종 서명본을 검증할 때는 `adb shell wm size`와 `adb shell wm density`로 사용한 화면 크기와 밀도를 기록하세요. [서명 APK 검증 기록](docs/validation/submission-ready-v0132.json) · [창 크기 기록](docs/split-screen-ko.md#크기에-따른-배치)
+0.13.2 서명 APK의 과거 설치·계측 환경은 **Pleos Connect v2.1.0, Android 14(API 34), Android 사용자 10**이었습니다. 화면 캡처는 **2560×1440 px**입니다. 별도 창 크기 확인에서는 기본 앱 창 약 **1682×1210 dp**, 내비게이션과 나눈 앱 창 약 **841×1210 dp**를 기록했습니다. 최종 서명본을 검증할 때는 `adb shell wm size`와 `adb shell wm density`로 사용한 화면 크기와 밀도를 기록하세요. [0.13.2 서명 APK 검증 기록](docs/validation/submission-ready-v0132.json) · [창 크기 기록](docs/split-screen-ko.md#크기에-따른-배치)
 
 ### 로컬 검사 명령
 
@@ -420,7 +423,7 @@ adb -s "$PLEOS_SERIAL" shell am instrument -w \
 
 | 역할 | 파일 | 버전 / 성격 |
 | --- | --- | --- |
-| 인식 기준 | [recognition.json](app/src/main/assets/datasets/document-v1/recognition.json) | `recognition-document-1.0.2` |
+| 인식 기준 | [recognition.json](app/src/main/assets/datasets/document-v1/recognition.json) | `recognition-document-1.0.3` |
 | 평가 기준 | [evaluation.json](app/src/main/assets/datasets/document-v1/evaluation.json) | `evaluation-document-1.0` |
 | 프로필 | [document-derived-v1.json](app/src/main/assets/profiles/document-derived-v1.json) | `document-derived-1.0` |
 | 인식 검증 | [recognition-validation.json](app/src/main/assets/datasets/document-v1/recognition-validation.json) | 정상 7개 동작을 포함한 사례와 yaw 누락·단위 오류·시각 오류 등 4개 합성 사례 |
@@ -588,12 +591,12 @@ adb -s "$PLEOS_SERIAL" shell am instrument -w \
 
 ## 14. 제출용 파일
 
-이 저장소에는 **차근차근 (StepByStep) 소스 0.13.3**과 **기존 Pleos 서명 APK 0.13.2**가 있습니다. 최종 제출용 Pleos APK는 현재 소스에서 빌드·서명·설치 검증한 뒤 `<팀명>_차근차근_release.apk`로 `apk/`에 올립니다. GitHub 파일 제한을 넘는 경우에는 GitHub Release에 등록하고 해당 Release 페이지를 제출합니다.
+이 저장소에는 **차근차근 (StepByStep) 소스 0.13.3**과 현재 소스에서 빌드한 **Pleos 서명 APK 0.13.3**이 있습니다. APK 경로는 기존 링크와의 호환을 위해 `apk/EasyCar_Pleos_release.apk`를 유지합니다. 제출 전에는 최종 서명본의 설치와 내장 데모를 확인하세요. GitHub 파일 제한을 넘는 경우에는 GitHub Release에 등록하고 해당 Release 페이지를 제출합니다.
 
 제출 페이지에는 저장소 주소와 최종 APK 경로를, 접수 메일에는 저장소 주소와 해당 소스·APK의 최종 커밋 해시를 적습니다. 개인 SDK 설정, 빌드 캐시, 앱 사용자 기록, 서명키·암호는 Git에서 제외합니다.
 
 - `app/`, `core/`, Gradle Wrapper: 최신 소스·자산·단위/장치 테스트와 빌드 설정.
-- [apk/](apk/README.md)에는 기존 Pleos 서명 APK와 SHA-256 해시가 있습니다.
+- [apk/](apk/README.md)에는 현재 Pleos 서명 APK 0.13.3과 SHA-256 해시·메타데이터가 있습니다.
 - `docs/`, `examples/`, `tools/`: 데이터 출처·설계·검증 근거·재현 도구. 과거 검증 자료는 당시 버전을 표시해 보존합니다.
 - [media/](media/README.md)에는 최신 0.13.3 [시연 영상](media/Demo-Vid.mp4)과 장면표가 있습니다. 0.9.3 영상은 과거 검증 자료로 보존합니다.
 - `experimental/`: 현재 빌드에서 제외된 주차 녹화 실험 원본.

@@ -1,0 +1,130 @@
+{
+  "checkedAt": "2026-11-14T21:19:42+09:00",
+  "sourceCommit": "126de32d242b5227186b642e58517ace8606bd6f",
+  "sourceCodeUnchangedFromCommit": true,
+  "release": {
+    "version": "0.13.3",
+    "sourceCommit": "126de32d242b5227186b642e58517ace8606bd6f",
+    "buildVariant": "pleosRelease",
+    "builtAt": "2026-11-14T21:15:27+09:00",
+    "certificateSha256": "f4e4ca5b9ab49fb5464651341e6066d8cf017bfa8bd36f5762ea3b11fdfbb3dc",
+    "artifacts": [
+      {
+        "file": "EasyCar_Pleos_release.apk",
+        "bytes": 16741425,
+        "sha256": "a01a92ac56f986de43fe3d20c9ce8961b0da26f4eb63498c3a62937bda55434d",
+        "applicationId": "com.example.easycar",
+        "versionName": "0.13.3",
+        "versionCode": 19,
+        "debuggable": false
+      },
+      {
+        "file": "EasyCar_Pleos_release.apk.idsig",
+        "bytes": 136681,
+        "sha256": "9b9742cf93e963b8b7e6238d7f666fe526094412ac538301b963aae7c7ccfa60"
+      }
+    ]
+  },
+  "verification": {
+    "gradle": {
+      "command": "JAVA_HOME=<JDK17> ./gradlew :core:test :app:testPleosDebugUnitTest :app:assemblePleosRelease --console=plain",
+      "status": "BUILD SUCCESSFUL",
+      "releaseLintVital": "PASS",
+      "unitTests": {
+        "core": {
+          "tests": 192,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        },
+        "app": {
+          "tests": 35,
+          "failures": 0,
+          "errors": 0,
+          "skipped": 0
+        }
+      },
+      "unitTestExecution": "UP-TO-DATE: Gradle validated unchanged inputs and reused passing results"
+    },
+    "apk": {
+      "versionName": "0.13.3",
+      "versionCode": 19,
+      "applicationId": "com.example.easycar",
+      "defaultLabel": "차근차근",
+      "englishLabel": "StepByStep",
+      "debuggable": false,
+      "recognitionId": "recognition-document-1.0.3",
+      "recognitionAssetMatchesSource": true,
+      "zipalign16KiB": "PASS",
+      "signatureV3": "PASS",
+      "signatureV4WithIdsig": "PASS",
+      "matchesPreviousReleaseCertificate": true,
+      "sha256AndByteCounts": "PASS"
+    },
+    "environment": {
+      "type": "isolated temporary Pleos emulator",
+      "pleosConnect": "2.1.0",
+      "androidApi": 34,
+      "androidUser": 10,
+      "cpuCores": 2,
+      "configuredRamMiB": 3072,
+      "guestMemTotalKiB": 3053212,
+      "screenPixels": [
+        2560,
+        1440
+      ],
+      "densityDpi": 160
+    },
+    "runtime": {
+      "previous0132Launch": "PASS",
+      "inPlaceUpgradeFrom0132WithoutUninstall": "PASS",
+      "signed0133LaunchAndHome": "PASS",
+      "sevenManeuverDemo": {
+        "status": "PASS",
+        "input": "built-in synthetic document-validation demo",
+        "results": [
+          {
+            "maneuver": "START",
+            "provisionalScore": 100
+          },
+          {
+            "maneuver": "LEFT",
+            "provisionalScore": 100
+          },
+          {
+            "maneuver": "RIGHT",
+            "provisionalScore": 100
+          },
+          {
+            "maneuver": "U_TURN",
+            "provisionalScore": 100
+          },
+          {
+            "maneuver": "STOP",
+            "provisionalScore": 100
+          },
+          {
+            "maneuver": "T_PARK",
+            "provisionalScore": 100
+          },
+          {
+            "maneuver": "PARALLEL_PARK",
+            "provisionalScore": 100
+          }
+        ]
+      },
+      "tParkingReplay": {
+        "status": "PASS",
+        "trajectoryAndReferenceCarDisplayed": true,
+        "playbackAdvancedFromSeconds": 0.0,
+        "playbackAdvancedToSeconds": 5.6
+      },
+      "allSevenResultsPreservedAfterForceStopAndRelaunch": "PASS",
+      "appCrashInCrashBuffer": false
+    }
+  },
+  "limits": [
+    "검증은 분리된 Pleos 에뮬레이터의 최종 서명 APK와 합성 데모 기준입니다. 실차/OEM 검증 또는 Gleo 음성 전체 경로의 새 검증으로 해석하지 않습니다.",
+    "단위 검사는 Gradle이 입력 일치를 확인한 기존 통과 결과를 재사용했습니다. 이번 확인에서 Android 계측 테스트는 실행하지 않았습니다."
+  ]
+}

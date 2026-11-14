@@ -1,15 +1,23 @@
 {
-  "version": "0.13.2",
+  "version": "0.13.3",
+  "sourceCommit": "126de32d242b5227186b642e58517ace8606bd6f",
+  "buildVariant": "pleosRelease",
+  "builtAt": "2026-11-14T21:15:27+09:00",
   "certificateSha256": "f4e4ca5b9ab49fb5464651341e6066d8cf017bfa8bd36f5762ea3b11fdfbb3dc",
   "artifacts": [
     {
       "file": "EasyCar_Pleos_release.apk",
-      "bytes": 46679173,
-      "sha256": "415cc016ed19c21da78d25e9860d3d88c74ea732502ad856ef5fa51b31aef2b6",
+      "bytes": 16741425,
+      "sha256": "a01a92ac56f986de43fe3d20c9ce8961b0da26f4eb63498c3a62937bda55434d",
       "applicationId": "com.example.easycar",
-      "versionName": "0.13.2",
-      "versionCode": 18,
+      "versionName": "0.13.3",
+      "versionCode": 19,
       "debuggable": false
+    },
+    {
+      "file": "EasyCar_Pleos_release.apk.idsig",
+      "bytes": 136681,
+      "sha256": "9b9742cf93e963b8b7e6238d7f666fe526094412ac538301b963aae7c7ccfa60"
     }
   ]
 }
