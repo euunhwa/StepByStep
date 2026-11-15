@@ -11,7 +11,7 @@
 3. Gleo에게 `이지카 최근 주차 결과 알려줘`, `이지카 주차 감점 이유 알려줘`, `이지카 이번 연습 요약해 줘`라고 질문한다.
 4. 같은 화면의 스위치나 설정의 `Gleo 기록 연결 해제`에서 해제한다. 연결된 기록을 삭제하거나 시작 동의를 철회하면 연결도 해제된다.
 
-연결을 켜면 음성 질문에 응답하기 위해 선택한 기록의 저장 점수·평가 근거·요약을 Gleo에 전달한다. 영상 파일, 원시 차량 신호, 사용자 제목은 전달하지 않는다. Gleo 자체의 음성·클라우드 처리 정책은 EasyCar의 로컬 저장 정책과 별개다. 앱 음성 끄기 설정은 Gleo callback에도 `mode=silent`로 반영한다.
+연결을 켜면 음성 질문에 응답하기 위해 선택한 기록의 저장 점수·평가 근거·요약을 Gleo에 전달한다. 영상 파일, 원시 차량 신호, 사용자 제목은 전달하지 않는다. Gleo 자체의 음성·클라우드 처리 정책은 StepByStep의 로컬 저장 정책과 별개다. 앱 음성 끄기 설정은 Gleo callback에도 `mode=silent`로 반영한다.
 
 ## 실제 연결 코드
 
@@ -26,7 +26,7 @@
 | 응답 직전 검사 | 연결·동의·UX 제한·코칭 진행·삭제·기록 변경을 다시 검사. 바뀐 기록의 지난 답변은 보내지 않음 |
 | 콜백 | `ai.pleos.playground.intent.action.APP_ACTION_RESPONSE`, extras `packageName`, `response`; 대상은 `ai.umos.ambientai`로 고정 |
 | 수신자 제한 | callback 수신 앱에도 Gleo 서명 권한을 요구. Gleo 권한의 소유자·보호 수준·보유 여부 확인 후 전송 |
-| 음성 | 정상 요청은 `mode=voice`; 앱 음성 끄기는 `silent`. EasyCar TTS로 같은 답변을 중복 발화하지 않음 |
+| 음성 | 정상 요청은 `mode=voice`; 앱 음성 끄기는 `silent`. StepByStep TTS로 같은 답변을 중복 발화하지 않음 |
 | 제한 | 처리5초 제한(공식 Gleo7초 제한보다 짧게 설정), 초기 UX 확인1.8초, callback UTF-8 48KiB. 초과하면 실패 응답으로 전체 설명을 앱에서 확인하도록 안내 |
 
 `service`는 Android Service를 실행한다는 의미가 아니라 공식 Gleo 명세의 `sendBroadcast` 방식이다. 일반 `demo` APK에는 Gleo schema와 exported receiver를 포함하지 않는다. 서명 권한 이름과 Gleo 패키지는 이번 에뮬레이터에서 확인한 값이다. 다른 OEM 빌드에서 식별자가 바뀌면 권한 제한을 풀지 말고 공식 계약을 확인해 어댑터를 갱신한다.

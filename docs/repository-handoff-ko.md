@@ -40,7 +40,7 @@ git push -u origin main
 
 ## 릴리스 실행과 개발 입력 구분
 
-- Pleos Release: `apk/EasyCar_Pleos_release.apk`, 앱 ID `com.example.easycar`.
+- Pleos Release: `apk/A3B_StepByStep_release.apk`, 앱 ID `com.example.easycar`.
 - Pleos 앱 안에서 홈의 내장 합성 데모를 제공합니다. 별도의 Android Phone 앱은 제출하지 않습니다. 일반 Android용 `demo` flavor는 기존 개발 옵션으로 소스에만 보존합니다.
 - **8088 조작에서 회전율을 계산하는 보조 모델은 Pleos Debug 에뮬레이터 전용**입니다. Release는 모델을 사용하지 않으며 현재 에뮬레이터의 7개 동작 시연은 내장 데모를 사용합니다.
 - 실제 탑뷰 AVM 입력·자동 녹화·최종 주차 배치 통합 채점은 현재 미연결입니다. 현대/Pleos의 승인된 입력·권한·보정·시각 정보가 제공되면 세 메뉴 안에서 재검토합니다.
@@ -64,7 +64,7 @@ export ANDROID_HOME=/absolute/path/to/Android/sdk
 
 python3 tools/sign_release.py \
   --input app/build/outputs/apk/pleos/release/app-pleos-release-unsigned.apk \
-  --output apk/EasyCar_Pleos_release-next.apk \
+  --output apk/A3B_StepByStep_release-next.apk \
   --keystore /private/path/to/easycar-submission.jks \
   --alias easycar-submission
 

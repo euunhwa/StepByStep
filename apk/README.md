@@ -1,8 +1,8 @@
 # 설치용 Pleos 릴리스 APK · 0.13.3
 
-> 현재 소스 0.13.3(`versionCode 19`, 기록 DB v2, 인식 1.0.3)에서 빌드한 차근차근 (StepByStep) Pleos 서명 APK입니다. 앱 이름 변경과 주차 궤적 재생을 포함합니다. 기존 다운로드 링크를 유지하기 위해 파일명은 `EasyCar_Pleos_release.apk`를 사용합니다.
+> 현재 소스 0.13.3(`versionCode 19`, 기록 DB v2, 인식 1.0.3)에서 빌드한 차근차근 (StepByStep) Pleos 서명 APK입니다. 앱 이름 변경과 주차 궤적 재생을 포함합니다. 제출용 파일명은 `A3B_StepByStep_release.apk`입니다.
 
-[EasyCar_Pleos_release.apk](EasyCar_Pleos_release.apk): Pleos용, 앱 ID `com.example.easycar`. 제출 패키지에는 일반 Android Phone용 APK를 포함하지 않습니다.
+[A3B_StepByStep_release.apk](A3B_StepByStep_release.apk): Pleos용, 앱 ID `com.example.easycar`. 제출 패키지에는 일반 Android Phone용 APK를 포함하지 않습니다.
 
 디버그가 비활성인 release 빌드를 전용 키로 서명했습니다. [SHA256SUMS](SHA256SUMS)와 [메타데이터](release-metadata.json)에 파일 해시·버전·인증서 해시를 기록했습니다. 개인 키와 암호는 포함하지 않습니다. `.idsig`는 일반 설치에는 필요하지 않은 서명 보조 파일입니다.
 

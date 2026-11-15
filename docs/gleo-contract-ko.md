@@ -8,7 +8,7 @@
 | 주차 등 감점 이유 | EXPLAIN_RESULT | sessionId, resultId, maneuverType |
 | 연결한 연습 요약 | SUMMARIZE_SESSION | sessionId |
 
-실행 함수명은 EasyCar의 앱 함수다. 원본은 [APK 스키마](../app/src/pleos/assets/schema.json)에 있다. 사용자가 앱에서 연결한 한 세션만 조회하며 다른 ID를 전달해도 범위가 늘어나지 않는다. 기록이 삭제·변경되거나 연결이 철회되면 지난 응답을 전송하지 않는다. 과거 기록을 재채점하지 않는다.
+실행 함수명은 StepByStep의 앱 함수다. 원본은 [APK 스키마](../app/src/pleos/assets/schema.json)에 있다. 사용자가 앱에서 연결한 한 세션만 조회하며 다른 ID를 전달해도 범위가 늘어나지 않는다. 기록이 삭제·변경되거나 연결이 철회되면 지난 응답을 전송하지 않는다. 과거 기록을 재채점하지 않는다.
 
 Pleos 수신기는 Gleo 소유 서명 권한으로 보호한다. 공식 예시의 bare action과 실제 Gleo4.2.0.15의 package-prefixed action을 지원한다. 실제 관찰된 빈 선택값은 생략으로 처리한다. 콜백은 공식 action/extras로 Gleo 패키지에만 보내고 Gleo 권한을 가진 수신자로 제한한다.
 

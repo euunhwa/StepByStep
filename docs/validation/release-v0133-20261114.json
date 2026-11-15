@@ -10,7 +10,7 @@
     "certificateSha256": "f4e4ca5b9ab49fb5464651341e6066d8cf017bfa8bd36f5762ea3b11fdfbb3dc",
     "artifacts": [
       {
-        "file": "EasyCar_Pleos_release.apk",
+        "file": "A3B_StepByStep_release.apk",
         "bytes": 16741425,
         "sha256": "a01a92ac56f986de43fe3d20c9ce8961b0da26f4eb63498c3a62937bda55434d",
         "applicationId": "com.example.easycar",
@@ -19,7 +19,7 @@
         "debuggable": false
       },
       {
-        "file": "EasyCar_Pleos_release.apk.idsig",
+        "file": "A3B_StepByStep_release.apk.idsig",
         "bytes": 136681,
         "sha256": "9b9742cf93e963b8b7e6238d7f666fe526094412ac538301b963aae7c7ccfa60"
       }
@@ -126,5 +126,20 @@
   "limits": [
     "검증은 분리된 Pleos 에뮬레이터의 최종 서명 APK와 합성 데모 기준입니다. 실차/OEM 검증 또는 Gleo 음성 전체 경로의 새 검증으로 해석하지 않습니다.",
     "단위 검사는 Gradle이 입력 일치를 확인한 기존 통과 결과를 재사용했습니다. 이번 확인에서 Android 계측 테스트는 실행하지 않았습니다."
-  ]
+  ],
+  "artifactRename": {
+    "date": "2026-11-15",
+    "files": [
+      {
+        "from": "EasyCar_Pleos_release.apk",
+        "to": "A3B_StepByStep_release.apk"
+      },
+      {
+        "from": "EasyCar_Pleos_release.apk.idsig",
+        "to": "A3B_StepByStep_release.apk.idsig"
+      }
+    ],
+    "binaryContentsChanged": false,
+    "note": "제출용 파일명만 변경했습니다. 기존 빌드·실행 검증 시각과 결과는 유지합니다."
+  }
 }

@@ -9,7 +9,7 @@
 | 앱 이름 | 차근차근 (StepByStep) |
 | GitHub 저장소 | [euunhwa/StepByStep](https://github.com/euunhwa/StepByStep) |
 | 현재 소스 | `0.13.3` (`versionCode 19`) |
-| 저장소의 서명 APK | [apk/EasyCar_Pleos_release.apk](apk/EasyCar_Pleos_release.apk) · `0.13.3` (`versionCode 19`) |
+| 저장소의 서명 APK | [apk/A3B_StepByStep_release.apk](apk/A3B_StepByStep_release.apk) · `0.13.3` (`versionCode 19`) |
 | 개발·검증 환경 | Pleos Connect `v2.1.0` · Android 14 (API 34) · CPU 2코어 · RAM 3072MB |
 | 화면 규격 | `0.13.3` 앱 영역 캡처 1680×1210 px · 시스템 분할 캡처 2560×1440 px · [캡처 안내](docs/ui-screenshots-ko.md) |
 | 구현 방식 | 차량 신호 기반 규칙 인식 + 문헌 기반 평가 초안 + 한국어 화면·음성 피드백 |
@@ -18,7 +18,7 @@
 
 [최신 시연 영상](media/Demo-Vid.mp4) · [APK 설치와 실행](#8-설치와-실행) · [소스 빌드와 환경 설정](#7-개발-환경과-빌드) · [제출용 파일](#14-제출용-파일)
 
-저장소 APK는 현재 소스 `0.13.3`에서 빌드한 **차근차근 (StepByStep)**입니다. 기존 다운로드 링크를 유지하기 위해 파일명은 `EasyCar_Pleos_release.apk`를 사용하며, 앱 이름 변경과 주차 궤적 재생을 포함합니다.
+저장소 APK는 현재 소스 `0.13.3`에서 빌드한 **차근차근 (StepByStep)**입니다. 제출용 파일명은 `A3B_StepByStep_release.apk`이며, 앱 이름 변경과 주차 궤적 재생을 포함합니다.
 
 > 현재 점수는 **관측된 조작 지표에 대한 임시 점수**입니다. 평가 배점과 합성 검증 데이터는 전문가·실차 검증과 개선이 필요합니다. 100점이 도로 안전성이나 주차 성공을 보증하지 않습니다.
 
@@ -299,12 +299,12 @@ Gradle은 현재 작업자 1개, JVM 최대 힙 1536MB, CPU 2코어 기준으로
 
 ### 저장소의 서명 APK 설치 · 0.13.3
 
-현재 받을 수 있는 파일은 [Pleos 서명 APK 0.13.3](apk/EasyCar_Pleos_release.apk)(`versionCode 19`)입니다. 파일 해시·버전·인증서 해시는 [SHA256SUMS](apk/SHA256SUMS)와 [메타데이터](apk/release-metadata.json)에서 확인할 수 있습니다. [0.13.2 검증 기록](docs/validation/submission-ready-v0132.json)은 이전 APK의 설치·계측 이력입니다.
+현재 받을 수 있는 파일은 [Pleos 서명 APK 0.13.3](apk/A3B_StepByStep_release.apk)(`versionCode 19`)입니다. 파일 해시·버전·인증서 해시는 [SHA256SUMS](apk/SHA256SUMS)와 [메타데이터](apk/release-metadata.json)에서 확인할 수 있습니다. [0.13.2 검증 기록](docs/validation/submission-ready-v0132.json)은 이전 APK의 설치·계측 이력입니다.
 
 2026-11-14 최종 서명본은 분리된 Pleos 에뮬레이터에서 기존 0.13.2로부터의 업데이트, 7개 동작 데모, T자 주차 궤적 재생과 앱 재시작 후 기록 보존을 확인했습니다. 서명·해시·빌드·단위 검사 확인 결과는 [0.13.3 릴리스 검증 기록](docs/validation/release-v0133-20261114.json)에 정리했습니다.
 
 ```sh
-adb install -r apk/EasyCar_Pleos_release.apk
+adb install -r apk/A3B_StepByStep_release.apk
 adb shell am start -n com.example.easycar/.MainActivity
 
 ```
@@ -591,7 +591,7 @@ adb -s "$PLEOS_SERIAL" shell am instrument -w \
 
 ## 14. 제출용 파일
 
-이 저장소에는 **차근차근 (StepByStep) 소스 0.13.3**과 현재 소스에서 빌드한 **Pleos 서명 APK 0.13.3**이 있습니다. APK 경로는 기존 링크와의 호환을 위해 `apk/EasyCar_Pleos_release.apk`를 유지합니다. 제출 전에는 최종 서명본의 설치와 내장 데모를 확인하세요. GitHub 파일 제한을 넘는 경우에는 GitHub Release에 등록하고 해당 Release 페이지를 제출합니다.
+이 저장소에는 **차근차근 (StepByStep) 소스 0.13.3**과 현재 소스에서 빌드한 **Pleos 서명 APK 0.13.3**이 있습니다. 제출용 APK 경로는 `apk/A3B_StepByStep_release.apk`입니다. 제출 전에는 최종 서명본의 설치와 내장 데모를 확인하세요. GitHub 파일 제한을 넘는 경우에는 GitHub Release에 등록하고 해당 Release 페이지를 제출합니다.
 
 제출 페이지에는 저장소 주소와 최종 APK 경로를, 접수 메일에는 저장소 주소와 해당 소스·APK의 최종 커밋 해시를 적습니다. 개인 SDK 설정, 빌드 캐시, 앱 사용자 기록, 서명키·암호는 Git에서 제외합니다.
 
